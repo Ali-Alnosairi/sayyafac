@@ -1,0 +1,6 @@
+# Agent configuration and local files
+.agents/
+
+# Operating System Files
+.DS_Store
+Thumbs.db

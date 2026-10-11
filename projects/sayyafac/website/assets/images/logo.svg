@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 72" width="320" height="72" fill="none">
+  <!-- Snowflake / Air Conditioning Icon -->
+  <g transform="translate(10, 8)">
+    <rect width="56" height="56" rx="14" fill="#0f4c81"/>
+    <!-- Snowflake Core -->
+    <path d="M28 14v28M14 28h28M18 18l20 20M38 18L18 38" stroke="#38bdf8" stroke-width="3" stroke-linecap="round"/>
+    <!-- Snowflake tips -->
+    <path d="M25 17l3-3 3 3M25 39l3 3 3-3M17 25l-3 3 3 3M39 25l3 3-3 3" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="28" cy="28" r="4" fill="#ffffff"/>
+  </g>
+  <!-- Text: صَيّاف للتكييف -->
+  <text x="76" y="38" font-family="'Cairo', system-ui, sans-serif" font-size="26" font-weight="800" fill="#0b3b60">صَيّاف للتكييف</text>
+  <text x="76" y="56" font-family="'Cairo', system-ui, sans-serif" font-size="12" font-weight="600" fill="#0284c7">خدمات تركيب وصيانة التكييف الميدانية بالطائف</text>
+</svg>

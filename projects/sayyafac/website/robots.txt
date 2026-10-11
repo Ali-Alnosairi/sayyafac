@@ -1,0 +1,22 @@
+# Robots.txt for SayyafAC (صَيّاف للتكييف) - Taif, Saudi Arabia
+User-agent: *
+Allow: /
+
+# Explicit AI Search and Retrieval Bot Permissions
+User-agent: GPTBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+# Sitemap Location
+Sitemap: https://sayyafac.com/sitemap.xml

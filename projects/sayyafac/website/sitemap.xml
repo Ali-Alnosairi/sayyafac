@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <!-- الصفحة الرئيسية -->
+  <url>
+    <loc>https://sayyafac.com/</loc>
+    <lastmod>2026-10-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://sayyafac.com/assets/images/install-after-aston-indoor.webp</image:loc>
+      <image:title>تركيب مكيف سبليت أستون في مجلس سكني بالطائف موزون بميزان ماء</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://sayyafac.com/assets/images/install-aston-cantilever-bracket.webp</image:loc>
+      <image:title>تثبيت وحدة مكيف خارجية على كابولي جداري متين بالطائف</image:title>
+    </image:image>
+  </url>
+
+  <!-- صفحة تركيب المكيفات (الخدمة الأولى الأساسية) -->
+  <url>
+    <loc>https://sayyafac.com/installation/</loc>
+    <lastmod>2026-10-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://sayyafac.com/assets/images/install-aston-cantilever-bracket.webp</image:loc>
+      <image:title>تركيب مكيف سبليت على كابولي جداري مقاوم للرياح بالطائف</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://sayyafac.com/assets/images/install-before-majlis.webp</image:loc>
+      <image:title>تجهيز وتمديد نحاس مكيف سبليت في مجلس بالطائف قبل التركيب</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://sayyafac.com/assets/images/install-after-aston-indoor.webp</image:loc>
+      <image:title>مكيف سبليت بعد التركيب النهائي أسفل الجبس بدقة</image:title>
+    </image:image>
+  </url>
+
+  <!-- صفحة صيانة المكيفات (الخدمة الثانية) -->
+  <url>
+    <loc>https://sayyafac.com/maintenance/</loc>
+    <lastmod>2026-10-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://sayyafac.com/assets/images/install-commercial-midea-stacked.webp</image:loc>
+      <image:title>صيانة وفحص وحدات تكييف ميديا متعددة في الطائف</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://sayyafac.com/assets/images/install-commercial-york-cabinet.webp</image:loc>
+      <image:title>صيانة وإصلاح مكيف دولابي يورك تجاري في الطائف</image:title>
+    </image:image>
+  </url>
+
+  <!-- صفحة التواصل والأحياء -->
+  <url>
+    <loc>https://sayyafac.com/contact/</loc>
+    <lastmod>2026-10-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- مركز الأدلة الفنية -->
+  <url>
+    <loc>https://sayyafac.com/articles/</loc>
+    <lastmod>2026-10-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- دليل تركيب مكيف سبليت بالطائف وتأسيس النحاس -->
+  <url>
+    <loc>https://sayyafac.com/articles/split-ac-installation-taif/</loc>
+    <lastmod>2026-10-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <image:image>
+      <image:loc>https://sayyafac.com/assets/images/install-rooftop-koolen-rubber-mounts.webp</image:loc>
+      <image:title>تركيب مكيف سبليت على السطح بقواعد ربل مطاطية بالطائف</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://sayyafac.com/assets/images/install-rooftop-koolen-piping-loop.webp</image:loc>
+      <image:title>عزل مواسير النحاس ومصيدة الزيت لمكيف سبليت على السطح بالطائف</image:title>
+    </image:image>
+  </url>
+</urlset>
