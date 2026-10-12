@@ -39,100 +39,241 @@
   <!-- Connected Entity Graph Schema (@graph) -->
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Organization",
-        "@id": "https://sayyafac.com/#organization",
-        "name": "صَيّاف للتكييف",
-        "alternateName": "SayyafAC",
-        "url": "https://sayyafac.com/",
-        "logo": "https://sayyafac.com/assets/images/logo.svg",
-        "description": "خدمات تكييف وتبريد ميدانية متخصصة في مدينة الطائف، تركز على تركيب مكيفات سبليت ودولابي وصيانة أجهزة التكييف وتعبئة الفريون.",
-        "contactPoint": {
-          "@type": "ContactPoint",
-          "telephone": "+966538972324",
-          "contactType": "customer service",
-          "areaServed": "SA",
-          "availableLanguage": ["Arabic"]
-        }
-      },
-      {
-        "@type": "HVACBusiness",
-        "@id": "https://sayyafac.com/#localbusiness",
-        "name": "صَيّاف للتكييف",
-        "alternateName": "SayyafAC",
-        "url": "https://sayyafac.com/",
-        "parentOrganization": { "@id": "https://sayyafac.com/#organization" },
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://sayyafac.com/#organization",
+      "name": "صَيّاف للتكييف",
+      "alternateName": "SayyafAC",
+      "url": "https://sayyafac.com/",
+      "logo": "https://sayyafac.com/assets/images/logo.svg",
+      "description": "خدمات تكييف وتبريد ميدانية متخصصة في مدينة الطائف، تركز على تركيب مكيفات سبليت ودولابي وصيانة أجهزة التكييف وتعبئة الفريون.",
+      "contactPoint": {
+        "@type": "ContactPoint",
         "telephone": "+966538972324",
-        "priceRange": "SAR 50 - SAR 350",
-        "image": "https://sayyafac.com/assets/images/install-after-aston-indoor.webp",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "شارع عور",
-          "addressLocality": "الطائف",
-          "addressRegion": "منطقة مكة المكرمة",
-          "postalCode": "26511",
-          "addressCountry": "SA"
+        "contactType": "customer service",
+        "areaServed": "SA",
+        "availableLanguage": [
+          "Arabic"
+        ]
+      }
+    },
+    {
+      "@type": "HVACBusiness",
+      "@id": "https://sayyafac.com/#localbusiness",
+      "name": "صَيّاف للتكييف",
+      "alternateName": "SayyafAC",
+      "url": "https://sayyafac.com/",
+      "parentOrganization": {
+        "@id": "https://sayyafac.com/#organization"
+      },
+      "telephone": "+966538972324",
+      "priceRange": "SAR 50 - SAR 350",
+      "image": "https://sayyafac.com/assets/images/install-after-aston-indoor.webp",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "شارع عور",
+        "addressLocality": "الطائف",
+        "addressRegion": "منطقة مكة المكرمة",
+        "postalCode": "26511",
+        "addressCountry": "SA"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 21.256835196480665,
+        "longitude": 40.408051642763986
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Saturday",
+            "Sunday",
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday"
+          ],
+          "opens": "08:00",
+          "closes": "22:00"
         },
-        "geo": {
-          "@type": "GeoCoordinates",
-          "latitude": 21.256835196480665,
-          "longitude": 40.408051642763986
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Friday"
+          ],
+          "opens": "13:00",
+          "closes": "22:00"
+        }
+      ],
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "الطائف"
         },
-        "openingHoursSpecification": [
+        {
+          "@type": "AdministrativeArea",
+          "name": "مخططات الوسام"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "حي شهار"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "حي السداد"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "حي الردف"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "حي الخالدية"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "حي أم العراد"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "حي قروى"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "حي مسرة"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "حي الأحباب"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "الحوية"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "الحلقة الشرقية"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "الحلقة الغربية"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "حي القيم"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "حي الفيصلية"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "حي الورود"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "حي النسيم"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "حي الجال"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "حي جبرة"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "حي السلامة"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "حي المثناة"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "الهدا"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "الشفا"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "السيل الصغير"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "السيل الكبير"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "خدمات تكييف صَيّاف بالطائف",
+        "itemListElement": [
           {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": ["Saturday", "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"],
-            "opens": "08:00",
-            "closes": "22:00"
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "@id": "https://sayyafac.com/installation/#service",
+              "name": "تركيب مكيفات سبليت ودولابي بالطائف",
+              "description": "تركيب مكيفات سبليت جديدة وفك ونقل وتركيب مع تفريغ الهواء بالفاكيوم وتمديد النحاس وضبط ميزان الماء."
+            }
           },
           {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": ["Friday"],
-            "opens": "13:00",
-            "closes": "22:00"
-          }
-        ],
-        "areaServed": [
-          { "@type": "AdministrativeArea", "name": "الطائف" },
-          { "@type": "AdministrativeArea", "name": "أم العراد" },
-          { "@type": "AdministrativeArea", "name": "شهار" },
-          { "@type": "AdministrativeArea", "name": "الحوية" },
-          { "@type": "AdministrativeArea", "name": "الهدا" },
-          { "@type": "AdministrativeArea", "name": "الشفا" },
-          { "@type": "AdministrativeArea", "name": "الوسام" }
-        ],
-        "hasOfferCatalog": {
-          "@type": "OfferCatalog",
-          "name": "خدمات تكييف صَيّاف بالطائف",
-          "itemListElement": [
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "@id": "https://sayyafac.com/installation/#service",
-                "name": "تركيب مكيفات سبليت ودولابي بالطائف",
-                "description": "تركيب مكيفات سبليت جديدة وفك ونقل وتركيب مع تفريغ الهواء بالفاكيوم وتمديد النحاس وضبط ميزان الماء."
-              }
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "@id": "https://sayyafac.com/maintenance/#service",
-                "name": "صيانة وإصلاح مكيفات سبليت وتعبئة فريون بالطائف",
-                "description": "كشف أعطال التكييف وتعبئة فريون R410A أصلي وغسيل وتنظيف المكيفات ومعالجة تنقيط الماء."
-              }
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "@id": "https://sayyafac.com/maintenance/#service",
+              "name": "صيانة وإصلاح مكيفات سبليت وتعبئة فريون بالطائف",
+              "description": "كشف أعطال التكييف وتعبئة فريون R410A أصلي وغسيل وتنظيف المكيفات ومعالجة تنقيط الماء."
             }
-          ]
-        }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "@id": "https://sayyafac.com/cleaning/#service",
+              "name": "تنظيف وغسيل مكيفات بالموقع بالطائف",
+              "description": "غسيل عميق لمكيفات السبليت والدولابي في الموقع بجراب حماية معلق لمنع اتساخ الجدران والأثاث مع تعقيم المبخر وتسليك الصرف."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "@id": "https://sayyafac.com/copper-piping/#service",
+              "name": "تأسيس وتمديد نحاس مكيفات بالطائف",
+              "description": "تمديد شبكات نحاس مولر أمريكي أصلي مع عزل أرمالكس مزدوج وشبكات تصريف PVC واختبار ضغط نيتروجين 300 PSI قبل اللياسة والجبس."
+            }
+          }
+        ]
       }
-    ]
-  }
+    }
+  ]
+}
   </script>
 </head>
 <body>
+
+    <!-- Live Availability Ticker Bar -->
+  <div class="sayyaf-ticker-bar">
+    <div class="sayyaf-ticker-content">
+      <div class="sayyaf-ticker-status">
+        <span class="sayyaf-pulse-dot"></span>
+        <span>فريق صَيّاف الميداني متاح الآن لتغطية أحياء وضواحي الطائف</span>
+      </div>
+      <div class="sayyaf-ticker-meta">
+        <span>ساعات الخدمة: 8 ص – 10 م</span>
+        <span>•</span>
+        <span>هاتف وواتساب: 0538972324</span>
+        <span>•</span>
+        <span>ضمان ميداني مباشر</span>
+      </div>
+    </div>
+  </div>
 
   <!-- Top Header Navigation -->
   <header class="sayyaf-header">
@@ -146,6 +287,8 @@
           <a href="/" class="sayyaf-nav-link active">الرئيسية</a>
           <a href="/installation/" class="sayyaf-nav-link">تركيب مكيفات</a>
           <a href="/maintenance/" class="sayyaf-nav-link">صيانة وتصليح</a>
+          <a href="/cleaning/" class="sayyaf-nav-link">تنظيف مكيفات</a>
+          <a href="/copper-piping/" class="sayyaf-nav-link">تأسيس مكيفات</a>
           <a href="/articles/" class="sayyaf-nav-link">أدلة فنية</a>
           <a href="/contact/" class="sayyaf-nav-link">تواصل معنا</a>
         </nav>
@@ -169,7 +312,7 @@
     </div>
   </header>
 
-  <!-- Mobile Navigation Drawer (Subpage Parity) -->
+  <!-- Mobile Navigation Drawer -->
   <div class="sayyaf-drawer-backdrop" aria-hidden="true"></div>
   <aside class="sayyaf-drawer" aria-label="قائمة الجوال">
     <div class="sayyaf-drawer-header">
@@ -192,6 +335,14 @@
       </a>
       <a href="/maintenance/" class="sayyaf-drawer-link">
         <span>صيانة وتصليح مكيفات</span>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
+      </a>
+      <a href="/cleaning/" class="sayyaf-drawer-link">
+        <span>تنظيف وغسيل مكيفات بالموقع</span>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
+      </a>
+      <a href="/copper-piping/" class="sayyaf-drawer-link">
+        <span>تأسيس وتمديد نحاس مكيفات</span>
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
       </a>
       <a href="/articles/" class="sayyaf-drawer-link">
@@ -322,7 +473,7 @@
             </div>
           </article>
 
-          <!-- Pillar 2: Maintenance (30%) -->
+          <!-- Pillar 2: Maintenance -->
           <article class="ac-pillar-card">
             <div class="ac-pillar-img-wrap">
               <img src="/assets/images/install-commercial-midea-stacked.webp" alt="صيانة وفحص وحدات تكييف ميديا في الطائف" width="900" height="1200" loading="lazy">
@@ -343,7 +494,7 @@
                 </div>
                 <div class="ac-pillar-feature-item">
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                  <span>غسيل مكيفات سبليت بالموقع مع كيس تصريف معزول</span>
+                  <span>استبدال كابستور الإقلاع بقطع أصلية مطابقة</span>
                 </div>
                 <div class="ac-pillar-feature-item">
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
@@ -358,6 +509,154 @@
               </div>
             </div>
           </article>
+
+          <!-- Pillar 3: Cleaning & Deep Washing -->
+          <article class="ac-pillar-card">
+            <div class="ac-pillar-img-wrap">
+              <img src="/assets/images/install-after-aston-indoor.webp" alt="غسيل وتنظيف مكيف سبليت عميق بالموقع في الطائف" width="1200" height="900" loading="lazy">
+            </div>
+            <div class="ac-pillar-body">
+              <h3 class="ac-pillar-title">تنظيف وغسيل مكيفات بالموقع (عميق ومعقم)</h3>
+              <p class="ac-pillar-desc">
+                غسيل عميق للوحدات الداخلية والخارجية بالموقع دون فك الجدار. نستخدم جراب حماية معلق ومضخة ضغط محسوبة لتنظيف المبخر ومروحة البلاور وتسليك حوض الصرف وإزالة الروائح الكريهة والعفن، مع باقات مخفضة للمنازل والفلل.
+              </p>
+              <div class="ac-pillar-features">
+                <div class="ac-pillar-feature-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>غسيل كامل بالموقع مع حماية تامة للأثاث والجدران والجبس</span>
+                </div>
+                <div class="ac-pillar-feature-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>تنظيف البلاور وزعانف الرديتر بمضخة ضغط محسوبة</span>
+                </div>
+                <div class="ac-pillar-feature-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>غسيل رديتر الوحدة الخارجية من أتربة الطائف لخفض الحرارة</span>
+                </div>
+                <div class="ac-pillar-feature-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>تسليك مجرى الصرف وتعقيم طبي يزيل الروائح الكريهة</span>
+                </div>
+              </div>
+              <div class="ac-pillar-cta">
+                <a href="/cleaning/" class="btn-pillar-link">
+                  <span>تفاصيل خدمة الغسيل وباقات المنازل</span>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Pillar 4: Piping & Pre-installation -->
+          <article class="ac-pillar-card">
+            <div class="ac-pillar-img-wrap">
+              <img src="/assets/images/install-rooftop-koolen-piping-loop.webp" alt="تأسيس وتمديد مواسير نحاس التكييف للفلل والمشاريع بالطائف" width="1200" height="900" loading="lazy">
+            </div>
+            <div class="ac-pillar-body">
+              <h3 class="ac-pillar-title">تأسيس وتمديد نحاس مكيفات (تحت اللياسة والجبس)</h3>
+              <p class="ac-pillar-desc">
+                تأسيس هندسي معتمد لخطوط نحاس التكييف للفلل والمباني الجديدة في الطائف. نحاس مولر أمريكي أصلي مع عزل أرمالكس مستقل لكل خط، تمديد خطوط الصرف PVC بميول دقيق، مصائد زيت للأسطح، واختبار ضغط نيتروجين 300 PSI قبل التشطيب.
+              </p>
+              <div class="ac-pillar-features">
+                <div class="ac-pillar-feature-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>مواسير نحاس مولر أمريكي أصلية بسماكات كود البناء</span>
+                </div>
+                <div class="ac-pillar-feature-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>عزل حراري مزدوج أرمالكس يمنع التعريق والرطوبة على الجبس</span>
+                </div>
+                <div class="ac-pillar-feature-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>اختبار ضغط نيتروجين 300 PSI لمدة 48 ساعة قبل اللياسة</span>
+                </div>
+                <div class="ac-pillar-feature-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>تأسيس مصائد زيت رأسية ومسارات أسطح احترافية</span>
+                </div>
+              </div>
+              <div class="ac-pillar-cta">
+                <a href="/copper-piping/" class="btn-pillar-link">
+                  <span>تفاصيل خدمة التأسيس والتسعير بالمتر</span>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- WhatsApp Quick Quote / Service Booking Widget -->
+    <section class="sayyaf-section bg-subtle" id="quick-quote">
+      <div class="container" style="max-width: 820px;">
+        <div class="section-head" style="margin-bottom: 1.25rem;">
+          <span class="section-tag">تسعير وحجز مباشر</span>
+          <h2 class="section-title">احسب تسعيرك التقديري واحجز موعدك عبر واتساب</h2>
+          <p class="section-subtitle">حدد نوع الخدمة وعدد المكيفات وموقعك في الطائف لإرسال تفاصيل طلبك مباشرة للفني الميداني.</p>
+        </div>
+
+        <div class="sayyaf-quote-widget">
+          <form class="sayyaf-quote-form">
+            <div class="sayyaf-form-grid sayyaf-form-grid-2col">
+              <div class="sayyaf-form-group">
+                <label class="sayyaf-form-label" for="home-service-type">نوع الخدمة المطلوبة</label>
+                <select id="home-service-type" class="sayyaf-form-select quote-service-type">
+                  <option value="تركيب مكيف سبليت جديد">تركيب مكيف سبليت جديد (نحاس المصنع)</option>
+                  <option value="فك ونقل وتركيب مكيف">فك ونقل وتركيب مكيف</option>
+                  <option value="صيانة وفحص تبريد">صيانة وفحص تبريد وتصليح أعطال</option>
+                  <option value="تعبئة فريون أصلي R410A/R22">تعبئة فريون أصلي R410A / R22</option>
+                  <option value="غسيل وتنظيف مكيف بالموقع">غسيل وتنظيف مكيف بالموقع (بخاخ وغلاف)</option>
+                  <option value="تأسيس وتمديد مواسير نحاس">تأسيس وتمديد مواسير نحاس للفلل</option>
+                  <option value="تركيب مكيف دولابي أو شباك">تركيب مكيف دولابي أو شباك</option>
+                </select>
+              </div>
+
+              <div class="sayyaf-form-group">
+                <label class="sayyaf-form-label" for="home-ac-type">نوع المكيف والماركة</label>
+                <select id="home-ac-type" class="sayyaf-form-select quote-ac-type">
+                  <option value="سبليت جداري (1.5 إلى 2.5 طن)">سبليت جداري (1.5 إلى 2.5 طن)</option>
+                  <option value="سبليت جداري (3 طن فأكثر)">سبليت جداري (3 طن فأكثر)</option>
+                  <option value="مكيف شباك">مكيف شباك</option>
+                  <option value="مكيف دولابي (عمودي)">مكيف دولابي (عمودي تجاري/مساجد)</option>
+                  <option value="تأسيس نحاس مبنى كامل/فيلا">تأسيس نحاس مبنى كامل / فيلا</option>
+                  <option value="أخرى / متنوع">أخرى / مكيفات متعددة</option>
+                </select>
+              </div>
+
+              <div class="sayyaf-form-group">
+                <label class="sayyaf-form-label" for="home-ac-count">عدد المكيفات</label>
+                <select id="home-ac-count" class="sayyaf-form-select quote-ac-count">
+                  <option value="مكيف واحد (1)">مكيف واحد (1)</option>
+                  <option value="مكيفين (2)">مكيفين (2)</option>
+                  <option value="3 إلى 5 مكيفات">3 إلى 5 مكيفات</option>
+                  <option value="6 مكيفات فأكثر (مشروع/فيلا)">6 مكيفات فأكثر (مشروع / فيلا)</option>
+                </select>
+              </div>
+
+              <div class="sayyaf-form-group">
+                <label class="sayyaf-form-label" for="home-user-location">موقعك في الطائف (الحي أو إحداثيات)</label>
+                <div class="sayyaf-location-input-group">
+                  <input type="text" id="home-user-location" class="sayyaf-form-input quote-user-location" placeholder="مثال: حي شهار، مخطط الوسام 2..." value="حي شهار">
+                  <button type="button" class="sayyaf-gps-btn" title="تحديد موقعي التلقائي عبر GPS">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z"/><circle cx="12" cy="10" r="3"/></svg>
+                    <span>موقعي</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="sayyaf-form-group" style="margin-top: 1rem;">
+              <label class="sayyaf-form-label" for="home-user-notes">ملاحظات إضافية أو وصف المشكلة (اختياري)</label>
+              <input type="text" id="home-user-notes" class="sayyaf-form-input quote-user-notes" placeholder="مثال: المكيف يقطر ماء، أو يحتاج تطويل نحاس 3 أمتار، أو جاهز للتركيب فوراً...">
+            </div>
+
+            <button type="submit" class="sayyaf-quote-submit-btn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.39-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.32a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24m4.52 11.66c-.19-.09-1.12-.55-1.3-.61-.17-.07-.3-.1-.43.1-.12.19-.48.61-.59.74-.11.12-.22.14-.41.05-.19-.09-.8-.3-1.52-.94-.56-.5-1-1.12-1.11-1.31-.11-.19-.01-.29.08-.38.08-.09.19-.22.28-.33.09-.11.13-.19.19-.32.06-.13.03-.24-.02-.33-.05-.09-.43-1.04-.59-1.42-.16-.38-.32-.33-.44-.33h-.37c-.13 0-.34.05-.52.24-.18.19-.69.67-.69 1.64s.71 1.9 0.81 2.03c.1.14 1.39 2.13 3.37 2.99.47.2 0.84.33 1.13.42.48.15.91.13 1.25.08.38-.06 1.17-.48 1.33-.94.17-.46.17-.86.12-.94-.05-.08-.18-.13-.37-.22z"/></svg>
+              <span>إرسال تفاصيل الطلب والحجز عبر واتساب فوراً</span>
+            </button>
+            <p class="sayyaf-quote-trust-note">يتم فتح محادثة واتساب مباشرة مع فني صَيّاف الميداني بدون الحاجة لتسجيل أي بيانات مسبقة.</p>
+          </form>
         </div>
       </div>
     </section>
@@ -372,7 +671,43 @@
         </div>
 
         <div class="hvac-showcase-grid">
-          <!-- Card 1 -->
+          <!-- Card 1: Multi-bank Koolen -->
+          <div class="hvac-showcase-card">
+            <div class="hvac-showcase-card-img">
+              <img src="/assets/images/install-koolen-multi-bank.webp" alt="تركيب بنك مكيفات سبليت كولين متعددة لمبنى سكني وتجاري بالطائف" width="1600" height="1200" loading="lazy">
+            </div>
+            <div class="hvac-showcase-content">
+              <span class="hvac-showcase-tag">مشاريع وعمائر - الطائف</span>
+              <h3 class="hvac-showcase-title">تركيب بنك مكيفات سبليت مدرج (7 وحدات) بتمديدات مجمعة</h3>
+              <p class="hvac-showcase-detail">تثبيت وتنظيم صفوف مكيفات سبليت على كوابيل جدارية متدرجة مع تجميع خطوط النحاس المعزولة في مسار رأسي موحد يحمي المظهر الخارجي للمبنى.</p>
+            </div>
+          </div>
+
+          <!-- Card 2: Commercial LG Mosque -->
+          <div class="hvac-showcase-card">
+            <div class="hvac-showcase-card-img">
+              <img src="/assets/images/install-commercial-lg-mosque.webp" alt="تركيب مكيف دولابي كبير LG داخل مسجد بالطائف مع ضبط الصرف وتدفق الهواء" width="1200" height="1600" loading="lazy">
+            </div>
+            <div class="hvac-showcase-content">
+              <span class="hvac-showcase-tag">مساجد وصالات - الطائف</span>
+              <h3 class="hvac-showcase-title">تركيب مكيف دولابي LG كبير للمساجد والمرافق العامة</h3>
+              <p class="hvac-showcase-detail">تثبيت وضبط مكيف عمودي دولابي بقدرة دفع عالية داخل مصلى مسجد، مع موازنة مجرى صرف التكثيف وتأمين التوصيلات الكهربائية.</p>
+            </div>
+          </div>
+
+          <!-- Card 3: Dual Ugine Brackets -->
+          <div class="hvac-showcase-card">
+            <div class="hvac-showcase-card-img">
+              <img src="/assets/images/install-ugine-dual-brackets.webp" alt="تركيب وحدتي مكيف سبليت يوجين خارجيتين على كوابيل جدارية متينة بالطائف" width="1600" height="900" loading="lazy">
+            </div>
+            <div class="hvac-showcase-content">
+              <span class="hvac-showcase-tag">كوابيل واجهات - حي شهار</span>
+              <h3 class="hvac-showcase-title">تثبيت ثنائي متناسق لوحدات يوجين على كوابيل مجلفنة</h3>
+              <p class="hvac-showcase-detail">تثبيت وحدتين خارجيتين جنبًا إلى جنب بوزن هندسي دقيق، مع عزل كابلات الكنترول وأنابيب الفريون بربل أرمفلكس عالي الكثافة.</p>
+            </div>
+          </div>
+
+          <!-- Card 4: Rooftop Mounts -->
           <div class="hvac-showcase-card">
             <div class="hvac-showcase-card-img">
               <img src="/assets/images/install-rooftop-koolen-rubber-mounts.webp" alt="تركيب مكيف سبليت على السطح بقواعد ربل مطاطية بالطائف" width="900" height="1200" loading="lazy">
@@ -380,23 +715,23 @@
             <div class="hvac-showcase-content">
               <span class="hvac-showcase-tag">تثبيت الأسطح - حي أم العراد</span>
               <h3 class="hvac-showcase-title">قواعد ربل مطاطية لمنع انتقال الاهتزاز والضجيج</h3>
-              <p class="hvac-showcase-detail">تثبيت وحدة مكيف كولين على سطح معزول مع وضع مخمدات اهتزاز مطاطية لامتصاص اهتزاز الضاغط وحماية العازل الحراري للسقف.</p>
+              <p class="hvac-showcase-detail">تثبيت وحدة مكيف كولين على سطح معزول مع وضع مخمدات اهتزاز مطاطية لامتصاص اهتزاز الضاغط وحماية عازل السطح الحراري.</p>
             </div>
           </div>
 
-          <!-- Card 2 -->
+          <!-- Card 5: Facade Tornado -->
           <div class="hvac-showcase-card">
             <div class="hvac-showcase-card-img">
               <img src="/assets/images/install-facade-tornado-nikai.webp" alt="تثبيت وحدات تكييف خارجية تورنادو ونيكاي على واجهة مبنى بالطائف" width="900" height="1200" loading="lazy">
             </div>
             <div class="hvac-showcase-content">
-              <span class="hvac-showcase-tag">كوابيل واجهات - حي شهار</span>
-              <h3 class="hvac-showcase-title">تثبيت وحدات خارجية متعددة على كوابيل جدارية متينة</h3>
+              <span class="hvac-showcase-tag">كوابيل واجهات - حي السلامة</span>
+              <h3 class="hvac-showcase-title">تثبيت وحدات خارجية متعددة على كوابيل مقاومة للرياح</h3>
               <p class="hvac-showcase-detail">تركيب وحدات تكييف سبليت على واجهة خارجية بمراسي ثقيلة مقاومة للرياح، مع تمديد مواسير النحاس بشريط حماية أبيض مقاوم للشمس.</p>
             </div>
           </div>
 
-          <!-- Card 3 -->
+          <!-- Card 6: York Cabinet -->
           <div class="hvac-showcase-card">
             <div class="hvac-showcase-card-img">
               <img src="/assets/images/install-commercial-york-cabinet.webp" alt="تركيب وصيانة مكيف دولابي يورك عملاق في متجر تجاري بالطائف" width="900" height="1200" loading="lazy">
@@ -406,6 +741,104 @@
               <h3 class="hvac-showcase-title">تركيب مكيف دولابي يورك عالي الكفاءة لمنشأة تجارية</h3>
               <p class="hvac-showcase-detail">توصيل وتأسيس مكيف دولابي قدرة 5 طن في معرض تجاري مع ضبط مسارات تدفق الهواء واختبار أمبير الإقلاع وسحب الكهرباء.</p>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Field Video Proof Section -->
+    <section class="sayyaf-section bg-subtle">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-tag">توثيق مشاريع مكتملة بالطائف</span>
+          <h2 class="section-title">أعمال ميدانية حقيقية ومشاريع تم تسليمها في الطائف</h2>
+          <p class="section-subtitle">لقطات واقعية من مواقع عمل فريق صَيّاف توثق جودة التشطيب ونظافة التنفيذ، لترى بنفسك مستوى الإتقان قبل طلب الخدمة.</p>
+        </div>
+
+        <div class="hvac-video-grid">
+          <!-- Video 1: Luxury Villa Tour -->
+          <div class="hvac-video-card">
+            <div class="hvac-video-wrapper">
+              <span class="hvac-video-badge">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
+                مشروع مكتمل • فيلا سكنية
+              </span>
+              <video controls playsinline preload="metadata" muted poster="/assets/images/install-split-luxury-villa-tour-poster.webp">
+                <source src="/assets/videos/install-split-luxury-villa-tour.mp4" type="video/mp4">
+                متصفحك لا يدعم تشغيل الفيديو المباشر.
+              </video>
+            </div>
+            <div class="hvac-video-content">
+              <span class="hvac-video-tag">مشاريع الطائف السكنية</span>
+              <h3 class="hvac-video-title">تسليم أعمال تركيب مكيفات سبليت فيلا بالطائف</h3>
+              <p class="hvac-video-desc">توثيق اكتمال الأعمال وتشغيل الوحدات بكفاءة مع إخفاء مسارات النحاس والصرف والحفاظ على نظافة المكان والتشطيب.</p>
+              <div style="margin-top: 0.85rem;">
+                <a href="/installation/" style="color: var(--color-accent); font-weight: 700; font-size: 0.9rem; display: inline-flex; align-items: center; gap: 0.35rem;">
+                  <span>تفاصيل المشروع وبروتوكول التركيب الكامل ←</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Video 2: Precision Level Alignment -->
+          <div class="hvac-video-card">
+            <div class="hvac-video-wrapper">
+              <span class="hvac-video-badge">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
+                إتقان ميداني • فحص الميزان
+              </span>
+              <video controls playsinline preload="metadata" muted poster="/assets/images/install-split-villa-walkthrough-1-poster.webp">
+                <source src="/assets/videos/install-split-villa-walkthrough-1.mp4" type="video/mp4">
+                متصفحك لا يدعم تشغيل الفيديو المباشر.
+              </video>
+            </div>
+            <div class="hvac-video-content">
+              <span class="hvac-video-tag">معايير الدقة الميدانية</span>
+              <h3 class="hvac-video-title">ضبط استواء الوحدات الداخلية بدقة ميزان الماء</h3>
+              <p class="hvac-video-desc">لقطة ميدانية توثق وزن الوحدة ميكانيكياً لمنع أي ميلان يسبب تسريب الماء على الجدران أو الديكورات الجبسية مستقبلاً.</p>
+              <div style="margin-top: 0.85rem;">
+                <a href="/installation/" style="color: var(--color-accent); font-weight: 700; font-size: 0.9rem; display: inline-flex; align-items: center; gap: 0.35rem;">
+                  <span>شاهد معايير الفحص الهندسي للتركيب ←</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Company-Wide 4-Step Process Section -->
+    <section class="sayyaf-section bg-subtle">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-tag">منهجية العمل الميداني</span>
+          <h2 class="section-title">كيف تسير خدمتك مع صَيّاف للتكييف بالطائف؟</h2>
+          <p class="section-subtitle">خطوات محددة واضحة تضمن دقة الإنجاز وحماية أجهزتك وأثاثك من أول تواصل وحتى تسليم الضمان.</p>
+        </div>
+
+        <div class="sayyaf-steps-grid">
+          <div class="sayyaf-step-card">
+            <div class="sayyaf-step-num">1</div>
+            <h3 class="sayyaf-step-title">التواصل وتحديد الاحتياج</h3>
+            <p class="sayyaf-step-desc">تواصل معنا عبر الاتصال أو الواتساب، وأرسل نوع الخدمة (تركيب، صيانة، غسيل، تأسيس)، نوع المكيف، وموقعك في الطائف لتحديد الموعد المناسب وتجهيز المعدات وقطع الغيار اللازمة.</p>
+          </div>
+
+          <div class="sayyaf-step-card">
+            <div class="sayyaf-step-num">2</div>
+            <h3 class="sayyaf-step-title">وصول الفني الميداني والمعاينة</h3>
+            <p class="sayyaf-step-desc">يصل الفني الميداني بأحدث أجهزة الفحص بمقر منزلك أو منشأتك، ويعاين مسار خطوط النحاس ومواقع التثبيت أو يفحص العطل بدقة، مع توضيح التكلفة النهائية بشفافية قبل بدء العمل.</p>
+          </div>
+
+          <div class="sayyaf-step-card">
+            <div class="sayyaf-step-num">3</div>
+            <h3 class="sayyaf-step-title">التنفيذ الهندسي المتخصص</h3>
+            <p class="sayyaf-step-desc">تنفيذ العمل وفق المعايير الفنية الصارمة: وزن المسطرة بميزان ماء، تفريغ هواء إلزامي بمضخة الفاكيوم، لحام فضة بإتقان، أو تنظيف عميق بغطاء واقٍ يحمي الأثاث والجدران من الرذاذ.</p>
+          </div>
+
+          <div class="sayyaf-step-card">
+            <div class="sayyaf-step-num">4</div>
+            <h3 class="sayyaf-step-title">الفحص والتسليم مع الضمان</h3>
+            <p class="sayyaf-step-desc">تشغيل واختبار التبريد وأمبير السحب وقياس ضغط الفريون أمام العميل، وتسليم سند الضمان الميداني المعتمد (من 30 إلى 90 يوماً). لا يتم سداد القيمة إلا بعد التأكد التام من كفاءة الجهاز ورضاك.</p>
           </div>
         </div>
       </div>
@@ -483,34 +916,96 @@
       </div>
     </section>
 
+    <!-- SayyafAC vs Others Comparison Table -->
+    <section class="sayyaf-section">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-tag">معايير الجودة والفرق الهندسي</span>
+          <h2 class="section-title">لماذا يختار أهالي الطائف فنيي صَيّاف بدلاً من العمالة غير المتخصصة؟</h2>
+          <p class="section-subtitle">مقارنة فنية شفافة بين التزامنا الهندسي الميداني والممارسات الشائعة لعمالة الشارع والمواقع المجهولة.</p>
+        </div>
+
+        <div class="sayyaf-compare-card">
+          <table class="sayyaf-compare-table">
+            <thead>
+              <tr>
+                <th class="col-feature">المعيار الفني</th>
+                <th class="col-sayyaf">صَيّاف للتكييف (SayyafAC)</th>
+                <th class="col-others">عمالة الشارع ومواقع الحراج</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>تفريغ الهواء والرطوبة (Vacuum)</strong></td>
+                <td><span class="sayyaf-badge-win">✓ إلزامي بمضخة فاكيوم متخصصة لحماية الضاغط</span></td>
+                <td><span class="sayyaf-badge-lose">✗ تنفيس يدوي سريع يحرق الكمبروسر ويلغي الضمان</span></td>
+              </tr>
+              <tr>
+                <td><strong>دقة الميزان ومسار الصرف</strong></td>
+                <td><span class="sayyaf-badge-win">✓ ميزان ماء دقيق وعزل مسار الصرف لمنع التنقيط</span></td>
+                <td><span class="sayyaf-badge-lose">✗ تركيب عشوائي بالعين المجردة يتسبب بخرير الماء داخل الغرفة</span></td>
+              </tr>
+              <tr>
+                <td><strong>جودة الفريون والشحن</strong></td>
+                <td><span class="sayyaf-badge-win">✓ فريون أصلي R410A / R22 يُوزن بالميزان بعد فحص التسريب</span></td>
+                <td><span class="sayyaf-badge-lose">✗ غازات مغشوشة أو تعبئة عشوائية دون معالجة سبب التهريب</span></td>
+              </tr>
+              <tr>
+                <td><strong>الضمان والمسؤولية الميدانية</strong></td>
+                <td><span class="sayyaf-badge-win">✓ ضمان ميداني معتمد 30-90 يوماً ومقر ثابت بشارع عور</span></td>
+                <td><span class="sayyaf-badge-lose">✗ اختفاء الفني فور الاستلام وعدم الرد على الهاتف</span></td>
+              </tr>
+              <tr>
+                <td><strong>نظافة الأثاث وموقع العمل</strong></td>
+                <td><span class="sayyaf-badge-win">✓ أغطية واقية وتنظيف كامل لمخلفات الثقب والجدران</span></td>
+                <td><span class="sayyaf-badge-lose">✗ اتساخ الدهانات وترك الأتربة ومخلفات العزل متناثرة</span></td>
+              </tr>
+              <tr>
+                <td><strong>طرق الدفع والشفافية</strong></td>
+                <td><span class="sayyaf-badge-win">✓ الدفع بعد فحص البرودة والاقتناع، نقداً أو تحويل بنكي رسمي</span></td>
+                <td><span class="sayyaf-badge-lose">✗ مطالبات مالية إضافية مفاجئة ومساومات مستمرة</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
     <!-- Taif Districts & Micro-Geography Triangulation -->
     <section class="sayyaf-section bg-subtle">
       <div class="container">
         <div class="section-head">
-          <span class="section-tag">سرعة الوصول والتغطية الجغرافية</span>
-          <h2 class="section-title">تغطية ميدانية شاملة لجميع أحياء وضواحي الطائف</h2>
-          <p class="section-subtitle">مركزنا الميداني في حي أم العراد بشارع عور يمكن فرقنا من الوصول السريع لجميع أحياء المدينة وضواحيها خلال وقت قياسي.</p>
+          <span class="section-tag">سرعة الوصول والتغطية الميدانية</span>
+          <h2 class="section-title">تغطية شاملة لأحياء ومخططات الطائف (أولوية الفلل والمشاريع)</h2>
+          <p class="section-subtitle">من مقرنا في حي أم العراد بشارع عور، تنطلق فرقنا المجهزة لتغطية كافة أحياء ومشاريع الطائف مع أولوية وسرعة وصول قصوى لمخططات الفلل والتأسيس في الوسام وشهار والسداد والحوية والحلقة:</p>
         </div>
 
         <div class="taif-districts-grid">
-          <div class="taif-district-chip">حي أم العراد (المقر)</div>
-          <div class="taif-district-chip">شارع عور</div>
+          <div class="taif-district-chip">مخططات الوسام (1، 2، 3)</div>
           <div class="taif-district-chip">حي شهار</div>
+          <div class="taif-district-chip">حي السداد والرحاب</div>
           <div class="taif-district-chip">حي الردف</div>
           <div class="taif-district-chip">حي الخالدية</div>
-          <div class="taif-district-chip">حي السداد</div>
+          <div class="taif-district-chip">حي أم العراد (المقر)</div>
+          <div class="taif-district-chip">شارع عور</div>
           <div class="taif-district-chip">حي قروى</div>
-          <div class="taif-district-chip">حي المثناة</div>
+          <div class="taif-district-chip">حي مسرة</div>
+          <div class="taif-district-chip">حي الأحباب</div>
+          <div class="taif-district-chip">حي الحوية ومخططاتها</div>
+          <div class="taif-district-chip">الحلقة الشرقية</div>
+          <div class="taif-district-chip">الحلقة الغربية</div>
+          <div class="taif-district-chip">حي القيم (الأعلى والأسفل)</div>
+          <div class="taif-district-chip">حي الفيصلية ومخطط البيعة</div>
+          <div class="taif-district-chip">حي الورود</div>
+          <div class="taif-district-chip">حي النسيم</div>
+          <div class="taif-district-chip">حي الجال</div>
+          <div class="taif-district-chip">حي جبرة</div>
           <div class="taif-district-chip">حي السلامة</div>
-          <div class="taif-district-chip">حي الحوية</div>
-          <div class="taif-district-chip">حي القيم</div>
-          <div class="taif-district-chip">الحلقة الشرقية والغربية</div>
-          <div class="taif-district-chip">حي الفيصلية</div>
-          <div class="taif-district-chip">حي الجال ومسرة</div>
+          <div class="taif-district-chip">حي المثناة</div>
           <div class="taif-district-chip">الهدا والمصايف</div>
           <div class="taif-district-chip">الشفا والمرتفعات</div>
-          <div class="taif-district-chip">مخططات الوسام</div>
-          <div class="taif-district-chip">السيل الصغير والكبير</div>
+          <div class="taif-district-chip">السيل الصغير</div>
+          <div class="taif-district-chip">السيل الكبير</div>
         </div>
       </div>
     </section>
@@ -581,12 +1076,10 @@
     </section>
 
   </main>
-
   <!-- Global Footer -->
   <footer class="sayyaf-footer">
     <div class="container">
       <div class="footer-grid">
-        <!-- Col 1 -->
         <div>
           <div style="margin-bottom: 1rem;">
             <img src="/assets/images/logo.svg" alt="صَيّاف للتكييف" width="200" height="46" style="filter: brightness(0) invert(1);">
@@ -599,20 +1092,16 @@
           </div>
         </div>
 
-        <!-- Col 2: Services -->
         <div>
           <h4 class="footer-col-title">خدماتنا الميدانية</h4>
           <ul class="footer-links-list">
-            <li class="footer-link-item"><a href="/installation/">تركيب مكيفات سبليت جديدة</a></li>
-            <li class="footer-link-item"><a href="/installation/">فك ونقل وتركيب مكيفات</a></li>
-            <li class="footer-link-item"><a href="/installation/">تركيب مكيفات دولابية وتجارية</a></li>
-            <li class="footer-link-item"><a href="/maintenance/">صيانة وتصليح مكيفات سبليت</a></li>
-            <li class="footer-link-item"><a href="/maintenance/">تعبئة فريون R410A أصلي</a></li>
-            <li class="footer-link-item"><a href="/maintenance/">غسيل وتنظيف المكيفات بالموقع</a></li>
+            <li class="footer-link-item"><a href="/installation/">تركيب مكيفات سبليت ودولابي</a></li>
+            <li class="footer-link-item"><a href="/maintenance/">صيانة وتصليح وتعبئة فريون</a></li>
+            <li class="footer-link-item"><a href="/cleaning/">تنظيف وغسيل مكيفات بالموقع</a></li>
+            <li class="footer-link-item"><a href="/copper-piping/">تأسيس وتمديد نحاس التكييف</a></li>
           </ul>
         </div>
 
-        <!-- Col 3: Navigation & Guides -->
         <div>
           <h4 class="footer-col-title">روابط مهمة وأدلة</h4>
           <ul class="footer-links-list">
@@ -620,12 +1109,13 @@
             <li class="footer-link-item"><a href="/articles/">مركز الأدلة الفنية</a></li>
             <li class="footer-link-item"><a href="/articles/split-ac-installation-taif/">دليل تركيب مكيف السبليت وتأسيس النحاس</a></li>
             <li class="footer-link-item"><a href="/contact/">مناطق التغطية وتواصل معنا</a></li>
+            <li class="footer-link-item"><a href="/privacy/">سياسة الخصوصية</a></li>
+            <li class="footer-link-item"><a href="/terms/">شروط الخدمة والضمان</a></li>
             <li class="footer-link-item"><a href="/llms.txt">ملف الذكاء الاصطناعي (llms.txt)</a></li>
             <li class="footer-link-item"><a href="/sitemap.xml">خريطة الموقع (Sitemap)</a></li>
           </ul>
         </div>
 
-        <!-- Col 4: Contact -->
         <div>
           <h4 class="footer-col-title">الاتصال المباشر والمواعيد</h4>
           <div class="footer-contact-info">

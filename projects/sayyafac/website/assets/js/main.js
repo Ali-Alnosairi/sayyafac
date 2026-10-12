@@ -93,4 +93,65 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
+
+  // 4. إدارة نموذج طلب تسعير الواتساب التفاعلي (Interactive WhatsApp Lead Generator)
+  document.querySelectorAll('.sayyaf-quote-form').forEach((quoteForm) => {
+    const gpsBtn = quoteForm.querySelector('.sayyaf-gps-btn');
+    const locationInput = quoteForm.querySelector('.sayyaf-location-input');
+    let detectedLocation = '';
+
+    if (gpsBtn && locationInput) {
+      gpsBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        if (!navigator.geolocation) {
+          alert('خاصية تحديد الموقع غير مدعومة في متصفحك. يرجى كتابة اسم الحي بالطائف.');
+          return;
+        }
+        gpsBtn.textContent = '⏳ جاري التحديد...';
+        navigator.geolocation.getCurrentPosition(
+          (position) => {
+            const lat = position.coords.latitude.toFixed(6);
+            const lng = position.coords.longitude.toFixed(6);
+            detectedLocation = `https://maps.google.com/?q=${lat},${lng}`;
+            gpsBtn.textContent = '✅ تم تحديد موقعك';
+            gpsBtn.classList.add('is-active');
+            if (!locationInput.value.trim()) {
+              locationInput.value = 'موقعي على الخريطة (GPS)';
+            }
+          },
+          (error) => {
+            gpsBtn.textContent = '📍 تحديد موقعي';
+            alert('تعذر الوصول التلقائي للموقع. يرجى كتابة اسم الحي بالطائف يدوياً.');
+          },
+          { timeout: 10000 }
+        );
+      });
+    }
+
+    quoteForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const serviceType = quoteForm.querySelector('[name="service_type"]')?.value || 'غير محدد';
+      const acType = quoteForm.querySelector('[name="ac_type"]')?.value || 'سبليت جداري';
+      const acCount = quoteForm.querySelector('[name="ac_count"]')?.value || '1';
+      const district = locationInput?.value.trim() || 'الطائف';
+      const notes = quoteForm.querySelector('[name="notes"]')?.value.trim() || '';
+
+      let message = 'السلام عليكم ورحمة الله، أحتاج تسعير / حجز موعد مع صَيّاف للتكييف:\n';
+      message += `• نوع الخدمة: ${serviceType}\n`;
+      message += `• نوع المكيف: ${acType}\n`;
+      message += `• العدد: ${acCount}\n`;
+      message += `• الحي / الموقع في الطائف: ${district}\n`;
+      if (detectedLocation) {
+        message += `• رابط الموقع الجغرافي: ${detectedLocation}\n`;
+      }
+      if (notes) {
+        message += `• تفاصيل إضافية: ${notes}\n`;
+      }
+
+      const encodedMsg = encodeURIComponent(message);
+      const whatsappUrl = `https://wa.me/966538972324?text=${encodedMsg}`;
+      window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
+    });
+  });
+
 });

@@ -53,12 +53,47 @@
         "url": "https://sayyafac.com/articles/",
         "isPartOf": { "@id": "https://sayyafac.com/#organization" },
         "description": "دليل ومرجع فني متخصص للمواصفات الهندسية لتركيب وتأسيس وصيانة التكييف في الطائف."
-      }
+      }    ,
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://sayyafac.com/articles/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "الرئيسية",
+          "item": "https://sayyafac.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "مركز الأدلة الفنية للتكييف بالطائف",
+          "item": "https://sayyafac.com/articles/"
+        }
+      ]
+    }
     ]
   }
   </script>
 </head>
 <body>
+
+    <!-- Live Availability Ticker Bar -->
+  <div class="sayyaf-ticker-bar">
+    <div class="sayyaf-ticker-content">
+      <div class="sayyaf-ticker-status">
+        <span class="sayyaf-pulse-dot"></span>
+        <span>فريق صَيّاف الميداني متاح الآن لتغطية أحياء وضواحي الطائف</span>
+      </div>
+      <div class="sayyaf-ticker-meta">
+        <span>ساعات الخدمة: 8 ص – 10 م</span>
+        <span>•</span>
+        <span>هاتف وواتساب: 0538972324</span>
+        <span>•</span>
+        <span>ضمان ميداني مباشر</span>
+      </div>
+    </div>
+  </div>
 
   <!-- Top Header Navigation -->
   <header class="sayyaf-header">
@@ -72,6 +107,8 @@
           <a href="/" class="sayyaf-nav-link">الرئيسية</a>
           <a href="/installation/" class="sayyaf-nav-link">تركيب مكيفات</a>
           <a href="/maintenance/" class="sayyaf-nav-link">صيانة وتصليح</a>
+          <a href="/cleaning/" class="sayyaf-nav-link">تنظيف مكيفات</a>
+          <a href="/copper-piping/" class="sayyaf-nav-link">تأسيس مكيفات</a>
           <a href="/articles/" class="sayyaf-nav-link active">أدلة فنية</a>
           <a href="/contact/" class="sayyaf-nav-link">تواصل معنا</a>
         </nav>
@@ -94,8 +131,19 @@
       </div>
     </div>
   </header>
+  <!-- Visual Breadcrumbs Bar -->
+  <div class="sayyaf-breadcrumbs-wrapper">
+    <div class="container">
+      <nav class="sayyaf-breadcrumbs-list" aria-label="مسار التنقل">
+        <span class="sayyaf-breadcrumb-item"><a href="/">الرئيسية</a></span>
+        <span class="sayyaf-breadcrumb-separator">/</span>
+        <span class="sayyaf-breadcrumb-current">مركز الأدلة الفنية للتكييف</span>
+      </nav>
+    </div>
+  </div>
 
-  <!-- Mobile Navigation Drawer (Subpage Parity) -->
+
+  <!-- Mobile Navigation Drawer -->
   <div class="sayyaf-drawer-backdrop" aria-hidden="true"></div>
   <aside class="sayyaf-drawer" aria-label="قائمة الجوال">
     <div class="sayyaf-drawer-header">
@@ -113,11 +161,19 @@
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
       </a>
       <a href="/installation/" class="sayyaf-drawer-link">
-        <span>تركيب مكيفات (الخدمة الأولى)</span>
+        <span>تركيب مكيفات سبليت</span>
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
       </a>
       <a href="/maintenance/" class="sayyaf-drawer-link">
         <span>صيانة وتصليح مكيفات</span>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
+      </a>
+      <a href="/cleaning/" class="sayyaf-drawer-link">
+        <span>تنظيف وغسيل مكيفات بالموقع</span>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
+      </a>
+      <a href="/copper-piping/" class="sayyaf-drawer-link">
+        <span>تأسيس وتمديد نحاس مكيفات</span>
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
       </a>
       <a href="/articles/" class="sayyaf-drawer-link active">
@@ -180,11 +236,78 @@
             </div>
           </article>
         </div>
+
+        <!-- Upcoming Guides Cluster -->
+        <div style="max-width: 860px; margin-inline: auto; margin-top: 2rem; display: grid; grid-template-columns: 1fr; gap: 1.5rem;">
+          
+          <!-- Cluster Card 1: Water Leakage -->
+          <article class="sayyaf-step-card" style="border: 1px solid var(--color-border); padding: 1.5rem;">
+            <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; margin-bottom: 0.5rem; gap: 0.5rem;">
+              <span class="section-tag" style="background: #e0f2fe; color: #0369a1; margin: 0;">تشخيص أعطال وتصريف</span>
+              <span style="font-size: 0.82rem; color: #64748b; font-weight: 700;">دليل تشخيصي معتمد • الفني أبو عيسى</span>
+            </div>
+            <h3 style="font-size: 1.25rem; font-weight: 800; color: var(--color-primary); margin-bottom: 0.5rem;">
+              أسباب تنقيط وخرير الماء من مكيف السبليت داخل الغرفة: التشخيص الهندسي وحلول الانسداد والميلان
+            </h3>
+            <p style="font-size: 0.93rem; color: var(--color-text-muted); line-height: 1.6; margin-bottom: 1rem;">
+              شرح تفصيلي لأسباب فيضان حوض التكثيف الداخلي، انسداد لي التصريف بالأطيان المتكلسة، خطأ استواء مسطرة التثبيت تحت الجبس، وتعريق مواسير النحاس نتيجة تلف عازل الأرمالكس.
+            </p>
+            <div style="display: flex; align-items: center; justify-content: space-between; padding-top: 0.75rem; border-top: 1px solid var(--color-bg-subtle);">
+              <span style="font-size: 0.85rem; color: #0284c7; font-weight: 700;">ضمن خطة النشر القادمة</span>
+              <a href="https://wa.me/966538972324?text=السلام%20عليكم،%20المكيف%20عندي%20ينقط%20ماء%20داخل%20الغرفة%20وأحتاج%20فني%20في%20الطائف" class="btn-pillar-link" target="_blank" rel="noopener">
+                <span>طلب فحص تسريب الماء فوراً</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Cluster Card 2: Freon Guide -->
+          <article class="sayyaf-step-card" style="border: 1px solid var(--color-border); padding: 1.5rem;">
+            <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; margin-bottom: 0.5rem; gap: 0.5rem;">
+              <span class="section-tag" style="background: #fef3c7; color: #b45309; margin: 0;">غازات وتبريد</span>
+              <span style="font-size: 0.82rem; color: #64748b; font-weight: 700;">دليل المواصفات الميدانية • الفني أبو عيسى</span>
+            </div>
+            <h3 style="font-size: 1.25rem; font-weight: 800; color: var(--color-primary); margin-bottom: 0.5rem;">
+              دليل أنواع فريون المكيفات (R410A vs R22 vs R32): كيف تتأكد من شحن الغاز الأصلي المطابق لمكيفك؟
+            </h3>
+            <p style="font-size: 0.93rem; color: var(--color-text-muted); line-height: 1.6; margin-bottom: 1rem;">
+              مقارنة علمية دقيقة لضغوط التشغيل وأنواع زيوت التبريد التخليقية (POE)، ولماذا يؤدي خلط الفريون التجاري أو الشحن العشوائي بدون ميزان إلكتروني إلى احتراق ملفات الضاغط وتلف المكيف.
+            </p>
+            <div style="display: flex; align-items: center; justify-content: space-between; padding-top: 0.75rem; border-top: 1px solid var(--color-bg-subtle);">
+              <span style="font-size: 0.85rem; color: #0284c7; font-weight: 700;">ضمن خطة النشر القادمة</span>
+              <a href="https://wa.me/966538972324?text=السلام%20عليكم،%20أحتاج%20فحص%20وتعبئة%20فريون%20أصلي%20لمكيف%20في%20الطائف" class="btn-pillar-link" target="_blank" rel="noopener">
+                <span>طلب فحص الفريون بالأجهزة</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Cluster Card 3: Deep Cleaning Guide -->
+          <article class="sayyaf-step-card" style="border: 1px solid var(--color-border); padding: 1.5rem;">
+            <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; margin-bottom: 0.5rem; gap: 0.5rem;">
+              <span class="section-tag" style="background: #dcfce7; color: #15803d; margin: 0;">كفاءة وصحة بيئية</span>
+              <span style="font-size: 0.82rem; color: #64748b; font-weight: 700;">دليل الصيانة الوقائية • الفني أبو عيسى</span>
+            </div>
+            <h3 style="font-size: 1.25rem; font-weight: 800; color: var(--color-primary); margin-bottom: 0.5rem;">
+              الدليل العملي لغسيل مكيف السبليت بالموقع: الفرق بين الغسيل الهندسي السليم ورش الماء العشوائي
+            </h3>
+            <p style="font-size: 0.93rem; color: var(--color-text-muted); line-height: 1.6; margin-bottom: 1rem;">
+              كيف يحمي الفني المحترف البورد الإلكتروني من التلف؟ ولماذا لا يكفي غسيل الفلتر البلاستيكي لاستعادة قوة التبريد؟ إرشادات لحماية أثاث منزلك وخفض استهلاك الكهرباء بنسبة 20%.
+            </p>
+            <div style="display: flex; align-items: center; justify-content: space-between; padding-top: 0.75rem; border-top: 1px solid var(--color-bg-subtle);">
+              <span style="font-size: 0.85rem; color: #0284c7; font-weight: 700;">ضمن خطة النشر القادمة</span>
+              <a href="https://wa.me/966538972324?text=السلام%20عليكم،%20أريد%20حجز%20غسيل%20مكيفات%20بالموقع%20في%20الطائف" class="btn-pillar-link" target="_blank" rel="noopener">
+                <span>حجز موعد غسيل بالموقع</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
+              </a>
+            </div>
+          </article>
+        </div>
+
       </div>
     </section>
 
   </main>
-
   <!-- Global Footer -->
   <footer class="sayyaf-footer">
     <div class="container">
@@ -194,7 +317,7 @@
             <img src="/assets/images/logo.svg" alt="صَيّاف للتكييف" width="200" height="46" style="filter: brightness(0) invert(1);">
           </div>
           <p style="font-size: 0.92rem; color: #cbd5e1; line-height: 1.6; margin-bottom: 1rem;">
-            مركز المعرفة الفنية لخدمات التكييف الميدانية في الطائف.
+            فريق فني متخصص لخدمات تركيب وصيانة التكييف الميدانية في مدينة الطائف وضواحيها. نلتزم بأعلى معايير الإتقان الهندسي والأسعار الشفافة والضمان المباشر.
           </p>
           <div style="font-size: 0.88rem; color: #94a3b8;">
             المقر الميداني: حي أم العراد، شارع عور، الطائف 26511
@@ -202,24 +325,31 @@
         </div>
 
         <div>
-          <h4 class="footer-col-title">أقسام الموقع</h4>
+          <h4 class="footer-col-title">خدماتنا الميدانية</h4>
+          <ul class="footer-links-list">
+            <li class="footer-link-item"><a href="/installation/">تركيب مكيفات سبليت ودولابي</a></li>
+            <li class="footer-link-item"><a href="/maintenance/">صيانة وتصليح وتعبئة فريون</a></li>
+            <li class="footer-link-item"><a href="/cleaning/">تنظيف وغسيل مكيفات بالموقع</a></li>
+            <li class="footer-link-item"><a href="/copper-piping/">تأسيس وتمديد نحاس التكييف</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">روابط مهمة وأدلة</h4>
           <ul class="footer-links-list">
             <li class="footer-link-item"><a href="/">الرئيسية</a></li>
-            <li class="footer-link-item"><a href="/installation/">تركيب مكيفات سبليت</a></li>
-            <li class="footer-link-item"><a href="/maintenance/">صيانة وتصليح مكيفات</a></li>
-            <li class="footer-link-item"><a href="/contact/">تواصل معنا</a></li>
-          </ul>
-        </div>
-
-        <div>
-          <h4 class="footer-col-title">الأدلة الفنية</h4>
-          <ul class="footer-links-list">
+            <li class="footer-link-item"><a href="/articles/">مركز الأدلة الفنية</a></li>
             <li class="footer-link-item"><a href="/articles/split-ac-installation-taif/">دليل تركيب مكيف السبليت وتأسيس النحاس</a></li>
+            <li class="footer-link-item"><a href="/contact/">مناطق التغطية وتواصل معنا</a></li>
+            <li class="footer-link-item"><a href="/privacy/">سياسة الخصوصية</a></li>
+            <li class="footer-link-item"><a href="/terms/">شروط الخدمة والضمان</a></li>
+            <li class="footer-link-item"><a href="/llms.txt">ملف الذكاء الاصطناعي (llms.txt)</a></li>
+            <li class="footer-link-item"><a href="/sitemap.xml">خريطة الموقع (Sitemap)</a></li>
           </ul>
         </div>
 
         <div>
-          <h4 class="footer-col-title">اتصال سريع ومباشر</h4>
+          <h4 class="footer-col-title">الاتصال المباشر والمواعيد</h4>
           <div class="footer-contact-info">
             <div class="footer-contact-row">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
@@ -229,13 +359,17 @@
               <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.39-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.32a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24m4.52 11.66c-.19-.09-1.12-.55-1.3-.61-.17-.07-.3-.1-.43.1-.12.19-.48.61-.59.74-.11.12-.22.14-.41.05-.19-.09-.8-.3-1.52-.94-.56-.5-1-1.12-1.11-1.31-.11-.19-.01-.29.08-.38.08-.09.19-.22.28-.33.09-.11.13-.19.19-.32.06-.13.03-.24-.02-.33-.05-.09-.43-1.04-.59-1.42-.16-.38-.32-.33-.44-.33h-.37c-.13 0-.34.05-.52.24-.18.19-.69.67-.69 1.64s.71 1.9 0.81 2.03c.1.14 1.39 2.13 3.37 2.99.47.2 0.84.33 1.13.42.48.15.91.13 1.25.08.38-.06 1.17-.48 1.33-.94.17-.46.17-.86.12-.94-.05-.08-.18-.13-.37-.22z"/></svg>
               <span>واتساب: <a href="https://wa.me/966538972324" style="color: #ffffff; font-weight: 700;" target="_blank" rel="noopener">محادثة فورية</a></span>
             </div>
+            <div class="footer-contact-row">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+              <span>السبت – الخميس: 08:00 ص – 10:00 م<br>الجمعة: 01:00 م – 10:00 م</span>
+            </div>
           </div>
         </div>
       </div>
 
       <div class="footer-bottom-bar">
-        <div>جميع الحقوق محفوظة © 2026 صَيّاف للتكييف (SayyafAC) - الطائف</div>
-        <div>معرفة تقنية وموثوقية هندسية في الميدان</div>
+        <div>جميع الحقوق محفوظة © 2026 صَيّاف للتكييف (SayyafAC) - الطائف، المملكة العربية السعودية</div>
+        <div>خدمات ميدانية احترافية بأيدي فنيين متخصصين</div>
       </div>
     </div>
   </footer>

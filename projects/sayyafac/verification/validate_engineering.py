@@ -38,6 +38,8 @@ def validate_sayyafac_engineering():
         (os.path.join(base_dir, 'index.html'), 'website', False),
         (os.path.join(base_dir, 'installation', 'index.html'), 'website', False),
         (os.path.join(base_dir, 'maintenance', 'index.html'), 'website', False),
+        (os.path.join(base_dir, 'cleaning', 'index.html'), 'website', False),
+        (os.path.join(base_dir, 'copper-piping', 'index.html'), 'website', False),
         (os.path.join(base_dir, 'articles', 'index.html'), 'website', False),
         (os.path.join(base_dir, 'articles', 'split-ac-installation-taif', 'index.html'), 'article', True),
         (os.path.join(base_dir, 'contact', 'index.html'), 'website', False)
@@ -111,6 +113,12 @@ def validate_sayyafac_engineering():
         if '0538972324' not in html:
             errors.append(f"Canonical phone number missing in {page_name}")
 
+        # Information Integrity: Verify canonical opening hours in footer
+        if '08:00 ص – 10:00 م' not in html or '01:00 م – 10:00 م' not in html:
+            errors.append(f"Opening hours missing or inconsistent in footer of {page_name}")
+        else:
+            passes.append(f"Footer opening hours (08:00-22:00 / Fri 13:00-22:00) verified in {page_name}")
+
     # 4. Check llms.txt & robots.txt & sitemap.xml
     llms_path = os.path.join(base_dir, 'llms.txt')
     robots_path = os.path.join(base_dir, 'robots.txt')
@@ -121,10 +129,10 @@ def validate_sayyafac_engineering():
     else:
         with open(llms_path, 'r', encoding='utf-8') as f:
             llms_content = f.read()
-            if '0538972324' in llms_content and 'أم العراد' in llms_content:
-                passes.append("llms.txt contains Single Source of Truth entity data")
+            if '0538972324' in llms_content and 'أم العراد' in llms_content and '08:00 صباحاً – 10:00 مساءً' in llms_content:
+                passes.append("llms.txt contains Single Source of Truth entity data and canonical opening hours")
             else:
-                errors.append("llms.txt missing core entity facts")
+                errors.append("llms.txt missing core entity facts or opening hours")
 
     if not os.path.exists(robots_path):
         errors.append("Missing robots.txt")
@@ -141,10 +149,54 @@ def validate_sayyafac_engineering():
     else:
         with open(sitemap_path, 'r', encoding='utf-8') as f:
             sitemap_content = f.read()
-            if 'https://sayyafac.com/installation/' in sitemap_content and '<image:image>' in sitemap_content:
-                passes.append("sitemap.xml has trailing slash URLs and Image Sitemap namespace")
+            required_urls = [
+                'https://sayyafac.com/installation/',
+                'https://sayyafac.com/maintenance/',
+                'https://sayyafac.com/cleaning/',
+                'https://sayyafac.com/copper-piping/'
+            ]
+            missing_urls = [u for u in required_urls if u not in sitemap_content]
+            if not missing_urls and '<image:image>' in sitemap_content:
+                passes.append("sitemap.xml has all core services with trailing slash URLs and Image Sitemap namespace")
             else:
-                errors.append("sitemap.xml incomplete")
+                errors.append(f"sitemap.xml incomplete, missing: {missing_urls}")
+
+    # 5. Check 25 Canonical Districts Parity across Core Pages & llms.txt
+    canonical_districts = [
+        "مخططات الوسام", "حي شهار", "حي السداد", "حي الردف", "حي الخالدية",
+        "حي أم العراد", "شارع عور", "حي قروى", "حي مسرة", "حي الأحباب",
+        "الحوية", "الحلقة الشرقية", "الحلقة الغربية", "حي القيم", "حي الفيصلية",
+        "حي الورود", "حي النسيم", "حي الجال", "حي جبرة", "حي السلامة",
+        "حي المثناة", "الهدا", "الشفا", "السيل الصغير", "السيل الكبير"
+    ]
+    
+    # Check llms.txt for canonical districts
+    with open(llms_path, 'r', encoding='utf-8') as f:
+        llms_text = f.read()
+    missing_in_llms = [d for d in canonical_districts if d not in llms_text]
+    if missing_in_llms:
+        errors.append(f"llms.txt missing canonical districts: {missing_in_llms}")
+    else:
+        passes.append("llms.txt verified with all 25 canonical Taif districts across 4 tiers")
+
+    # Check service pages and index/contact for Schema areaServed
+    geo_pages = [
+        os.path.join(base_dir, 'index.html'),
+        os.path.join(base_dir, 'installation', 'index.html'),
+        os.path.join(base_dir, 'maintenance', 'index.html'),
+        os.path.join(base_dir, 'cleaning', 'index.html'),
+        os.path.join(base_dir, 'copper-piping', 'index.html'),
+        os.path.join(base_dir, 'contact', 'index.html')
+    ]
+    for gp in geo_pages:
+        gp_name = os.path.relpath(gp, base_dir).replace('\\', '/')
+        with open(gp, 'r', encoding='utf-8') as f:
+            gp_html = f.read()
+        missing_in_page = [d for d in canonical_districts if d not in gp_html]
+        if missing_in_page:
+            errors.append(f"Missing canonical districts in {gp_name}: {missing_in_page}")
+        else:
+            passes.append(f"All 25 canonical Taif districts present in {gp_name} (Schema & UI)")
 
     print("\n=== RESULTS ===")
     for p in passes:

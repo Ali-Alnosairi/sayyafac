@@ -138,7 +138,7 @@ ul, ol {
 .sayyaf-nav-links {
   display: none;
   align-items: center;
-  gap: 1.5rem;
+  gap: clamp(0.45rem, 0.95vw, 0.9rem);
 }
 
 @media (min-width: 992px) {
@@ -149,10 +149,11 @@ ul, ol {
 
 .sayyaf-nav-link {
   font-weight: 600;
-  font-size: 0.98rem;
+  font-size: clamp(0.85rem, 0.88vw, 0.92rem);
   color: var(--color-text-main);
-  padding: 0.5rem 0.25rem;
+  padding: 0.35rem 0.15rem;
   position: relative;
+  white-space: nowrap;
 }
 
 .sayyaf-nav-link:hover,
@@ -520,7 +521,7 @@ ul, ol {
 
 @media (min-width: 768px) {
   .ac-pillar-grid {
-    grid-template-columns: 1.2fr 0.8fr;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -710,6 +711,95 @@ ul, ol {
   font-size: 0.9rem;
   color: var(--color-text-muted);
   line-height: 1.5;
+}
+
+/* ==========================================================================
+   Video Field Documentation & Walkthroughs
+   ========================================================================== */
+.hvac-video-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.75rem;
+}
+
+@media (min-width: 768px) {
+  .hvac-video-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.hvac-video-card {
+  background-color: var(--color-bg-surface);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.hvac-video-wrapper {
+  position: relative;
+  background-color: #0b1523;
+  width: 100%;
+  aspect-ratio: 9 / 16;
+  max-height: 480px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hvac-video-wrapper video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.hvac-video-badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background-color: rgba(11, 59, 96, 0.88);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  color: #ffffff;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 0.35rem 0.75rem;
+  border-radius: var(--radius-full);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  z-index: 5;
+}
+
+.hvac-video-content {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  flex: 1;
+}
+
+.hvac-video-tag {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--color-accent);
+}
+
+.hvac-video-title {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: var(--color-primary);
+  line-height: 1.35;
+}
+
+.hvac-video-desc {
+  font-size: 0.92rem;
+  color: var(--color-text-muted);
+  line-height: 1.6;
 }
 
 /* ==========================================================================
@@ -1251,4 +1341,516 @@ ul, ol {
 .mobile-sticky-btn.btn-wa {
   background-color: var(--color-whatsapp);
   color: #ffffff;
+}
+
+
+
+/* ==========================================================================
+   Live Availability Ticker Bar (Mobile & Desktop)
+   ========================================================================== */
+.sayyaf-ticker-bar {
+  background: #072640;
+  color: #e0f2fe;
+  font-size: 0.85rem;
+  padding: 0.45rem 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  overflow: hidden;
+  position: relative;
+  z-index: 99;
+}
+
+.sayyaf-ticker-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: var(--container-max);
+  margin-inline: auto;
+  gap: 1rem;
+}
+
+.sayyaf-ticker-status {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.sayyaf-pulse-dot {
+  width: 9px;
+  height: 9px;
+  background-color: #22c55e;
+  border-radius: 50%;
+  display: inline-block;
+  box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7);
+  animation: pulse-green 2s infinite;
+}
+
+@keyframes pulse-green {
+  0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7); }
+  70% { transform: scale(1); box-shadow: 0 0 0 6px rgba(34, 197, 94, 0); }
+  100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(34, 197, 94, 0); }
+}
+
+.sayyaf-ticker-meta {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  color: #94a3b8;
+  font-size: 0.82rem;
+}
+
+@media (max-width: 767px) {
+  .sayyaf-ticker-meta {
+    display: none;
+  }
+  .sayyaf-ticker-content {
+    justify-content: center;
+  }
+}
+
+/* ==========================================================================
+   Visual Breadcrumbs Bar (Subtle & Elegant)
+   ========================================================================== */
+.sayyaf-breadcrumbs-wrapper {
+  padding: 0.75rem 0;
+  background: #ffffff;
+  border-bottom: 1px solid var(--color-border);
+  font-size: 0.88rem;
+}
+
+.sayyaf-breadcrumbs-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--color-text-muted);
+}
+
+.sayyaf-breadcrumb-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.sayyaf-breadcrumb-item a {
+  color: var(--color-accent);
+  transition: color 0.15s;
+}
+
+.sayyaf-breadcrumb-item a:hover {
+  text-decoration: underline;
+}
+
+.sayyaf-breadcrumb-separator {
+  color: #94a3b8;
+  font-size: 0.75rem;
+}
+
+.sayyaf-breadcrumb-current {
+  color: var(--color-text-main);
+  font-weight: 600;
+}
+
+/* ==========================================================================
+   Interactive WhatsApp Quote / Booking Generator Widget
+   ========================================================================== */
+.sayyaf-quote-widget {
+  background: #ffffff;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 1.75rem;
+  box-shadow: var(--shadow-md);
+  margin-top: 1.5rem;
+}
+
+.sayyaf-quote-widget-header {
+  margin-bottom: 1.25rem;
+  text-align: right;
+  border-bottom: 1px solid var(--color-bg-subtle);
+  padding-bottom: 0.85rem;
+}
+
+.sayyaf-quote-widget-title {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.sayyaf-quote-widget-subtitle {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  margin-top: 0.25rem;
+}
+
+.sayyaf-form-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.1rem;
+}
+
+@media (min-width: 640px) {
+  .sayyaf-form-grid-2col {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.sayyaf-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.sayyaf-form-label {
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--color-text-main);
+}
+
+.sayyaf-form-select,
+.sayyaf-form-input,
+.sayyaf-form-textarea {
+  width: 100%;
+  font-family: inherit;
+  font-size: 0.95rem;
+  padding: 0.65rem 0.9rem;
+  border: 1.5px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background-color: #ffffff;
+  color: var(--color-text-main);
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.sayyaf-form-select:focus,
+.sayyaf-form-input:focus,
+.sayyaf-form-textarea:focus {
+  outline: none;
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.15);
+}
+
+.sayyaf-location-input-group {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.sayyaf-location-input-group .sayyaf-form-input {
+  flex: 1;
+}
+
+.sayyaf-gps-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background-color: var(--color-bg-subtle);
+  border: 1.5px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: 0.65rem 0.85rem;
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.sayyaf-gps-btn:hover {
+  background-color: var(--color-accent-light);
+  border-color: var(--color-accent);
+  color: var(--color-accent-hover);
+}
+
+.sayyaf-gps-btn.is-active {
+  background-color: #dcfce7;
+  border-color: #22c55e;
+  color: #15803d;
+}
+
+.sayyaf-quote-submit-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  width: 100%;
+  padding: 0.9rem 1.5rem;
+  background-color: var(--color-whatsapp);
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 1.05rem;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(22, 163, 74, 0.25);
+  transition: background-color 0.2s, transform 0.1s;
+  border: none;
+  margin-top: 0.5rem;
+}
+
+.sayyaf-quote-submit-btn:hover {
+  background-color: var(--color-whatsapp-hover);
+  transform: translateY(-1px);
+}
+
+.sayyaf-quote-trust-note {
+  font-size: 0.82rem;
+  color: var(--color-text-muted);
+  text-align: center;
+  margin-top: 0.6rem;
+}
+
+/* ==========================================================================
+   Company-Wide 4-Step Process Section
+   ========================================================================== */
+.sayyaf-steps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.25rem;
+  margin-top: 1.75rem;
+}
+
+.sayyaf-step-card {
+  background: #ffffff;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  position: relative;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.2s;
+}
+
+.sayyaf-step-card:hover {
+  transform: translateY(-2px);
+}
+
+.sayyaf-step-num {
+  width: 38px;
+  height: 38px;
+  background: var(--color-primary);
+  color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.sayyaf-step-title {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--color-primary);
+  margin-bottom: 0.4rem;
+}
+
+.sayyaf-step-desc {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+}
+
+/* ==========================================================================
+   Comparison Table: SayyafAC vs Street Freelancers
+   ========================================================================== */
+.sayyaf-compare-card {
+  background: #ffffff;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  margin-top: 2rem;
+}
+
+.sayyaf-compare-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: right;
+  font-size: 0.92rem;
+}
+
+.sayyaf-compare-table th {
+  padding: 1rem 1.2rem;
+  font-weight: 800;
+}
+
+.sayyaf-compare-table th.col-feature {
+  background: #0f172a;
+  color: #ffffff;
+  width: 36%;
+}
+
+.sayyaf-compare-table th.col-sayyaf {
+  background: var(--color-primary);
+  color: #ffffff;
+  width: 32%;
+}
+
+.sayyaf-compare-table th.col-others {
+  background: #475569;
+  color: #f1f5f9;
+  width: 32%;
+}
+
+.sayyaf-compare-table td {
+  padding: 0.9rem 1.2rem;
+  border-bottom: 1px solid var(--color-border);
+  vertical-align: middle;
+}
+
+.sayyaf-compare-table tr:nth-child(even) td {
+  background-color: #f8fafc;
+}
+
+.sayyaf-badge-win {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  color: #15803d;
+  font-weight: 700;
+}
+
+.sayyaf-badge-lose {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  color: #b91c1c;
+}
+
+/* ==========================================================================
+   Supported Brands Carousel / Grid
+   ========================================================================== */
+.sayyaf-brands-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.sayyaf-brand-chip {
+  background: #ffffff;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: 0.65rem 0.5rem;
+  text-align: center;
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--color-primary);
+  box-shadow: var(--shadow-sm);
+}
+
+/* ==========================================================================
+   Author Bio Box (الفني أبو عيسى)
+   ========================================================================== */
+.sayyaf-author-box {
+  background: #ffffff;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-top: 2.5rem;
+  box-shadow: var(--shadow-sm);
+}
+
+@media (min-width: 640px) {
+  .sayyaf-author-box {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.sayyaf-author-avatar {
+  width: 72px;
+  height: 72px;
+  background: var(--color-primary);
+  color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.75rem;
+  font-weight: 800;
+  flex-shrink: 0;
+  margin-inline: auto;
+}
+
+.sayyaf-author-info {
+  flex: 1;
+}
+
+.sayyaf-author-name {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--color-primary);
+}
+
+.sayyaf-author-title {
+  font-size: 0.88rem;
+  color: var(--color-accent);
+  font-weight: 700;
+  margin-bottom: 0.35rem;
+}
+
+.sayyaf-author-bio {
+  font-size: 0.92rem;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+}
+
+/* ==========================================================================
+   Interactive Map Card & Directions Button
+   ========================================================================== */
+.sayyaf-map-card {
+  background: #ffffff;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  margin-top: 1.5rem;
+}
+
+.sayyaf-map-frame-wrapper {
+  position: relative;
+  width: 100%;
+  height: 320px;
+  background: #e2e8f0;
+}
+
+.sayyaf-map-frame {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.sayyaf-map-footer {
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  background: #ffffff;
+}
+
+.sayyaf-payment-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.sayyaf-pay-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  background: var(--color-bg-subtle);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: 0.35rem 0.65rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--color-text-main);
 }
