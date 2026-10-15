@@ -25,7 +25,7 @@
     </image:image>
   </url>
 
-  <!-- صفحة تركيب المكيفات (الخدمة الأولى الأساسية) -->
+  <!-- صفحة تركيب المكيفات -->
   <url>
     <loc>https://sayyafac.com/installation/</loc>
     <lastmod>2026-10-12</lastmod>
@@ -55,34 +55,46 @@
       <image:loc>https://sayyafac.com/assets/images/install-after-aston-indoor.webp</image:loc>
       <image:title>مكيف سبليت بعد التركيب النهائي أسفل الجبس بدقة</image:title>
     </image:image>
+    <image:image>
+      <image:loc>https://sayyafac.com/assets/images/install-commercial-lg-mosque.webp</image:loc>
+      <image:title>تركيب مكيف دولابي كبير LG داخل مسجد بالطائف</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://sayyafac.com/assets/images/install-commercial-york-cabinet.webp</image:loc>
+      <image:title>تركيب مكيف دولابي 5 طن في متجر تجاري بالطائف</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://sayyafac.com/assets/images/install-commercial-midea-stacked.webp</image:loc>
+      <image:title>تركيب وتنظيم صفوف مكيفات سبليت ميديا على كوابيل جدارية بالطائف</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://sayyafac.com/assets/images/install-facade-tornado-nikai.webp</image:loc>
+      <image:title>تثبيت وحدات تكييف خارجية تورنادو ونيكاي على واجهة مبنى بالطائف</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://sayyafac.com/assets/images/install-rooftop-koolen-piping-loop.webp</image:loc>
+      <image:title>تمديد نحاس ومصيدة زيت لمكيف سبليت على السطح بالطائف</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://sayyafac.com/assets/images/install-rooftop-koolen-rubber-mounts.webp</image:loc>
+      <image:title>تركيب مكيف سبليت على السطح بقواعد ربل مطاطية بالطائف</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://sayyafac.com/assets/images/install-aston-outdoor-facade.webp</image:loc>
+      <image:title>تثبيت مكثف مكيف أستون خارجي على واجهة جدارية بالطائف</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://sayyafac.com/assets/images/install-night-triple-brackets.webp</image:loc>
+      <image:title>تثبيت مجمع لثلاث وحدات تكييف سبليت على كوابيل جدارية بالطائف</image:title>
+    </image:image>
   </url>
 
-  <!-- صفحة صيانة المكيفات (الخدمة الثانية) -->
+  <!-- صفحة صيانة المكيفات -->
   <url>
     <loc>https://sayyafac.com/maintenance/</loc>
     <lastmod>2026-10-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
-    <image:image>
-      <image:loc>https://sayyafac.com/assets/images/install-commercial-lg-mosque.webp</image:loc>
-      <image:title>صيانة وإصلاح مكيف دولابي كبير داخل مسجد بالطائف</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://sayyafac.com/assets/images/install-koolen-multi-bank.webp</image:loc>
-      <image:title>فحص وضبط ضغوط شبكة مكيفات سبليت مجمعة في الطائف</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://sayyafac.com/assets/images/install-night-triple-brackets.webp</image:loc>
-      <image:title>طوارئ صيانة مكيفات ليلية وفحص ضواغط الواجهات بالطائف</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://sayyafac.com/assets/images/install-commercial-midea-stacked.webp</image:loc>
-      <image:title>صيانة وفحص وحدات تكييف ميديا متعددة في الطائف</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://sayyafac.com/assets/images/install-commercial-york-cabinet.webp</image:loc>
-      <image:title>صيانة وإصلاح مكيف دولابي يورك تجاري في الطائف</image:title>
-    </image:image>
   </url>
 
   <!-- صفحة تنظيف وغسيل المكيفات -->
@@ -91,26 +103,6 @@
     <lastmod>2026-10-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
-    <image:image>
-      <image:loc>https://sayyafac.com/assets/images/install-commercial-lg-mosque.webp</image:loc>
-      <image:title>غسيل مكيف دولابي كبير للمساجد والصالات بالطائف</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://sayyafac.com/assets/images/install-koolen-multi-bank.webp</image:loc>
-      <image:title>باقات تنظيف وغسيل مكيفات الفلل والمباني السكنية بالطائف</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://sayyafac.com/assets/images/install-ugine-dual-brackets.webp</image:loc>
-      <image:title>غسيل وتطهير مكثفات المكيفات الخارجية على الكوابيل بالطائف</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://sayyafac.com/assets/images/install-after-aston-indoor.webp</image:loc>
-      <image:title>غسيل وتنظيف مكيف سبليت في الموقع بغطاء واقي بالطائف</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://sayyafac.com/assets/images/install-commercial-midea-stacked.webp</image:loc>
-      <image:title>غسيل مكثفات التكييف الخارجية وإزالة الأتربة بالطائف</image:title>
-    </image:image>
   </url>
 
   <!-- صفحة تأسيس وتمديد مواسير النحاس -->
@@ -119,22 +111,6 @@
     <lastmod>2026-10-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
-    <image:image>
-      <image:loc>https://sayyafac.com/assets/images/install-koolen-multi-bank.webp</image:loc>
-      <image:title>تأسيس وتجميع مسارات مواسير النحاس المعزولة لشبكة مكيفات بالطائف</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://sayyafac.com/assets/images/install-zamil-villa-project.webp</image:loc>
-      <image:title>تأسيس وتمديد شبكة نحاس لمشروع فيلا سكنية أثناء البناء بالطائف</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://sayyafac.com/assets/images/install-before-majlis.webp</image:loc>
-      <image:title>تأسيس وتمديد مواسير النحاس تحت اللياسة والجبس بالطائف</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://sayyafac.com/assets/images/install-rooftop-koolen-piping-loop.webp</image:loc>
-      <image:title>عزل مواسير النحاس بربل أرمفلكس واختبار كبس النيتروجين بالطائف</image:title>
-    </image:image>
   </url>
 
   <!-- صفحة التواصل والأحياء -->
@@ -153,9 +129,9 @@
     <priority>0.7</priority>
   </url>
 
-  <!-- دليل تركيب مكيف سبليت بالطائف وتأسيس النحاس -->
+  <!-- دليل التثبيت الهندسي لمكيفات السبليت وتأسيس النحاس -->
   <url>
-    <loc>https://sayyafac.com/articles/split-ac-installation-taif/</loc>
+    <loc>https://sayyafac.com/articles/split-ac-guide/</loc>
     <lastmod>2026-10-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>

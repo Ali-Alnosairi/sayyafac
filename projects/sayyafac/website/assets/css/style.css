@@ -467,6 +467,91 @@ ul, ol {
   font-weight: 600;
 }
 
+/* Hero Engineering Specification Card (Zero Hallucination Proof) */
+.ac-hero-spec-card {
+  background: linear-gradient(145deg, #0b3b60 0%, #062238 100%);
+  border-radius: var(--radius-lg);
+  padding: 2rem 1.75rem;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: var(--shadow-lg);
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.ac-hero-spec-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 0.85rem;
+  background: rgba(2, 132, 199, 0.25);
+  border: 1px solid rgba(56, 189, 248, 0.45);
+  color: #7dd3fc;
+  font-size: 0.82rem;
+  font-weight: 700;
+  border-radius: var(--radius-full);
+  align-self: flex-start;
+}
+
+.ac-hero-spec-title {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.ac-hero-spec-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.ac-hero-spec-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  font-size: 0.92rem;
+  line-height: 1.5;
+  color: #e2e8f0;
+}
+
+.ac-hero-spec-item strong {
+  color: #ffffff;
+  display: block;
+  font-size: 0.95rem;
+}
+
+.ac-hero-spec-icon {
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  border-radius: var(--radius-sm);
+  background: rgba(56, 189, 248, 0.2);
+  color: #38bdf8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2px;
+}
+
+.ac-hero-spec-footer {
+  margin-top: 0.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  font-size: 0.85rem;
+  color: #94a3b8;
+}
+
+.ac-hero-spec-footer svg {
+  color: #38bdf8;
+  flex-shrink: 0;
+}
+
 /* ==========================================================================
    Section Headers & Common
    ========================================================================== */
@@ -711,6 +796,42 @@ ul, ol {
   font-size: 0.9rem;
   color: var(--color-text-muted);
   line-height: 1.5;
+}
+
+/* Engineering Protocol Card Header (When Real Photos are Not Yet Available) */
+.hvac-showcase-card-header {
+  padding: 1.5rem 1.25rem 1rem;
+  background: linear-gradient(135deg, #0b3b60 0%, #0369a1 100%);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.hvac-showcase-header-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #ffffff;
+}
+
+.hvac-showcase-header-text h3 {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0;
+  line-height: 1.35;
+}
+
+.hvac-showcase-header-text span {
+  font-size: 0.78rem;
+  color: #bae6fd;
+  font-weight: 600;
 }
 
 /* ==========================================================================
