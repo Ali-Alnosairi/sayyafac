@@ -41,7 +41,7 @@ def validate_sayyafac_engineering():
         (os.path.join(base_dir, 'cleaning', 'index.html'), 'website', False),
         (os.path.join(base_dir, 'copper-piping', 'index.html'), 'website', False),
         (os.path.join(base_dir, 'articles', 'index.html'), 'website', False),
-        (os.path.join(base_dir, 'articles', 'split-ac-installation-taif', 'index.html'), 'article', True),
+        (os.path.join(base_dir, 'articles', 'split-ac-guide', 'index.html'), 'article', True),
         (os.path.join(base_dir, 'contact', 'index.html'), 'website', False)
     ]
 
@@ -114,10 +114,10 @@ def validate_sayyafac_engineering():
             errors.append(f"Canonical phone number missing in {page_name}")
 
         # Information Integrity: Verify canonical opening hours in footer
-        if '08:00 ص – 10:00 م' not in html or '01:00 م – 10:00 م' not in html:
+        if '07:00 ص – 11:50 م' not in html or '02:00 م – 11:50 م' not in html:
             errors.append(f"Opening hours missing or inconsistent in footer of {page_name}")
         else:
-            passes.append(f"Footer opening hours (08:00-22:00 / Fri 13:00-22:00) verified in {page_name}")
+            passes.append(f"Footer opening hours (07:00-23:50 / Fri 14:00-23:50) verified in {page_name}")
 
     # 4. Check llms.txt & robots.txt & sitemap.xml
     llms_path = os.path.join(base_dir, 'llms.txt')
@@ -129,7 +129,7 @@ def validate_sayyafac_engineering():
     else:
         with open(llms_path, 'r', encoding='utf-8') as f:
             llms_content = f.read()
-            if '0538972324' in llms_content and 'أم العراد' in llms_content and '08:00 صباحاً – 10:00 مساءً' in llms_content:
+            if '0538972324' in llms_content and 'أم العراد' in llms_content and '07:00 صباحاً – 11:50 مساءً' in llms_content:
                 passes.append("llms.txt contains Single Source of Truth entity data and canonical opening hours")
             else:
                 errors.append("llms.txt missing core entity facts or opening hours")

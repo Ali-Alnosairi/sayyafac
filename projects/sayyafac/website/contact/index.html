@@ -67,6 +67,7 @@
       },
       "telephone": "+966538972324",
       "priceRange": "SAR 50 - SAR 350",
+      "hasMap": "https://maps.google.com/?q=21.256835196480665,40.408051642763986",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "شارع عور",
@@ -250,7 +251,7 @@
             "name": "ما هي طرق الدفع المعتمدة لدى فنيي صَيّاف؟",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "الدفع يتم بعد إتمام العمل وفحص برودة التكييف مباشرة. نقبل الدفع نقداً (كاش) والتحويل البنكي الفوري عبر الراجحي والأهلي وSTC Pay."
+              "text": "الدفع يتم بعد إتمام العمل وفحص برودة التكييف مباشرة. نقبل الدفع نقداً (كاش)، شبكة مدى، بطاقات فيزا، والتحويل البنكي الفوري عبر الراجحي والأهلي وSTC Pay."
             }
           },
           {
@@ -285,7 +286,7 @@
           <span class="sayyaf-ticker-divider">•</span>
           <span class="sayyaf-ticker-item">📞 <strong>اتصال وواتساب مباشر:</strong> <a href="tel:+966538972324">0538972324</a></span>
           <span class="sayyaf-ticker-divider">•</span>
-          <span class="sayyaf-ticker-item">🛡️ <strong>ضمان ميداني:</strong> سند ضمان معتمد 60 يوماً على جميع أعمال التركيب والصيانة</span>
+          <span class="sayyaf-ticker-item">🛡️ <strong>ضمان ميداني:</strong> ضمان ميداني معتمد حتى 90 يوماً على أعمال التركيب والصيانة</span>
           <span class="sayyaf-ticker-divider">•</span>
           <span class="sayyaf-ticker-item">💳 <strong>طرق الدفع:</strong> سداد نقدي، شبكة مدى، فيزا، وتحويل بنكي رسمي بعد الفحص والتشغيل</span>
           <span class="sayyaf-ticker-divider">•</span>
@@ -298,7 +299,7 @@
           <span class="sayyaf-ticker-divider">•</span>
           <span class="sayyaf-ticker-item">📞 <strong>اتصال وواتساب مباشر:</strong> <a href="tel:+966538972324">0538972324</a></span>
           <span class="sayyaf-ticker-divider">•</span>
-          <span class="sayyaf-ticker-item">🛡️ <strong>ضمان ميداني:</strong> سند ضمان معتمد 60 يوماً على جميع أعمال التركيب والصيانة</span>
+          <span class="sayyaf-ticker-item">🛡️ <strong>ضمان ميداني:</strong> ضمان ميداني معتمد حتى 90 يوماً على أعمال التركيب والصيانة</span>
           <span class="sayyaf-ticker-divider">•</span>
           <span class="sayyaf-ticker-item">💳 <strong>طرق الدفع:</strong> سداد نقدي، شبكة مدى، فيزا، وتحويل بنكي رسمي بعد الفحص والتشغيل</span>
           <span class="sayyaf-ticker-divider">•</span>
@@ -547,6 +548,7 @@
                 <strong style="color: var(--color-primary); display: block; font-size: 0.92rem;">طرق الدفع المعتمدة لدى فنيينا:</strong>
                 <div class="sayyaf-payment-badges">
                   <span class="sayyaf-pay-chip">💵 نقداً (كاش) بعد استلام وفحص العمل</span>
+                  <span class="sayyaf-pay-chip">💳 شبكة مدى وفيزا (POS)</span>
                   <span class="sayyaf-pay-chip">🏦 تحويل بنكي فوري (الراجحي / الأهلي)</span>
                   <span class="sayyaf-pay-chip">📱 STC Pay</span>
                 </div>
@@ -579,6 +581,11 @@
               <div>
                 <strong style="color: var(--color-primary);">طبيعة تقديم الخدمة:</strong>
                 <p style="color: var(--color-text-muted); margin-top: 0.25rem;">خدمة ميدانية متنقلة بسيارات مجهزة بكامل معدات التركيب والفاكيوم وقطع الغيار الأصلية تصل إلى موقع العميل مباشرة في أي حي بالطائف.</p>
+              </div>
+
+              <div>
+                <strong style="color: var(--color-primary);">الإشراف الهندسي الميداني:</strong>
+                <p style="color: var(--color-text-muted); margin-top: 0.25rem;">إشراف وتوجيه مباشر من <strong>الفني أبو عيسى</strong> (كبير فنيي التكييف والتبريد، خبرة تزيد عن 12 عاماً في تأسيس وتركيب وصيانة أنظمة التكييف والفلل بالطائف).</p>
               </div>
             </div>
           </div>
@@ -635,34 +642,38 @@
           <h2 class="section-title">أسئلة متكررة حول المواعيد وخدمة صَيّاف بالطائف</h2>
         </div>
 
-        <div style="display: flex; flex-direction: column; gap: 1rem;">
-          <details style="background: #ffffff; border: 1px solid var(--color-border); border-radius: var(--radius-md); padding: 1.25rem;">
-            <summary style="font-weight: 800; color: var(--color-primary); cursor: pointer; font-size: 1.05rem;">كم يستغرق وصول فني التكييف بعد تأكيد الطلب؟</summary>
-            <p style="margin-top: 0.75rem; color: var(--color-text-muted); font-size: 0.95rem; line-height: 1.7;">
+        <div class="chunk-faq-grid">
+          <!-- FAQ 1 -->
+          <div class="chunk-faq-card">
+            <h3 class="chunk-faq-question">كم يستغرق وصول فني التكييف بعد تأكيد الطلب؟</h3>
+            <p class="chunk-faq-answer">
               يصل فريق فنيي صَيّاف الميداني في غضون <strong>60 إلى 120 دقيقة</strong> في الحالات العادية داخل أحياء الطائف. كما نوفر خدمة طوارئ سريعة للمساجد والمناسبات وقاعات الأفراح والمستودعات بالتنسيق الفوري عبر الهاتف.
             </p>
-          </details>
+          </div>
 
-          <details style="background: #ffffff; border: 1px solid var(--color-border); border-radius: var(--radius-md); padding: 1.25rem;">
-            <summary style="font-weight: 800; color: var(--color-primary); cursor: pointer; font-size: 1.05rem;">هل تقدمون خدمات التكييف يوم الجمعة؟</summary>
-            <p style="margin-top: 0.75rem; color: var(--color-text-muted); font-size: 0.95rem; line-height: 1.7;">
+          <!-- FAQ 2 -->
+          <div class="chunk-faq-card">
+            <h3 class="chunk-faq-question">هل تقدمون خدمات التكييف يوم الجمعة؟</h3>
+            <p class="chunk-faq-answer">
               نعم، تعمل فرقنا الميدانية يوم الجمعة من الساعة <strong>02:00 ظهراً وحتى 11:50 مساءً</strong> (وباقي أيام الأسبوع من 07:00 صباحاً وحتى 11:50 مساءً)، مع إعطاء الأولوية لصيانة مساجد الطائف والحالات الطارئة.
             </p>
-          </details>
+          </div>
 
-          <details style="background: #ffffff; border: 1px solid var(--color-border); border-radius: var(--radius-md); padding: 1.25rem;">
-            <summary style="font-weight: 800; color: var(--color-primary); cursor: pointer; font-size: 1.05rem;">ما هي طرق الدفع المعتمدة لدى فنييكم في الطائف؟</summary>
-            <p style="margin-top: 0.75rem; color: var(--color-text-muted); font-size: 0.95rem; line-height: 1.7;">
-              الدفع يتم دائماً <strong>بعد انتهاء الفني من العمل وفحص برودة المكيف والتأكد من عدم وجود أي تسريب</strong>. نقبل الدفع نقداً (كاش)، أو التحويل البنكي الفوري عبر الحسابات السعودية المعتمدة (الراجحي، الأهلي، STC Pay).
+          <!-- FAQ 3 -->
+          <div class="chunk-faq-card">
+            <h3 class="chunk-faq-question">ما هي طرق الدفع المعتمدة لدى فنييكم في الطائف؟</h3>
+            <p class="chunk-faq-answer">
+              الدفع يتم دائماً <strong>بعد انتهاء الفني من العمل وفحص برودة المكيف والتأكد من عدم وجود أي تسريب</strong>. نقبل الدفع نقداً (كاش)، شبكة مدى، بطاقات فيزا، أو التحويل البنكي الفوري عبر الحسابات السعودية المعتمدة (الراجحي، الأهلي، STC Pay).
             </p>
-          </details>
+          </div>
 
-          <details style="background: #ffffff; border: 1px solid var(--color-border); border-radius: var(--radius-md); padding: 1.25rem;">
-            <summary style="font-weight: 800; color: var(--color-primary); cursor: pointer; font-size: 1.05rem;">هل تخدمون ضواحي ومصايف الطائف مثل الهدا والشفا والسيل؟</summary>
-            <p style="margin-top: 0.75rem; color: var(--color-text-muted); font-size: 0.95rem; line-height: 1.7;">
+          <!-- FAQ 4 -->
+          <div class="chunk-faq-card">
+            <h3 class="chunk-faq-question">هل تخدمون ضواحي ومصايف الطائف مثل الهدا والشفا والسيل؟</h3>
+            <p class="chunk-faq-answer">
               نعم، نغطي الهدا والشفا ومخططات الوسام والسيل الصغير والسيل الكبير ووادي وج بفرق عمل مجهزة لمواجهة طبيعة التضاريس الجبلية والرياح العالية.
             </p>
-          </details>
+          </div>
         </div>
       </div>
     </section>

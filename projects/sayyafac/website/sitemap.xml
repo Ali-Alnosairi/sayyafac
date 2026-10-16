@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
   <!-- الصفحة الرئيسية -->
   <url>
     <loc>https://sayyafac.com/</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -23,6 +24,22 @@
       <image:loc>https://sayyafac.com/assets/images/install-commercial-lg-mosque.webp</image:loc>
       <image:title>تركيب وصيانة مكيف دولابي كبير في مسجد بالطائف</image:title>
     </image:image>
+    <video:video>
+      <video:thumbnail_loc>https://sayyafac.com/assets/images/install-split-luxury-villa-tour-poster.webp</video:thumbnail_loc>
+      <video:title>تسليم أعمال تركيب مكيفات سبليت فيلا بالطائف</video:title>
+      <video:description>توثيق اكتمال الأعمال وتشغيل الوحدات بكفاءة مع إخفاء مسارات النحاس والصرف والحفاظ على نظافة المكان والتشطيب.</video:description>
+      <video:content_loc>https://sayyafac.com/assets/videos/install-split-luxury-villa-tour.mp4</video:content_loc>
+      <video:publication_date>2026-03-01T10:00:00+03:00</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://sayyafac.com/assets/images/install-split-villa-walkthrough-1-poster.webp</video:thumbnail_loc>
+      <video:title>ضبط استواء الوحدات الداخلية بدقة ميزان الماء</video:title>
+      <video:description>لقطة ميدانية توثق وزن الوحدة ميكانيكياً لمنع أي ميلان يسبب تسريب الماء على الجدران أو الديكورات الجبسية مستقبلاً.</video:description>
+      <video:content_loc>https://sayyafac.com/assets/videos/install-split-villa-walkthrough-1.mp4</video:content_loc>
+      <video:publication_date>2026-03-01T10:00:00+03:00</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
   </url>
 
   <!-- صفحة تركيب المكيفات -->
@@ -92,33 +109,61 @@
   <!-- صفحة صيانة المكيفات -->
   <url>
     <loc>https://sayyafac.com/maintenance/</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://sayyafac.com/assets/images/install-aston-outdoor-facade.webp</image:loc>
+      <image:title>صيانة وتصليح مكيفات سبليت على واجهات المباني بالطائف</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://sayyafac.com/assets/images/install-facade-tornado-nikai.webp</image:loc>
+      <image:title>فحص وتعبئة فريون أصلي لوحدات تكييف سبليت بالطائف</image:title>
+    </image:image>
   </url>
 
   <!-- صفحة تنظيف وغسيل المكيفات -->
   <url>
     <loc>https://sayyafac.com/cleaning/</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://sayyafac.com/assets/images/install-after-aston-indoor.webp</image:loc>
+      <image:title>غسيل وتنظيف عميق لمكيفات السبليت بالموقع في الطائف</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://sayyafac.com/assets/images/install-commercial-york-cabinet.webp</image:loc>
+      <image:title>تنظيف وغسيل مكيفات دولابية وتجارية بالطائف</image:title>
+    </image:image>
   </url>
 
   <!-- صفحة تأسيس وتمديد مواسير النحاس -->
   <url>
     <loc>https://sayyafac.com/copper-piping/</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://sayyafac.com/assets/images/install-rooftop-koolen-piping-loop.webp</image:loc>
+      <image:title>تأسيس وتمديد شبكات نحاس مولر أمريكي مع مصائد الزيت بالطائف</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://sayyafac.com/assets/images/install-before-majlis.webp</image:loc>
+      <image:title>تجهيز وتمديد خطوط النحاس الإنشائية قبل اللياسة بالطائف</image:title>
+    </image:image>
   </url>
 
   <!-- صفحة التواصل والأحياء -->
   <url>
     <loc>https://sayyafac.com/contact/</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://sayyafac.com/assets/images/install-after-aston-indoor.webp</image:loc>
+      <image:title>مقر وخدمات صَيّاف للتكييف في كافة أحياء وضواحي الطائف</image:title>
+    </image:image>
   </url>
 
   <!-- مركز الأدلة الفنية -->

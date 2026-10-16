@@ -4,3 +4,6 @@
 # Operating System Files
 .DS_Store
 Thumbs.db
+
+# Project export dumps
+/*_sayyafac_*.txt
