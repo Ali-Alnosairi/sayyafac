@@ -52,26 +52,33 @@
         "name": "مركز الأدلة الفنية للتكييف بالطائف",
         "url": "https://sayyafac.com/articles/",
         "isPartOf": { "@id": "https://sayyafac.com/#organization" },
-        "description": "دليل ومرجع فني متخصص للمواصفات الهندسية لتركيب وتأسيس وصيانة التكييف في الطائف."
-      }    ,
-    {
-      "@type": "BreadcrumbList",
-      "@id": "https://sayyafac.com/articles/#breadcrumb",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "الرئيسية",
-          "item": "https://sayyafac.com/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "مركز الأدلة الفنية للتكييف بالطائف",
-          "item": "https://sayyafac.com/articles/"
-        }
-      ]
-    }
+        "description": "دليل ومرجع فني متخصص للمواصفات الهندسية لتركيب وتأسيس وصيانة التكييف في الطائف.",
+        "hasPart": [
+          { "@id": "https://sayyafac.com/articles/split-ac-guide/#article" },
+          { "@id": "https://sayyafac.com/articles/water-leakage-guide/#article" },
+          { "@id": "https://sayyafac.com/articles/freon-types-guide/#article" },
+          { "@id": "https://sayyafac.com/articles/deep-cleaning-guide/#article" },
+          { "@id": "https://sayyafac.com/articles/taif-winter-heating-guide/#article" }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://sayyafac.com/articles/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "الرئيسية",
+            "item": "https://sayyafac.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "مركز الأدلة الفنية للتكييف بالطائف",
+            "item": "https://sayyafac.com/articles/"
+          }
+        ]
+      }
     ]
   }
   </script>
@@ -258,67 +265,96 @@
           </article>
         </div>
 
-        <!-- Upcoming Guides Cluster -->
+        <!-- Published Guides Cluster (4 Specialized Knowledge Guides) -->
         <div style="max-width: 860px; margin-inline: auto; margin-top: 2rem; display: grid; grid-template-columns: 1fr; gap: 1.5rem;">
           
-          <!-- Cluster Card 1: Water Leakage -->
+          <!-- Guide 2: Water Leakage -->
           <article class="sayyaf-step-card" style="border: 1px solid var(--color-border); padding: 1.5rem;">
             <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; margin-bottom: 0.5rem; gap: 0.5rem;">
               <span class="section-tag" style="background: #e0f2fe; color: #0369a1; margin: 0;">تشخيص أعطال وتصريف</span>
               <span style="font-size: 0.82rem; color: #64748b; font-weight: 700;">دليل تشخيصي معتمد • الفني أبو عيسى</span>
             </div>
             <h3 style="font-size: 1.25rem; font-weight: 800; color: var(--color-primary); margin-bottom: 0.5rem;">
-              أسباب تنقيط وخرير الماء من مكيف السبليت داخل الغرفة: التشخيص الهندسي وحلول الانسداد والميلان
+              <a href="/articles/water-leakage-guide/" style="color: inherit; text-decoration: none;">
+                أسباب تنقيط وخرير الماء من مكيف السبليت داخل الغرفة: التشخيص الهندسي وحلول الانسداد والميلان
+              </a>
             </h3>
             <p style="font-size: 0.93rem; color: var(--color-text-muted); line-height: 1.6; margin-bottom: 1rem;">
               شرح تفصيلي لأسباب فيضان حوض التكثيف الداخلي، انسداد لي التصريف بالأطيان المتكلسة، خطأ استواء مسطرة التثبيت تحت الجبس، وتعريق مواسير النحاس نتيجة تلف عازل الأرمالكس.
             </p>
             <div style="display: flex; align-items: center; justify-content: space-between; padding-top: 0.75rem; border-top: 1px solid var(--color-bg-subtle);">
-              <span style="font-size: 0.85rem; color: #0284c7; font-weight: 700;">ضمن خطة النشر القادمة</span>
-              <a href="https://wa.me/966538972324?text=السلام%20عليكم،%20المكيف%20عندي%20ينقط%20ماء%20داخل%20الغرفة%20وأحتاج%20فني%20في%20الطائف" class="btn-pillar-link" target="_blank" rel="noopener">
-                <span>طلب فحص تسريب الماء فوراً</span>
+              <span style="font-size: 0.85rem; color: #64748b;">تاريخ النشر: 16 أكتوبر 2026</span>
+              <a href="/articles/water-leakage-guide/" class="btn-pillar-link">
+                <span>قراءة الدليل بالكامل</span>
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
               </a>
             </div>
           </article>
 
-          <!-- Cluster Card 2: Freon Guide -->
+          <!-- Guide 3: Freon Guide -->
           <article class="sayyaf-step-card" style="border: 1px solid var(--color-border); padding: 1.5rem;">
             <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; margin-bottom: 0.5rem; gap: 0.5rem;">
               <span class="section-tag" style="background: #fef3c7; color: #b45309; margin: 0;">غازات وتبريد</span>
               <span style="font-size: 0.82rem; color: #64748b; font-weight: 700;">دليل المواصفات الميدانية • الفني أبو عيسى</span>
             </div>
             <h3 style="font-size: 1.25rem; font-weight: 800; color: var(--color-primary); margin-bottom: 0.5rem;">
-              دليل أنواع فريون المكيفات (R410A vs R22 vs R32): كيف تتأكد من شحن الغاز الأصلي المطابق لمكيفك؟
+              <a href="/articles/freon-types-guide/" style="color: inherit; text-decoration: none;">
+                دليل أنواع فريون المكيفات (R410A vs R22 vs R32): كيف تتأكد من شحن الغاز الأصلي المطابق لمكيفك؟
+              </a>
             </h3>
             <p style="font-size: 0.93rem; color: var(--color-text-muted); line-height: 1.6; margin-bottom: 1rem;">
               مقارنة علمية دقيقة لضغوط التشغيل وأنواع زيوت التبريد التخليقية (POE)، ولماذا يؤدي خلط الفريون التجاري أو الشحن العشوائي بدون ميزان إلكتروني إلى احتراق ملفات الضاغط وتلف المكيف.
             </p>
             <div style="display: flex; align-items: center; justify-content: space-between; padding-top: 0.75rem; border-top: 1px solid var(--color-bg-subtle);">
-              <span style="font-size: 0.85rem; color: #0284c7; font-weight: 700;">ضمن خطة النشر القادمة</span>
-              <a href="https://wa.me/966538972324?text=السلام%20عليكم،%20أحتاج%20فحص%20وتعبئة%20فريون%20أصلي%20لمكيف%20في%20الطائف" class="btn-pillar-link" target="_blank" rel="noopener">
-                <span>طلب فحص الفريون بالأجهزة</span>
+              <span style="font-size: 0.85rem; color: #64748b;">تاريخ النشر: 16 أكتوبر 2026</span>
+              <a href="/articles/freon-types-guide/" class="btn-pillar-link">
+                <span>قراءة الدليل بالكامل</span>
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
               </a>
             </div>
           </article>
 
-          <!-- Cluster Card 3: Deep Cleaning Guide -->
+          <!-- Guide 4: Deep Cleaning Guide -->
           <article class="sayyaf-step-card" style="border: 1px solid var(--color-border); padding: 1.5rem;">
             <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; margin-bottom: 0.5rem; gap: 0.5rem;">
               <span class="section-tag" style="background: #dcfce7; color: #15803d; margin: 0;">كفاءة وصحة بيئية</span>
               <span style="font-size: 0.82rem; color: #64748b; font-weight: 700;">دليل الصيانة الوقائية • الفني أبو عيسى</span>
             </div>
             <h3 style="font-size: 1.25rem; font-weight: 800; color: var(--color-primary); margin-bottom: 0.5rem;">
-              الدليل العملي لغسيل مكيف السبليت بالموقع: الفرق بين الغسيل الهندسي السليم ورش الماء العشوائي
+              <a href="/articles/deep-cleaning-guide/" style="color: inherit; text-decoration: none;">
+                الدليل العملي لغسيل مكيف السبليت بالموقع: الفرق بين الغسيل الهندسي السليم ورش الماء العشوائي
+              </a>
             </h3>
             <p style="font-size: 0.93rem; color: var(--color-text-muted); line-height: 1.6; margin-bottom: 1rem;">
               كيف يحمي الفني المحترف البورد الإلكتروني من التلف؟ ولماذا لا يكفي غسيل الفلتر البلاستيكي لاستعادة قوة التبريد؟ إرشادات لحماية أثاث منزلك وخفض استهلاك الكهرباء بنسبة 20%.
             </p>
             <div style="display: flex; align-items: center; justify-content: space-between; padding-top: 0.75rem; border-top: 1px solid var(--color-bg-subtle);">
-              <span style="font-size: 0.85rem; color: #0284c7; font-weight: 700;">ضمن خطة النشر القادمة</span>
-              <a href="https://wa.me/966538972324?text=السلام%20عليكم،%20أريد%20حجز%20غسيل%20مكيفات%20بالموقع%20في%20الطائف" class="btn-pillar-link" target="_blank" rel="noopener">
-                <span>حجز موعد غسيل بالموقع</span>
+              <span style="font-size: 0.85rem; color: #64748b;">تاريخ النشر: 16 أكتوبر 2026</span>
+              <a href="/articles/deep-cleaning-guide/" class="btn-pillar-link">
+                <span>قراءة الدليل بالكامل</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Guide 5: Taif Winter Heating Guide -->
+          <article class="sayyaf-step-card" style="border: 1px solid var(--color-border); padding: 1.5rem;">
+            <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; margin-bottom: 0.5rem; gap: 0.5rem;">
+              <span class="section-tag" style="background: #ede9fe; color: #6d28d9; margin: 0;">تدفئة ومناخ جبلي</span>
+              <span style="font-size: 0.82rem; color: #64748b; font-weight: 700;">دليل تشغيل موسمي • الفني أبو عيسى</span>
+            </div>
+            <h3 style="font-size: 1.25rem; font-weight: 800; color: var(--color-primary); margin-bottom: 0.5rem;">
+              <a href="/articles/taif-winter-heating-guide/" style="color: inherit; text-decoration: none;">
+                دليل تشغيل وتدفئة مكيفات السبليت شتاءً في الطائف: بلف العكس ودورة إذابة الصقيع
+              </a>
+            </h3>
+            <p style="font-size: 0.93rem; color: var(--color-text-muted); line-height: 1.6; margin-bottom: 1rem;">
+              فيزياء المضخة الحرارية ودور صمام بلف العكس رباعي المسارات، تفسير تصاعد البخار من الوحدة الخارجية أثناء دورة إذابة الجليد (Defrost)، وكيفية ضبط تدفئة مريحة بأقل استهلاك طاقة.
+            </p>
+            <div style="display: flex; align-items: center; justify-content: space-between; padding-top: 0.75rem; border-top: 1px solid var(--color-bg-subtle);">
+              <span style="font-size: 0.85rem; color: #64748b;">تاريخ النشر: 16 أكتوبر 2026</span>
+              <a href="/articles/taif-winter-heating-guide/" class="btn-pillar-link">
+                <span>قراءة الدليل بالكامل</span>
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
               </a>
             </div>

@@ -169,7 +169,7 @@
   <!-- مركز الأدلة الفنية -->
   <url>
     <loc>https://sayyafac.com/articles/</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -177,7 +177,7 @@
   <!-- دليل التثبيت الهندسي لمكيفات السبليت وتأسيس النحاس -->
   <url>
     <loc>https://sayyafac.com/articles/split-ac-guide/</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
     <image:image>
@@ -187,6 +187,54 @@
     <image:image>
       <image:loc>https://sayyafac.com/assets/images/install-rooftop-koolen-piping-loop.webp</image:loc>
       <image:title>عزل مواسير النحاس ومصيدة الزيت لمكيف سبليت على السطح بالطائف</image:title>
+    </image:image>
+  </url>
+
+  <!-- دليل علاج تسريب ماء المكيف السبلت داخل الغرفة -->
+  <url>
+    <loc>https://sayyafac.com/articles/water-leakage-guide/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <image:image>
+      <image:loc>https://sayyafac.com/assets/images/install-before-majlis.webp</image:loc>
+      <image:title>تأسيس خطوط تصريف مياه ونحاس مكيف سبليت داخل مجلس سكني بالطائف</image:title>
+    </image:image>
+  </url>
+
+  <!-- دليل أنواع فريون المكيفات وضغوط التبريد -->
+  <url>
+    <loc>https://sayyafac.com/articles/freon-types-guide/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <image:image>
+      <image:loc>https://sayyafac.com/assets/images/install-aston-outdoor-facade.webp</image:loc>
+      <image:title>فحص ضغوط وشحن فريون أصلي لوحدة مكيف سبليت على واجهة مبنى بالطائف</image:title>
+    </image:image>
+  </url>
+
+  <!-- دليل غسيل مكيف السبليت في مكانه بالموقع -->
+  <url>
+    <loc>https://sayyafac.com/articles/deep-cleaning-guide/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <image:image>
+      <image:loc>https://sayyafac.com/assets/images/install-after-aston-indoor.webp</image:loc>
+      <image:title>غسيل وتعقيم شامل لوحدة مكيف سبليت داخلية بالموقع في الطائف</image:title>
+    </image:image>
+  </url>
+
+  <!-- دليل تشغيل وتدفئة مكيفات السبليت شتاءً في الطائف -->
+  <url>
+    <loc>https://sayyafac.com/articles/taif-winter-heating-guide/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <image:image>
+      <image:loc>https://sayyafac.com/assets/images/install-ugine-dual-brackets.webp</image:loc>
+      <image:title>تثبيت وحدات مكيف سبليت على كوابيل جدارية لمقاومة البرد والرياح بالطائف</image:title>
     </image:image>
   </url>
   <!-- سياسة الخصوصية -->

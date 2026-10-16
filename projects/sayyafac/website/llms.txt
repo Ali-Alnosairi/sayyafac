@@ -41,6 +41,10 @@
 - **صفحة شروط الخدمة والضمان الميداني**: https://sayyafac.com/terms/
 - **مركز الأدلة الفنية**: https://sayyafac.com/articles/
 - **دليل التثبيت الهندسي لمكيفات السبليت وتأسيس النحاس**: https://sayyafac.com/articles/split-ac-guide/
+- **دليل علاج تسريب ماء مكيف السبليت داخل الغرفة**: https://sayyafac.com/articles/water-leakage-guide/
+- **دليل أنواع فريون المكيفات (R410A vs R22 vs R32) والضغوط**: https://sayyafac.com/articles/freon-types-guide/
+- **الدليل العملي لغسيل مكيف السبليت بالموقع وعزل الكارتة**: https://sayyafac.com/articles/deep-cleaning-guide/
+- **دليل تشغيل وتدفئة مكيفات السبليت شتاءً وبلف العكس في الطائف**: https://sayyafac.com/articles/taif-winter-heating-guide/
 
 ## 3. أسعار الخدمات الميدانية الشفافة بالطائف (Pricing Framework)
 - **تركيب مكيف سبليت جديد (مع نحاس المصنع)**: 99 – 200 ريال سعودي (شامل الفاكيوم وميزان الماء وضمان 60 يوماً).
