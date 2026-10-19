@@ -46,7 +46,11 @@
       "name": "صَيّاف للتكييف",
       "alternateName": "SayyafAC",
       "url": "https://sayyafac.com/",
-      "logo": "https://sayyafac.com/assets/images/logo.svg"
+      "logo": "https://sayyafac.com/assets/images/logo.svg",
+      "sameAs": [
+        "https://www.instagram.com/sayyaf_ac",
+        "https://facebook.com/sayyafac.offical"
+      ]
     },
     {
       "@type": "HVACBusiness",
@@ -56,6 +60,10 @@
       "parentOrganization": {
         "@id": "https://sayyafac.com/#organization"
       },
+      "sameAs": [
+        "https://www.instagram.com/sayyaf_ac",
+        "https://facebook.com/sayyafac.offical"
+      ],
       "telephone": "+966538972324",
       "priceRange": "SAR 50 - SAR 350",
       "hasMap": "https://maps.google.com/?q=21.256835196480665,40.408051642763986",
@@ -425,12 +433,14 @@
         </a>
 
         <nav class="sayyaf-nav-links" aria-label="القائمة الرئيسية">
-          <a href="/" class="sayyaf-nav-link">الرئيسية</a>
-          <a href="/installation/" class="sayyaf-nav-link">تركيب مكيفات</a>
+          <a href="/" class="sayyaf-nav-link">الرئيسية (فك وتركيب)</a>
+          <a href="/services/" class="sayyaf-nav-link">خدماتنا</a>
+          <a href="/split-ac-installation-technician/" class="sayyaf-nav-link">فني تركيب سبليت</a>
           <a href="/maintenance/" class="sayyaf-nav-link active">صيانة وتصليح</a>
           <a href="/cleaning/" class="sayyaf-nav-link">تنظيف مكيفات</a>
           <a href="/copper-piping/" class="sayyaf-nav-link">تأسيس مكيفات</a>
           <a href="/articles/" class="sayyaf-nav-link">أدلة فنية</a>
+          <a href="/about/" class="sayyaf-nav-link">من نحن</a>
           <a href="/contact/" class="sayyaf-nav-link">تواصل معنا</a>
         </nav>
 
@@ -478,11 +488,15 @@
 
     <nav class="sayyaf-drawer-links">
       <a href="/" class="sayyaf-drawer-link">
-        <span>الرئيسية</span>
+        <span>الرئيسية (فك وتركيب)</span>
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
       </a>
-      <a href="/installation/" class="sayyaf-drawer-link">
-        <span>تركيب مكيفات سبليت</span>
+      <a href="/services/" class="sayyaf-drawer-link">
+        <span>دليل كافة الخدمات والأسعار</span>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
+      </a>
+      <a href="/split-ac-installation-technician/" class="sayyaf-drawer-link">
+        <span>فني تركيب مكيفات سبليت (100 ريال)</span>
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
       </a>
       <a href="/maintenance/" class="sayyaf-drawer-link active">
@@ -499,6 +513,10 @@
       </a>
       <a href="/articles/" class="sayyaf-drawer-link">
         <span>الأدلة الفنية والاسترشادية</span>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
+      </a>
+      <a href="/about/" class="sayyaf-drawer-link">
+        <span>من نحن وقصة صَيّاف</span>
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
       </a>
       <a href="/contact/" class="sayyaf-drawer-link">
@@ -793,8 +811,188 @@
       </div>
     </section>
 
+    <!-- Estimated Maintenance Duration Matrix -->
+    <section class="sayyaf-section bg-subtle" style="border-top: 1px solid var(--color-border);">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-tag">الجدول الزمني الميداني</span>
+          <h2 class="section-title">كم يستغرق تشخيص وإصلاح مكيفك في الطائف؟</h2>
+          <p class="section-subtitle">تشخيص فوري وإصلاح دقيق بالموقع دون مماطلة أو ترك الموقع قبل اكتمال الفحص:</p>
+        </div>
+
+        <div class="hvac-price-table-container">
+          <table class="hvac-price-table">
+            <thead>
+              <tr>
+                <th>عملية الصيانة الميدانية</th>
+                <th>المدة الميدانية التقديرية</th>
+                <th>الإجراء المتبع خلال المدة</th>
+                <th>معيار الاختبار قبل المغادرة</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>الفحص والتشخيص الشامل</strong></td>
+                <td><span class="price-highlight">25 – 40 دقيقة</span></td>
+                <td>قياس ضغط الفريون وسحب الأمبير واختبار الكابستور وحساسات الحرارة</td>
+                <td>تحديد العطل بدقة متناهية</td>
+              </tr>
+              <tr>
+                <td><strong>كشف ومعالجة تسريب الفريون</strong></td>
+                <td><span class="price-highlight">45 – 90 دقيقة</span></td>
+                <td>كبس النيتروجين لكشف مكان الثقب، لحام فضة أصلي، واختبار الصابون والضغط</td>
+                <td>ثبات ضغط النيتروجين التام</td>
+              </tr>
+              <tr>
+                <td><strong>تفريغ الفاكيوم وشحن الفريون الأصلي</strong></td>
+                <td><span class="price-highlight">40 – 60 دقيقة</span></td>
+                <td>تفريغ كامل بمضخة الفاكيوم لسحب الرطوبة، ثم شحن R410A بالميزان الرقمي بالجرام</td>
+                <td>تطابق وزن الغاز مع ليبل المصنع</td>
+              </tr>
+              <tr>
+                <td><strong>استبدال كابستور الإقلاع أو المروحة</strong></td>
+                <td><span class="price-highlight">30 – 45 دقيقة</span></td>
+                <td>فصل الكهرباء، تفريغ الشحنة، تركيب كابستور أصلي بنفس الميكروفاراد واختبار الإقلاع</td>
+                <td>إقلاع فوري وهادئ للضاغط</td>
+              </tr>
+              <tr>
+                <td><strong>تسليك مجرى الصرف وحل خرير الماء</strong></td>
+                <td><span class="price-highlight">30 – 50 دقيقة</span></td>
+                <td>تسليك هيدروليكي بمضخة الضغط، تطهير حوض التكثيف، وضبط استواء المسطرة</td>
+                <td>انسياب حر كامل لماء التصريف</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Detailed Maintenance Warranty Terms -->
+    <section class="sayyaf-section">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-tag">الضمان الميداني الصريح</span>
+          <h2 class="section-title">شروط ضمان الصيانة والإصلاح: ما يغطيه وما لا يغطيه</h2>
+          <p class="section-subtitle">نلتزم بما نقوم به فعلياً ونمنحك ضماناً ميدانياً معتمداً ومكتوباً يحفظ حقك بالكامل:</p>
+        </div>
+
+        <div class="sayyaf-warranty-grid">
+          <div class="sayyaf-warranty-col covered">
+            <h3 class="sayyaf-warranty-title covered">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>ما يشمله ضمان الصيانة (تغطية مجانية كاملة)</span>
+            </h3>
+            <ul class="sayyaf-warranty-list">
+              <li class="sayyaf-warranty-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>استقرار شحنة الفريون وضغط الغاز:</strong> ضمان عدم نقص الغاز من الدائرة التي تم فحصها وتعبئتها لمدة 60 يوماً.</span>
+              </li>
+              <li class="sayyaf-warranty-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>جودة نقطة اللحام المعالجة:</strong> ضمان عدم تسريب الفريون من نقطة اللحام بالفضة التي تم إصلاحها.</span>
+              </li>
+              <li class="sayyaf-warranty-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>قطع الغيار المستبدلة:</strong> ضمان استبدال فوري مجاني لأي كابستور أو قطعة غيار ركبها فنيونا لمدة 90 يوماً.</span>
+              </li>
+              <li class="sayyaf-warranty-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>انعدام خرير الماء:</strong> ضمان عدم تكرار تنقيط الماء الداخلي بعد تسليك المجرى وضبط الميول لمدة 30 يوماً.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="sayyaf-warranty-col not-covered">
+            <h3 class="sayyaf-warranty-title not-covered">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line></svg>
+              <span>ما لا يغطيه ضمان الصيانة</span>
+            </h3>
+            <ul class="sayyaf-warranty-list">
+              <li class="sayyaf-warranty-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#dc2626" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                <span><strong>ظهور تسريب جديد في جزء آخر:</strong> حدوث ثقب في جزء سليم لم يتم العمل عليه سابقاً بسبب اهتراء المعدن القديم.</span>
+              </li>
+              <li class="sayyaf-warranty-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#dc2626" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                <span><strong>احتراق الضاغط القديم التالف ميكانيكياً:</strong> إذا كان الضاغط يعاني من تفويت داخلي أو احتراق وشيك بسبب سنوات التشغيل السابقة.</span>
+              </li>
+              <li class="sayyaf-warranty-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#dc2626" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                <span><strong>تلف اللوحة الإلكترونية بسبب الصواعق أو تذبذب الكهرباء:</strong> ارتفاع مفاجئ في جهد الشبكة خارج نطاق تحمل الجهاز.</span>
+              </li>
+              <li class="sayyaf-warranty-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#dc2626" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                <span><strong>تدخل فني خارجي بعد الصيانة:</strong> محاولة فك أو تعبئة فريون من قبل أي جهة غير فريق صَيّاف المعتمد.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Customer Maintenance Fears & Guarantees -->
+    <section class="sayyaf-section bg-subtle" style="border-top: 1px solid var(--color-border);">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-tag">إزالة مخاوف الصيانة</span>
+          <h2 class="section-title">مخاوف يسألها عملاء صيانة المكيفات في الطائف — وحسم صَيّاف لها</h2>
+          <p class="section-subtitle">نضع حداً للممارسات الخاطئة التي تستنزف مالك دون حل جذري لعطل المكيف:</p>
+        </div>
+
+        <div class="sayyaf-fears-grid">
+          <div class="sayyaf-fear-card">
+            <div class="sayyaf-fear-header">
+              <div class="sayyaf-fear-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+              </div>
+              <h3 class="sayyaf-fear-title">"الفريون ينقص لحاله... ليه أدفع فحص تسريب؟"</h3>
+            </div>
+            <p class="sayyaf-fear-body">
+              <strong>حسم صَيّاف:</strong> غاز الفريون يدور في دائرة نحاسية مغلقة ومحكمة تماماً ولا ينقص أبداً إلا بوجود ثقب أو تسريب! تعبئة الفريون دون كشف مصدر التهريب هدر لمالك لأن الغاز سيتسرب مجدداً خلال أيام. نحن نرفض الشحن الأعمى ونلزم فحص التسريب أولاً.
+            </p>
+            <div class="sayyaf-guarantee-badge">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>معالجة مصدر التهريب قبل شحن الفريون الأصلي</span>
+            </div>
+          </div>
+
+          <div class="sayyaf-fear-card">
+            <div class="sayyaf-fear-header">
+              <div class="sayyaf-fear-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+              </div>
+              <h3 class="sayyaf-fear-title">"هل تستخدمون فريون أو قطع غيار تجارية مقلدة؟"</h3>
+            </div>
+            <p class="sayyaf-fear-body">
+              <strong>حسم صَيّاف:</strong> نستخدم حصرياً أسطوانات فريون أصلية معتمدة (R410A / R22) خالية من شوائب الغازات الرخيصة التي ترفع حرارة الضاغط، ونركب كابستورات أصلية مطابقة لمواصفات الشركة الصانعة مع إبراز القطعة القديمة للعميل وفحصها أمامه.
+            </p>
+            <div class="sayyaf-guarantee-badge">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>قطع غيار وفريون أصلي 100% مع ضمان مكتوب</span>
+            </div>
+          </div>
+
+          <div class="sayyaf-fear-card">
+            <div class="sayyaf-fear-header">
+              <div class="sayyaf-fear-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+              </div>
+              <h3 class="sayyaf-fear-title">"ماذا لو تكرر العطل بعد مغادرة الفني؟"</h3>
+            </div>
+            <p class="sayyaf-fear-body">
+              <strong>حسم صَيّاف:</strong> سند الضمان الميداني المعتمد يمنحك أولوية استجابة فورية. إذا عاد نفس العطل خلال فترة الضمان، يتوجه إليك الفني لإصلاحه دون أي رسوم كشف أو مصنعية إضافية.
+            </p>
+            <div class="sayyaf-guarantee-badge">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>أولوية استجابة وضمان ميداني معتمد حتى 90 يوماً</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- HVAC Diagnostic Standards & Field Readiness Protocol -->
-    <section class="sayyaf-section bg-subtle">
+    <section class="sayyaf-section">
       <div class="container">
         <div class="section-head">
           <span class="section-tag">معايير الفحص الميداني المعتمد</span>
@@ -1080,7 +1278,9 @@
         <div>
           <h4 class="footer-col-title">خدماتنا الميدانية</h4>
           <ul class="footer-links-list">
-            <li class="footer-link-item"><a href="/installation/">تركيب مكيفات سبليت ودولابي</a></li>
+            <li class="footer-link-item"><a href="/">شركة فك وتركيب مكيفات</a></li>
+            <li class="footer-link-item"><a href="/split-ac-installation-technician/">فني تركيب مكيفات سبليت (100 ريال)</a></li>
+            <li class="footer-link-item"><a href="/services/">دليل كافة الخدمات والأسعار</a></li>
             <li class="footer-link-item"><a href="/maintenance/">صيانة وتصليح وتعبئة فريون</a></li>
             <li class="footer-link-item"><a href="/cleaning/">تنظيف وغسيل مكيفات بالموقع</a></li>
             <li class="footer-link-item"><a href="/copper-piping/">تأسيس وتمديد نحاس التكييف</a></li>
@@ -1091,6 +1291,8 @@
           <h4 class="footer-col-title">روابط مهمة وأدلة</h4>
           <ul class="footer-links-list">
             <li class="footer-link-item"><a href="/">الرئيسية</a></li>
+            <li class="footer-link-item"><a href="/services/">خدمات صَيّاف</a></li>
+            <li class="footer-link-item"><a href="/about/">من نحن وقصة صَيّاف</a></li>
             <li class="footer-link-item"><a href="/articles/">مركز الأدلة الفنية</a></li>
             <li class="footer-link-item"><a href="/articles/split-ac-guide/">دليل التثبيت الهندسي لمكيفات السبليت</a></li>
             <li class="footer-link-item"><a href="/contact/">مناطق التغطية وتواصل معنا</a></li>
@@ -1115,6 +1317,17 @@
             <div class="footer-contact-row">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
               <span>السبت – الخميس: 07:00 ص – 11:50 م<br>الجمعة: 02:00 م – 11:50 م</span>
+            </div>
+            <div class="footer-contact-row" style="margin-top: 0.85rem; display: flex; gap: 0.75rem; align-items: center;">
+              <a href="https://www.instagram.com/sayyaf_ac" target="_blank" rel="noopener me" aria-label="حساب صَيّاف للتكييف على إنستغرام" style="color: #cbd5e1; display: inline-flex; align-items: center; gap: 0.35rem; font-size: 0.88rem;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                <span>إنستغرام</span>
+              </a>
+              <span style="color: #64748b;">•</span>
+              <a href="https://facebook.com/sayyafac.offical" target="_blank" rel="noopener me" aria-label="صفحة صَيّاف للتكييف على فيسبوك" style="color: #cbd5e1; display: inline-flex; align-items: center; gap: 0.35rem; font-size: 0.88rem;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                <span>فيسبوك</span>
+              </a>
             </div>
           </div>
         </div>

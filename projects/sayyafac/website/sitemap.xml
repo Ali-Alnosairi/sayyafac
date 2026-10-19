@@ -42,10 +42,10 @@
     </video:video>
   </url>
 
-  <!-- صفحة تركيب المكيفات -->
+  <!-- صفحة فني تركيب مكيفات سبليت -->
   <url>
-    <loc>https://sayyafac.com/installation/</loc>
-    <lastmod>2026-10-12</lastmod>
+    <loc>https://sayyafac.com/split-ac-installation-technician/</loc>
+    <lastmod>2026-10-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <image:image>
@@ -104,6 +104,12 @@
       <image:loc>https://sayyafac.com/assets/images/install-night-triple-brackets.webp</image:loc>
       <image:title>تثبيت مجمع لثلاث وحدات تكييف سبليت على كوابيل جدارية بالطائف</image:title>
     </image:image>
+  <!-- صفحة دليل الخدمات -->
+  <url>
+    <loc>https://sayyafac.com/services/</loc>
+    <lastmod>2026-10-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
   </url>
 
   <!-- صفحة صيانة المكيفات -->
@@ -151,6 +157,18 @@
     <image:image>
       <image:loc>https://sayyafac.com/assets/images/install-before-majlis.webp</image:loc>
       <image:title>تجهيز وتمديد خطوط النحاس الإنشائية قبل اللياسة بالطائف</image:title>
+    </image:image>
+  </url>
+
+  <!-- صفحة من نحن وقصة صَيّاف -->
+  <url>
+    <loc>https://sayyafac.com/about/</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://sayyafac.com/assets/images/install-after-aston-indoor.webp</image:loc>
+      <image:title>عن صَيّاف للتكييف وقصة الفني أبو عيسى في الطائف</image:title>
     </image:image>
   </url>
 

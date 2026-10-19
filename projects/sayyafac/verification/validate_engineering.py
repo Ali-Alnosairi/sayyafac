@@ -36,12 +36,14 @@ def validate_sayyafac_engineering():
     # 3. Check pages
     pages = [
         (os.path.join(base_dir, 'index.html'), 'website', False),
-        (os.path.join(base_dir, 'installation', 'index.html'), 'website', False),
+        (os.path.join(base_dir, 'split-ac-installation-technician', 'index.html'), 'website', False),
+        (os.path.join(base_dir, 'services', 'index.html'), 'website', False),
         (os.path.join(base_dir, 'maintenance', 'index.html'), 'website', False),
         (os.path.join(base_dir, 'cleaning', 'index.html'), 'website', False),
         (os.path.join(base_dir, 'copper-piping', 'index.html'), 'website', False),
         (os.path.join(base_dir, 'articles', 'index.html'), 'website', False),
         (os.path.join(base_dir, 'articles', 'split-ac-guide', 'index.html'), 'article', True),
+        (os.path.join(base_dir, 'about', 'index.html'), 'website', False),
         (os.path.join(base_dir, 'contact', 'index.html'), 'website', False)
     ]
 
@@ -150,7 +152,8 @@ def validate_sayyafac_engineering():
         with open(sitemap_path, 'r', encoding='utf-8') as f:
             sitemap_content = f.read()
             required_urls = [
-                'https://sayyafac.com/installation/',
+                'https://sayyafac.com/split-ac-installation-technician/',
+                'https://sayyafac.com/services/',
                 'https://sayyafac.com/maintenance/',
                 'https://sayyafac.com/cleaning/',
                 'https://sayyafac.com/copper-piping/'
@@ -182,11 +185,12 @@ def validate_sayyafac_engineering():
     # Check service pages and index/contact for Schema areaServed
     geo_pages = [
         os.path.join(base_dir, 'index.html'),
-        os.path.join(base_dir, 'installation', 'index.html'),
+        os.path.join(base_dir, 'split-ac-installation-technician', 'index.html'),
         os.path.join(base_dir, 'maintenance', 'index.html'),
         os.path.join(base_dir, 'cleaning', 'index.html'),
         os.path.join(base_dir, 'copper-piping', 'index.html'),
-        os.path.join(base_dir, 'contact', 'index.html')
+        os.path.join(base_dir, 'contact', 'index.html'),
+        os.path.join(base_dir, 'about', 'index.html')
     ]
     for gp in geo_pages:
         gp_name = os.path.relpath(gp, base_dir).replace('\\', '/')
