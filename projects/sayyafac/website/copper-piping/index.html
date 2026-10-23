@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>تأسيس وتمديد نحاس مكيفات بالطائف | صَيّاف للتكييف</title>
-  <meta name="description" content="تمديد وتأسيس مواسير النحاس لمكيفات السبليت بالفلل والمشاريع في الطائف. نحاس مولر أمريكي أصلي معزول بربل أرمفلكس واختبار كبس نيتروجين 300 PSI قبل اللياسة.">
+  <meta name="description" content="تأسيس وتمديد نحاس مكيفات سبليت بالطائف للفلل والمشاريع. نحاس مولر أمريكي معزول أرمفلكس، واختبار كبس نيتروجين 300 PSI قبل اللياسة. حجز: 0538972324">
   <meta name="keywords" content="تأسيس مكيفات الطائف, تمديد نحاس مكيفات الطائف, تمديد مواسير مكيف سبليت الطائف, نحاس مولر امريكي الطائف, سعر متر نحاس التكييف الطائف, مصيدة زيت مكيف الطائف">
   <link rel="canonical" href="https://sayyafac.com/copper-piping/">
 
@@ -34,6 +34,343 @@
   <!-- Stylesheets (ZERO CSS @import) -->
   <link rel="stylesheet" href="/assets/css/fonts.css">
   <link rel="stylesheet" href="/assets/css/style.css">
+
+  <style>
+    /* Decision-Maker Commercial Landing Layout Enhancements */
+    .hero-btn-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+    .hero-btn-item {
+      flex: 1 1 200px;
+      min-height: 52px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 0.85rem 1.5rem;
+      font-size: 1.05rem;
+      font-weight: 700;
+      border-radius: var(--radius-md);
+      box-sizing: border-box;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+    @media (max-width: 640px) {
+      .hero-btn-group {
+        flex-direction: column;
+        width: 100%;
+        gap: 0.75rem;
+      }
+      .hero-btn-item {
+        width: 100%;
+        flex: none;
+      }
+    }
+
+    /* Card-First Piping Pricing Grid */
+    .tech-pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    .tech-pricing-card {
+      background: #ffffff;
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      padding: 1.75rem 1.5rem;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      box-shadow: var(--shadow-sm);
+      transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+    }
+    .tech-pricing-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+      border-color: var(--color-primary-light);
+    }
+    .tech-pricing-card.popular {
+      border: 2px solid var(--color-primary);
+      box-shadow: 0 10px 25px -5px rgba(2, 132, 199, 0.15);
+    }
+    .tech-pricing-badge {
+      position: absolute;
+      top: -12px;
+      left: 1.5rem;
+      background: var(--color-primary);
+      color: #ffffff;
+      font-size: 0.78rem;
+      font-weight: 700;
+      padding: 0.25rem 0.85rem;
+      border-radius: var(--radius-full);
+      box-shadow: var(--shadow-sm);
+    }
+    .tech-pricing-header {
+      margin-bottom: 1.25rem;
+      border-bottom: 1px solid #f1f5f9;
+      padding-bottom: 1.25rem;
+    }
+    .tech-pricing-header h3 {
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: var(--color-text-main);
+      margin: 0 0 0.5rem 0;
+      line-height: 1.35;
+    }
+    .tech-pricing-price {
+      display: flex;
+      align-items: baseline;
+      gap: 0.35rem;
+      color: var(--color-primary);
+      margin-top: 0.75rem;
+    }
+    .tech-pricing-price .amount {
+      font-size: 2.25rem;
+      font-weight: 800;
+      line-height: 1;
+    }
+    .tech-pricing-price .currency {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--color-text-muted);
+    }
+    .tech-pricing-features {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 1.75rem 0;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      flex-grow: 1;
+    }
+    .tech-pricing-features li {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.6rem;
+      font-size: 0.92rem;
+      color: #334155;
+      line-height: 1.45;
+    }
+    .tech-pricing-features svg {
+      flex-shrink: 0;
+      margin-top: 0.2rem;
+      color: #16a34a;
+    }
+    .tech-pricing-card .card-cta {
+      width: 100%;
+      text-align: center;
+      padding: 0.75rem 1rem;
+      border-radius: var(--radius-md);
+      font-weight: 700;
+      font-size: 0.95rem;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      transition: background 0.2s ease;
+      box-sizing: border-box;
+    }
+
+    /* Bulk/Packages Special Banner */
+    .package-banner {
+      background: linear-gradient(135deg, #0b3b60 0%, #0369a1 100%);
+      color: #ffffff;
+      border-radius: var(--radius-lg);
+      padding: 2rem;
+      margin-top: 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+      box-shadow: var(--shadow-md);
+    }
+    .package-banner-content h3 {
+      font-size: 1.4rem;
+      font-weight: 800;
+      margin: 0 0 0.5rem 0;
+      color: #ffffff;
+    }
+    .package-banner-content p {
+      margin: 0;
+      font-size: 0.98rem;
+      color: #e2e8f0;
+      max-width: 650px;
+      line-height: 1.6;
+    }
+
+    /* Duration Timeline Grid */
+    .duration-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.25rem;
+      margin-top: 1.75rem;
+    }
+    .duration-card {
+      background: #ffffff;
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-md);
+      padding: 1.25rem;
+      text-align: center;
+      box-shadow: var(--shadow-sm);
+    }
+    .duration-time {
+      font-size: 1.6rem;
+      font-weight: 800;
+      color: var(--color-primary);
+      margin-bottom: 0.35rem;
+    }
+    .duration-title {
+      font-weight: 700;
+      font-size: 1rem;
+      color: var(--color-text-main);
+      margin-bottom: 0.35rem;
+    }
+    .duration-desc {
+      font-size: 0.85rem;
+      color: var(--color-text-muted);
+      line-height: 1.4;
+      margin: 0;
+    }
+
+    /* Why Choose Us Grid */
+    .why-choose-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    .why-choose-card {
+      background: #ffffff;
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      padding: 1.5rem;
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      box-shadow: var(--shadow-sm);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .why-choose-card:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-md);
+    }
+    .why-choose-icon {
+      flex-shrink: 0;
+      width: 44px;
+      height: 44px;
+      border-radius: var(--radius-md);
+      background: rgba(2, 132, 199, 0.1);
+      color: var(--color-primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .why-choose-info h3 {
+      font-size: 1.12rem;
+      font-weight: 800;
+      color: var(--color-text-main);
+      margin: 0 0 0.35rem 0;
+    }
+    .why-choose-info p {
+      font-size: 0.92rem;
+      color: var(--color-text-muted);
+      margin: 0;
+      line-height: 1.5;
+    }
+
+    /* Quick Q&A 3-Card Grid */
+    .quick-qa-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.25rem;
+      margin-top: 2rem;
+    }
+    .quick-qa-card {
+      background: #f8fafc;
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-md);
+      padding: 1.25rem 1.5rem;
+    }
+    .quick-qa-card h3 {
+      font-size: 1.05rem;
+      font-weight: 800;
+      color: var(--color-primary);
+      margin: 0 0 0.5rem 0;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .quick-qa-card p {
+      font-size: 0.92rem;
+      color: #334155;
+      margin: 0;
+      line-height: 1.55;
+    }
+
+    /* Sister Services Cross-Links */
+    .sister-services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.25rem;
+      margin-top: 2rem;
+    }
+    .sister-service-card {
+      background: #ffffff;
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-md);
+      padding: 1.25rem;
+      text-decoration: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      transition: all 0.2s ease;
+      box-shadow: var(--shadow-sm);
+    }
+    .sister-service-card:hover {
+      border-color: var(--color-primary);
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-md);
+    }
+    .sister-service-card h3 {
+      font-size: 1.05rem;
+      font-weight: 800;
+      color: var(--color-primary);
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .sister-service-card p {
+      font-size: 0.88rem;
+      color: var(--color-text-muted);
+      margin: 0;
+      line-height: 1.5;
+    }
+
+    /* Districts Title Group */
+    .districts-title-group {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .districts-main-title {
+      font-size: clamp(1.5rem, 3vw, 2.2rem);
+      font-weight: 800;
+      color: var(--color-primary);
+      margin: 0.5rem 0;
+    }
+    .districts-subtitle {
+      font-size: 1.05rem;
+      color: var(--color-text-muted);
+      max-width: 650px;
+      margin: 0 auto;
+    }
+  </style>
 
   <!-- Connected Entity Graph Schema (@graph) -->
   <script type="application/ld+json">
@@ -207,24 +544,6 @@
       ]
     },
     {
-      "@type": "BreadcrumbList",
-      "@id": "https://sayyafac.com/copper-piping/#breadcrumb",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "الرئيسية",
-          "item": "https://sayyafac.com/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "تأسيس مواسير التكييف",
-          "item": "https://sayyafac.com/copper-piping/"
-        }
-      ]
-    },
-    {
       "@type": "Service",
       "@id": "https://sayyafac.com/copper-piping/#service",
       "name": "تأسيس وتمديد مواسير نحاس مكيفات سبليت بالطائف للفلل والمشاريع",
@@ -333,13 +652,12 @@
           "name": "السيل الكبير"
         }
       ],
-      "description": "تمديد وتأسيس شبكات نحاس التكييف الإنشائية للمباني والفلل قيد التشطيب بنحاس مولر أمريكي معتمد، عزل حراري أرمفلكس مستقل، تمديد صرف PVC، واختبار كبس النيتروجين الجاف تحت ضغط 300 PSI قبل اللياسة والجبس.",
+      "description": "تمديد وتأسيس مواسير النحاس لمكيفات السبليت بالفلل والمشاريع في الطائف. نحاس مولر أمريكي أصلي معزول بربل أرمفلكس واختبار كبس نيتروجين 300 PSI قبل اللياسة.",
       "offers": {
         "@type": "AggregateOffer",
         "priceCurrency": "SAR",
         "lowPrice": "35",
-        "highPrice": "60",
-        "offerCount": "4"
+        "highPrice": "60"
       }
     },
     {
@@ -351,7 +669,7 @@
           "name": "ما هو أفضل نوع نحاس لتأسيس مكيفات السبليت في الطائف؟",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "النحاس الأمريكي مولر (Mueller) هو الخيار الأفضل عالمياً ومحلياً، يليه النحاس الكوري والجنوب أفريقي المعتمد. يتميز بسماكة جدار متجانسة ومقاومة عالية لتحمل ضغوط فريون R410A التي تتجاوز 400 PSI دون تشقق أو تنفيس مع تمدد وثني المواسير."
+            "text": "النحاس الأمريكي مولر (Mueller) هو الخيار الأفضل عالمياً ومحلياً من حيث نقاء المعدن وسماكة الجدار، يليه النحاس الجنوب أفريقي والكوري المعتمد. نبتعد تماماً عن النحاس الخفيف أو التجاري لضمان تحمل ضغوط فريون R410A العالية دون أي تنفيس مستقبلي."
           }
         },
         {
@@ -359,23 +677,55 @@
           "name": "كم سعر متر تأسيس وتمديد مواسير النحاس بالطائف؟",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "يتراوح سعر متر تمديد مواسير النحاس الأصلي في الطائف بين 35 و60 ريالاً سعودياً للمتر الطولي (35–50 ريال للنحاس الكوري/الجنوب أفريقي، و40–60 ريال للنحاس الأمريكي مولر الأصلي). ويشمل السعر مواسير النحاس (خط السائل وخط الغاز)، عوازل الأرمفلكس المستقلة، كابل التحكم الكهربائي، والتثبيت الميكانيكي، مع اختبار كبس النيتروجين مجاناً ضمن باقة التأسيس."
+            "text": "يتراوح سعر متر تمديد مواسير النحاس الأصلي بين 40 و60 ريالاً للمتر الطولي حسب سماكة النحاس (أمريكي أصلي)، ويشمل السعر مواسير النحاس بخطي السحب والطرد، عوازل أرمفلكس مستقلة، كابل التحكم الكهربائي، واختبار كبس النيتروجين. للمشاريع والفلل الكاملة نقدم أسعاراً مخفضة على الكميات."
           }
         },
         {
           "@type": "Question",
-          "name": "لماذا يجب عزل كل ماسورة نحاس بشكل منفصل بربل أرمفلكس؟",
+          "name": "لماذا تشترطون عزل كل خط نحاس بشكل منفصل بربل أرمفلكس؟",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "عزل الماسورتين معاً داخل عازل واحد خطأ فادح؛ حيث يؤدي لاختلاف درجات الحرارة بين خط السحب وخط الطرد وحدوث تبادل حراري ضار يقلل كفاءة التبريد بنسبة 15%. كما يؤدي إلى تعريق مائي ورطوبة مستمرة تنفذ من داخل الجدار وتتلف الدهانات وألواح الجبس."
+            "text": "لأن تمرير خط السائل وخط الغاز معاً في عازل واحد يتسبب في تبادل حراري ضار يضعف تبريد المكيف بنسبة تصل إلى 15%، والأخطر هو حدوث تكثف مائي وتعريق داخل الجدران يؤدي إلى رطوبة تخرب الدهانات والجبس بورد مع الوقت."
           }
         },
         {
           "@type": "Question",
-          "name": "ما هي مصيدة الزيت (Oil Trap) ومتى يلزم تركيبها؟",
+          "name": "ما هي مصيدة الزيت (Oil Trap) ومتى يلزم عملها في التأسيس؟",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "مصيدة الزيت هي انحناء حرف U يُصنع في خط سحب النحاس الصاعد. يلزم تركيبها عندما تكون الوحدة الخارجية على السطح أعلى من الوحدة الداخلية بمسافة تتجاوز 3 أمتار؛ لمنع تراكم زيت التزييت داخل المبخر وضمان عودته بانتظام إلى كمبروسر المكيف لمنع احتراقه."
+            "text": "مصيدة الزيت هي انحناء هندسي على شكل حرف U يتم تنفيذه في خط السحب الصاعد، وتلزم عندما يكون المكيف على السطح أعلى من الوحدة الداخلية بأكثر من 3 إلى 5 أمتار. وظيفتها ضمان عودة زيت التزييت بانتظام إلى الكمبروسر وحمايته من الاحتراق وقصر العمر الافتراضي."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "كيف تضمنون سلامة النحاس قبل أعمال اللياسة والدهانات؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "نقوم بلحام نهايات الخطوط وتركيب بلف شحن ومانوميتر (ساعة ضغط) لكبس شبكة النحاس بغاز النيتروجين الجاف تحت ضغط 300 إلى 350 PSI. نترك ساعة الضغط راكبة أمام المالك والمقاول لمدة لا تقل عن 48 ساعة للتأكد التام من ثبات الضغط وصفر تسريب قبل تغطية المواسير."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "هل تقدمون معاينة ميدانية للمشروع ورفع المقاسات قبل التأسيس؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "نعم، نوفر زيارة فنية ميدانية لموقعك العظم في كافة أحياء ومخططات الطائف لتحديد أفضل مسارات التمديد وأقصرها، ومراجعة أماكن صرف المياه وتغذية الكهرباء، ونزودك بعرض سعر وجدول كميات دقيق بدون أي التزام مسبق."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "هل هناك أي لحامات أو وصلات نحاس مدفونة داخل الجدار؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "نلتزم في صَيّاف بمبدأ هندسي صارم: صفر وصلات مدفونة. يتم سحب لفة النحاس متصلة كقطعة واحدة من مخرج الوحدة الداخلية بالجدار وحتى السطح مباشرة. أي لحام داخل الجدار يُعد قنبلة موقوتة لتسريب الفريون يصعب كشفها لاحقاً."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "ما هو الضمان المقدم على شبكة تأسيس النحاس المنفذة؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "نقدم ضماناً شاملاً يصل إلى 10 سنوات على سلامة شبكة النحاس وجودة التركيب وعدم وجود أي تسريب ناتج عن عيوب التمديد، مع تسليم شهادة فحص واختبار كبس موثقة بعد الانتهاء من العمل."
           }
         }
       ]
@@ -386,7 +736,7 @@
 </head>
 <body>
 
-    <!-- Live Availability Ticker Bar (News Ticker) -->
+  <!-- Live Availability Ticker Bar -->
   <div class="sayyaf-ticker-bar" role="region" aria-label="شريط الأخبار الميدانية المباشرة">
     <div class="sayyaf-ticker-badge">
       <span class="sayyaf-pulse-dot" aria-hidden="true"></span>
@@ -402,9 +752,9 @@
           <span class="sayyaf-ticker-divider">•</span>
           <span class="sayyaf-ticker-item">📞 <strong>اتصال وواتساب مباشر:</strong> <a href="tel:+966538972324">0538972324</a></span>
           <span class="sayyaf-ticker-divider">•</span>
-          <span class="sayyaf-ticker-item">🛡️ <strong>ضمان ميداني:</strong> ضمان ميداني معتمد حتى 90 يوماً على أعمال التركيب والصيانة</span>
+          <span class="sayyaf-ticker-item">🛡️ <strong>ضمان إنشائي:</strong> ضمان حتى 10 سنوات على تمديدات النحاس واختبار كبس النيتروجين</span>
           <span class="sayyaf-ticker-divider">•</span>
-          <span class="sayyaf-ticker-item">💳 <strong>طرق الدفع:</strong> سداد نقدي، شبكة مدى، وتحويل بنكي رسمي بعد الفحص والتشغيل</span>
+          <span class="sayyaf-ticker-item">💳 <strong>طرق الدفع:</strong> سداد نقدي، شبكة مدى، وتحويل بنكي رسمي للمشاريع والفلل</span>
           <span class="sayyaf-ticker-divider">•</span>
         </div>
         <!-- Group 2 (Duplicate for Seamless Infinite Loop) -->
@@ -415,16 +765,16 @@
           <span class="sayyaf-ticker-divider">•</span>
           <span class="sayyaf-ticker-item">📞 <strong>اتصال وواتساب مباشر:</strong> <a href="tel:+966538972324">0538972324</a></span>
           <span class="sayyaf-ticker-divider">•</span>
-          <span class="sayyaf-ticker-item">🛡️ <strong>ضمان ميداني:</strong> ضمان ميداني معتمد حتى 90 يوماً على أعمال التركيب والصيانة</span>
+          <span class="sayyaf-ticker-item">🛡️ <strong>ضمان إنشائي:</strong> ضمان حتى 10 سنوات على تمديدات النحاس واختبار كبس النيتروجين</span>
           <span class="sayyaf-ticker-divider">•</span>
-          <span class="sayyaf-ticker-item">💳 <strong>طرق الدفع:</strong> سداد نقدي، شبكة مدى، وتحويل بنكي رسمي بعد الفحص والتشغيل</span>
+          <span class="sayyaf-ticker-item">💳 <strong>طرق الدفع:</strong> سداد نقدي، شبكة مدى، وتحويل بنكي رسمي للمشاريع والفلل</span>
           <span class="sayyaf-ticker-divider">•</span>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- Top Header Navigation -->
+  <!-- Top Header Navigation (Unified & Clean) -->
   <header class="sayyaf-header">
     <div class="container">
       <div class="sayyaf-nav-wrapper">
@@ -433,15 +783,12 @@
         </a>
 
         <nav class="sayyaf-nav-links" aria-label="القائمة الرئيسية">
-          <a href="/" class="sayyaf-nav-link">الرئيسية (فك وتركيب)</a>
-          <a href="/services/" class="sayyaf-nav-link">خدماتنا</a>
-          <a href="/split-ac-installation-technician/" class="sayyaf-nav-link">فني تركيب سبليت</a>
-          <a href="/maintenance/" class="sayyaf-nav-link">صيانة وتصليح</a>
+          <a href="/" class="sayyaf-nav-link">الرئيسية</a>
+          <a href="/split-ac-installation-technician/" class="sayyaf-nav-link">فني تركيب مكيفات</a>
+          <a href="/maintenance/" class="sayyaf-nav-link">صيانة مكيفات</a>
           <a href="/cleaning/" class="sayyaf-nav-link">تنظيف مكيفات</a>
           <a href="/copper-piping/" class="sayyaf-nav-link active">تأسيس مكيفات</a>
-          <a href="/articles/" class="sayyaf-nav-link">أدلة فنية</a>
-          <a href="/about/" class="sayyaf-nav-link">من نحن</a>
-          <a href="/contact/" class="sayyaf-nav-link">تواصل معنا</a>
+          <a href="/articles/" class="sayyaf-nav-link">المدونة</a>
         </nav>
 
         <div class="sayyaf-nav-actions">
@@ -462,17 +809,6 @@
       </div>
     </div>
   </header>
-  <!-- Visual Breadcrumbs Bar -->
-  <div class="sayyaf-breadcrumbs-wrapper">
-    <div class="container">
-      <nav class="sayyaf-breadcrumbs-list" aria-label="مسار التنقل">
-        <span class="sayyaf-breadcrumb-item"><a href="/">الرئيسية</a></span>
-        <span class="sayyaf-breadcrumb-separator">/</span>
-        <span class="sayyaf-breadcrumb-current">تأسيس وتمديد نحاس مكيفات بالفلل والمشاريع بالطائف</span>
-      </nav>
-    </div>
-  </div>
-
 
   <!-- Mobile Navigation Drawer -->
   <div class="sayyaf-drawer-backdrop" aria-hidden="true"></div>
@@ -488,39 +824,27 @@
 
     <nav class="sayyaf-drawer-links">
       <a href="/" class="sayyaf-drawer-link">
-        <span>الرئيسية (فك وتركيب)</span>
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
-      </a>
-      <a href="/services/" class="sayyaf-drawer-link">
-        <span>دليل كافة الخدمات والأسعار</span>
+        <span>الرئيسية</span>
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
       </a>
       <a href="/split-ac-installation-technician/" class="sayyaf-drawer-link">
-        <span>فني تركيب مكيفات سبليت (100 ريال)</span>
+        <span>فني تركيب مكيفات</span>
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
       </a>
       <a href="/maintenance/" class="sayyaf-drawer-link">
-        <span>صيانة وتصليح مكيفات</span>
+        <span>صيانة مكيفات</span>
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
       </a>
       <a href="/cleaning/" class="sayyaf-drawer-link">
-        <span>تنظيف وغسيل مكيفات بالموقع</span>
+        <span>تنظيف مكيفات</span>
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
       </a>
       <a href="/copper-piping/" class="sayyaf-drawer-link active">
-        <span>تأسيس وتمديد نحاس مكيفات</span>
+        <span>تأسيس مكيفات</span>
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
       </a>
       <a href="/articles/" class="sayyaf-drawer-link">
-        <span>الأدلة الفنية والاسترشادية</span>
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
-      </a>
-      <a href="/about/" class="sayyaf-drawer-link">
-        <span>من نحن وقصة صَيّاف</span>
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
-      </a>
-      <a href="/contact/" class="sayyaf-drawer-link">
-        <span>تواصل معنا ومناطق التغطية</span>
+        <span>المدونة</span>
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
       </a>
     </nav>
@@ -539,31 +863,19 @@
   <!-- Main Content -->
   <main id="main-content">
 
-    <!-- Service Hero (Matching High-Craft Archetype) -->
+    <!-- Immediate Action Hero -->
     <section class="ac-hero-section">
       <div class="container">
         <div class="ac-hero-grid">
           <div class="ac-hero-content">
             <span class="ac-badge-label">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-              تأسيس هندسي معتمد بمواصفات كود البناء
+              تأسيس هندسي معتمد بمواصفات كود البناء — فلل ومشاريع الطائف
             </span>
-            <h1 class="ac-hero-title">تأسيس وتمديد مواسير نحاس مكيفات سبليت بالطائف للفلل والمشاريع</h1>
+            <h1 class="ac-hero-title">تأسيس وتمديد مواسير نحاس مكيفات سبليت بالطائف</h1>
             <p class="ac-hero-description">
-              نقدم في <strong>صَيّاف للتكييف</strong> خدمات التأسيس الهندسي المتكامل لشبكات التكييف للفلل الجديدة، الشقق السكنية، والمشاريع التجارية في الطائف. نعتمد مواسير النحاس الأمريكي الأصلي (مولر) المعتمدة لضغوط R410A، مع عزل أرمفلكس حراري مستقل لكل خط، تمديد خطوط الصرف PVC بميول هندسي، واختبار ضغط النيتروجين حتى 300 PSI قبل اللياسة والجبس لضمان صفر تسريب طوال عمر المبنى.
+              خدمات التأسيس الإنشائي المتكامل لشبكات نحاس التكييف للفلل الجديدة، الشقق، والمشاريع التجارية في الطائف. نحاس مولر أمريكي أصلي معتمد، عزل أرمفلكس حراري مستقل لكل خط، تمديد خطوط الصرف PVC بميول هندسي، واختبار كبس نيتروجين 300 PSI قبل اللياسة والجبس لضمان صفر تسريب طوال عمر المبنى.
             </p>
-
-            <div class="ac-hero-cta-group">
-              <a href="tel:+966538972324" class="sayyaf-btn-lg sayyaf-btn-call">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                <span>معاينة موقعك بالمشروع: 0538972324</span>
-              </a>
-
-              <a href="https://wa.me/966538972324?text=السلام%20عليكم،%20أحتاج%20تسعيرة%20تأسيس%20وتمديد%20نحاس%20تكييف%20في%20الطائف" class="sayyaf-btn-lg sayyaf-btn-wa" target="_blank" rel="noopener">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.39-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.32a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24m4.52 11.66c-.19-.09-1.12-.55-1.3-.61-.17-.07-.3-.1-.43.1-.12.19-.48.61-.59.74-.11.12-.22.14-.41.05-.19-.09-.8-.3-1.52-.94-.56-.5-1-1.12-1.11-1.31-.11-.19-.01-.29.08-.38.08-.09.19-.22.28-.33.09-.11.13-.19.19-.32.06-.13.03-.24-.02-.33-.05-.09-.43-1.04-.59-1.42-.16-.38-.32-.33-.44-.33h-.37c-.13 0-.34.05-.52.24-.18.19-.69.67-.69 1.64s.71 1.9 0.81 2.03c.1.14 1.39 2.13 3.37 2.99.47.2 0.84.33 1.13.42.48.15.91.13 1.25.08.38-.06 1.17-.48 1.33-.94.17-.46.17-.86.12-.94-.05-.08-.18-.13-.37-.22z"/></svg>
-                <span>إرسال المخطط للتسعير عبر الواتساب</span>
-              </a>
-            </div>
 
             <div class="ac-hero-trust-chips">
               <span class="ac-trust-chip">نحاس مولر أمريكي أصلي</span>
@@ -571,22 +883,35 @@
               <span class="ac-trust-chip">اختبار كبس نيتروجين 300 PSI</span>
               <span class="ac-trust-chip">مصائد زيت رأسية للأسطح</span>
             </div>
+
+            <div class="hero-btn-group">
+              <a href="tel:+966538972324" class="sayyaf-btn-call hero-btn-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                <span>معاينة موقعك بالمشروع: 0538972324</span>
+              </a>
+
+              <a href="https://wa.me/966538972324?text=السلام%20عليكم،%20أحتاج%20تسعيرة%20تأسيس%20وتمديد%20نحاس%20تكييف%20في%20الطائف" class="sayyaf-btn-wa hero-btn-item" target="_blank" rel="noopener">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.39-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.32a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24m4.52 11.66c-.19-.09-1.12-.55-1.3-.61-.17-.07-.3-.1-.43.1-.12.19-.48.61-.59.74-.11.12-.22.14-.41.05-.19-.09-.8-.3-1.52-.94-.56-.5-1-1.12-1.11-1.31-.11-.19-.01-.29.08-.38.08-.09.19-.22.28-.33.09-.11.13-.19.19-.32.06-.13.03-.24-.02-.33-.05-.09-.43-1.04-.59-1.42-.16-.38-.32-.33-.44-.33h-.37c-.13 0-.34.05-.52.24-.18.19-.69.67-.69 1.64s.71 1.9 0.81 2.03c.1.14 1.39 2.13 3.37 2.99.47.2 0.84.33 1.13.42.48.15.91.13 1.25.08.38-.06 1.17-.48 1.33-.94.17-.46.17-.86.12-.94-.05-.08-.18-.13-.37-.22z"/></svg>
+                <span>إرسال المخطط للتسعير واتساب</span>
+              </a>
+            </div>
           </div>
 
+          <!-- Hero Actionable Piping Spec Card -->
           <div class="ac-hero-spec-card">
             <span class="ac-hero-spec-badge">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
               <span>معايير كود البناء السعودي (SBC)</span>
             </span>
-            <h3 class="ac-hero-spec-title">المواصفات الهندسية لتأسيس نحاس الفلل والمشاريع بالطائف</h3>
+            <h3 class="ac-hero-spec-title">4 مواصفات نلتزم بها لتأسيس نحاس الفلل بالطائف</h3>
             <div class="ac-hero-spec-list">
               <div class="ac-hero-spec-item">
                 <div class="ac-hero-spec-icon">
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
                 </div>
                 <div>
-                  <strong>نحاس مولر أمريكي أصلي (Mueller)</strong>
-                  أعلى معايير النقاء النحاسي وسماكات الجدار المعتمدة لمقاومة ضغوط R410A.
+                  <strong>نحاس مولر أمريكي أصلي (قطعة متصلة)</strong>
+                  بدون أي لحام مدفون بالجدار تحت اللياسة لمنع نقاط الضعف والتسريب مستقبلاً.
                 </div>
               </div>
               <div class="ac-hero-spec-item">
@@ -595,7 +920,7 @@
                 </div>
                 <div>
                   <strong>عزل حراري مستقل أرمفلكس 9 ملم</strong>
-                  عزل خط السحب وخط السائل بشكل منفصل لمنع التكثيف والتعريق على الجبس.
+                  عزل خط السحب والسائل مستقلاً لمنع التكثيف والتعريق وتلف ألواح الجبس.
                 </div>
               </div>
               <div class="ac-hero-spec-item">
@@ -604,7 +929,7 @@
                 </div>
                 <div>
                   <strong>اختبار كبس نيتروجين 300 PSI (48 ساعة)</strong>
-                  ساعة ضغط موصلة طوال أعمال اللياسة والتشطيب لضمان انعدام أي تسريب.
+                  ساعة ضغط موصلة طوال أعمال اللياسة للتأكد بالعين المجردة من ثبات الضغط.
                 </div>
               </div>
               <div class="ac-hero-spec-item">
@@ -613,20 +938,20 @@
                 </div>
                 <div>
                   <strong>مصائد زيت وميول صرف هيدروليكي</strong>
-                  تشكيل مصائد زيت رأسية للأسطح وتمديد مواسير صرف PVC بميول هندسي متزن 2%.
+                  حماية الكمبروسر في صواعد الأسطح وتمديد خطوط الصرف بميول 2% لمنع الخرير.
                 </div>
               </div>
             </div>
             <div class="ac-hero-spec-footer">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-              <span>ضمان شامل لا يقبل المساومة قبل دفن المواسير أو إغلاق ديكورات الجبس</span>
+              <span>ضمان إنشائي معتمد حتى 10 سنوات على جودة النحاس والعزل</span>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Engineering Methodology: 4-Step Process -->
+    <!-- Engineering Methodology: 4-Step Process (What not How) -->
     <section class="sayyaf-section bg-subtle">
       <div class="container">
         <div class="section-head">
@@ -640,7 +965,7 @@
             <div class="hvac-process-step-num">1</div>
             <h3 class="hvac-process-title">تحديد المسارات وتثبيت الشدادات</h3>
             <p class="hvac-process-desc">
-              تحديد موقع مسطرة الوحدة الداخلية وتمديد النحاس في مجارٍ مستقيمة بدون ثنيات حادة (Kinks)، مع تثبيت المواسير بمرابط حديدية مجلفنة كل 60 سم لضمان ثباتها أثناء أعمال اللياسة.
+              تحديد موقع مسطرة الوحدة الداخلية وتمديد النحاس في مسارات مستقيمة بدون ثنيات حادة، مع تثبيت المواسير بمرابط حديدية مجلفنة كل 60 سم لضمان ثباتها أثناء أعمال اللياسة.
             </p>
           </div>
 
@@ -648,15 +973,15 @@
             <div class="hvac-process-step-num">2</div>
             <h3 class="hvac-process-title">عزل حراري مزدوج لكل خط على حدة</h3>
             <p class="hvac-process-desc">
-              عزل خط الغاز (السحب) وخط السائل داخل عوازل أرمفلكس (Armaflex) مستقلة بسماكة 9 ملم على الأقل، وتغليفها بشريط حماية فينيل عالي التحمل لضمان منع التكثيف الحراري المائي بنسبة 100%.
+              عزل خط الغاز (السحب) وخط السائل داخل عوازل أرمفلكس مستقلة بسماكة 9 ملم على الأقل، وتغليفها بشريط حماية فينيل عالي التحمل لمنع التكثيف المائي بنسبة 100%.
             </p>
           </div>
 
           <div class="hvac-process-card">
             <div class="hvac-process-step-num">3</div>
-            <h3 class="hvac-process-title">تأسيس مصائد الزيت (Oil Traps) للأسطح</h3>
+            <h3 class="hvac-process-title">تأسيس مصائد الزيت للأسطح</h3>
             <p class="hvac-process-desc">
-              في التمديدات التي ترتفع إلى أسطح مباني وفلل الطائف بمسافات تتجاوز 3 أمتار، ننشئ مصائد زيت حرف U مقوسة في الخط الصاعد لضمان رجوع زيت تزييت الكمبروسر وعدم احتراق الضاغط.
+              في التمديدات التي ترتفع إلى أسطح مباني وفلل الطائف بمسافات تتجاوز 3 أمتار، ننشئ مصائد زيت حرف U مقوسة في الخط الصاعد لضمان رجوع زيت تزييت الكمبروسر ومنع احتراقه.
             </p>
           </div>
 
@@ -664,14 +989,14 @@
             <div class="hvac-process-step-num">4</div>
             <h3 class="hvac-process-title">ضغط النيتروجين الجاف 300 PSI</h3>
             <p class="hvac-process-desc">
-              لحام نهايات الخطوط وحقن شبكة النحاس بغاز النيتروجين الخامل بضغط 300 PSI مع تركيب ساعة فحص معتمدة تترك موصلة لمدة 48 ساعة أثناء أعمال اللياسة والجبس للتأكد من خلوها من أي تسريب.
+              لحام نهايات الخطوط وحقن شبكة النحاس بغاز النيتروجين الخامل بضغط 300 PSI مع تركيب ساعة فحص معتمدة تترك موصلة لمدة 48 ساعة أثناء أعمال اللياسة والجبس للتأكد من انعدام أي تسريب.
             </p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Copper Piping Engineering Standards & Quality Protocols -->
+    <!-- Copper Piping Engineering Standards Showcase -->
     <section class="sayyaf-section">
       <div class="container">
         <div class="section-head">
@@ -681,7 +1006,6 @@
         </div>
 
         <div class="hvac-showcase-grid">
-          <!-- Card 1: Zero In-Wall Brazing -->
           <div class="hvac-showcase-card">
             <div class="hvac-showcase-card-header">
               <div class="hvac-showcase-header-icon">
@@ -699,7 +1023,6 @@
             </div>
           </div>
 
-          <!-- Card 2: Engineered Oil Traps -->
           <div class="hvac-showcase-card">
             <div class="hvac-showcase-card-header">
               <div class="hvac-showcase-header-icon">
@@ -717,7 +1040,6 @@
             </div>
           </div>
 
-          <!-- Card 3: Dual-Line Independent Insulation -->
           <div class="hvac-showcase-card">
             <div class="hvac-showcase-card-header">
               <div class="hvac-showcase-header-icon">
@@ -735,7 +1057,6 @@
             </div>
           </div>
 
-          <!-- Card 4: Heavy-Duty Clamping -->
           <div class="hvac-showcase-card">
             <div class="hvac-showcase-card-header">
               <div class="hvac-showcase-header-icon">
@@ -753,7 +1074,6 @@
             </div>
           </div>
 
-          <!-- Card 5: Sleeve Wall Penetrations -->
           <div class="hvac-showcase-card">
             <div class="hvac-showcase-card-header">
               <div class="hvac-showcase-header-icon">
@@ -771,7 +1091,6 @@
             </div>
           </div>
 
-          <!-- Card 6: 48h Nitrogen Test Guarantee -->
           <div class="hvac-showcase-card">
             <div class="hvac-showcase-card-header">
               <div class="hvac-showcase-header-icon">
@@ -792,98 +1111,245 @@
       </div>
     </section>
 
-<!-- Nitrogen Pressure Test Guarantee & Builder Protocol -->
-    <section class="sayyaf-section" style="padding-top: 1rem; padding-bottom: 2rem;">
-      <div class="container">
-        <div class="price-note-box" style="border-right-color: #0284c7; background-color: #f0f9ff; padding: 1.5rem; border-radius: var(--radius-md); margin-bottom: 2rem;">
-          <div style="font-weight: 800; font-size: 1.15rem; color: var(--color-primary); margin-bottom: 0.35rem; display: flex; align-items: center; gap: 0.5rem;">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-            <span>ضمان اختبار ضغط النيتروجين الجاف (300 PSI لمدة 48 ساعة) قبل اللياسة والجبس</span>
-          </div>
-          <p style="margin: 0; color: #334155; font-size: 0.95rem; line-height: 1.6;">
-            أكبر كابوس يواجه أصحاب الفلل هو اكتشاف تهريب فريون داخل الجدار بعد اكتمال الدهانات والجبس الفاخر! لتفادي ذلك قطعياً، نقوم بحقن شبكة النحاس بالنيتروجين الجاف الخالي من الرطوبة تحت ضغط <strong>300 PSI</strong> وتركيب ساعات قياس ضغط (Pressure Gauge) في الموقع لمدة تتراوح بين 24 إلى 48 ساعة. يتيح هذا للمالك والمقاول التأكد بالعين المجردة من ثبات مؤشر الضغط بنسبة 100% وسلامة جميع الوصلات قبل دفن المواسير أو إغلاق الأسقف.
-          </p>
-        </div>
-
-        <!-- B2B Contractor & Villa Builder Partnership -->
-        <div class="sayyaf-quote-widget" style="border: 1.5px solid var(--color-border); margin-top: 0;">
-          <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 1rem;">
-            <div style="flex: 1; min-width: 260px;">
-              <span class="section-tag" style="background: #fef3c7; color: #b45309; margin-bottom: 0.5rem;">مشاريع ومقاولو الطائف</span>
-              <h3 style="font-size: 1.25rem; font-weight: 800; color: var(--color-primary); margin-bottom: 0.4rem;">قسم مقاولي البناء ومطوري الفلل في الطائف</h3>
-              <p style="font-size: 0.92rem; color: var(--color-text-muted); margin: 0; line-height: 1.6;">
-                نوفر للمقاولين وملاك الفلل قيد الإنشاء في مخططات الوسام وشهار والرحاب والحوية أسعار توريد وتركيب خاصة بالمتر الطولي، التزاماً بمواصفات كود البناء السعودي (SBC)، وتنسيقاً ميدانياً دقيقاً مع مقاولي الكهرباء والسباكة والجبس لتسليم مسارات نظيفة ومطابقة للمخططات المعتمدة.
-              </p>
-            </div>
-            <a href="https://wa.me/966538972324?text=السلام%20عليكم،%20أنا%20مقاول/مالك%20مشروع%20فيلا%20في%20الطائف%20وأريد%20تسعيرة%20تأسيس%20نحاس" class="sayyaf-btn-primary" style="white-space: nowrap;" target="_blank" rel="noopener">
-              <span>طلب تسعيرة مقاولين ومشاريع</span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Transparent Pricing Matrix -->
-    <section class="sayyaf-section bg-subtle">
+    <!-- Pricing Section Rebuilt as Actionable Cards (Card-First Architecture) -->
+    <section class="sayyaf-section bg-subtle" id="pricing">
       <div class="container">
         <div class="section-head">
           <span class="section-tag">شفافية التسعير والمتر الطولي</span>
           <h2 class="section-title">أسعار تأسيس وتمديد مواسير النحاس في الطائف</h2>
-          <p class="section-subtitle">تسعير واضح للمتر الطولي يشمل المواد الأصلية والمصنعية المتخصصة واختبار الضغط المعتمد.</p>
+          <p class="section-subtitle">تسعير واضح للمتر الطولي يشمل المواد الأصلية والمصنعية المتخصصة واختبار كبس النيتروجين المعتمد:</p>
         </div>
 
-        <div class="hvac-price-table-container">
-          <table class="hvac-price-table">
-            <thead>
-              <tr>
-                <th>بند التأسيس / المواصفات الهندسية</th>
-                <th>نوع النحاس وسماكة العزل</th>
-                <th>السعر المعتمد</th>
-                <th>الضمان والاختبار</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><strong>تمديد متر نحاس أمريكي مولر (شامل العزل والمصنعية)</strong></td>
-                <td>نحاس مولر أمريكي أصلي مع عزل أرمفلكس 9 ملم مستقل لكل ماسورة وكابل كنترول</td>
-                <td><span class="price-highlight">40 – 60 ريال / للمتر</span></td>
-                <td>ضمان شامل واختبار نيتروجين</td>
-              </tr>
-              <tr>
-                <td><strong>تمديد متر نحاس كوري أو جنوب أفريقي معتمد</strong></td>
-                <td>نحاس كوري أصلي معتمد لمشاريع الشقق والعزل المزدوج المقاوم للرطوبة</td>
-                <td><span class="price-highlight">35 – 50 ريال / للمتر</span></td>
-                <td>مطابق للمواصفات القياسية</td>
-              </tr>
-              <tr>
-                <td><strong>تمديد مواسير صرف مياه PVC ضغط عالي</strong></td>
-                <td>مواسير PVC نيبلو كلاس 4 مع كيعان مفتوحة بميول هندسي متزن 2% نحو الصرف</td>
-                <td><span class="price-highlight">25 – 40 ريال / للمتر</span></td>
-                <td>منع الروائح وتنقيط الجبس</td>
-              </tr>
-              <tr>
-                <td><strong>عمل وتشكيل مصيدة زيت هيدروليكية (Oil Trap)</strong></td>
-                <td>تشكيل ثني هيدروليكي احترافي بدون لحامات إضافية لمنع تسريب الفريون</td>
-                <td><span class="price-highlight">50 – 70 ريال / للخط</span></td>
-                <td>حماية كمبروسر المكيف</td>
-              </tr>
-              <tr>
-                <td><strong>اختبار كبس النيتروجين مع ساعة الضغط (48 ساعة)</strong></td>
-                <td>حقن غاز النيتروجين الجاف تحت ضغط 300 PSI وترك الساعة موصلة حتى اكتمال اللياسة</td>
-                <td><span class="price-highlight">مشمول مجاناً</span></td>
-                <td>شهادة كبس هندسية مؤكدة</td>
-              </tr>
-            </tbody>
-          </table>
+        <div class="tech-pricing-grid">
+          <!-- Card 1 -->
+          <div class="tech-pricing-card">
+            <span class="tech-pricing-badge" style="background: #0b3b60;">نحاس أمريكي أصلي</span>
+            <div class="tech-pricing-header">
+              <h3>تمديد متر نحاس أمريكي مولر</h3>
+              <p style="color: var(--color-text-muted); font-size: 0.88rem; margin: 0;">شامل العزل والمصنعية واختبار الكبس</p>
+              <div class="tech-pricing-price">
+                <span class="amount">45 – 60</span>
+                <span class="currency">ريال / متر</span>
+              </div>
+            </div>
+            <ul class="tech-pricing-features">
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>مواسير نحاس مولر أمريكي أصلي (Mueller)</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>عزل أرمفلكس مستقل 9 ملم لكل خط</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>كابل كنترول كهربائي معتمد وتثبيت ميكانيكي</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>اختبار كبس نيتروجين 300 PSI مجاناً</strong></span>
+              </li>
+            </ul>
+            <a href="tel:+966538972324" class="sayyaf-btn-primary card-cta">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <span>طلب معاينة نحاس أمريكي</span>
+            </a>
+          </div>
+
+          <!-- Card 2 (Popular) -->
+          <div class="tech-pricing-card popular">
+            <span class="tech-pricing-badge">الأكثر طلباً للفلل والمشاريع</span>
+            <div class="tech-pricing-header">
+              <h3>باقة تأسيس الفلل المتكاملة</h3>
+              <p style="color: var(--color-text-muted); font-size: 0.88rem; margin: 0;">شامل النحاس والصرف ومصائد الزيت</p>
+              <div class="tech-pricing-price">
+                <span class="amount">تبدأ من 40</span>
+                <span class="currency">ريال / متر</span>
+              </div>
+            </div>
+            <ul class="tech-pricing-features">
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>تمديد شبكة النحاس بالكامل قطعة واحدة دون لحام مدفون</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>تمديد مواسير صرف PVC بميول هندسي متزن</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>تشكيل مصائد الزيت الرأسية للأسطح مجاناً</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>شهادة كبس نيتروجين وساعة ضغط 48 ساعة قبل اللياسة</span>
+              </li>
+            </ul>
+            <a href="https://wa.me/966538972324?text=السلام%20عليكم،%20أحتاج%20تسعيرة%20باقة%20تأسيس%20فيلا%20كاملة%20في%20الطائف" class="sayyaf-btn-primary card-cta" target="_blank" rel="noopener">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.39-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.32a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24m4.52 11.66c-.19-.09-1.12-.55-1.3-.61-.17-.07-.3-.1-.43.1-.12.19-.48.61-.59.74-.11.12-.22.14-.41.05-.19-.09-.8-.3-1.52-.94-.56-.5-1-1.12-1.11-1.31-.11-.19-.01-.29.08-.38.08-.09.19-.22.28-.33.09-.11.13-.19.19-.32.06-.13.03-.24-.02-.33-.05-.09-.43-1.04-.59-1.42-.16-.38-.32-.33-.44-.33h-.37c-.13 0-.34.05-.52.24-.18.19-.69.67-.69 1.64s.71 1.9 0.81 2.03c.1.14 1.39 2.13 3.37 2.99.47.2 0.84.33 1.13.42.48.15.91.13 1.25.08.38-.06 1.17-.48 1.33-.94.17-.46.17-.86.12-.94-.05-.08-.18-.13-.37-.22z"/></svg>
+              <span>طلب تسعيرة باقة الفلل</span>
+            </a>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="tech-pricing-card">
+            <span class="tech-pricing-badge" style="background: #16a34a;">نحاس كوري معتمد</span>
+            <div class="tech-pricing-header">
+              <h3>تمديد نحاس كوري أو جنوب أفريقي</h3>
+              <p style="color: var(--color-text-muted); font-size: 0.88rem; margin: 0;">مطابق لمشاريع الشقق والعمارات</p>
+              <div class="tech-pricing-price">
+                <span class="amount">35 – 50</span>
+                <span class="currency">ريال / متر</span>
+              </div>
+            </div>
+            <ul class="tech-pricing-features">
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>نحاس كوري أصلي معتمد لمشاريع الشقق</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>عزل حراري مستقل وتثبيت بمرابط حديدية</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>تمديد أسلاك الكنترول وتثبيت كل 60 سم</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>اختبار كبس النيتروجين المعتمد قبل اللياسة</span>
+              </li>
+            </ul>
+            <a href="tel:+966538972324" class="sayyaf-btn-primary card-cta">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <span>طلب معاينة نحاس كوري</span>
+            </a>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="tech-pricing-card">
+            <span class="tech-pricing-badge" style="background: #0284c7;">صرف PVC هندسي</span>
+            <div class="tech-pricing-header">
+              <h3>تمديد خطوط صرف مياه PVC</h3>
+              <p style="color: var(--color-text-muted); font-size: 0.88rem; margin: 0;">كلاس 4 بميول متزن 2% لمنع خرير الماء</p>
+              <div class="tech-pricing-price">
+                <span class="amount">25 – 40</span>
+                <span class="currency">ريال / متر</span>
+              </div>
+            </div>
+            <ul class="tech-pricing-features">
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>مواسير PVC نيبلو كلاس 4 سميكة ومقاومة للكسر</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>كيعان مفتوحة بميول هندسي متزن نحو الصرف</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>تثبيت محكم يمنع اهتزاز أو انكسار اللي أثناء اللياسة</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>ضمان انسياب الماء التام وحماية ديكورات الجبس</span>
+              </li>
+            </ul>
+            <a href="tel:+966538972324" class="sayyaf-btn-primary card-cta">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <span>طلب تمديد شبكة الصرف</span>
+            </a>
+          </div>
         </div>
 
-        <div class="price-note-box">
-          <strong>معيار الجودة الهندسي لدى صَيّاف:</strong> نحرص على عدم إجراء أي لحامات داخل الجدران أو تحت اللياسة إطلاقاً؛ التمديد يكون من نقطة الوحدة الداخلية إلى الوحدة الخارجية مباشرة بقطعة نحاس واحدة متصلة لتفادي أي نقطة ضعف مستقبلية.
+        <!-- Special Bulk/Facilities Banner -->
+        <div class="package-banner">
+          <div class="package-banner-content">
+            <span style="display: inline-block; background: rgba(255, 255, 255, 0.2); padding: 0.25rem 0.75rem; border-radius: var(--radius-full); font-size: 0.82rem; font-weight: 700; margin-bottom: 0.5rem;">قسم المشاريع والمقاولين</span>
+            <h3>أسعار خاصة وتنسيق هندسي لمقاولي الفلل والعمارات بالطائف</h3>
+            <p>نوفر للمقاولين وملاك الفلل قيد الإنشاء في مخططات الوسام وشهار والرحاب والحوية أسعار توريد وتركيب خاصة بالمتر الطولي، مع التزام تام بمواصفات كود البناء السعودي (SBC) وتسليم استشاري موثق.</p>
+          </div>
+          <a href="https://wa.me/966538972324?text=السلام%20عليكم،%20أنا%20مقاول/مالك%20مشروع%20فيلا%20في%20الطائف%20وأريد%20تسعيرة%20تأسيس%20نحاس" class="sayyaf-btn-lg" style="background: #ffffff; color: var(--color-primary); font-weight: 800; white-space: nowrap;" target="_blank" rel="noopener">
+            طلب تسعيرة مقاولين ومشاريع
+          </a>
         </div>
+
+        <!-- Transparent Add-ons Pricing Table -->
+        <div style="margin-top: 2.5rem;">
+          <h3 style="font-size: 1.2rem; font-weight: 800; color: var(--color-text-main); margin-bottom: 0.75rem;">متى تزيد التكلفة ؟ جدول البنود والإصلاحات الإضافية المحتملة</h3>
+          <p style="font-size: 0.92rem; color: var(--color-text-muted); margin-bottom: 1.25rem;">أسعار معلنة للإجراءات التخصصية عند الحاجة الفعلية لها:</p>
+
+          <div class="hvac-price-table-container">
+            <table class="hvac-price-table">
+              <thead>
+                <tr>
+                  <th>البند الإضافي</th>
+                  <th>متى يحتاجه المشروع الإنشائي؟</th>
+                  <th>السعر المعتمد</th>
+                  <th>الضمان الميداني</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>تشكيل مصيدة زيت هيدروليكية (Oil Trap) إضافية</strong></td>
+                  <td>الخطوط الصاعدة التي تتجاوز مسافتها الرأسية 6 أمتار نحو السطح</td>
+                  <td><span class="price-highlight">50 – 70 ريال / للخط</span></td>
+                  <td>حماية الضاغط من الاحتراق</td>
+                </tr>
+                <tr>
+                  <td><strong>تمديد مجارٍ ديكورية ظاهرة (Trunking) في الترميم</strong></td>
+                  <td>المنازل المسكونة التي لا تسمح بالتكسير الجداري داخل الغرف</td>
+                  <td><span class="price-highlight">30 – 50 ريال / للمتر</span></td>
+                  <td>مظهر جمالي أنيق</td>
+                </tr>
+                <tr>
+                  <td><strong>فتح جلب خرسانية (Core Drill) بالأسقف والجدران</strong></td>
+                  <td>تمرير حزم النحاس والصرف عبر كمرات خرسانية صلبة دون تكسير يدوي</td>
+                  <td><span class="price-highlight">100 – 150 ريال / للفتحة</span></td>
+                  <td>سلامة الهيكل الإنشائي</td>
+                </tr>
+                <tr>
+                  <td><strong>اختبار كبس نيتروجين إضافي لشبكة قائمة</strong></td>
+                  <td>فحص شبكة نحاس قديمة قبل شراء أو سكن العقار للتأكد من سلامتها</td>
+                  <td><span class="price-highlight">150 – 200 ريال / للشبكة</span></td>
+                  <td>تقرير فحص دقيق موثق</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- 3 Quick Q&A Decision Cards Placed Immediately After Pricing -->
+        <div class="quick-qa-grid">
+          <div class="quick-qa-card">
+            <h3>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4"/><path d="M12 16h.01"/></svg>
+              <span>ما أفضل نوع نحاس للتأسيس في الطائف؟</span>
+            </h3>
+            <p>النحاس الأمريكي مولر (Mueller) هو الأفضل عالمياً ومحلياً لمقاومته العالية لضغوط R410A، يليه النحاس الكوري الأصلي المعتمد لمشاريع الشقق.</p>
+          </div>
+
+          <div class="quick-qa-card">
+            <h3>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              <span>كيف أضمن عدم وجود تسريب قبل اللياسة؟</span>
+            </h3>
+            <p>نحقن شبكة النحاس بالنيتروجين الجاف تحت ضغط 300 PSI ونترك ساعة الضغط موصلة لمدة 48 ساعة للتأكد بالعين المجردة من ثبات المؤشر.</p>
+          </div>
+
+          <div class="quick-qa-card">
+            <h3>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              <span>لماذا عزل كل ماسورة بربل أرمفلكس مستقل؟</span>
+            </h3>
+            <p>لمنع حدوث تبادل حراري ضار بين خط الغاز والسائل، وتفادي التعريق المائي الداخلي الذي يتلف الدهانات وديكورات الجبس الفاخرة.</p>
+          </div>
+        </div>
+
       </div>
     </section>
 
-    <!-- Estimated Copper Piping Duration Matrix -->
+    <!-- Realistic Duration Timeline -->
     <section class="sayyaf-section bg-subtle" style="border-top: 1px solid var(--color-border);">
       <div class="container">
         <div class="section-head">
@@ -892,43 +1358,30 @@
           <p class="section-subtitle">تنفيذ هندسي سريع ودقيق يتوافق مع جدول مقاول اللياسة والجبس دون تعطيل مراحل البناء:</p>
         </div>
 
-        <div class="hvac-price-table-container">
-          <table class="hvac-price-table">
-            <thead>
-              <tr>
-                <th>حجم ونوع المشروع الإنشائي</th>
-                <th>المدة الميدانية التقديرية</th>
-                <th>المراحل المشمولة بالتفصيل</th>
-                <th>معيار التسليم والاعتماد</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><strong>تأسيس خط غرفة واحدة أو ملحق (حتى 8 أمتار)</strong></td>
-                <td><span class="price-highlight">1.5 – 3 ساعات</span></td>
-                <td>تحديد مسار النحاس، التثبيت، عزل أرمالكس مستقل، مد كابل الكنترول وخط الصرف PVC</td>
-                <td>قطعة واحدة متصلة دون لحام</td>
-              </tr>
-              <tr>
-                <td><strong>تأسيس شقة كاملة (3 إلى 5 مكيفات)</strong></td>
-                <td><span class="price-highlight">1 – 2 يوم عمل</span></td>
-                <td>تمديد الخطوط وتثبيتها بالباندات الحديدية، عمل الميول لخطوط الصرف، وحقن النيتروجين</td>
-                <td>كبس نيتروجين 300 PSI</td>
-              </tr>
-              <tr>
-                <td><strong>تأسيس فيلا سكنية دورين وملحق (8 إلى 14 مكيف)</strong></td>
-                <td><span class="price-highlight">2 – 4 أيام عمل</span></td>
-                <td>تمديد مسارات النحاس الرأسية نحو السطح، عمل مصائد الزيت (Oil Traps) كل 4-5 أمتار، وتركيب ساعات الضغط</td>
-                <td>ثبات عداد الضغط 48 ساعة</td>
-              </tr>
-              <tr>
-                <td><strong>مشروع مجمع تجاري أو مبنى عمائر كامل</strong></td>
-                <td><span class="price-highlight">وفق جدول التشطيب</span></td>
-                <td>تنسيق هندسي مرحلي مع مهندس الموقع والمشرف الإنشائي لمطابقة كود البناء السعودي</td>
-                <td>تسليم استشاري موثق</td>
-              </tr>
-            </tbody>
-          </table>
+        <div class="duration-grid">
+          <div class="duration-card">
+            <div class="duration-time">1.5 – 3 ساعات</div>
+            <div class="duration-title">خط غرفة واحدة أو ملحق</div>
+            <p class="duration-desc">تحديد المسار، التثبيت بمرابط مجلفنة، عزل أرمفلكس مستقل، ومد خط الصرف PVC قطعة متصلة.</p>
+          </div>
+
+          <div class="duration-card">
+            <div class="duration-time">1 – 2 يوم عمل</div>
+            <div class="duration-title">شقة كاملة (3 إلى 5 مكيفات)</div>
+            <p class="duration-desc">تمديد الخطوط وتثبيتها، عمل الميول لخطوط الصرف، وحقن النيتروجين الجاف 300 PSI.</p>
+          </div>
+
+          <div class="duration-card">
+            <div class="duration-time">2 – 4 أيام عمل</div>
+            <div class="duration-title">فيلا دورين وملحق (8 إلى 14 مكيف)</div>
+            <p class="duration-desc">تمديد المسارات الرأسية للسطح، تشكيل مصائد الزيت كل 4-5 أمتار، وساعة ضغط 48 ساعة.</p>
+          </div>
+
+          <div class="duration-card">
+            <div class="duration-time">وفق جدول التشطيب</div>
+            <div class="duration-title">مجمع تجاري أو عمائر سكنية</div>
+            <p class="duration-desc">تنسيق مرحلي مع المهندس المشرف والمقاولين لمطابقة كود البناء السعودي وتسليم استشاري موثق.</p>
+          </div>
         </div>
       </div>
     </section>
@@ -1057,13 +1510,86 @@
       </div>
     </section>
 
-    <!-- Taif Geographic Project Coverage -->
+    <!-- Why Choose Sayyaf for Copper Piping -->
     <section class="sayyaf-section">
       <div class="container">
         <div class="section-head">
-          <span class="section-tag">تغطية المشاريع والإنشاءات</span>
-          <h2 class="section-title">معاينة وتأسيس التكييف في كافة مخططات وأحياء الطائف</h2>
-          <p class="section-subtitle">فريقنا الهندسي ينتقل لمعاينة المخططات على الطبيعة في الفلل والمباني قيد الإنشاء في كافة مناطق الطائف.</p>
+          <span class="section-tag">معايير التأسيس الهندسي</span>
+          <h2 class="section-title">فروقات تنفيذية في تأسيس النحاس تحمي عمارتك من التكسير لاحقاً</h2>
+          <p class="section-subtitle">تمديد مواسير التكييف ليس مجرد تمرير بيب نحاس؛ بل هندسة متكاملة تضمن بقاء كفاءة التبريد لسنوات طويلة دون تسريب خفي:</p>
+        </div>
+
+        <div class="why-choose-grid">
+          <div class="why-choose-card">
+            <div class="why-choose-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <div class="why-choose-info">
+              <h3>صفر لحامات مدفونة بالجدار</h3>
+              <p>تمديد النحاس قطعة واحدة متصلة من الوحدة الداخلية إلى السطح دون أي وصلات لحام تحت اللياسة نهائياً.</p>
+            </div>
+          </div>
+
+          <div class="why-choose-card">
+            <div class="why-choose-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div class="why-choose-info">
+              <h3>ساعة ضغط نيتروجين 48 ساعة</h3>
+              <p>فحص موثق بالمانوميتر تحت ضغط 300 PSI يترك أمام المالك والمقاول طوال أعمال اللياسة للتأكد من سلامة التأسيس.</p>
+            </div>
+          </div>
+
+          <div class="why-choose-card">
+            <div class="why-choose-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <div class="why-choose-info">
+              <h3>نحاس مولر أمريكي وعزل أرمفلكس</h3>
+              <p>أعلى معايير النقاء النحاسي مع عزل حراري مستقل لكل خط يمنع تعريق الأسقف وتلف الدهانات والجبس.</p>
+            </div>
+          </div>
+
+          <div class="why-choose-card">
+            <div class="why-choose-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+            </div>
+            <div class="why-choose-info">
+              <h3>مصائد زيت هندسية لصواعد الأسطح</h3>
+              <p>تشكيل مصائد زيت هيدروليكية تضمن رجوع زيت التزييت للكمبروسر وتحميه من الاحتراق في الفلل المرتفعة.</p>
+            </div>
+          </div>
+
+          <div class="why-choose-card">
+            <div class="why-choose-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            </div>
+            <div class="why-choose-info">
+              <h3>تسعير واضح بالمتر وجداول كميات</h3>
+              <p>حساب دقيق لعدد الأمتار الفعلية مع بنود مواصفات معتمدة توفر عليك مبالغ كبيرة مقارنة بتقديرات السوق العشوائية.</p>
+            </div>
+          </div>
+
+          <div class="why-choose-card">
+            <div class="why-choose-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <div class="why-choose-info">
+              <h3>معاينة موقعية ورفع مساحي للمشروع</h3>
+              <p>نزول فني متخصص للموقع العظم لمراجعة مسارات التمديد وتفادي تقاطعها مع أعمال السباكة والكهرباء.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Taif Coverage Districts (Customer Voice) -->
+    <section class="sayyaf-section bg-subtle" style="border-top: 1px solid var(--color-border);">
+      <div class="container">
+        <div class="districts-title-group">
+          <span class="section-tag">تغطية مشاريع البناء والتشطيب</span>
+          <h2 class="districts-main-title">معاينة وتأسيس مواسير النحاس لمشاريع الفلل والعمائر في الطائف</h2>
+          <p class="districts-subtitle">نزول ميداني مباشر لموقعك العظم أو قيد التشطيب لرفع المقاسات وتمديد خطوط النحاس بأعلى مواصفات الكود السعودي:</p>
         </div>
 
         <div class="taif-sectors-grid">
@@ -1074,7 +1600,7 @@
               <span class="taif-sector-badge">تأسيس نحاس مولر أصلي</span>
             </div>
             <p class="taif-sector-desc">
-              أعلى طلب على تأسيس شبكات النحاس الإنشائية للمنازل والمباني الجديدة؛ تمديد نحاس مولر أمريكي أصلي مع عزل أرمالكس مستقل واختبار كبس النيتروجين 300 PSI.
+              أعلى طلب على تأسيس شبكات النحاس الإنشائية للمنازل والمباني الجديدة؛ تمديد نحاس مولر أمريكي أصلي مع عزل أرمفلكس مستقل واختبار كبس النيتروجين 300 PSI.
             </p>
             <div class="taif-sector-chips">
               <div class="taif-district-chip">مخططات الوسام (1، 2، 3)</div>
@@ -1150,42 +1676,163 @@
       </div>
     </section>
 
-    <!-- Chunk-Ready FAQs (AEO & GEO Optimized) -->
-    <section class="sayyaf-section bg-subtle">
+    <!-- Sister Services Cross-Links -->
+    <section class="sayyaf-section">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-tag">خدمات صَيّاف المتكاملة</span>
+          <h2 class="section-title">خدمات تكييف متكاملة في الطائف</h2>
+          <p class="section-subtitle">إلى جانب تأسيس وتمديد مواسير النحاس، يقدم فريق صَيّاف حلول التكييف الشاملة بأعلى معايير الإتقان:</p>
+        </div>
+
+        <div class="sister-services-grid">
+          <a href="/" class="sister-service-card">
+            <h3>
+              <span>فك وتركيب ونقل المكيفات</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
+            </h3>
+            <p>نقل آمن بأحدث الرافعات وسحب الفريون بدون هدر مع ضمان التشغيل الكامل.</p>
+          </a>
+
+          <a href="/split-ac-installation-technician/" class="sister-service-card">
+            <h3>
+              <span>فني تركيب مكيفات سبليت</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
+            </h3>
+            <p>تركيب احترافي للأجهزة الجديدة والتأسيس الجاهز مع تفريغ فاكيوم واختبار تبريد وتدفئة.</p>
+          </a>
+
+          <a href="/maintenance/" class="sister-service-card">
+            <h3>
+              <span>صيانة وتصليح وتعبئة فريون</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
+            </h3>
+            <p>كشف دقيق للأعطال بالأجهزة الرقمية، شحن فريون أصلي، وإصلاح الكابستور والكمبروسر.</p>
+          </a>
+
+          <a href="/cleaning/" class="sister-service-card">
+            <h3>
+              <span>تنظيف وغسيل مكيفات بالموقع</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
+            </h3>
+            <p>غسيل عميق بأغطية حماية معزولة تمنع اتساخ الجدران والأثاث وتزيل الروائح الكريهة.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Chunk-Ready FAQs -->
+    <section class="sayyaf-section bg-subtle" style="border-top: 1px solid var(--color-border);">
       <div class="container">
         <div class="section-head">
           <span class="section-tag">إرشادات فنية للمقبلين على البناء</span>
           <h2 class="section-title">أسئلة شائعة حول تأسيس نحاس التكييف بالطائف</h2>
         </div>
 
-        <div class="chunk-faq-grid">
-          <div class="chunk-faq-card">
-            <h3 class="chunk-faq-question">ما هو أفضل نوع نحاس لتأسيس مكيفات السبليت في الطائف؟</h3>
-            <p class="chunk-faq-answer">
-              <strong>النحاس الأمريكي مولر (Mueller) هو الخيار الأفضل عالمياً ومحلياً، يليه النحاس الكوري والجنوب أفريقي المعتمد.</strong> يتميز بسماكة جدار متجانسة ومقاومة عالية لتحمل ضغوط فريون R410A التي تتجاوز 400 PSI دون تشقق أو تنفيس مع تمدد وثني المواسير.
-            </p>
-          </div>
+        <div class="sayyaf-faq-accordion">
+          <!-- FAQ 1 -->
+          <details class="sayyaf-faq-item" open>
+            <summary class="sayyaf-faq-summary">
+              <span>ما هو أفضل نوع نحاس لتأسيس مكيفات السبليت في الطائف؟</span>
+              <div class="sayyaf-faq-icon" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </div>
+            </summary>
+            <div class="sayyaf-faq-body">
+              النحاس الأمريكي مولر (Mueller) هو الخيار الأفضل عالمياً ومحلياً من حيث نقاء المعدن وسماكة الجدار، يليه النحاس الجنوب أفريقي والكوري المعتمد. نبتعد تماماً عن النحاس الخفيف أو التجاري لضمان تحمل ضغوط فريون R410A العالية دون أي تنفيس مستقبلي.
+            </div>
+          </details>
 
-          <div class="chunk-faq-card">
-            <h3 class="chunk-faq-question">كم سعر متر تأسيس وتمديد مواسير النحاس بالطائف؟</h3>
-            <p class="chunk-faq-answer">
-              <strong>يتراوح سعر متر تمديد مواسير النحاس الأصلي في الطائف بين 40 و60 ريالاً سعودياً للمتر الطولي.</strong> ويشمل السعر مواسير النحاس (خط السائل وخط الغاز)، عوازل الأرمفلكس المستقلة، كابل التحكم الكهربائي، والتثبيت الميكانيكي، مع اختبار كبس النيتروجين مجاناً ضمن باقة التأسيس.
-            </p>
-          </div>
+          <!-- FAQ 2 -->
+          <details class="sayyaf-faq-item">
+            <summary class="sayyaf-faq-summary">
+              <span>كم سعر متر تأسيس وتمديد مواسير النحاس بالطائف؟</span>
+              <div class="sayyaf-faq-icon" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </div>
+            </summary>
+            <div class="sayyaf-faq-body">
+              يتراوح سعر متر تمديد مواسير النحاس الأصلي بين 40 و60 ريالاً للمتر الطولي حسب سماكة النحاس (أمريكي أصلي)، ويشمل السعر مواسير النحاس بخطي السحب والطرد، عوازل أرمفلكس مستقلة، كابل التحكم الكهربائي، واختبار كبس النيتروجين. للمشاريع والفلل الكاملة نقدم أسعاراً مخفضة على الكميات.
+            </div>
+          </details>
 
-          <div class="chunk-faq-card">
-            <h3 class="chunk-faq-question">لماذا يجب عزل كل ماسورة نحاس بشكل منفصل بربل أرمفلكس؟</h3>
-            <p class="chunk-faq-answer">
-              <strong>عزل الماسورتين معاً داخل عازل واحد خطأ فادح؛ حيث يؤدي لاختلاف درجات الحرارة بين خط السحب وخط الطرد وحدوث تبادل حراري ضار يقلل كفاءة التبريد بنسبة 15%.</strong> كما يؤدي إلى تعريق مائي ورطوبة مستمرة تنفذ من داخل الجدار وتتلف الدهانات وألواح الجبس.
-            </p>
-          </div>
+          <!-- FAQ 3 -->
+          <details class="sayyaf-faq-item">
+            <summary class="sayyaf-faq-summary">
+              <span>لماذا تشترطون عزل كل خط نحاس بشكل منفصل بربل أرمفلكس؟</span>
+              <div class="sayyaf-faq-icon" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </div>
+            </summary>
+            <div class="sayyaf-faq-body">
+              لأن تمرير خط السائل وخط الغاز معاً في عازل واحد يتسبب في تبادل حراري ضار يضعف تبريد المكيف بنسبة تصل إلى 15%، والأخطر هو حدوث تكثف مائي وتعريق داخل الجدران يؤدي إلى رطوبة تخرب الدهانات والجبس بورد مع الوقت.
+            </div>
+          </details>
 
-          <div class="chunk-faq-card">
-            <h3 class="chunk-faq-question">ما هي مصيدة الزيت (Oil Trap) ومتى يلزم تركيبها؟</h3>
-            <p class="chunk-faq-answer">
-              <strong>مصيدة الزيت هي انحناء حرف U يُصنع في خط سحب النحاس الصاعد.</strong> يلزم تركيبها عندما تكون الوحدة الخارجية على السطح أعلى من الوحدة الداخلية بمسافة تتجاوز 3 أمتار؛ لمنع تراكم زيت التزييت داخل المبخر وضمان عودته بانتظام إلى كمبروسر المكيف لمنع احتراقه.
-            </p>
-          </div>
+          <!-- FAQ 4 -->
+          <details class="sayyaf-faq-item">
+            <summary class="sayyaf-faq-summary">
+              <span>ما هي مصيدة الزيت (Oil Trap) ومتى يلزم عملها في التأسيس؟</span>
+              <div class="sayyaf-faq-icon" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </div>
+            </summary>
+            <div class="sayyaf-faq-body">
+              مصيدة الزيت هي انحناء هندسي على شكل حرف U يتم تنفيذه في خط السحب الصاعد، وتلزم عندما يكون المكيف على السطح أعلى من الوحدة الداخلية بأكثر من 3 إلى 5 أمتار. وظيفتها ضمان عودة زيت التزييت بانتظام إلى الكمبروسر وحمايته من الاحتراق وقصر العمر الافتراضي.
+            </div>
+          </details>
+
+          <!-- FAQ 5 -->
+          <details class="sayyaf-faq-item">
+            <summary class="sayyaf-faq-summary">
+              <span>كيف تضمنون سلامة النحاس قبل أعمال اللياسة والدهانات؟</span>
+              <div class="sayyaf-faq-icon" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </div>
+            </summary>
+            <div class="sayyaf-faq-body">
+              نقوم بلحام نهايات الخطوط وتركيب بلف شحن ومانوميتر (ساعة ضغط) لكبس شبكة النحاس بغاز النيتروجين الجاف تحت ضغط 300 إلى 350 PSI. نترك ساعة الضغط راكبة أمام المالك والمقاول لمدة لا تقل عن 48 ساعة للتأكد التام من ثبات الضغط وصفر تسريب قبل تغطية المواسير.
+            </div>
+          </details>
+
+          <!-- FAQ 6 -->
+          <details class="sayyaf-faq-item">
+            <summary class="sayyaf-faq-summary">
+              <span>هل تقدمون معاينة ميدانية للمشروع ورفع المقاسات قبل التأسيس؟</span>
+              <div class="sayyaf-faq-icon" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </div>
+            </summary>
+            <div class="sayyaf-faq-body">
+              نعم، نوفر زيارة فنية ميدانية لموقعك العظم في كافة أحياء ومخططات الطائف لتحديد أفضل مسارات التمديد وأقصرها، ومراجعة أماكن صرف المياه وتغذية الكهرباء، ونزودك بعرض سعر وجدول كميات دقيق بدون أي التزام مسبق.
+            </div>
+          </details>
+
+          <!-- FAQ 7 -->
+          <details class="sayyaf-faq-item">
+            <summary class="sayyaf-faq-summary">
+              <span>هل هناك أي لحامات أو وصلات نحاس مدفونة داخل الجدار؟</span>
+              <div class="sayyaf-faq-icon" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </div>
+            </summary>
+            <div class="sayyaf-faq-body">
+              نلتزم في صَيّاف بمبدأ هندسي صارم: صفر وصلات مدفونة. يتم سحب لفة النحاس متصلة كقطعة واحدة من مخرج الوحدة الداخلية بالجدار وحتى السطح مباشرة. أي لحام داخل الجدار يُعد قنبلة موقوتة لتسريب الفريون يصعب كشفها لاحقاً.
+            </div>
+          </details>
+
+          <!-- FAQ 8 -->
+          <details class="sayyaf-faq-item">
+            <summary class="sayyaf-faq-summary">
+              <span>ما هو الضمان المقدم على شبكة تأسيس النحاس المنفذة؟</span>
+              <div class="sayyaf-faq-icon" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </div>
+            </summary>
+            <div class="sayyaf-faq-body">
+              نقدم ضماناً شاملاً يصل إلى 10 سنوات على سلامة شبكة النحاس وجودة التركيب وعدم وجود أي تسريب ناتج عن عيوب التمديد، مع تسليم شهادة فحص واختبار كبس موثقة بعد الانتهاء من العمل.
+            </div>
+          </details>
         </div>
       </div>
     </section>
@@ -1195,13 +1842,13 @@
       <div class="container" style="max-width: 740px;">
         <span class="section-tag">استشارة مجانية للمشاريع</span>
         <h2 class="section-title">تبني فيلا جديدة أو تشطب شققك في الطائف؟</h2>
-        <p class="section-subtitle" style="margin-bottom: 2rem;">لا تغامر بسباكة ونحاس مجهول المصدر؛ تواصل مع صَيّاف للتكييف لمعاينة موقعك ورفع المقاسات وتقديم جدول كميات دقيق ومختوم بأعلى المواصفات الهندسية.</p>
-        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem;">
-          <a href="tel:+966538972324" class="sayyaf-btn-lg sayyaf-btn-call">
+        <p class="section-subtitle" style="margin-bottom: 2rem;">لا تغامر بنحاس وتمديدات مجهولة المصدر؛ تواصل مع صَيّاف للتكييف لمعاينة موقعك ورفع المقاسات وتقديم جدول كميات دقيق ومختوم بأعلى المواصفات الهندسية.</p>
+        <div class="hero-btn-group" style="justify-content: center; max-width: 540px; margin: 0 auto;">
+          <a href="tel:+966538972324" class="sayyaf-btn-call hero-btn-item">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
             <span>طلب معاينة: 0538972324</span>
           </a>
-          <a href="https://wa.me/966538972324?text=السلام%20عليكم،%20أحتاج%20تسعيرة%20تأسيس%20وتمديد%20نحاس%20تكييف%20في%20الطائف" class="sayyaf-btn-lg sayyaf-btn-wa" target="_blank" rel="noopener">
+          <a href="https://wa.me/966538972324?text=السلام%20عليكم،%20أحتاج%20تسعيرة%20تأسيس%20وتمديد%20نحاس%20تكييف%20في%20الطائف" class="sayyaf-btn-wa hero-btn-item" target="_blank" rel="noopener">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.39-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.32a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24m4.52 11.66c-.19-.09-1.12-.55-1.3-.61-.17-.07-.3-.1-.43.1-.12.19-.48.61-.59.74-.11.12-.22.14-.41.05-.19-.09-.8-.3-1.52-.94-.56-.5-1-1.12-1.11-1.31-.11-.19-.01-.29.08-.38.08-.09.19-.22.28-.33.09-.11.13-.19.19-.32.06-.13.03-.24-.02-.33-.05-.09-.43-1.04-.59-1.42-.16-.38-.32-.33-.44-.33h-.37c-.13 0-.34.05-.52.24-.18.19-.69.67-.69 1.64s.71 1.9 0.81 2.03c.1.14 1.39 2.13 3.37 2.99.47.2 0.84.33 1.13.42.48.15.91.13 1.25.08.38-.06 1.17-.48 1.33-.94.17-.46.17-.86.12-.94-.05-.08-.18-.13-.37-.22z"/></svg>
             <span>إرسال المخطط واتساب</span>
           </a>
@@ -1210,83 +1857,85 @@
     </section>
 
   </main>
+
   <!-- Global Footer -->
   <footer class="sayyaf-footer">
     <div class="container">
       <div class="footer-grid">
+        <!-- Col 1: Brand & About -->
         <div>
-          <div style="margin-bottom: 1rem;">
+          <div style="margin-bottom: 1.25rem;">
             <img src="/assets/images/logo.svg" alt="صَيّاف للتكييف" width="200" height="46" style="filter: brightness(0) invert(1);">
           </div>
-          <p style="font-size: 0.92rem; color: #cbd5e1; line-height: 1.6; margin-bottom: 1rem;">
-            فريق فني متخصص لخدمات تركيب وصيانة التكييف الميدانية في مدينة الطائف وضواحيها. نلتزم بأعلى معايير الإتقان الهندسي والأسعار الشفافة والضمان المباشر.
+          <p style="color: #94a3b8; font-size: 0.92rem; line-height: 1.7; margin-bottom: 1.5rem;">
+            مركز صَيّاف للتكييف — متخصصون في فك وتركيب ونقل وصيانة وتنظيف وتأسيس أجهزة التكييف الميدانية في مدينة الطائف وضواحيها بإشراف فنيين خبراء وضمان معتمد.
           </p>
-          <div style="font-size: 0.88rem; color: #94a3b8;">
-            المقر الميداني: حي أم العراد، شارع عور، الطائف 26511
+          <div style="display: flex; gap: 0.85rem; align-items: center;">
+            <a href="https://www.instagram.com/sayyaf_ac" target="_blank" rel="noopener me" aria-label="حساب صَيّاف للتكييف على إنستغرام" style="color: #cbd5e1; display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.88rem;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+              <span>إنستغرام</span>
+            </a>
+            <span style="color: #64748b;">•</span>
+            <a href="https://facebook.com/sayyafac.offical" target="_blank" rel="noopener me" aria-label="صفحة صَيّاف للتكييف على فيسبوك" style="color: #cbd5e1; display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.88rem;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+              <span>فيسبوك</span>
+            </a>
           </div>
         </div>
 
+        <!-- Col 2: Services -->
         <div>
-          <h4 class="footer-col-title">خدماتنا الميدانية</h4>
+          <h4 class="footer-col-title">خدمات التكييف بالطائف</h4>
           <ul class="footer-links-list">
-            <li class="footer-link-item"><a href="/">شركة فك وتركيب مكيفات</a></li>
-            <li class="footer-link-item"><a href="/split-ac-installation-technician/">فني تركيب مكيفات سبليت (100 ريال)</a></li>
-            <li class="footer-link-item"><a href="/services/">دليل كافة الخدمات والأسعار</a></li>
-            <li class="footer-link-item"><a href="/maintenance/">صيانة وتصليح وتعبئة فريون</a></li>
-            <li class="footer-link-item"><a href="/cleaning/">تنظيف وغسيل مكيفات بالموقع</a></li>
-            <li class="footer-link-item"><a href="/copper-piping/">تأسيس وتمديد نحاس التكييف</a></li>
+            <li class="footer-link-item"><a href="/">فك وتركيب مكيفات بالطائف</a></li>
+            <li class="footer-link-item"><a href="/split-ac-installation-technician/">تركيب مكيفات سبليت</a></li>
+            <li class="footer-link-item"><a href="/maintenance/">صيانة وإصلاح مكيفات وتعبئة فريون</a></li>
+            <li class="footer-link-item"><a href="/cleaning/">تنظيف وغسيل مكيفات</a></li>
+            <li class="footer-link-item"><a href="/copper-piping/">تأسيس وتمديد مواسير نحاس مولر</a></li>
           </ul>
         </div>
 
+        <!-- Col 3: Quick Links -->
         <div>
-          <h4 class="footer-col-title">روابط مهمة وأدلة</h4>
+          <h4 class="footer-col-title">روابط مهمة</h4>
           <ul class="footer-links-list">
-            <li class="footer-link-item"><a href="/">الرئيسية</a></li>
-            <li class="footer-link-item"><a href="/services/">خدمات صَيّاف</a></li>
-            <li class="footer-link-item"><a href="/about/">من نحن وقصة صَيّاف</a></li>
-            <li class="footer-link-item"><a href="/articles/">مركز الأدلة الفنية</a></li>
-            <li class="footer-link-item"><a href="/articles/split-ac-guide/">دليل التثبيت الهندسي لمكيفات السبليت</a></li>
-            <li class="footer-link-item"><a href="/contact/">مناطق التغطية وتواصل معنا</a></li>
+            <li class="footer-link-item"><a href="/services/">خدماتنا</a></li>
+            <li class="footer-link-item"><a href="/about/">من نحن</a></li>
+            <li class="footer-link-item"><a href="/contact/">تواصل معنا ومناطق التغطية</a></li>
+            <li class="footer-link-item"><a href="/articles/">المدونة</a></li>
             <li class="footer-link-item"><a href="/privacy/">سياسة الخصوصية</a></li>
             <li class="footer-link-item"><a href="/terms/">شروط الخدمة والضمان</a></li>
-            <li class="footer-link-item"><a href="/llms.txt">ملف الذكاء الاصطناعي (llms.txt)</a></li>
-            <li class="footer-link-item"><a href="/sitemap.xml">خريطة الموقع (Sitemap)</a></li>
+            <li class="footer-link-item"><a href="/sitemap.xml">خريطة الموقع</a></li>
           </ul>
         </div>
 
+        <!-- Col 4: Contact & Hours -->
         <div>
-          <h4 class="footer-col-title">الاتصال المباشر والمواعيد</h4>
+          <h4 class="footer-col-title">معلومات التواصل والمواعيد</h4>
           <div class="footer-contact-info">
             <div class="footer-contact-row">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-              <span>الهاتف: <a href="tel:+966538972324" style="color: #ffffff; font-weight: 700;">0538972324</a></span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span>شارع عور، حي أم العراد، الرمز البريدي 26511، الطائف</span>
+            </div>
+            <div class="footer-contact-row">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <span>الهاتف المباشر: <a href="tel:+966538972324" style="color: #38bdf8; font-weight: 700;">0538972324</a></span>
             </div>
             <div class="footer-contact-row">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.39-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.32a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24m4.52 11.66c-.19-.09-1.12-.55-1.3-.61-.17-.07-.3-.1-.43.1-.12.19-.48.61-.59.74-.11.12-.22.14-.41.05-.19-.09-.8-.3-1.52-.94-.56-.5-1-1.12-1.11-1.31-.11-.19-.01-.29.08-.38.08-.09.19-.22.28-.33.09-.11.13-.19.19-.32.06-.13.03-.24-.02-.33-.05-.09-.43-1.04-.59-1.42-.16-.38-.32-.33-.44-.33h-.37c-.13 0-.34.05-.52.24-.18.19-.69.67-.69 1.64s.71 1.9 0.81 2.03c.1.14 1.39 2.13 3.37 2.99.47.2 0.84.33 1.13.42.48.15.91.13 1.25.08.38-.06 1.17-.48 1.33-.94.17-.46.17-.86.12-.94-.05-.08-.18-.13-.37-.22z"/></svg>
-              <span>واتساب: <a href="https://wa.me/966538972324" style="color: #ffffff; font-weight: 700;" target="_blank" rel="noopener">محادثة فورية</a></span>
+              <span>واتساب: <a href="https://wa.me/966538972324?text=السلام%20عليكم،%20أحتاج%20تسعيرة%20تأسيس%20وتمديد%20نحاس%20تكييف%20في%20الطائف" target="_blank" rel="noopener" style="color: #4ade80; font-weight: 700;">محادثة فورية (متاح 24 ساعة)</a></span>
             </div>
             <div class="footer-contact-row">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
-              <span>السبت – الخميس: 07:00 ص – 11:50 م<br>الجمعة: 02:00 م – 11:50 م</span>
-            </div>
-            <div class="footer-contact-row" style="margin-top: 0.85rem; display: flex; gap: 0.75rem; align-items: center;">
-              <a href="https://www.instagram.com/sayyaf_ac" target="_blank" rel="noopener me" aria-label="حساب صَيّاف للتكييف على إنستغرام" style="color: #cbd5e1; display: inline-flex; align-items: center; gap: 0.35rem; font-size: 0.88rem;">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
-                <span>إنستغرام</span>
-              </a>
-              <span style="color: #64748b;">•</span>
-              <a href="https://facebook.com/sayyafac.offical" target="_blank" rel="noopener me" aria-label="صفحة صَيّاف للتكييف على فيسبوك" style="color: #cbd5e1; display: inline-flex; align-items: center; gap: 0.35rem; font-size: 0.88rem;">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
-                <span>فيسبوك</span>
-              </a>
+              <span style="font-size: 0.88rem; line-height: 1.5;">ساعات العمل الميداني:<br>السبت – الخميس: 07:00 ص – 11:50 م<br>الجمعة: 02:00 م – 11:50 م</span>
             </div>
           </div>
         </div>
       </div>
 
       <div class="footer-bottom-bar">
-        <div>جميع الحقوق محفوظة © 2026 صَيّاف للتكييف (SayyafAC) - الطائف، المملكة العربية السعودية</div>
-        <div>خدمات ميدانية احترافية بأيدي فنيين متخصصين</div>
+        <div>© 2026 صَيّاف للتكييف. جميع الحقوق محفوظة.</div>
+        <div>خدمات تأسيس وتمديد نحاس التكييف بمواصفات كود البناء السعودي</div>
       </div>
     </div>
   </footer>
@@ -1295,7 +1944,7 @@
   <div class="mobile-sticky-action-bar">
     <a href="tel:+966538972324" class="mobile-sticky-btn btn-call">
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-      <span>اتصال مباشر</span>
+      <span>معاينة مشروعك</span>
     </a>
     <a href="https://wa.me/966538972324?text=السلام%20عليكم،%20أحتاج%20تسعيرة%20تأسيس%20وتمديد%20نحاس%20تكييف%20في%20الطائف" class="mobile-sticky-btn btn-wa" target="_blank" rel="noopener">
       <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.39-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.32a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24m4.52 11.66c-.19-.09-1.12-.55-1.3-.61-.17-.07-.3-.1-.43.1-.12.19-.48.61-.59.74-.11.12-.22.14-.41.05-.19-.09-.8-.3-1.52-.94-.56-.5-1-1.12-1.11-1.31-.11-.19-.01-.29.08-.38.08-.09.19-.22.28-.33.09-.11.13-.19.19-.32.06-.13.03-.24-.02-.33-.05-.09-.43-1.04-.59-1.42-.16-.38-.32-.33-.44-.33h-.37c-.13 0-.34.05-.52.24-.18.19-.69.67-.69 1.64s.71 1.9 0.81 2.03c.1.14 1.39 2.13 3.37 2.99.47.2 0.84.33 1.13.42.48.15.91.13 1.25.08.38-.06 1.17-.48 1.33-.94.17-.46.17-.86.12-.94-.05-.08-.18-.13-.37-.22z"/></svg>
