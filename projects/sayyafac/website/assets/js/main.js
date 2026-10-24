@@ -152,8 +152,42 @@ document.addEventListener('DOMContentLoaded', () => {
 
       const encodedMsg = encodeURIComponent(message);
       const whatsappUrl = `https://wa.me/966538972324?text=${encodedMsg}`;
+
+      if (typeof window.gtag === 'function') {
+        window.gtag('event', 'generate_lead', {
+          event_category: 'conversion',
+          event_label: 'whatsapp_quote_builder',
+          service_type: serviceType,
+          district: district
+        });
+      }
+
       window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
     });
   });
 
+  // 5. تتبع أحداث التحويل المباشر للاتصال والواتساب (Conversion Tracking Hooks)
+  document.querySelectorAll('a[href^="tel:"]').forEach((link) => {
+    link.addEventListener('click', () => {
+      if (typeof window.gtag === 'function') {
+        window.gtag('event', 'contact', {
+          event_category: 'conversion',
+          event_label: 'phone_call'
+        });
+      }
+    });
+  });
+
+  document.querySelectorAll('a[href*="wa.me"]').forEach((link) => {
+    link.addEventListener('click', () => {
+      if (typeof window.gtag === 'function') {
+        window.gtag('event', 'contact', {
+          event_category: 'conversion',
+          event_label: 'whatsapp_direct_click'
+        });
+      }
+    });
+  });
+
 });
+
