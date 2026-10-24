@@ -1,9 +1,0 @@
-# ==============================================================================
-# SayyafAC (صَيّاف للتكييف) - 301 Redirect Rules
-# Preserving legacy SEO equity and canonical trailing slash enforcement
-# ==============================================================================
-
-# Legacy / installation redirect
-/installation          /split-ac-installation-technician/ 301!
-/installation/         /split-ac-installation-technician/ 301!
-/installation.html     /split-ac-installation-technician/ 301!

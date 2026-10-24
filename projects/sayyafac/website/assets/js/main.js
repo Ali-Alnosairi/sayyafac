@@ -1,5 +1,5 @@
 /**
- * صَيّاف للتكييف (SayyafAC) - التفاعل البرمجي الموحد
+ * صَيّاف للتكييف - التفاعل البرمجي الموحد
  * يعمل بتوافق تام على الصفحة الرئيسية وجميع المسارات الفرعية (Subpage Script Parity)
  */
 
@@ -71,9 +71,11 @@ document.addEventListener('DOMContentLoaded', () => {
   const allNavLinks = document.querySelectorAll('.sayyaf-nav-link, .sayyaf-drawer-link');
 
   allNavLinks.forEach((link) => {
-    const linkPath = link.getAttribute('href').replace(/\/$/, '') || '/';
+    const linkPath = (link.getAttribute('href') || '').replace(/\/$/, '') || '/';
     if (linkPath === currentPath) {
       link.classList.add('active');
+    } else {
+      link.classList.remove('active');
     }
   });
 

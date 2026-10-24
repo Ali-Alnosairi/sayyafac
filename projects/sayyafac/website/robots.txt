@@ -1,4 +1,4 @@
-# Robots.txt for SayyafAC (صَيّاف للتكييف) - Taif, Saudi Arabia
+# Robots.txt for صَيّاف للتكييف - الطائف، المملكة العربية السعودية
 User-agent: *
 Allow: /
 
@@ -20,3 +20,7 @@ Allow: /
 
 # Sitemap Location
 Sitemap: https://sayyafac.com/sitemap.xml
+
+# LLMs Discovery
+# https://sayyafac.com/llms.txt
+# https://sayyafac.com/llms-full.txt
