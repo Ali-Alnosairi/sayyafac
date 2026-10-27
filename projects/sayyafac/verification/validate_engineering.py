@@ -100,6 +100,12 @@ def validate_sayyafac_engineering():
                 except Exception as ex:
                     errors.append(f"Invalid JSON in schema on {page_name}: {ex}")
 
+        # Strict Ban on self-serving reviews / fake ratings (Gate: Zero Fake Reviews on New Domains)
+        if 'aggregateRating' in html or 'AggregateRating' in html or 'ac-review' in html:
+            errors.append(f"CRITICAL VIOLATION: Forbidden self-serving aggregateRating or fake reviews found in {page_name}")
+        else:
+            passes.append(f"ZERO fake reviews and ZERO aggregateRating verified in {page_name}")
+
         # Trailing slash checks in internal links
         internal_links = re.findall(r'href=["\'](/[^"\']*)["\']', html)
         for link in internal_links:
