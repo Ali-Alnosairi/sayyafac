@@ -45,15 +45,18 @@
   <!-- Connected Entity Graph Schema with ISO-8601 Timestamps -->
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Organization",
-        "@id": "https://sayyafac.com/#organization",
-        "name": "صَيّاف للتكييف",
-        "url": "https://sayyafac.com/",
-        "logo": "https://sayyafac.com/assets/images/logo.svg",
-        "sameAs": [
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": [
+        "Organization",
+        "HVACBusiness"
+      ],
+      "@id": "https://sayyafac.com/#organization",
+      "name": "صَيّاف للتكييف",
+      "url": "https://sayyafac.com/",
+      "logo": "https://sayyafac.com/assets/images/logo.svg",
+      "sameAs": [
         "https://www.instagram.com/sayyaf_ac",
         "https://facebook.com/sayyafac.offical",
         "https://www.tiktok.com/@sayyaf_ac",
@@ -68,125 +71,126 @@
         "صيانة مكيفات سبليت",
         "تنظيف وغسيل مكيفات",
         "تمديد نحاس مولر أمريكي"
-      ]
+      ],
+      "telephone": "+966538972324"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://sayyafac.com/articles/water-leakage-guide/#article",
+      "headline": "أسباب تنقيط وخرير الماء من مكيف السبليت داخل الغرفة: التشخيص الهندسي وحلول الانسداد والميلان",
+      "description": "دليل فني معتمد يشرح الأسباب الهندسية لظاهرة تسريب مياه التكثيف من الوحدة الداخلية لمكيف السبليت، وطرق معالجة انسداد ليات التصريف وضبط استواء المسطرة.",
+      "image": "https://sayyafac.com/assets/images/install-before-majlis.webp",
+      "datePublished": "2026-10-16T08:00:00+03:00",
+      "dateModified": "2026-10-16T08:00:00+03:00",
+      "inLanguage": "ar-SA",
+      "mainEntityOfPage": "https://sayyafac.com/articles/water-leakage-guide/",
+      "isPartOf": {
+        "@type": "CollectionPage",
+        "@id": "https://sayyafac.com/articles/#collection"
       },
-      {
-        "@type": "Article",
-        "@id": "https://sayyafac.com/articles/water-leakage-guide/#article",
-        "headline": "أسباب تنقيط وخرير الماء من مكيف السبليت داخل الغرفة: التشخيص الهندسي وحلول الانسداد والميلان",
-        "description": "دليل فني معتمد يشرح الأسباب الهندسية لظاهرة تسريب مياه التكثيف من الوحدة الداخلية لمكيف السبليت، وطرق معالجة انسداد ليات التصريف وضبط استواء المسطرة.",
-        "image": "https://sayyafac.com/assets/images/install-before-majlis.webp",
-        "datePublished": "2026-10-16T08:00:00+03:00",
-        "dateModified": "2026-10-16T08:00:00+03:00",
-        "inLanguage": "ar-SA",
-        "mainEntityOfPage": "https://sayyafac.com/articles/water-leakage-guide/",
-        "isPartOf": {
-          "@type": "CollectionPage",
-          "@id": "https://sayyafac.com/articles/#collection"
-        },
-        "speakable": {
-          "@type": "SpeakableSpecification",
-          "cssSelector": [
-            ".article-header h1",
-            ".article-prose > p:first-of-type"
-          ]
-        },
-        "author": {
-          "@type": "Person",
-          "@id": "https://sayyafac.com/#abu-issa",
-          "name": "الفني أبو عيسى",
-          "jobTitle": "كبير فنيي التكييف والتبريد الميداني ومؤسس صَيّاف للتكييف بالطائف",
-          "url": "https://sayyafac.com/about/",
-          "sameAs": [
-            "https://www.linkedin.com/in/abu-issa-sayyafac"
-          ],
-          "knowsAbout": [
-            "صيانة وتصليح مكيفات سبليت",
-            "تسليك مجاري تصريف مياه المكيفات",
-            "فحص ومعالجة تجمد مبخر التكييف",
-            "عزل مواسير النحاس وتفادي التعريق الجداري",
-            "وزن وتثبيت مساطر المكيفات الداخلية بميزان الماء"
-          ],
-          "worksFor": {
-            "@id": "https://sayyafac.com/#organization"
-          }
-        },
-        "publisher": {
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [
+          ".article-header h1",
+          ".article-prose > p:first-of-type"
+        ]
+      },
+      "author": {
+        "@type": "Person",
+        "@id": "https://sayyafac.com/#abu-issa",
+        "name": "الفني أبو عيسى",
+        "jobTitle": "كبير فنيي التكييف والتبريد الميداني ومؤسس صَيّاف للتكييف بالطائف",
+        "url": "https://sayyafac.com/about/",
+        "sameAs": [
+          "https://www.linkedin.com/in/abu-issa-sayyafac"
+        ],
+        "knowsAbout": [
+          "صيانة وتصليح مكيفات سبليت",
+          "تسليك مجاري تصريف مياه المكيفات",
+          "فحص ومعالجة تجمد مبخر التكييف",
+          "عزل مواسير النحاس وتفادي التعريق الجداري",
+          "وزن وتثبيت مساطر المكيفات الداخلية بميزان الماء"
+        ],
+        "worksFor": {
           "@id": "https://sayyafac.com/#organization"
         }
       },
-      {
-        "@type": "BreadcrumbList",
-        "@id": "https://sayyafac.com/articles/water-leakage-guide/#breadcrumb",
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "الرئيسية",
-            "item": "https://sayyafac.com/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "name": "الأدلة الفنية",
-            "item": "https://sayyafac.com/articles/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 3,
-            "name": "دليل علاج تسريب ماء المكيف",
-            "item": "https://sayyafac.com/articles/water-leakage-guide/"
-          }
-        ]
-      },
-      {
-        "@type": "FAQPage",
-        "@id": "https://sayyafac.com/articles/water-leakage-guide/#faq",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "لماذا ينقط مكيف السبليت ماء فجأة داخل الغرفة؟",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "ينقط مكيف السبليت ماء داخل الغرفة في 80% من الحالات بسبب انسداد فتحة أو لي تصريف حوض التكثيف الداخلي بفعل تراكم الأطيان والبكتيريا الجيلاتينية وغبار الهواء، مما يؤدي إلى امتلاء الحوض الصغير وفيضان الماء على الجدار والأرضيات."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "هل نقص الفريون يسبب تنقيط الماء من المكيف؟",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "نعم، يؤدي نقص الفريون إلى انخفاض ضغط المبخر لدرجة تجمد رطوبة الهواء على زعانف الألمنيوم وتكون طبقة سميكة من الثلج؛ وعند توقف الضاغط أو ذوبان الثلج الفجائي، تتدفق كميات مياه ضخمة تفوق استيعاب حوض التصريف فتفيض داخل الغرفة."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "كيف أعرف أن سبب تسريب الماء هو خطأ في ميلان المكيف؟",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "إذا كان التنقيط يخرج من الزاوية المعاكسة لفتحة الصرف في المكيف، أو حدث التسريب مباشرة بعد تركيب جديد أو صيانة، فذلك ناتج عن ميلان مسطرة التثبيت في اتجاه عكسي، حيث يجب أن تميل الوحدة بمقدار 1 إلى 2 ملم نحو جهة أنبوب الصرف."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "ما هو تعريق مواسير النحاس خلف المكيف وكيف يتلف الجدار؟",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "يحدث تعريق النحاس عند تشقق أو تمزق عازل الأرمالكس الإسفنجي المحيط بأنبوب خط السحب البارد؛ حيث يلامس هواء الغرفة الرطب النحاس البارد مباشرة ويتكثف عليه قطرات ماء مستمرة تتغلغل في بياض اللياسة ودهان الجدار وتسبب عفناً أسود وتلفاً للديكور."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "كم تكلفة تسليك وصيانة تسريب ماء مكيف السبليت في الطائف؟",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "تبدأ تكلفة تسليك مجرى الصرف وتنظيف حوض التكثيف وفحص ميل المكيف في الطائف لدى صَيّاف من 80 إلى 150 ريالاً للجهاز، وتشمل فحص ضغط الفريون وضماناً ميدانياً ضد عودة التسريب."
-            }
-          }
-        ]
+      "publisher": {
+        "@id": "https://sayyafac.com/#organization"
       }
-    ]
-  }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://sayyafac.com/articles/water-leakage-guide/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "الرئيسية",
+          "item": "https://sayyafac.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "الأدلة الفنية",
+          "item": "https://sayyafac.com/articles/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "دليل علاج تسريب ماء المكيف",
+          "item": "https://sayyafac.com/articles/water-leakage-guide/"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://sayyafac.com/articles/water-leakage-guide/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "لماذا ينقط مكيف السبليت ماء فجأة داخل الغرفة؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ينقط مكيف السبليت ماء داخل الغرفة في 80% من الحالات بسبب انسداد فتحة أو لي تصريف حوض التكثيف الداخلي بفعل تراكم الأطيان والبكتيريا الجيلاتينية وغبار الهواء، مما يؤدي إلى امتلاء الحوض الصغير وفيضان الماء على الجدار والأرضيات."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "هل نقص الفريون يسبب تنقيط الماء من المكيف؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "نعم، يؤدي نقص الفريون إلى انخفاض ضغط المبخر لدرجة تجمد رطوبة الهواء على زعانف الألمنيوم وتكون طبقة سميكة من الثلج؛ وعند توقف الضاغط أو ذوبان الثلج الفجائي، تتدفق كميات مياه ضخمة تفوق استيعاب حوض التصريف فتفيض داخل الغرفة."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "كيف أعرف أن سبب تسريب الماء هو خطأ في ميلان المكيف؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "إذا كان التنقيط يخرج من الزاوية المعاكسة لفتحة الصرف في المكيف، أو حدث التسريب مباشرة بعد تركيب جديد أو صيانة، فذلك ناتج عن ميلان مسطرة التثبيت في اتجاه عكسي، حيث يجب أن تميل الوحدة بمقدار 1 إلى 2 ملم نحو جهة أنبوب الصرف."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "ما هو تعريق مواسير النحاس خلف المكيف وكيف يتلف الجدار؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "يحدث تعريق النحاس عند تشقق أو تمزق عازل الأرمالكس الإسفنجي المحيط بأنبوب خط السحب البارد؛ حيث يلامس هواء الغرفة الرطب النحاس البارد مباشرة ويتكثف عليه قطرات ماء مستمرة تتغلغل في بياض اللياسة ودهان الجدار وتسبب عفناً أسود وتلفاً للديكور."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "كم تكلفة تسليك وصيانة تسريب ماء مكيف السبليت في الطائف؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "تبدأ تكلفة تسليك مجرى الصرف وتنظيف حوض التكثيف وفحص ميل المكيف في الطائف لدى صَيّاف من 80 إلى 150 ريالاً للجهاز، وتشمل فحص ضغط الفريون وضماناً ميدانياً ضد عودة التسريب."
+          }
+        }
+      ]
+    }
+  ]
+}
   </script>
 </head>
 <body>

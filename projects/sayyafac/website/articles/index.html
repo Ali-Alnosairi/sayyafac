@@ -40,15 +40,18 @@
   <!-- Connected Entity Graph Schema (@graph) -->
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Organization",
-        "@id": "https://sayyafac.com/#organization",
-        "name": "صَيّاف للتكييف",
-        "url": "https://sayyafac.com/",
-        "logo": "https://sayyafac.com/assets/images/logo.svg",
-        "sameAs": [
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": [
+        "Organization",
+        "HVACBusiness"
+      ],
+      "@id": "https://sayyafac.com/#organization",
+      "name": "صَيّاف للتكييف",
+      "url": "https://sayyafac.com/",
+      "logo": "https://sayyafac.com/assets/images/logo.svg",
+      "sameAs": [
         "https://www.instagram.com/sayyaf_ac",
         "https://facebook.com/sayyafac.offical",
         "https://www.tiktok.com/@sayyaf_ac",
@@ -63,43 +66,56 @@
         "صيانة مكيفات سبليت",
         "تنظيف وغسيل مكيفات",
         "تمديد نحاس مولر أمريكي"
+      ],
+      "telephone": "+966538972324"
+    },
+    {
+      "@type": "CollectionPage",
+      "@id": "https://sayyafac.com/articles/#collection",
+      "name": "مركز الأدلة الفنية للتكييف بالطائف",
+      "url": "https://sayyafac.com/articles/",
+      "isPartOf": {
+        "@id": "https://sayyafac.com/#organization"
+      },
+      "description": "دليل ومرجع فني متخصص للمواصفات الهندسية لتركيب وتأسيس وصيانة التكييف في الطائف.",
+      "hasPart": [
+        {
+          "@id": "https://sayyafac.com/articles/split-ac-guide/#article"
+        },
+        {
+          "@id": "https://sayyafac.com/articles/water-leakage-guide/#article"
+        },
+        {
+          "@id": "https://sayyafac.com/articles/freon-types-guide/#article"
+        },
+        {
+          "@id": "https://sayyafac.com/articles/deep-cleaning-guide/#article"
+        },
+        {
+          "@id": "https://sayyafac.com/articles/taif-winter-heating-guide/#article"
+        }
       ]
-      },
-      {
-        "@type": "CollectionPage",
-        "@id": "https://sayyafac.com/articles/#collection",
-        "name": "مركز الأدلة الفنية للتكييف بالطائف",
-        "url": "https://sayyafac.com/articles/",
-        "isPartOf": { "@id": "https://sayyafac.com/#organization" },
-        "description": "دليل ومرجع فني متخصص للمواصفات الهندسية لتركيب وتأسيس وصيانة التكييف في الطائف.",
-        "hasPart": [
-          { "@id": "https://sayyafac.com/articles/split-ac-guide/#article" },
-          { "@id": "https://sayyafac.com/articles/water-leakage-guide/#article" },
-          { "@id": "https://sayyafac.com/articles/freon-types-guide/#article" },
-          { "@id": "https://sayyafac.com/articles/deep-cleaning-guide/#article" },
-          { "@id": "https://sayyafac.com/articles/taif-winter-heating-guide/#article" }
-        ]
-      },
-      {
-        "@type": "BreadcrumbList",
-        "@id": "https://sayyafac.com/articles/#breadcrumb",
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "الرئيسية",
-            "item": "https://sayyafac.com/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "name": "مركز الأدلة الفنية للتكييف بالطائف",
-            "item": "https://sayyafac.com/articles/"
-          }
-        ]
-      }
-    ]
-  }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://sayyafac.com/articles/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "الرئيسية",
+          "item": "https://sayyafac.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "مركز الأدلة الفنية للتكييف بالطائف",
+          "item": "https://sayyafac.com/articles/"
+        }
+      ]
+    }
+  ]
+}
   </script>
 </head>
 <body>

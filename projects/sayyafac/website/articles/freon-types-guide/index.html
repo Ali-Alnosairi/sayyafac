@@ -45,15 +45,18 @@
   <!-- Connected Entity Graph Schema with ISO-8601 Timestamps -->
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Organization",
-        "@id": "https://sayyafac.com/#organization",
-        "name": "صَيّاف للتكييف",
-        "url": "https://sayyafac.com/",
-        "logo": "https://sayyafac.com/assets/images/logo.svg",
-        "sameAs": [
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": [
+        "Organization",
+        "HVACBusiness"
+      ],
+      "@id": "https://sayyafac.com/#organization",
+      "name": "صَيّاف للتكييف",
+      "url": "https://sayyafac.com/",
+      "logo": "https://sayyafac.com/assets/images/logo.svg",
+      "sameAs": [
         "https://www.instagram.com/sayyaf_ac",
         "https://facebook.com/sayyafac.offical",
         "https://www.tiktok.com/@sayyaf_ac",
@@ -68,125 +71,126 @@
         "صيانة مكيفات سبليت",
         "تنظيف وغسيل مكيفات",
         "تمديد نحاس مولر أمريكي"
-      ]
+      ],
+      "telephone": "+966538972324"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://sayyafac.com/articles/freon-types-guide/#article",
+      "headline": "دليل أنواع فريون المكيفات (R410A vs R22 vs R32): كيف تتأكد من شحن الغاز الأصلي المطابق لمكيفك؟",
+      "description": "دليل متخصص في ديناميكا التبريد يشرح خصائص غازات R410A و R22 و R32، الفروق في ضغوط التشغيل وأنواع الزيوت، ومخاطر الشحن العشوائي.",
+      "image": "https://sayyafac.com/assets/images/install-aston-outdoor-facade.webp",
+      "datePublished": "2026-10-16T08:00:00+03:00",
+      "dateModified": "2026-10-16T08:00:00+03:00",
+      "inLanguage": "ar-SA",
+      "mainEntityOfPage": "https://sayyafac.com/articles/freon-types-guide/",
+      "isPartOf": {
+        "@type": "CollectionPage",
+        "@id": "https://sayyafac.com/articles/#collection"
       },
-      {
-        "@type": "Article",
-        "@id": "https://sayyafac.com/articles/freon-types-guide/#article",
-        "headline": "دليل أنواع فريون المكيفات (R410A vs R22 vs R32): كيف تتأكد من شحن الغاز الأصلي المطابق لمكيفك؟",
-        "description": "دليل متخصص في ديناميكا التبريد يشرح خصائص غازات R410A و R22 و R32، الفروق في ضغوط التشغيل وأنواع الزيوت، ومخاطر الشحن العشوائي.",
-        "image": "https://sayyafac.com/assets/images/install-aston-outdoor-facade.webp",
-        "datePublished": "2026-10-16T08:00:00+03:00",
-        "dateModified": "2026-10-16T08:00:00+03:00",
-        "inLanguage": "ar-SA",
-        "mainEntityOfPage": "https://sayyafac.com/articles/freon-types-guide/",
-        "isPartOf": {
-          "@type": "CollectionPage",
-          "@id": "https://sayyafac.com/articles/#collection"
-        },
-        "speakable": {
-          "@type": "SpeakableSpecification",
-          "cssSelector": [
-            ".article-header h1",
-            ".article-prose > p:first-of-type"
-          ]
-        },
-        "author": {
-          "@type": "Person",
-          "@id": "https://sayyafac.com/#abu-issa",
-          "name": "الفني أبو عيسى",
-          "jobTitle": "كبير فنيي التكييف والتبريد الميداني ومؤسس صَيّاف للتكييف بالطائف",
-          "url": "https://sayyafac.com/about/",
-          "sameAs": [
-            "https://www.linkedin.com/in/abu-issa-sayyafac"
-          ],
-          "knowsAbout": [
-            "ديناميكا موائع التبريد",
-            "شحن فريون R410A السائل بالميزان الإلكتروني",
-            "فحص ضغوط غاز R22 و R32",
-            "كيمياء زيوت التبريد التخليقية POE وحمض الهيدروفلوريك",
-            "كشف تهريب الفريون بالنيتروجين وأجهزة الاستشعار الإلكترونية"
-          ],
-          "worksFor": {
-            "@id": "https://sayyafac.com/#organization"
-          }
-        },
-        "publisher": {
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [
+          ".article-header h1",
+          ".article-prose > p:first-of-type"
+        ]
+      },
+      "author": {
+        "@type": "Person",
+        "@id": "https://sayyafac.com/#abu-issa",
+        "name": "الفني أبو عيسى",
+        "jobTitle": "كبير فنيي التكييف والتبريد الميداني ومؤسس صَيّاف للتكييف بالطائف",
+        "url": "https://sayyafac.com/about/",
+        "sameAs": [
+          "https://www.linkedin.com/in/abu-issa-sayyafac"
+        ],
+        "knowsAbout": [
+          "ديناميكا موائع التبريد",
+          "شحن فريون R410A السائل بالميزان الإلكتروني",
+          "فحص ضغوط غاز R22 و R32",
+          "كيمياء زيوت التبريد التخليقية POE وحمض الهيدروفلوريك",
+          "كشف تهريب الفريون بالنيتروجين وأجهزة الاستشعار الإلكترونية"
+        ],
+        "worksFor": {
           "@id": "https://sayyafac.com/#organization"
         }
       },
-      {
-        "@type": "BreadcrumbList",
-        "@id": "https://sayyafac.com/articles/freon-types-guide/#breadcrumb",
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "الرئيسية",
-            "item": "https://sayyafac.com/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "name": "الأدلة الفنية",
-            "item": "https://sayyafac.com/articles/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 3,
-            "name": "دليل أنواع فريون المكيفات",
-            "item": "https://sayyafac.com/articles/freon-types-guide/"
-          }
-        ]
-      },
-      {
-        "@type": "FAQPage",
-        "@id": "https://sayyafac.com/articles/freon-types-guide/#faq",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "هل ينقص فريون المكيف طبيعياً ويحتاج لتزويد سنوي؟",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "لا ينقص الفريون طبيعياً على الإطلاق؛ فدورة التبريد مغلقة ومحكمة بنسبة 100%. إذا نقص الغاز فهذا دليل قطعي على وجود تهريب أو ثقب في مواسير النحاس يجب كشفه ولحامه قبل إعادة الشحن."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "ما هو ضغط فريون R410A الطبيعي في مكيف السبليت صيفاً؟",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "يتراوح ضغط سحب فريون R410A الطبيعي عند درجة حرارة جوية 35 مئوية بين 115 إلى 130 PSI على خط السحب البارد، بينما يصل ضغط الطرد العالي إلى ما بين 350 إلى 420 PSI."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "هل يمكن شحن فريون R22 في مكيف مخصص لغاز R410A؟",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "لا يمكن ذلك نهائياً؛ فغاز R410A يتطلب زيت تبريد تخليقي (POE)، بينما يعمل R22 بزيت معدني. خلط الغازين يؤدي إلى تحلل الزيت وتكوّن أحماض تحرق ملفات الكمبروسر وانسداد دورة التبريد."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "لماذا يجب قلب أسطوانة فريون R410A عند الشحن؟",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "يجب شحن R410A في الحالة السائلة مع قلب الأسطوانة لأنه خليط متكافئ من غازين بنسبة 50/50؛ فشحنه غازياً والأسطوانة قائمة يخرج الغاز الأخف أولاً ويغير تركيبة الفريون ويفقد المكيف برودته."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "كيف أعرف نوع الفريون المخصص لمكيفي بنفسي؟",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "يمكنك التحقق بقراءة اللوحة الفضية المعدنية (Nameplate) المثبتة على جانب الوحدة الخارجية أو الداخلية؛ تحت بند (Refrigerant) ستجد نوع الغاز بوضوح (R410A أو R22 أو R32) وبجانبه وزن الشحنة بالجرام."
-            }
-          }
-        ]
+      "publisher": {
+        "@id": "https://sayyafac.com/#organization"
       }
-    ]
-  }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://sayyafac.com/articles/freon-types-guide/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "الرئيسية",
+          "item": "https://sayyafac.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "الأدلة الفنية",
+          "item": "https://sayyafac.com/articles/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "دليل أنواع فريون المكيفات",
+          "item": "https://sayyafac.com/articles/freon-types-guide/"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://sayyafac.com/articles/freon-types-guide/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "هل ينقص فريون المكيف طبيعياً ويحتاج لتزويد سنوي؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "لا ينقص الفريون طبيعياً على الإطلاق؛ فدورة التبريد مغلقة ومحكمة بنسبة 100%. إذا نقص الغاز فهذا دليل قطعي على وجود تهريب أو ثقب في مواسير النحاس يجب كشفه ولحامه قبل إعادة الشحن."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "ما هو ضغط فريون R410A الطبيعي في مكيف السبليت صيفاً؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "يتراوح ضغط سحب فريون R410A الطبيعي عند درجة حرارة جوية 35 مئوية بين 115 إلى 130 PSI على خط السحب البارد، بينما يصل ضغط الطرد العالي إلى ما بين 350 إلى 420 PSI."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "هل يمكن شحن فريون R22 في مكيف مخصص لغاز R410A؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "لا يمكن ذلك نهائياً؛ فغاز R410A يتطلب زيت تبريد تخليقي (POE)، بينما يعمل R22 بزيت معدني. خلط الغازين يؤدي إلى تحلل الزيت وتكوّن أحماض تحرق ملفات الكمبروسر وانسداد دورة التبريد."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "لماذا يجب قلب أسطوانة فريون R410A عند الشحن؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "يجب شحن R410A في الحالة السائلة مع قلب الأسطوانة لأنه خليط متكافئ من غازين بنسبة 50/50؛ فشحنه غازياً والأسطوانة قائمة يخرج الغاز الأخف أولاً ويغير تركيبة الفريون ويفقد المكيف برودته."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "كيف أعرف نوع الفريون المخصص لمكيفي بنفسي؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "يمكنك التحقق بقراءة اللوحة الفضية المعدنية (Nameplate) المثبتة على جانب الوحدة الخارجية أو الداخلية؛ تحت بند (Refrigerant) ستجد نوع الغاز بوضوح (R410A أو R22 أو R32) وبجانبه وزن الشحنة بالجرام."
+          }
+        }
+      ]
+    }
+  ]
+}
   </script>
 </head>
 <body>

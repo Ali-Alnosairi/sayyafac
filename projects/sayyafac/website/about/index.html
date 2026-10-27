@@ -43,79 +43,20 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "Organization",
+      "@type": [
+        "Organization",
+        "HVACBusiness"
+      ],
       "@id": "https://sayyafac.com/#organization",
       "name": "صَيّاف للتكييف",
+      "alternateName": "صياف للتكييف",
       "url": "https://sayyafac.com/",
       "logo": "https://sayyafac.com/assets/images/logo.svg",
-      "sameAs": [
-        "https://www.instagram.com/sayyaf_ac",
-        "https://facebook.com/sayyafac.offical",
-        "https://www.tiktok.com/@sayyaf_ac",
-        "https://www.pinterest.com/sayyafac/"
-      ],
-      "knowsAbout": [
-        "فك وتركيب مكيفات سبليت ودولابي وشباك",
-        "صيانة وإصلاح التكييف وتعبئة الفريون",
-        "غسيل وتنظيف المكيفات في الموقع بجراب عازل",
-        "تأسيس وتمديد شبكات نحاس مولر أمريكي",
-        "تفريغ الفاكيوم بمضخات ثنائية المرحلة",
-        "معايير التكييف في مرتفعات الطائف"
-      ],
-      "employee": [
-        {
-          "@id": "https://sayyafac.com/#abu-issa"
-        }
-      ]
-    },
-    {
-      "@type": "AboutPage",
-      "@id": "https://sayyafac.com/about/#page",
-      "name": "من نحن | صَيّاف للتكييف بالطائف",
-      "url": "https://sayyafac.com/about/",
-      "isPartOf": {
-        "@id": "https://sayyafac.com/#organization"
+      "image": "https://sayyafac.com/assets/images/install-after-aston-indoor.webp",
+      "description": "شركة متخصصة في خدمات فك ونقل وتركيب وصيانة أجهزة التكييف الميدانية في مدينة الطائف وضواحيها.",
+      "founder": {
+        "@id": "https://sayyafac.com/#abu-issa"
       },
-      "about": {
-        "@id": "https://sayyafac.com/#localbusiness"
-      }
-    },
-    {
-      "@type": "Person",
-      "@id": "https://sayyafac.com/#abu-issa",
-      "name": "الفني أبو عيسى",
-      "jobTitle": "كبير الفنيين والمشرف الميداني على الجودة",
-      "worksFor": {
-        "@id": "https://sayyafac.com/#organization"
-      },
-      "sameAs": [
-        "https://www.linkedin.com/in/abu-issa-sayyafac"
-      ],
-      "description": "كبير الفنيين والمشرف الميداني على الجودة في صَيّاف للتكييف بالطائف، متخصص في الإشراف الفني وضبط معايير التركيب والتشغيل.",
-      "telephone": "+966538972324",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "شارع عور",
-        "addressLocality": "الطائف",
-        "addressRegion": "منطقة مكة المكرمة",
-        "postalCode": "26511",
-        "addressCountry": "SA"
-      }
-    },
-    {
-      "@type": "HVACBusiness",
-      "@id": "https://sayyafac.com/#localbusiness",
-      "name": "صَيّاف للتكييف",
-      "url": "https://sayyafac.com/",
-      "parentOrganization": {
-        "@id": "https://sayyafac.com/#organization"
-      },
-      "sameAs": [
-        "https://www.instagram.com/sayyaf_ac",
-        "https://facebook.com/sayyafac.offical",
-        "https://www.tiktok.com/@sayyaf_ac",
-        "https://www.pinterest.com/sayyafac/"
-      ],
       "telephone": "+966538972324",
       "email": "info@sayyafac.com",
       "priceRange": "SAR 50 - SAR 350",
@@ -159,37 +100,184 @@
         }
       ],
       "areaServed": [
-        { "@type": "City", "name": "الطائف" },
-        { "@type": "AdministrativeArea", "name": "مخططات الوسام" },
-        { "@type": "AdministrativeArea", "name": "حي شهار" },
-        { "@type": "AdministrativeArea", "name": "حي السداد" },
-        { "@type": "AdministrativeArea", "name": "حي الرحاب" },
-        { "@type": "AdministrativeArea", "name": "حي الردف" },
-        { "@type": "AdministrativeArea", "name": "حي الخالدية" },
-        { "@type": "AdministrativeArea", "name": "حي أم العراد" },
-        { "@type": "AdministrativeArea", "name": "شارع عور" },
-        { "@type": "AdministrativeArea", "name": "حي قروى" },
-        { "@type": "AdministrativeArea", "name": "حي مسرة" },
-        { "@type": "AdministrativeArea", "name": "حي الأحباب" },
-        { "@type": "AdministrativeArea", "name": "الحوية" },
-        { "@type": "AdministrativeArea", "name": "الحلقة الشرقية" },
-        { "@type": "AdministrativeArea", "name": "الحلقة الغربية" },
-        { "@type": "AdministrativeArea", "name": "حي القيم" },
-        { "@type": "AdministrativeArea", "name": "حي الفيصلية" },
-        { "@type": "AdministrativeArea", "name": "حي البيعة" },
-        { "@type": "AdministrativeArea", "name": "حي الورود" },
-        { "@type": "AdministrativeArea", "name": "حي النسيم" },
-        { "@type": "AdministrativeArea", "name": "حي الجال" },
-        { "@type": "AdministrativeArea", "name": "حي جبرة" },
-        { "@type": "AdministrativeArea", "name": "حي السلامة" },
-        { "@type": "AdministrativeArea", "name": "حي المثناة" },
-        { "@type": "AdministrativeArea", "name": "حي العزيزية" },
-        { "@type": "AdministrativeArea", "name": "حي شبرا" },
-        { "@type": "AdministrativeArea", "name": "الهدا" },
-        { "@type": "AdministrativeArea", "name": "الشفا" },
-        { "@type": "AdministrativeArea", "name": "السيل الصغير" },
-        { "@type": "AdministrativeArea", "name": "السيل الكبير" }
-      ]
+        {
+          "@type": "City",
+          "name": "الطائف"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "مخططات الوسام"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "حي شهار"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "حي السداد"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "حي الردف"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "حي الخالدية"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "حي أم العراد"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "حي قروى"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "حي مسرة"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "حي الأحباب"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "شارع عور"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "الحوية"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "الحلقة الشرقية"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "الحلقة الغربية"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "حي القيم"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "حي الفيصلية"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "حي الورود"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "حي النسيم"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "حي الجال"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "حي جبرة"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "حي السلامة"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "حي المثناة"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "حي العزيزية"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "حي شبرا"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "منطقة وادي وج"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "حي الرحاب"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "الهدا"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "الشفا"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "السيل الصغير"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "السيل الكبير"
+        }
+      ],
+      "knowsAbout": [
+        "فك وتركيب مكيفات سبليت ودولابي وشباك",
+        "صيانة وإصلاح التكييف وتعبئة الفريون",
+        "غسيل وتنظيف المكيفات في الموقع بجراب عازل",
+        "تأسيس وتمديد شبكات نحاس مولر أمريكي",
+        "تفريغ الفاكيوم بمضخات ثنائية المرحلة",
+        "معايير التكييف في مرتفعات الطائف"
+      ],
+      "sameAs": [
+        "https://www.instagram.com/sayyaf_ac",
+        "https://facebook.com/sayyafac.offical",
+        "https://www.tiktok.com/@sayyaf_ac",
+        "https://www.pinterest.com/sayyafac/"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+966538972324",
+        "contactType": "customer service",
+        "areaServed": "SA",
+        "availableLanguage": [
+          "Arabic"
+        ]
+      }
+    },
+    {
+      "@type": "AboutPage",
+      "@id": "https://sayyafac.com/about/#page",
+      "name": "من نحن | صَيّاف للتكييف بالطائف",
+      "url": "https://sayyafac.com/about/",
+      "isPartOf": {
+        "@id": "https://sayyafac.com/#organization"
+      },
+      "about": {
+        "@id": "https://sayyafac.com/#organization"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://sayyafac.com/#abu-issa",
+      "name": "الفني أبو عيسى",
+      "jobTitle": "كبير الفنيين والمشرف الميداني على الجودة",
+      "worksFor": {
+        "@id": "https://sayyafac.com/#organization"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/abu-issa-sayyafac"
+      ],
+      "description": "كبير الفنيين والمشرف الميداني على الجودة في صَيّاف للتكييف بالطائف، متخصص في الإشراف الفني وضبط معايير التركيب والتشغيل.",
+      "telephone": "+966538972324",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "شارع عور",
+        "addressLocality": "الطائف",
+        "addressRegion": "منطقة مكة المكرمة",
+        "postalCode": "26511",
+        "addressCountry": "SA"
+      }
     },
     {
       "@type": "FAQPage",

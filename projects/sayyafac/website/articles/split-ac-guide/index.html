@@ -45,15 +45,18 @@
   <!-- Connected Entity Graph Schema with ISO-8601 Timestamps -->
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Organization",
-        "@id": "https://sayyafac.com/#organization",
-        "name": "صَيّاف للتكييف",
-        "url": "https://sayyafac.com/",
-        "logo": "https://sayyafac.com/assets/images/logo.svg",
-        "sameAs": [
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": [
+        "Organization",
+        "HVACBusiness"
+      ],
+      "@id": "https://sayyafac.com/#organization",
+      "name": "صَيّاف للتكييف",
+      "url": "https://sayyafac.com/",
+      "logo": "https://sayyafac.com/assets/images/logo.svg",
+      "sameAs": [
         "https://www.instagram.com/sayyaf_ac",
         "https://facebook.com/sayyafac.offical",
         "https://www.tiktok.com/@sayyaf_ac",
@@ -68,127 +71,128 @@
         "صيانة مكيفات سبليت",
         "تنظيف وغسيل مكيفات",
         "تمديد نحاس مولر أمريكي"
-      ]
+      ],
+      "telephone": "+966538972324"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://sayyafac.com/articles/split-ac-guide/#article",
+      "headline": "دليل معايير تركيب مكيف السبليت وتأسيس النحاس: أسرار تفريغ الفاكيوم، مقاسات المواسير، وتفادي أخطاء الصوت والتنقيط",
+      "description": "دليل فني معتمد يوضح الخطوات الحرفية لتركيب مكيفات السبليت، أضرار التنفيس السريع، قاعدة طول النحاس لمنع الاهتزاز، ومعايير تصريف المياه.",
+      "image": "https://sayyafac.com/assets/images/install-rooftop-koolen-rubber-mounts.webp",
+      "datePublished": "2026-10-11T08:00:00+03:00",
+      "dateModified": "2026-10-24T06:20:00+03:00",
+      "inLanguage": "ar-SA",
+      "mainEntityOfPage": "https://sayyafac.com/articles/split-ac-guide/",
+      "isPartOf": {
+        "@type": "CollectionPage",
+        "@id": "https://sayyafac.com/articles/#collection"
       },
-      {
-        "@type": "Article",
-        "@id": "https://sayyafac.com/articles/split-ac-guide/#article",
-        "headline": "دليل معايير تركيب مكيف السبليت وتأسيس النحاس: أسرار تفريغ الفاكيوم، مقاسات المواسير، وتفادي أخطاء الصوت والتنقيط",
-        "description": "دليل فني معتمد يوضح الخطوات الحرفية لتركيب مكيفات السبليت، أضرار التنفيس السريع، قاعدة طول النحاس لمنع الاهتزاز، ومعايير تصريف المياه.",
-        "image": "https://sayyafac.com/assets/images/install-rooftop-koolen-rubber-mounts.webp",
-        "datePublished": "2026-10-11T08:00:00+03:00",
-        "dateModified": "2026-10-24T06:20:00+03:00",
-        "inLanguage": "ar-SA",
-        "mainEntityOfPage": "https://sayyafac.com/articles/split-ac-guide/",
-        "isPartOf": {
-          "@type": "CollectionPage",
-          "@id": "https://sayyafac.com/articles/#collection"
-        },
-        "speakable": {
-          "@type": "SpeakableSpecification",
-          "cssSelector": [
-            ".article-header h1",
-            ".article-prose > p:first-of-type"
-          ]
-        },
-        "author": {
-          "@type": "Person",
-          "@id": "https://sayyafac.com/#abu-issa",
-          "name": "الفني أبو عيسى",
-          "jobTitle": "كبير فنيي التكييف والتبريد الميداني ومؤسس صَيّاف للتكييف بالطائف",
-          "url": "https://sayyafac.com/about/",
-          "sameAs": [
-            "https://www.linkedin.com/in/abu-issa-sayyafac"
-          ],
-          "knowsAbout": [
-            "تكييف وتبريد",
-            "تركيب وتأسيس مكيفات سبليت",
-            "تأسيس وتمديد شبكات النحاس",
-            "تفريغ الفاكيوم بمضخات ثنائية المرحلة",
-            "شحن وتعبئة فريون R410A و R22",
-            "اختبار كبس النيتروجين 300 PSI"
-          ],
-          "worksFor": {
-            "@id": "https://sayyafac.com/#organization"
-          }
-        },
-        "publisher": {
-          "@type": "Organization",
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [
+          ".article-header h1",
+          ".article-prose > p:first-of-type"
+        ]
+      },
+      "author": {
+        "@type": "Person",
+        "@id": "https://sayyafac.com/#abu-issa",
+        "name": "الفني أبو عيسى",
+        "jobTitle": "كبير فنيي التكييف والتبريد الميداني ومؤسس صَيّاف للتكييف بالطائف",
+        "url": "https://sayyafac.com/about/",
+        "sameAs": [
+          "https://www.linkedin.com/in/abu-issa-sayyafac"
+        ],
+        "knowsAbout": [
+          "تكييف وتبريد",
+          "تركيب وتأسيس مكيفات سبليت",
+          "تأسيس وتمديد شبكات النحاس",
+          "تفريغ الفاكيوم بمضخات ثنائية المرحلة",
+          "شحن وتعبئة فريون R410A و R22",
+          "اختبار كبس النيتروجين 300 PSI"
+        ],
+        "worksFor": {
           "@id": "https://sayyafac.com/#organization"
         }
       },
-      {
-        "@type": "FAQPage",
-        "@id": "https://sayyafac.com/articles/split-ac-guide/#faq",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "هل يمكن تشغيل مكيف السبليت الجديد بدون تفريغ فاكيوم؟",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "لا يمكن ذلك نهائياً؛ فالهواء والرطوبة المحبوسة داخل مواسير النحاس تتفاعل كيميائياً مع زيت التبريد عند درجات حرارة التشغيل العالية وتتحول إلى أحماض تآكلية تحرق ملفات الكمبروسر النحاسية وتلغي كفاءة التبريد في غضون أشهر."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "ما هو الحد الأدنى المسموح به لطول مواسير النحاس بين الوحدتين؟",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "الحد الأدنى القياسي هو 3 إلى 4 أمتار حتى لو كانت الوحدة الخارجية ملاصقة تماماً للجدار الخلفي؛ حيث يمنع هذا الطول رجوع سائل الفريون غير المتبخر للضاغط ويمنع انتقال رنين واهتزاز المروحة إلى الغرفة."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "كيف يتأكد العميل من أن الفني أجرى تفريغ فاكيوم حقيقي وليس تنفيساً يدوياً؟",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "الفحص بالفاكيوم يتطلب ربط مضخة تفريغ كهربائية مع ساعة قياس ضغط وتوصيلها بمحبس الخدمة لمدة لا تقل عن 15 دقيقة، بينما التنفيس اليدوي العشوائي يقتصر على فتح المحبس بمفتاح ألنكي والضغط على الإبرة لثوانٍ معدودة."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "كم المسافة المطلوبة بين أعلى المكيف الداخلي وسقف الجبس؟",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "يجب ترك مسافة فراغ لا تقل عن 15 إلى 20 سم بين أعلى الوحدة وسقف الغرفة أو الجبس المعلق، لضمان سحب الهواء الراجع بحرية تامة وتفادي خنق المبخر وضعف دفع التبريد."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "لماذا يجب إمالة مكيف السبليت بمقدار 2 ملم أثناء التثبيت؟",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "تمنح هذه الإمالة الطفيفة انحداراً انسيابياً لمياه التكثيف المتجمعة في حوض المبخر باتجاه فتحة خرطوم الصرف، مما يمنع ركود المياه ونمو الطحالب وفيضان الماء على الجدران والأثاث."
-            }
-          }
-        ]
-      },
-      {
-        "@type": "BreadcrumbList",
-        "@id": "https://sayyafac.com/articles/split-ac-guide/#breadcrumb",
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "الرئيسية",
-            "item": "https://sayyafac.com/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "name": "الأدلة الفنية",
-            "item": "https://sayyafac.com/articles/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 3,
-            "name": "دليل معايير تركيب مكيف السبليت",
-            "item": "https://sayyafac.com/articles/split-ac-guide/"
-          }
-        ]
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://sayyafac.com/#organization"
       }
-    ]
-  }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://sayyafac.com/articles/split-ac-guide/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "هل يمكن تشغيل مكيف السبليت الجديد بدون تفريغ فاكيوم؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "لا يمكن ذلك نهائياً؛ فالهواء والرطوبة المحبوسة داخل مواسير النحاس تتفاعل كيميائياً مع زيت التبريد عند درجات حرارة التشغيل العالية وتتحول إلى أحماض تآكلية تحرق ملفات الكمبروسر النحاسية وتلغي كفاءة التبريد في غضون أشهر."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "ما هو الحد الأدنى المسموح به لطول مواسير النحاس بين الوحدتين؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "الحد الأدنى القياسي هو 3 إلى 4 أمتار حتى لو كانت الوحدة الخارجية ملاصقة تماماً للجدار الخلفي؛ حيث يمنع هذا الطول رجوع سائل الفريون غير المتبخر للضاغط ويمنع انتقال رنين واهتزاز المروحة إلى الغرفة."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "كيف يتأكد العميل من أن الفني أجرى تفريغ فاكيوم حقيقي وليس تنفيساً يدوياً؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "الفحص بالفاكيوم يتطلب ربط مضخة تفريغ كهربائية مع ساعة قياس ضغط وتوصيلها بمحبس الخدمة لمدة لا تقل عن 15 دقيقة، بينما التنفيس اليدوي العشوائي يقتصر على فتح المحبس بمفتاح ألنكي والضغط على الإبرة لثوانٍ معدودة."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "كم المسافة المطلوبة بين أعلى المكيف الداخلي وسقف الجبس؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "يجب ترك مسافة فراغ لا تقل عن 15 إلى 20 سم بين أعلى الوحدة وسقف الغرفة أو الجبس المعلق، لضمان سحب الهواء الراجع بحرية تامة وتفادي خنق المبخر وضعف دفع التبريد."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "لماذا يجب إمالة مكيف السبليت بمقدار 2 ملم أثناء التثبيت؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "تمنح هذه الإمالة الطفيفة انحداراً انسيابياً لمياه التكثيف المتجمعة في حوض المبخر باتجاه فتحة خرطوم الصرف، مما يمنع ركود المياه ونمو الطحالب وفيضان الماء على الجدران والأثاث."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://sayyafac.com/articles/split-ac-guide/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "الرئيسية",
+          "item": "https://sayyafac.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "الأدلة الفنية",
+          "item": "https://sayyafac.com/articles/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "دليل معايير تركيب مكيف السبليت",
+          "item": "https://sayyafac.com/articles/split-ac-guide/"
+        }
+      ]
+    }
+  ]
+}
   </script>
 </head>
 <body>

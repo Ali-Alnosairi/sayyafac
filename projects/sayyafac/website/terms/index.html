@@ -39,15 +39,18 @@
   <!-- Schema Markup -->
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Organization",
-        "@id": "https://sayyafac.com/#organization",
-        "name": "صَيّاف للتكييف",
-        "url": "https://sayyafac.com/",
-        "logo": "https://sayyafac.com/assets/images/logo.svg",
-        "sameAs": [
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": [
+        "Organization",
+        "HVACBusiness"
+      ],
+      "@id": "https://sayyafac.com/#organization",
+      "name": "صَيّاف للتكييف",
+      "url": "https://sayyafac.com/",
+      "logo": "https://sayyafac.com/assets/images/logo.svg",
+      "sameAs": [
         "https://www.instagram.com/sayyaf_ac",
         "https://facebook.com/sayyafac.offical",
         "https://www.tiktok.com/@sayyaf_ac",
@@ -62,35 +65,38 @@
         "صيانة مكيفات سبليت",
         "تنظيف وغسيل مكيفات",
         "تمديد نحاس مولر أمريكي"
-      ]
-      },
-      {
-        "@type": "WebPage",
-        "@id": "https://sayyafac.com/terms/#page",
-        "name": "شروط الخدمة والضمان الميداني",
-        "url": "https://sayyafac.com/terms/",
-        "isPartOf": { "@id": "https://sayyafac.com/#organization" }
-      },
-      {
-        "@type": "BreadcrumbList",
-        "@id": "https://sayyafac.com/terms/#breadcrumb",
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "الرئيسية",
-            "item": "https://sayyafac.com/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "name": "شروط الخدمة والضمان",
-            "item": "https://sayyafac.com/terms/"
-          }
-        ]
+      ],
+      "telephone": "+966538972324"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://sayyafac.com/terms/#page",
+      "name": "شروط الخدمة والضمان الميداني",
+      "url": "https://sayyafac.com/terms/",
+      "isPartOf": {
+        "@id": "https://sayyafac.com/#organization"
       }
-    ]
-  }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://sayyafac.com/terms/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "الرئيسية",
+          "item": "https://sayyafac.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "شروط الخدمة والضمان",
+          "item": "https://sayyafac.com/terms/"
+        }
+      ]
+    }
+  ]
+}
   </script>
 </head>
 <body>
