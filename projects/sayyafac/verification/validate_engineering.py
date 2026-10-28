@@ -152,6 +152,11 @@ def validate_sayyafac_engineering():
             else:
                 errors.append("robots.txt missing AI search bot rules")
 
+            if 'LLM-Txt:' in rob or 'LLM-Full-Txt:' in rob:
+                errors.append("Non-standard directives (LLM-Txt) found in robots.txt causing Google Search Console syntax errors")
+            else:
+                passes.append("robots.txt has ZERO non-standard syntax errors")
+
     if not os.path.exists(sitemap_path):
         errors.append("Missing sitemap.xml")
     else:

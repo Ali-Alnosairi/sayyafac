@@ -42,7 +42,3 @@ Allow: /
 # Sitemap Location
 Sitemap: https://sayyafac.com/sitemap.xml
 
-# LLMs Discovery (https://llmstxt.org/)
-LLM-Txt: https://sayyafac.com/llms.txt
-LLM-Full-Txt: https://sayyafac.com/llms-full.txt
-
