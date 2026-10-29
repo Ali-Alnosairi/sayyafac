@@ -1351,6 +1351,7 @@ ul, ol {
   padding: 1.25rem;
 }
 
+.before-after-info h3,
 .before-after-info h4 {
   font-size: 1.1rem;
   font-weight: 800;
@@ -2681,6 +2682,7 @@ body.drawer-open .sayyaf-back-to-top {
   flex-shrink: 0;
 }
 
+.hvac-tool-body h3,
 .hvac-tool-body h4 {
   font-size: 0.95rem;
   font-weight: 800;

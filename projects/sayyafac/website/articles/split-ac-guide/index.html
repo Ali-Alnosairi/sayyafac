@@ -50,154 +50,330 @@
   <!-- Connected Entity Graph Schema with ISO-8601 Timestamps -->
   <script type="application/ld+json">
   {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": [
-        "Organization",
-        "HVACBusiness"
-      ],
-      "@id": "https://sayyafac.com/#organization",
-      "name": "صَيّاف للتكييف",
-      "url": "https://sayyafac.com/",
-      "logo": "https://sayyafac.com/assets/images/logo.svg",
-      "sameAs": [
-        "https://www.instagram.com/sayyaf_ac",
-        "https://facebook.com/sayyafac.offical",
-        "https://www.tiktok.com/@sayyaf_ac",
-        "https://www.pinterest.com/sayyafac/"
-      ],
-      "knowsAbout": [
-        "https://en.wikipedia.org/wiki/Air_conditioning",
-        "https://en.wikipedia.org/wiki/Refrigeration",
-        "https://en.wikipedia.org/wiki/HVAC",
-        "https://ar.wikipedia.org/wiki/%D8%AA%D9%83%D9%8A%D9%8A%D9%81_%D8%A7%D9%84%D9%87%D9%88%D8%A7%D8%A1",
-        "تركيب مكيفات سبليت بالطائف",
-        "صيانة مكيفات سبليت",
-        "تنظيف وغسيل مكيفات",
-        "تمديد نحاس مولر أمريكي"
-      ],
-      "telephone": "+966538972324"
-    },
-    {
-      "@type": "Article",
-      "@id": "https://sayyafac.com/articles/split-ac-guide/#article",
-      "headline": "دليل معايير تركيب مكيف السبليت وتأسيس النحاس: أسرار تفريغ الفاكيوم، مقاسات المواسير، وتفادي أخطاء الصوت والتنقيط",
-      "description": "دليل فني معتمد يوضح الخطوات الحرفية لتركيب مكيفات السبليت، أضرار التنفيس السريع، قاعدة طول النحاس لمنع الاهتزاز، ومعايير تصريف المياه.",
-      "image": "https://sayyafac.com/assets/images/install-rooftop-koolen-rubber-mounts.webp",
-      "datePublished": "2026-10-11T08:00:00+03:00",
-      "dateModified": "2026-10-24T06:20:00+03:00",
-      "inLanguage": "ar-SA",
-      "mainEntityOfPage": "https://sayyafac.com/articles/split-ac-guide/",
-      "isPartOf": {
-        "@type": "CollectionPage",
-        "@id": "https://sayyafac.com/articles/#collection"
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://sayyafac.com/articles/split-ac-guide/#webpage",
+        "url": "https://sayyafac.com/articles/split-ac-guide/",
+        "name": "دليل معايير تركيب مكيف السبليت وتأسيس النحاس | صَيّاف للتكييف",
+        "description": "دليل فني شامل يشرح المعايير الهندسية لتركيب مكيفات السبليت: خطوات التثبيت السليمة، سر تفريغ الفاكيوم، قاعدة طول النحاس 3 أمتار لمنع الرنين، وتثبيت الوحدات ضد الرياح.",
+        "inLanguage": "ar-SA",
+        "isPartOf": {
+          "@id": "https://sayyafac.com/#website"
+        },
+        "about": {
+          "@id": "https://sayyafac.com/#organization"
+        },
+        "mainEntity": {
+          "@id": "https://sayyafac.com/articles/split-ac-guide/#article"
+        },
+        "breadcrumb": {
+          "@id": "https://sayyafac.com/articles/split-ac-guide/#breadcrumb"
+        }
       },
-      "speakable": {
-        "@type": "SpeakableSpecification",
-        "cssSelector": [
-          ".article-header h1",
-          ".article-prose > p:first-of-type"
-        ]
+      {
+        "@type": [
+          "Organization",
+          "HVACBusiness"
+        ],
+        "@id": "https://sayyafac.com/#organization",
+        "name": "صَيّاف للتكييف",
+        "alternateName": "صياف للتكييف",
+        "url": "https://sayyafac.com/",
+        "logo": {
+          "@type": "ImageObject",
+          "@id": "https://sayyafac.com/#logo",
+          "url": "https://sayyafac.com/assets/images/logo.png",
+          "contentUrl": "https://sayyafac.com/assets/images/logo.png",
+          "caption": "شعار صَيّاف للتكييف بالطائف",
+          "inLanguage": "ar-SA"
+        },
+        "image": "https://sayyafac.com/assets/images/install-after-aston-indoor.webp",
+        "description": "مركز متخصص في خدمات فك ونقل وتركيب وصيانة وتنظيف وتأسيس مكيفات سبليت ودولابي وشباك في مدينة الطائف وضواحيها بإشراف هندسي وضمان ميداني موثق.",
+        "founder": {
+          "@id": "https://sayyafac.com/#abu-issa"
+        },
+        "telephone": "+966538972324",
+        "email": "info@sayyafac.com",
+        "priceRange": "SAR 50 - SAR 350",
+        "paymentAccepted": "Cash, Mada, Bank Transfer",
+        "currenciesAccepted": "SAR",
+        "hasMap": "https://maps.google.com/?q=21.256835196480665,40.408051642763986",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "شارع عور، حي أم العراد",
+          "addressLocality": "الطائف",
+          "addressRegion": "منطقة مكة المكرمة",
+          "postalCode": "26511",
+          "addressCountry": "SA"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 21.256835196480665,
+          "longitude": 40.408051642763986
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Saturday",
+              "Sunday",
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday"
+            ],
+            "opens": "07:00",
+            "closes": "23:50"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Friday"
+            ],
+            "opens": "14:00",
+            "closes": "23:50"
+          }
+        ],
+        "areaServed": [
+          {
+            "@type": "City",
+            "@id": "https://www.wikidata.org/wiki/Q168544",
+            "name": "الطائف",
+            "sameAs": "https://ar.wikipedia.org/wiki/%D8%A7%D9%84%D8%B7%D8%A7%D8%A6%D9%81"
+          },
+          { "@type": "AdministrativeArea", "name": "مخططات الوسام", "containedInPlace": { "@type": "City", "name": "الطائف" } },
+          { "@type": "AdministrativeArea", "name": "حي شهار", "containedInPlace": { "@type": "City", "name": "الطائف" } },
+          { "@type": "AdministrativeArea", "name": "حي السداد", "containedInPlace": { "@type": "City", "name": "الطائف" } },
+          { "@type": "AdministrativeArea", "name": "حي الردف", "containedInPlace": { "@type": "City", "name": "الطائف" } },
+          { "@type": "AdministrativeArea", "name": "حي الخالدية", "containedInPlace": { "@type": "City", "name": "الطائف" } },
+          { "@type": "AdministrativeArea", "name": "حي أم العراد", "containedInPlace": { "@type": "City", "name": "الطائف" } },
+          { "@type": "AdministrativeArea", "name": "حي قروى", "containedInPlace": { "@type": "City", "name": "الطائف" } },
+          { "@type": "AdministrativeArea", "name": "حي مسرة", "containedInPlace": { "@type": "City", "name": "الطائف" } },
+          { "@type": "AdministrativeArea", "name": "حي الأحباب", "containedInPlace": { "@type": "City", "name": "الطائف" } },
+          { "@type": "AdministrativeArea", "name": "الحوية", "containedInPlace": { "@type": "City", "name": "الطائف" } },
+          { "@type": "AdministrativeArea", "name": "الحلقة الشرقية", "containedInPlace": { "@type": "City", "name": "الطائف" } },
+          { "@type": "AdministrativeArea", "name": "الحلقة الغربية", "containedInPlace": { "@type": "City", "name": "الطائف" } },
+          { "@type": "AdministrativeArea", "name": "حي القيم", "containedInPlace": { "@type": "City", "name": "الطائف" } },
+          { "@type": "AdministrativeArea", "name": "حي الفيصلية", "containedInPlace": { "@type": "City", "name": "الطائف" } },
+          { "@type": "AdministrativeArea", "name": "حي الورود", "containedInPlace": { "@type": "City", "name": "الطائف" } },
+          { "@type": "AdministrativeArea", "name": "حي النسيم", "containedInPlace": { "@type": "City", "name": "الطائف" } },
+          { "@type": "AdministrativeArea", "name": "حي الجال", "containedInPlace": { "@type": "City", "name": "الطائف" } },
+          { "@type": "AdministrativeArea", "name": "حي جبرة", "containedInPlace": { "@type": "City", "name": "الطائف" } },
+          { "@type": "AdministrativeArea", "name": "حي السلامة", "containedInPlace": { "@type": "City", "name": "الطائف" } },
+          { "@type": "AdministrativeArea", "name": "حي المثناة", "containedInPlace": { "@type": "City", "name": "الطائف" } },
+          { "@type": "AdministrativeArea", "name": "حي العزيزية", "containedInPlace": { "@type": "City", "name": "الطائف" } },
+          { "@type": "AdministrativeArea", "name": "حي شبرا", "containedInPlace": { "@type": "City", "name": "الطائف" } },
+          { "@type": "AdministrativeArea", "name": "منطقة وادي وج", "containedInPlace": { "@type": "City", "name": "الطائف" } },
+          { "@type": "AdministrativeArea", "name": "حي الرحاب", "containedInPlace": { "@type": "City", "name": "الطائف" } },
+          { "@type": "AdministrativeArea", "name": "الهدا", "containedInPlace": { "@type": "City", "name": "الطائف" } },
+          { "@type": "AdministrativeArea", "name": "الشفا", "containedInPlace": { "@type": "City", "name": "الطائف" } },
+          { "@type": "AdministrativeArea", "name": "السيل الصغير", "containedInPlace": { "@type": "City", "name": "الطائف" } },
+          { "@type": "AdministrativeArea", "name": "السيل الكبير", "containedInPlace": { "@type": "City", "name": "الطائف" } }
+        ],
+        "knowsAbout": [
+          "https://www.wikidata.org/wiki/Q179635",
+          "https://www.wikidata.org/wiki/Q753364",
+          "https://www.wikidata.org/wiki/Q179235",
+          "https://www.wikidata.org/wiki/Q168544",
+          "https://ar.wikipedia.org/wiki/%D8%AA%D9%83%D9%8A%D9%8A%D9%81_%D8%A7%D9%84%D9%87%D9%88%D8%A7%D8%A1",
+          "https://en.wikipedia.org/wiki/Air_conditioning",
+          "https://en.wikipedia.org/wiki/HVAC",
+          "فك وتركيب مكيفات سبليت بالطائف",
+          "صيانة وإصلاح مكيفات سبليت ودولابي",
+          "تنظيف وغسيل مكيفات بالموقع",
+          "تأسيس وتمديد شبكات نحاس مولر أمريكي",
+          "شحن وتعبئة فريون R410A و R22",
+          "تفريغ الفاكيوم بمضخات ثنائية المرحلة"
+        ],
+        "sameAs": [
+          "https://www.instagram.com/sayyaf_ac",
+          "https://facebook.com/sayyafac.official",
+          "https://www.tiktok.com/@sayyaf_ac",
+          "https://www.pinterest.com/sayyafac/"
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "@id": "https://sayyafac.com/#service-catalog",
+          "name": "دليل خدمات تكييف صَيّاف بالطائف",
+          "itemListElement": [
+            {
+              "@type": "OfferCatalog",
+              "name": "خدمات فك ونقل وتركيب المكيفات",
+              "url": "https://sayyafac.com/"
+            },
+            {
+              "@type": "OfferCatalog",
+              "name": "فني تركيب مكيفات سبليت",
+              "url": "https://sayyafac.com/split-ac-installation-technician/"
+            },
+            {
+              "@type": "OfferCatalog",
+              "name": "صيانة وتصليح مكيفات وتعبئة فريون",
+              "url": "https://sayyafac.com/maintenance/"
+            },
+            {
+              "@type": "OfferCatalog",
+              "name": "تنظيف وغسيل مكيفات بالموقع",
+              "url": "https://sayyafac.com/cleaning/"
+            },
+            {
+              "@type": "OfferCatalog",
+              "name": "تأسيس وتمديد مواسير النحاس",
+              "url": "https://sayyafac.com/copper-piping/"
+            }
+          ]
+        },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+966538972324",
+          "contactType": "customer service",
+          "areaServed": "SA",
+          "availableLanguage": [
+            "Arabic"
+          ]
+        }
       },
-      "author": {
+      {
         "@type": "Person",
         "@id": "https://sayyafac.com/#abu-issa",
         "name": "الفني أبو عيسى",
-        "jobTitle": "كبير فنيي التكييف والتبريد الميداني ومؤسس صَيّاف للتكييف بالطائف",
+        "jobTitle": "كبير فنيي التكييف والتبريد والمشرف الميداني العام",
         "url": "https://sayyafac.com/about/",
         "sameAs": [
           "https://www.linkedin.com/in/abu-issa-sayyafac"
         ],
-        "knowsAbout": [
-          "تكييف وتبريد",
-          "تركيب وتأسيس مكيفات سبليت",
-          "تأسيس وتمديد شبكات النحاس",
-          "تفريغ الفاكيوم بمضخات ثنائية المرحلة",
-          "شحن وتعبئة فريون R410A و R22",
-          "اختبار كبس النيتروجين 300 PSI"
-        ],
+        "description": "كبير فنيي التكييف والتبريد والمشرف الميداني العام في صَيّاف للتكييف بالطائف، بخبرة تفوق 12 عاماً في تأسيس وتركيب وصيانة أنظمة التكييف بالمملكة العربية السعودية.",
+        "telephone": "+966538972324",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "شارع عور، حي أم العراد",
+          "addressLocality": "الطائف",
+          "addressRegion": "منطقة مكة المكرمة",
+          "postalCode": "26511",
+          "addressCountry": "SA"
+        },
         "worksFor": {
+          "@id": "https://sayyafac.com/#organization"
+        },
+        "knowsAbout": [
+          "تأسيس وتمديد شبكات النحاس الأمريكي مولر",
+          "تركيب وتثبيت مكيفات سبليت ودولابي وشباك",
+          "تفريغ الفاكيوم بمضخات سحب الهواء ثنائية المرحلة",
+          "شحن وتعبئة فريون R410A و R22 بالميزان الإلكتروني",
+          "صيانة وتشخيص أعطال التكييف وكشف تهريب الغاز بالنيتروجين",
+          "غسيل وتنظيف المكيفات بالموقع وعزل اللوحات الإلكترونية PCB"
+        ]
+      },
+      {
+        "@type": "Article",
+        "@id": "https://sayyafac.com/articles/split-ac-guide/#article",
+        "headline": "دليل معايير تركيب مكيف السبليت وتأسيس النحاس: أسرار تفريغ الفاكيوم، مقاسات المواسير، وتفادي أخطاء الصوت والتنقيط",
+        "description": "دليل فني معتمد يوضح الخطوات الحرفية لتركيب مكيفات السبليت، أضرار التنفيس السريع، قاعدة طول النحاس لمنع الاهتزاز، ومعايير تصريف المياه.",
+        "image": "https://sayyafac.com/assets/images/install-rooftop-koolen-rubber-mounts.webp",
+        "datePublished": "2026-10-11T08:00:00+03:00",
+        "dateModified": "2026-10-24T06:20:00+03:00",
+        "inLanguage": "ar-SA",
+        "mainEntityOfPage": {
+          "@id": "https://sayyafac.com/articles/split-ac-guide/#webpage"
+        },
+        "isPartOf": {
+          "@id": "https://sayyafac.com/articles/#webpage"
+        },
+        "articleSection": "أدلة التكييف والتبريد الميدانية",
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            ".article-header h1",
+            ".article-prose > p:first-of-type"
+          ]
+        },
+        "author": {
+          "@id": "https://sayyafac.com/#abu-issa"
+        },
+        "publisher": {
           "@id": "https://sayyafac.com/#organization"
         }
       },
-      "publisher": {
-        "@type": "Organization",
-        "@id": "https://sayyafac.com/#organization"
+      {
+        "@type": "FAQPage",
+        "@id": "https://sayyafac.com/articles/split-ac-guide/#faq",
+        "isPartOf": {
+          "@id": "https://sayyafac.com/articles/split-ac-guide/#webpage"
+        },
+        "about": {
+          "@id": "https://sayyafac.com/articles/split-ac-guide/#article"
+        },
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "هل يمكن تشغيل مكيف السبليت الجديد بدون تفريغ فاكيوم؟",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "لا يمكن ذلك نهائياً؛ فالهواء والرطوبة المحبوسة داخل مواسير النحاس تتفاعل كيميائياً مع زيت التبريد عند درجات حرارة التشغيل العالية وتتحول إلى أحماض تآكلية تحرق ملفات الكمبروسر النحاسية وتلغي كفاءة التبريد في غضون أشهر."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "ما هو الحد الأدنى المسموح به لطول مواسير النحاس بين الوحدتين؟",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "الحد الأدنى القياسي هو 3 إلى 4 أمتار حتى لو كانت الوحدة الخارجية ملاصقة تماماً للجدار الخلفي؛ حيث يمنع هذا الطول رجوع سائل الفريون غير المتبخر للضاغط ويمنع انتقال رنين واهتزاز المروحة إلى الغرفة."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "كيف يتأكد العميل من أن الفني أجرى تفريغ فاكيوم حقيقي وليس تنفيساً يدوياً؟",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "الفحص بالفاكيوم يتطلب ربط مضخة تفريغ كهربائية مع ساعة قياس ضغط وتوصيلها بمحبس الخدمة لمدة لا تقل عن 15 دقيقة، بينما التنفيس اليدوي العشوائي يقتصر على فتح المحبس بمفتاح ألنكي والضغط على الإبرة لثوانٍ معدودة."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "كم المسافة المطلوبة بين أعلى المكيف الداخلي وسقف الجبس؟",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "يجب ترك مسافة فراغ لا تقل عن 15 إلى 20 سم بين أعلى الوحدة وسقف الغرفة أو الجبس المعلق، لضمان سحب الهواء الراجع بحرية تامة وتفادي خنق المبخر وضعف دفع التبريد."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "لماذا يجب إمالة مكيف السبليت بمقدار 2 ملم أثناء التثبيت؟",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "تمنح هذه الإمالة الطفيفة انحداراً انسيابياً لمياه التكثيف المتجمعة في حوض المبخر باتجاه فتحة خرطوم الصرف، مما يمنع ركود المياه ونمو الطحالب وفيضان الماء على الجدران والأثاث."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://sayyafac.com/articles/split-ac-guide/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "الرئيسية",
+            "item": "https://sayyafac.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "الأدلة الفنية",
+            "item": "https://sayyafac.com/articles/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "دليل معايير تركيب مكيف السبليت",
+            "item": "https://sayyafac.com/articles/split-ac-guide/"
+          }
+        ]
       }
-    },
-    {
-      "@type": "FAQPage",
-      "@id": "https://sayyafac.com/articles/split-ac-guide/#faq",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "هل يمكن تشغيل مكيف السبليت الجديد بدون تفريغ فاكيوم؟",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "لا يمكن ذلك نهائياً؛ فالهواء والرطوبة المحبوسة داخل مواسير النحاس تتفاعل كيميائياً مع زيت التبريد عند درجات حرارة التشغيل العالية وتتحول إلى أحماض تآكلية تحرق ملفات الكمبروسر النحاسية وتلغي كفاءة التبريد في غضون أشهر."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "ما هو الحد الأدنى المسموح به لطول مواسير النحاس بين الوحدتين؟",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "الحد الأدنى القياسي هو 3 إلى 4 أمتار حتى لو كانت الوحدة الخارجية ملاصقة تماماً للجدار الخلفي؛ حيث يمنع هذا الطول رجوع سائل الفريون غير المتبخر للضاغط ويمنع انتقال رنين واهتزاز المروحة إلى الغرفة."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "كيف يتأكد العميل من أن الفني أجرى تفريغ فاكيوم حقيقي وليس تنفيساً يدوياً؟",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "الفحص بالفاكيوم يتطلب ربط مضخة تفريغ كهربائية مع ساعة قياس ضغط وتوصيلها بمحبس الخدمة لمدة لا تقل عن 15 دقيقة، بينما التنفيس اليدوي العشوائي يقتصر على فتح المحبس بمفتاح ألنكي والضغط على الإبرة لثوانٍ معدودة."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "كم المسافة المطلوبة بين أعلى المكيف الداخلي وسقف الجبس؟",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "يجب ترك مسافة فراغ لا تقل عن 15 إلى 20 سم بين أعلى الوحدة وسقف الغرفة أو الجبس المعلق، لضمان سحب الهواء الراجع بحرية تامة وتفادي خنق المبخر وضعف دفع التبريد."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "لماذا يجب إمالة مكيف السبليت بمقدار 2 ملم أثناء التثبيت؟",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "تمنح هذه الإمالة الطفيفة انحداراً انسيابياً لمياه التكثيف المتجمعة في حوض المبخر باتجاه فتحة خرطوم الصرف، مما يمنع ركود المياه ونمو الطحالب وفيضان الماء على الجدران والأثاث."
-          }
-        }
-      ]
-    },
-    {
-      "@type": "BreadcrumbList",
-      "@id": "https://sayyafac.com/articles/split-ac-guide/#breadcrumb",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "الرئيسية",
-          "item": "https://sayyafac.com/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "الأدلة الفنية",
-          "item": "https://sayyafac.com/articles/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "دليل معايير تركيب مكيف السبليت",
-          "item": "https://sayyafac.com/articles/split-ac-guide/"
-        }
-      ]
-    }
-  ]
-}
+    ]
+  }
   </script>
 </head>
 <body>
@@ -219,7 +395,7 @@
           <span class="sayyaf-ticker-divider">•</span>
           <span class="sayyaf-ticker-item">📞 <strong>اتصال وواتساب مباشر:</strong> <a href="tel:+966538972324">0538972324</a></span>
           <span class="sayyaf-ticker-divider">•</span>
-          <span class="sayyaf-ticker-item">🛡️ <strong>ضمان ميداني:</strong> ضمان ميداني معتمد حتى 90 يوماً على أعمال التركيب والصيانة</span>
+          <span class="sayyaf-ticker-item">🛡️ <strong>ضمان ميداني:</strong> ضمان معتمد 60 يوماً على التركيب وحتى 90 يوماً على الصيانة والقطع</span>
           <span class="sayyaf-ticker-divider">•</span>
           <span class="sayyaf-ticker-item">💳 <strong>طرق الدفع:</strong> سداد نقدي، شبكة مدى، وتحويل بنكي رسمي بعد الفحص والتشغيل</span>
           <span class="sayyaf-ticker-divider">•</span>
@@ -232,7 +408,7 @@
           <span class="sayyaf-ticker-divider">•</span>
           <span class="sayyaf-ticker-item">📞 <strong>اتصال وواتساب مباشر:</strong> <a href="tel:+966538972324">0538972324</a></span>
           <span class="sayyaf-ticker-divider">•</span>
-          <span class="sayyaf-ticker-item">🛡️ <strong>ضمان ميداني:</strong> ضمان ميداني معتمد حتى 90 يوماً على أعمال التركيب والصيانة</span>
+          <span class="sayyaf-ticker-item">🛡️ <strong>ضمان ميداني:</strong> ضمان معتمد 60 يوماً على التركيب وحتى 90 يوماً على الصيانة والقطع</span>
           <span class="sayyaf-ticker-divider">•</span>
           <span class="sayyaf-ticker-item">💳 <strong>طرق الدفع:</strong> سداد نقدي، شبكة مدى، وتحويل بنكي رسمي بعد الفحص والتشغيل</span>
           <span class="sayyaf-ticker-divider">•</span>
@@ -267,7 +443,7 @@
             <span>0538972324</span>
           </a>
 
-          <a href="https://wa.me/966538972324?text=السلام%20عليكم،%20أحتاج%20خدمة%20فك%20وتركيب%20مكيفات%20في%20الطائف" class="sayyaf-btn-primary" target="_blank" rel="noopener">
+          <a href="https://wa.me/966538972324?text=السلام%20عليكم،%20أحتاج%20خدمة%20فك%20وتركيب%20مكيفات%20في%20الطائف" class="sayyaf-btn-primary" target="_blank" rel="noopener noreferrer">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.39-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.32a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24m4.52 11.66c-.19-.09-1.12-.55-1.3-.61-.17-.07-.3-.1-.43.1-.12.19-.48.61-.59.74-.11.12-.22.14-.41.05-.19-.09-.8-.3-1.52-.94-.56-.5-1-1.12-1.11-1.31-.11-.19-.01-.29.08-.38.08-.09.19-.22.28-.33.09-.11.13-.19.19-.32.06-.13.03-.24-.02-.33-.05-.09-.43-1.04-.59-1.42-.16-.38-.32-.33-.44-.33h-.37c-.13 0-.34.05-.52.24-.18.19-.69.67-.69 1.64s.71 1.9 0.81 2.03c.1.14 1.39 2.13 3.37 2.99.47.2 0.84.33 1.13.42.48.15.91.13 1.25.08.38-.06 1.17-.48 1.33-.94.17-.46.17-.86.12-.94-.05-.08-.18-.13-.37-.22z"/></svg>
             <span>واتساب فوري</span>
           </a>
@@ -324,7 +500,7 @@
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
         <span>اتصال: 0538972324</span>
       </a>
-      <a href="https://wa.me/966538972324?text=السلام%20عليكم،%20أحتاج%20خدمة%20فك%20وتركيب%20مكيفات%20في%20الطائف" class="sayyaf-btn-lg sayyaf-btn-wa" style="width: 100%;" target="_blank" rel="noopener">
+      <a href="https://wa.me/966538972324?text=السلام%20عليكم،%20أحتاج%20خدمة%20فك%20وتركيب%20مكيفات%20في%20الطائف" class="sayyaf-btn-lg sayyaf-btn-wa" style="width: 100%;" target="_blank" rel="noopener noreferrer">
         <span>محادثة واتساب مباشرة</span>
       </a>
     </div>
@@ -591,7 +767,7 @@
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
               <span>استشارة فنية هاتفية: 0538972324</span>
             </a>
-            <a href="https://wa.me/966538972324?text=السلام%20عليكم،%20قرأت%20دليل%20معايير%20التركيب%20وأحتاج%20استشارة%20في%20الطائف" class="sayyaf-btn-lg sayyaf-btn-wa" target="_blank" rel="noopener">
+            <a href="https://wa.me/966538972324?text=السلام%20عليكم،%20قرأت%20دليل%20معايير%20التركيب%20وأحتاج%20استشارة%20في%20الطائف" class="sayyaf-btn-lg sayyaf-btn-wa" target="_blank" rel="noopener noreferrer">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.39-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.32a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24m4.52 11.66c-.19-.09-1.12-.55-1.3-.61-.17-.07-.3-.1-.43.1-.12.19-.48.61-.59.74-.11.12-.22.14-.41.05-.19-.09-.8-.3-1.52-.94-.56-.5-1-1.12-1.11-1.31-.11-.19-.01-.29.08-.38.08-.09.19-.22.28-.33.09-.11.13-.19.19-.32.06-.13.03-.24-.02-.33-.05-.09-.43-1.04-.59-1.42-.16-.38-.32-.33-.44-.33h-.37c-.13 0-.34.05-.52.24-.18.19-.69.67-.69 1.64s.71 1.9 0.81 2.03c.1.14 1.39 2.13 3.37 2.99.47.2 0.84.33 1.13.42.48.15.91.13 1.25.08.38-.06 1.17-.48 1.33-.94.17-.46.17-.86.12-.94-.05-.08-.18-.13-.37-.22z"/></svg>
               <span>محادثة واتساب مباشرة</span>
             </a>
@@ -631,22 +807,22 @@
             مركز صَيّاف للتكييف — متخصصون في فك وتركيب ونقل وصيانة وتنظيف وتأسيس أجهزة التكييف الميدانية في مدينة الطائف وضواحيها بإشراف فنيين خبراء وضمان معتمد.
           </p>
           <div style="display: flex; gap: 0.85rem; align-items: center; flex-wrap: wrap;">
-            <a href="https://www.instagram.com/sayyaf_ac" target="_blank" rel="noopener me" aria-label="حساب صَيّاف للتكييف على إنستغرام" style="color: #cbd5e1; display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.88rem;">
+            <a href="https://www.instagram.com/sayyaf_ac" target="_blank" rel="noopener noreferrer me" aria-label="حساب صَيّاف للتكييف على إنستغرام" style="color: #cbd5e1; display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.88rem;">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
               <span>إنستغرام</span>
             </a>
             <span style="color: #64748b;">•</span>
-            <a href="https://facebook.com/sayyafac.offical" target="_blank" rel="noopener me" aria-label="صفحة صَيّاف للتكييف على فيسبوك" style="color: #cbd5e1; display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.88rem;">
+            <a href="https://facebook.com/sayyafac.offical" target="_blank" rel="noopener noreferrer me" aria-label="صفحة صَيّاف للتكييف على فيسبوك" style="color: #cbd5e1; display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.88rem;">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
               <span>فيسبوك</span>
             </a>
             <span style="color: #64748b;">•</span>
-            <a href="https://www.tiktok.com/@sayyaf_ac" target="_blank" rel="noopener me" aria-label="حساب صَيّاف للتكييف على تيك توك" style="color: #cbd5e1; display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.88rem;">
+            <a href="https://www.tiktok.com/@sayyaf_ac" target="_blank" rel="noopener noreferrer me" aria-label="حساب صَيّاف للتكييف على تيك توك" style="color: #cbd5e1; display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.88rem;">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"></path></svg>
               <span>تيك توك</span>
             </a>
             <span style="color: #64748b;">•</span>
-            <a href="https://www.pinterest.com/sayyafac/" target="_blank" rel="noopener me" aria-label="حساب صَيّاف للتكييف على بنترست" style="color: #cbd5e1; display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.88rem;">
+            <a href="https://www.pinterest.com/sayyafac/" target="_blank" rel="noopener noreferrer me" aria-label="حساب صَيّاف للتكييف على بنترست" style="color: #cbd5e1; display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.88rem;">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="20" x2="12" y2="11"></line><path d="M10.7 14c.437 1.263 1.43 2 2.55 2c2.071 0 3.75 -1.554 3.75 -4a5 5 0 1 0 -9.7 1.7"></path><circle cx="12" cy="12" r="9"></circle></svg>
               <span>بنترست</span>
             </a>
@@ -655,7 +831,7 @@
 
         <!-- Col 2: Services -->
         <div>
-          <h4 class="footer-col-title">خدمات التكييف بالطائف</h4>
+          <h3 class="footer-col-title">خدمات التكييف بالطائف</h3>
           <ul class="footer-links-list">
             <li class="footer-link-item"><a href="/">فك وتركيب مكيفات بالطائف</a></li>
             <li class="footer-link-item"><a href="/split-ac-installation-technician/">تركيب مكيفات سبليت</a></li>
@@ -667,7 +843,7 @@
 
         <!-- Col 3: Quick Links (with 'خدماتنا') -->
         <div>
-          <h4 class="footer-col-title">روابط مهمة</h4>
+          <h3 class="footer-col-title">روابط مهمة</h3>
           <ul class="footer-links-list">
             <li class="footer-link-item"><a href="/services/">خدماتنا</a></li>
             <li class="footer-link-item"><a href="/about/">من نحن</a></li>
@@ -681,7 +857,7 @@
 
         <!-- Col 4: Contact & Hours -->
         <div>
-          <h4 class="footer-col-title">معلومات التواصل والمواعيد</h4>
+          <h3 class="footer-col-title">معلومات التواصل والمواعيد</h3>
           <div class="footer-contact-info">
             <div class="footer-contact-row">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
@@ -693,7 +869,7 @@
             </div>
             <div class="footer-contact-row">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.39-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.32a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24m4.52 11.66c-.19-.09-1.12-.55-1.3-.61-.17-.07-.3-.1-.43.1-.12.19-.48.61-.59.74-.11.12-.22.14-.41.05-.19-.09-.8-.3-1.52-.94-.56-.5-1-1.12-1.11-1.31-.11-.19-.01-.29.08-.38.08-.09.19-.22.28-.33.09-.11.13-.19.19-.32.06-.13.03-.24-.02-.33-.05-.09-.43-1.04-.59-1.42-.16-.38-.32-.33-.44-.33h-.37c-.13 0-.34.05-.52.24-.18.19-.69.67-.69 1.64s.71 1.9 0.81 2.03c.1.14 1.39 2.13 3.37 2.99.47.2 0.84.33 1.13.42.48.15.91.13 1.25.08.38-.06 1.17-.48 1.33-.94.17-.46.17-.86.12-.94-.05-.08-.18-.13-.37-.22z"/></svg>
-              <span>واتساب: <a href="https://wa.me/966538972324?text=السلام%20عليكم،%20أحتاج%20خدمة%20فك%20وتركيب%20مكيفات%20في%20الطائف" target="_blank" rel="noopener" style="color: #4ade80; font-weight: 700;">محادثة فورية (متاح 24 ساعة)</a></span>
+              <span>واتساب: <a href="https://wa.me/966538972324?text=السلام%20عليكم،%20أحتاج%20خدمة%20فك%20وتركيب%20مكيفات%20في%20الطائف" target="_blank" rel="noopener noreferrer" style="color: #4ade80; font-weight: 700;">محادثة فورية (متاح 24 ساعة)</a></span>
             </div>
                         <div class="footer-contact-row">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
@@ -720,7 +896,7 @@
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
       <span>اتصال مباشر</span>
     </a>
-    <a href="https://wa.me/966538972324?text=السلام%20عليكم،%20أحتاج%20خدمة%20تركيب%20مكيفات%20في%20الطائف" class="mobile-sticky-btn btn-wa" target="_blank" rel="noopener">
+    <a href="https://wa.me/966538972324?text=السلام%20عليكم،%20أحتاج%20خدمة%20تركيب%20مكيفات%20في%20الطائف" class="mobile-sticky-btn btn-wa" target="_blank" rel="noopener noreferrer">
       <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.39-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.32a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24m4.52 11.66c-.19-.09-1.12-.55-1.3-.61-.17-.07-.3-.1-.43.1-.12.19-.48.61-.59.74-.11.12-.22.14-.41.05-.19-.09-.8-.3-1.52-.94-.56-.5-1-1.12-1.11-1.31-.11-.19-.01-.29.08-.38.08-.09.19-.22.28-.33.09-.11.13-.19.19-.32.06-.13.03-.24-.02-.33-.05-.09-.43-1.04-.59-1.42-.16-.38-.32-.33-.44-.33h-.37c-.13 0-.34.05-.52.24-.18.19-.69.67-.69 1.64s.71 1.9 0.81 2.03c.1.14 1.39 2.13 3.37 2.99.47.2 0.84.33 1.13.42.48.15.91.13 1.25.08.38-.06 1.17-.48 1.33-.94.17-.46.17-.86.12-.94-.05-.08-.18-.13-.37-.22z"/></svg>
       <span>واتساب</span>
     </a>

@@ -3,7 +3,7 @@ import re
 import json
 
 def validate_sayyafac_engineering():
-    print("=== STARTING SAYYAFAC ENGINEERING AUDIT (GATE 4 & GATE 5) ===")
+    print("=== STARTING SAYYAFAC ENGINEERING AUDIT (GATE 4 & GATE 5 EXPANDED) ===")
     errors = []
     passes = []
     
@@ -33,7 +33,14 @@ def validate_sayyafac_engineering():
     else:
         passes.append(f"Found {len(font_files)} local self-hosted .woff2 font files: {font_files}")
 
-    # 3. Check pages
+    # Gather all HTML files site-wide
+    html_files = []
+    for root, dirs, files in os.walk(base_dir):
+        for f in files:
+            if f.endswith('.html'):
+                html_files.append(os.path.join(root, f))
+
+    # 3. Check core pages for navigation, og:type, JSON-LD, and basic integrity
     pages = [
         (os.path.join(base_dir, 'index.html'), 'website', False),
         (os.path.join(base_dir, 'split-ac-installation-technician', 'index.html'), 'website', False),
@@ -43,8 +50,14 @@ def validate_sayyafac_engineering():
         (os.path.join(base_dir, 'copper-piping', 'index.html'), 'website', False),
         (os.path.join(base_dir, 'articles', 'index.html'), 'website', False),
         (os.path.join(base_dir, 'articles', 'split-ac-guide', 'index.html'), 'article', True),
+        (os.path.join(base_dir, 'articles', 'water-leakage-guide', 'index.html'), 'article', True),
+        (os.path.join(base_dir, 'articles', 'freon-types-guide', 'index.html'), 'article', True),
+        (os.path.join(base_dir, 'articles', 'deep-cleaning-guide', 'index.html'), 'article', True),
+        (os.path.join(base_dir, 'articles', 'taif-winter-heating-guide', 'index.html'), 'article', True),
         (os.path.join(base_dir, 'about', 'index.html'), 'website', False),
-        (os.path.join(base_dir, 'contact', 'index.html'), 'website', False)
+        (os.path.join(base_dir, 'contact', 'index.html'), 'website', False),
+        (os.path.join(base_dir, 'privacy', 'index.html'), 'website', False),
+        (os.path.join(base_dir, 'terms', 'index.html'), 'website', False)
     ]
 
     for rel_path, expected_og_type, is_article in pages:
@@ -111,7 +124,7 @@ def validate_sayyafac_engineering():
         for link in internal_links:
             if link.startswith(('/assets/', '/favicon.', '#')):
                 continue
-            # Skip file extensions like .txt, .xml, .svg
+            # Skip file extensions like .txt, .xml, .svg, .webmanifest
             if re.search(r'\.[a-zA-Z0-9]+$', link):
                 continue
             if not link.endswith('/'):
@@ -184,7 +197,6 @@ def validate_sayyafac_engineering():
         "حي المثناة", "الهدا", "الشفا", "السيل الصغير", "السيل الكبير"
     ]
     
-    # Check llms.txt for canonical districts
     with open(llms_path, 'r', encoding='utf-8') as f:
         llms_text = f.read()
     missing_in_llms = [d for d in canonical_districts if d not in llms_text]
@@ -193,7 +205,6 @@ def validate_sayyafac_engineering():
     else:
         passes.append("llms.txt verified with all 25 canonical Taif districts across 4 tiers")
 
-    # Check service pages and index/contact for Schema areaServed
     geo_pages = [
         os.path.join(base_dir, 'index.html'),
         os.path.join(base_dir, 'split-ac-installation-technician', 'index.html'),
@@ -213,7 +224,269 @@ def validate_sayyafac_engineering():
         else:
             passes.append(f"All 25 canonical Taif districts present in {gp_name} (Schema & UI)")
 
+    # 6. Gate: Heading Hierarchy Integrity (WCAG 2.1 A SC 1.3.1 - Zero Heading Skips)
+    heading_skip_errors = 0
+    for hf in html_files:
+        rel = os.path.relpath(hf, base_dir).replace('\\', '/')
+        with open(hf, 'r', encoding='utf-8') as f:
+            h_content = f.read()
+        headings = re.findall(r'<h([1-6])[^>]*>(.*?)</h\1>', h_content, re.DOTALL | re.IGNORECASE)
+        prev_lvl = 0
+        for lvl_str, h_text in headings:
+            lvl = int(lvl_str)
+            if prev_lvl > 0 and lvl > prev_lvl + 1:
+                errors.append(f"Heading skip in {rel}: <h{prev_lvl}> followed by <h{lvl}> ({h_text.strip()[:30]})")
+                heading_skip_errors += 1
+            prev_lvl = lvl
+    if heading_skip_errors == 0:
+        passes.append(f"Gate 6: Heading hierarchy verified 100% compliant (zero skips) across all {len(html_files)} HTML pages")
+
+    # 7. Gate: Schema OfferCatalog & Mathematical Pricing Bounds
+    catalog_pages = [
+        'index.html',
+        'split-ac-installation-technician/index.html',
+        'maintenance/index.html',
+        'cleaning/index.html',
+        'copper-piping/index.html'
+    ]
+    for cp in catalog_pages:
+        full_p = os.path.join(base_dir, cp)
+        with open(full_p, 'r', encoding='utf-8') as f:
+            cp_content = f.read()
+        schema_matches = re.findall(r'<script\s+type=["\']application/ld\+json["\']>(.*?)</script>', cp_content, re.DOTALL)
+        found_catalog = False
+        for s_str in schema_matches:
+            data = json.loads(s_str)
+            graph = data.get('@graph', [])
+            
+            # Check unified Organization priceRange
+            for node in graph:
+                if any(t in node.get('@type', []) for t in ['Organization', 'HVACBusiness']):
+                    if node.get('priceRange') != 'SAR 50 - SAR 350':
+                        errors.append(f"Mismatched priceRange on Organization in {cp}: {node.get('priceRange')}")
+                    else:
+                        passes.append(f"priceRange 'SAR 50 - SAR 350' verified on {cp}")
+            
+            # Check Service OfferCatalog & AggregateOffer
+            for node in graph:
+                if node.get('@type') == 'Service' and 'hasOfferCatalog' in node:
+                    cat = node['hasOfferCatalog']
+                    items = cat.get('itemListElement', [])
+                    if len(items) < 3:
+                        errors.append(f"OfferCatalog in {cp} has fewer than 3 offers: {len(items)}")
+                    else:
+                        prices = [float(it['price']) for it in items if 'price' in it]
+                        offers = node.get('offers', {})
+                        if offers.get('@type') != 'AggregateOffer':
+                            errors.append(f"Service in {cp} offers is not AggregateOffer: {offers.get('@type')}")
+                        else:
+                            if int(offers.get('offerCount', 0)) != len(items):
+                                errors.append(f"offerCount ({offers.get('offerCount')}) does not match catalog count ({len(items)}) in {cp}")
+                            if float(offers.get('lowPrice', 0)) != min(prices):
+                                errors.append(f"lowPrice ({offers.get('lowPrice')}) does not match min price ({min(prices)}) in {cp}")
+                            
+                            high_val = float(offers.get('highPrice', 0))
+                            if high_val < max(prices):
+                                errors.append(f"highPrice ({high_val}) cannot be lower than max base price ({max(prices)}) in {cp}")
+                            
+                            high_str = str(int(high_val)) if high_val.is_integer() else str(high_val)
+                            if high_str not in cp_content:
+                                errors.append(f"highPrice ({high_str}) not found in visible page or schema for {cp}")
+                            else:
+                                found_catalog = True
+                                passes.append(f"OfferCatalog & AggregateOffer verified on {cp} ({len(items)} offers: {min(prices)}-{high_str} SAR)")
+        if not found_catalog:
+            errors.append(f"Missing hasOfferCatalog in Service schema for {cp}")
+
+    # 8. Gate: Forbidden Technical Orthography & Jargon Blacklist
+    blacklist = {
+        'أرمالكس': 'Should be أرمفلكس (Armaflex)',
+        'كومبروسر': 'Should be unified to كمبروسر'
+    }
+    scan_exts = ('.html', '.txt', '.md', '.js', '.json')
+    typo_errors = 0
+    for root, dirs, files in os.walk(base_dir):
+        for f in files:
+            if f.endswith(scan_exts):
+                fpath = os.path.join(root, f)
+                with open(fpath, 'r', encoding='utf-8', errors='ignore') as fl:
+                    fcontent = fl.read()
+                for bad_word, advice in blacklist.items():
+                    if bad_word in fcontent:
+                        errors.append(f"Forbidden orthography '{bad_word}' in {os.path.relpath(fpath, base_dir)}: {advice}")
+                        typo_errors += 1
+    if typo_errors == 0:
+        passes.append("Gate 8: Technical orthography blacklist verified 100% clean (zero forbidden typos)")
+
+    # 9. Gate: Form Progressive Enhancement & External Link Security
+    for hf in html_files:
+        rel = os.path.relpath(hf, base_dir).replace('\\', '/')
+        with open(hf, 'r', encoding='utf-8') as f:
+            content = f.read()
+        
+        # Check forms for progressive enhancement
+        forms = re.findall(r'<form\b([^>]*)>', content, re.IGNORECASE)
+        for form_attrs in forms:
+            if 'sayyaf-quote-form' in form_attrs:
+                if 'action="https://wa.me/966538972324"' not in form_attrs or 'method="GET"' not in form_attrs:
+                    errors.append(f"Form missing progressive enhancement fallback (action/method) in {rel}")
+                else:
+                    passes.append(f"Quote form progressive enhancement fallback verified in {rel}")
+
+        # Check external links for noopener noreferrer
+        ext_links = re.findall(r'<a\b([^>]*)href=["\'](https?://[^"\']+)["\']([^>]*)>', content, re.IGNORECASE)
+        for pre, url, post in ext_links:
+            attrs = pre + " " + post
+            if 'sayyafac.com' in url or 'localhost' in url:
+                continue
+            if 'target="_blank"' in attrs:
+                if 'rel=' not in attrs:
+                    errors.append(f"External link to {url} in {rel} missing rel attribute")
+                else:
+                    rel_match = re.search(r'rel=["\']([^"\']+)["\']', attrs)
+                    if not rel_match or 'noopener' not in rel_match.group(1) or 'noreferrer' not in rel_match.group(1):
+                        errors.append(f"External link to {url} in {rel} missing noopener or noreferrer: {attrs}")
+
+    # 10. Gate: AI Grounding & Webmanifest Shaddah Branding
+    if '26 حياً' in llms_text or '26 حيا' in llms_text:
+        errors.append("Conflicting hardcoded count '26 حياً' found in llms.txt")
+    else:
+        passes.append("llms.txt clean of conflicting numeric counters")
+
+    manifest_path = os.path.join(base_dir, 'site.webmanifest')
+    with open(manifest_path, 'r', encoding='utf-8') as f:
+        man_data = json.load(f)
+    if 'صَيّاف للتكييف' not in man_data.get('name', ''):
+        errors.append(f"site.webmanifest name missing shaddah: {man_data.get('name')}")
+    else:
+        passes.append("site.webmanifest name correctly includes shaddah ('صَيّاف للتكييف')")
+
+    # 11. Gate: Connected Entity Graph Integrity & Zero Dangling Nodes
+    allowed_global_roots = {
+        'https://sayyafac.com/#website',
+        'https://sayyafac.com/#service-catalog'
+    }
+    for hf in html_files:
+        rel = os.path.relpath(hf, base_dir).replace('\\', '/')
+        with open(hf, 'r', encoding='utf-8') as f:
+            content = f.read()
+
+        schemas = re.findall(r'<script\s+type=["\']application/ld\+json["\']>(.*?)</script>', content, re.DOTALL)
+        if rel == '404.html':
+            if len(schemas) > 0:
+                errors.append(f"404.html must not contain schema markup (found {len(schemas)})")
+            else:
+                passes.append("404.html correctly has zero schema markup")
+            continue
+
+        if not schemas:
+            errors.append(f"Missing schema markup in {rel}")
+            continue
+
+        for s_str in schemas:
+            try:
+                data = json.loads(s_str)
+            except Exception as ex:
+                errors.append(f"Invalid JSON in schema for {rel}: {ex}")
+                continue
+
+            graph = data.get('@graph', [])
+            if not graph:
+                errors.append(f"Schema missing @graph in {rel}")
+                continue
+
+            defined_ids = set()
+            for node in graph:
+                if isinstance(node, dict) and '@id' in node:
+                    defined_ids.add(node['@id'])
+
+            # Hierarchy check on WebPage nodes
+            webpage_types = {'WebPage', 'ItemPage', 'AboutPage', 'ContactPage', 'CollectionPage'}
+            found_webpage = False
+            found_org = False
+            for node in graph:
+                if not isinstance(node, dict):
+                    continue
+                ntypes = set()
+                raw_type = node.get('@type', [])
+                if isinstance(raw_type, list):
+                    ntypes.update(raw_type)
+                elif isinstance(raw_type, str):
+                    ntypes.add(raw_type)
+
+                if ntypes.intersection(webpage_types):
+                    found_webpage = True
+                    part_of = node.get('isPartOf', {})
+                    part_of_id = part_of.get('@id') if isinstance(part_of, dict) else part_of
+                    if part_of_id == 'https://sayyafac.com/#organization':
+                        errors.append(f"Invalid container hierarchy: WebPage.isPartOf points to #organization instead of #website in {rel}")
+                    elif part_of_id != 'https://sayyafac.com/#website':
+                        errors.append(f"WebPage.isPartOf must point to https://sayyafac.com/#website (got {part_of_id}) in {rel}")
+
+                # Check Organization consistency
+                if ntypes.intersection({'Organization', 'HVACBusiness'}):
+                    found_org = True
+                    # Check rich ImageObject logo
+                    logo = node.get('logo')
+                    if not isinstance(logo, dict) or logo.get('@type') != 'ImageObject' or not logo.get('url', '').endswith('logo.png'):
+                        errors.append(f"Organization logo is not a valid ImageObject in {rel}")
+                    
+                    # Check sameAs typo
+                    same_as = node.get('sameAs', [])
+                    for url in same_as:
+                        if 'sayyafac.offical' in url:
+                            errors.append(f"Typo 'sayyafac.offical' found in sameAs in {rel}")
+                        if 'facebook.com' in url and 'sayyafac.official' not in url:
+                            errors.append(f"Mismatched Facebook profile in {rel}: {url}")
+
+                    # Check areaServed coverage and Wikidata
+                    areas = node.get('areaServed', [])
+                    if len(areas) < 20:
+                        errors.append(f"Organization areaServed has fewer than 20 neighborhoods ({len(areas)}) in {rel}")
+                    has_taif_wikidata = False
+                    for area in areas:
+                        if isinstance(area, dict):
+                            if area.get('@type') == 'City' and 'wikidata.org' in str(area.get('@id', '')):
+                                has_taif_wikidata = True
+                            if area.get('@type') == 'AdministrativeArea':
+                                contained = area.get('containedInPlace', {})
+                                contained_name = contained.get('name') if isinstance(contained, dict) else ''
+                                if contained_name != 'الطائف':
+                                    errors.append(f"areaServed item {area.get('name')} missing containedInPlace 'الطائف' in {rel}")
+                    if not has_taif_wikidata:
+                        errors.append(f"Organization areaServed missing primary City node with Wikidata Q168544 in {rel}")
+
+
+                # Check FAQPage contextual anchoring
+                if 'FAQPage' in ntypes:
+                    part_of = node.get('isPartOf', {})
+                    part_of_id = part_of.get('@id') if isinstance(part_of, dict) else part_of
+                    about_entity = node.get('about', {})
+                    about_id = about_entity.get('@id') if isinstance(about_entity, dict) else about_entity
+                    if not part_of_id or '#webpage' not in part_of_id:
+                        errors.append(f"FAQPage isPartOf must anchor to #webpage in {rel} (got {part_of_id})")
+                    if not about_id or not any(x in about_id for x in ['#service', '#article', '#organization']):
+                        errors.append(f"FAQPage about must anchor to #service, #article, or #organization in {rel} (got {about_id})")
+
+            # Check for dangling internal nodes
+            def check_pointers(obj, path=""):
+                if isinstance(obj, dict):
+                    for k, v in obj.items():
+                        if k == '@id' and path.endswith(('founder', 'author', 'provider', 'itemOffered', 'mainEntity', 'about')):
+                            if isinstance(v, str) and v.startswith('https://sayyafac.com/#') and v not in defined_ids and v not in allowed_global_roots:
+                                errors.append(f"Dangling node reference '{v}' at '{path}' in {rel}")
+                        else:
+                            check_pointers(v, f"{path}.{k}" if path else k)
+                elif isinstance(obj, list):
+                    for idx, item in enumerate(obj):
+                        check_pointers(item, f"{path}[{idx}]")
+
+            check_pointers(graph)
+            if found_webpage and found_org:
+                passes.append(f"Gate 11: Schema entity graph integrity verified in {rel} (valid hierarchy, zero dangling nodes)")
+
     print("\n=== RESULTS ===")
+
     for p in passes:
         print(f"[PASS] {p}")
 

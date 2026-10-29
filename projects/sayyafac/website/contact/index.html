@@ -45,280 +45,286 @@
   <!-- Connected Entity Graph Schema (@graph) -->
   <script type="application/ld+json">
   {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": [
-        "Organization",
-        "HVACBusiness"
-      ],
-      "@id": "https://sayyafac.com/#organization",
-      "name": "صَيّاف للتكييف",
-      "alternateName": "صياف للتكييف",
-      "url": "https://sayyafac.com/",
-      "logo": "https://sayyafac.com/assets/images/logo.svg",
-      "image": "https://sayyafac.com/assets/images/install-after-aston-indoor.webp",
-      "description": "شركة متخصصة في خدمات فك ونقل وتركيب وصيانة أجهزة التكييف الميدانية في مدينة الطائف وضواحيها.",
-      "founder": {
-        "@id": "https://sayyafac.com/#abu-issa"
-      },
-      "telephone": "+966538972324",
-      "email": "info@sayyafac.com",
-      "priceRange": "SAR 50 - SAR 350",
-      "paymentAccepted": "Cash, Mada, Bank Transfer",
-      "currenciesAccepted": "SAR",
-      "hasMap": "https://maps.google.com/?q=21.256835196480665,40.408051642763986",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "شارع عور",
-        "addressLocality": "الطائف",
-        "addressRegion": "منطقة مكة المكرمة",
-        "postalCode": "26511",
-        "addressCountry": "SA"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 21.256835196480665,
-        "longitude": 40.408051642763986
-      },
-      "openingHoursSpecification": [
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": [
-            "Saturday",
-            "Sunday",
-            "Monday",
-            "Tuesday",
-            "Wednesday",
-            "Thursday"
-          ],
-          "opens": "07:00",
-          "closes": "23:50"
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "ContactPage",
+        "@id": "https://sayyafac.com/contact/#webpage",
+        "url": "https://sayyafac.com/contact/",
+        "name": "تواصل مع صَيّاف للتكييف بالطائف | حجز ومواعيد فورية",
+        "description": "اتصل بفريق صَيّاف للتكييف الميداني في الطائف. هاتف وواتساب: 0538972324. المقر: شارع عور، حي أم العراد، الطائف. تغطية سريعة لجميع أحياء وضواحي الطائف.",
+        "inLanguage": "ar-SA",
+        "isPartOf": {
+          "@id": "https://sayyafac.com/#website"
         },
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": [
-            "Friday"
-          ],
-          "opens": "14:00",
-          "closes": "23:50"
+        "about": {
+          "@id": "https://sayyafac.com/#organization"
+        },
+        "mainEntity": {
+          "@id": "https://sayyafac.com/#organization"
+        },
+        "breadcrumb": {
+          "@id": "https://sayyafac.com/contact/#breadcrumb"
         }
-      ],
-      "areaServed": [
-        {
-          "@type": "City",
-          "name": "الطائف"
+      },
+      {
+        "@type": [
+          "Organization",
+          "HVACBusiness"
+        ],
+        "@id": "https://sayyafac.com/#organization",
+        "name": "صَيّاف للتكييف",
+        "alternateName": "صياف للتكييف",
+        "url": "https://sayyafac.com/",
+        "logo": {
+          "@type": "ImageObject",
+          "@id": "https://sayyafac.com/#logo",
+          "url": "https://sayyafac.com/assets/images/logo.png",
+          "contentUrl": "https://sayyafac.com/assets/images/logo.png",
+          "caption": "شعار صَيّاف للتكييف بالطائف",
+          "inLanguage": "ar-SA"
         },
-        {
-          "@type": "AdministrativeArea",
-          "name": "مخططات الوسام"
+        "image": "https://sayyafac.com/assets/images/install-after-aston-indoor.webp",
+        "description": "مركز متخصص في خدمات فك ونقل وتركيب وصيانة وتنظيف وتأسيس مكيفات سبليت ودولابي وشباك في مدينة الطائف وضواحيها بإشراف هندسي وضمان ميداني موثق.",
+        "founder": {
+          "@id": "https://sayyafac.com/#abu-issa"
         },
-        {
-          "@type": "AdministrativeArea",
-          "name": "حي شهار"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "حي السداد"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "حي الردف"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "حي الخالدية"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "حي أم العراد"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "حي قروى"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "حي مسرة"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "حي الأحباب"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "شارع عور"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "الحوية"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "الحلقة الشرقية"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "الحلقة الغربية"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "حي القيم"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "حي الفيصلية"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "حي الورود"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "حي النسيم"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "حي الجال"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "حي جبرة"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "حي السلامة"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "حي المثناة"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "حي العزيزية"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "حي شبرا"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "منطقة وادي وج"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "حي الرحاب"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "الهدا"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "الشفا"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "السيل الصغير"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "السيل الكبير"
-        }
-      ],
-      "knowsAbout": [
-        "https://en.wikipedia.org/wiki/Air_conditioning",
-        "https://en.wikipedia.org/wiki/Refrigeration",
-        "https://en.wikipedia.org/wiki/HVAC",
-        "https://ar.wikipedia.org/wiki/%D8%AA%D9%83%D9%8A%D9%8A%D9%81_%D8%A7%D9%84%D9%87%D9%88%D8%A7%D8%A1",
-        "تركيب مكيفات سبليت بالطائف",
-        "صيانة مكيفات سبليت",
-        "تنظيف وغسيل مكيفات",
-        "تمديد نحاس مولر أمريكي"
-      ],
-      "sameAs": [
-        "https://www.instagram.com/sayyaf_ac",
-        "https://facebook.com/sayyafac.offical",
-        "https://www.tiktok.com/@sayyaf_ac",
-        "https://www.pinterest.com/sayyafac/"
-      ],
-      "contactPoint": {
-        "@type": "ContactPoint",
         "telephone": "+966538972324",
-        "contactType": "customer service",
-        "areaServed": "SA",
-        "availableLanguage": [
-          "Arabic"
+        "email": "info@sayyafac.com",
+        "priceRange": "SAR 50 - SAR 350",
+        "paymentAccepted": "Cash, Mada, Bank Transfer",
+        "currenciesAccepted": "SAR",
+        "hasMap": "https://maps.google.com/?q=21.256835196480665,40.408051642763986",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "شارع عور، حي أم العراد",
+          "addressLocality": "الطائف",
+          "addressRegion": "منطقة مكة المكرمة",
+          "postalCode": "26511",
+          "addressCountry": "SA"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 21.256835196480665,
+          "longitude": 40.408051642763986
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Saturday",
+              "Sunday",
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday"
+            ],
+            "opens": "07:00",
+            "closes": "23:50"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Friday"
+            ],
+            "opens": "14:00",
+            "closes": "23:50"
+          }
+        ],
+        "areaServed": [
+          {
+            "@type": "City",
+            "@id": "https://www.wikidata.org/wiki/Q168544",
+            "name": "الطائف",
+            "sameAs": "https://ar.wikipedia.org/wiki/%D8%A7%D9%84%D8%B7%D8%A7%D8%A6%D9%81"
+          },
+          { "@type": "AdministrativeArea", "name": "مخططات الوسام", "containedInPlace": { "@type": "City", "name": "الطائف" } },
+          { "@type": "AdministrativeArea", "name": "حي شهار", "containedInPlace": { "@type": "City", "name": "الطائف" } },
+          { "@type": "AdministrativeArea", "name": "حي السداد", "containedInPlace": { "@type": "City", "name": "الطائف" } },
+          { "@type": "AdministrativeArea", "name": "حي الردف", "containedInPlace": { "@type": "City", "name": "الطائف" } },
+          { "@type": "AdministrativeArea", "name": "حي الخالدية", "containedInPlace": { "@type": "City", "name": "الطائف" } },
+          { "@type": "AdministrativeArea", "name": "حي أم العراد", "containedInPlace": { "@type": "City", "name": "الطائف" } },
+          { "@type": "AdministrativeArea", "name": "حي قروى", "containedInPlace": { "@type": "City", "name": "الطائف" } },
+          { "@type": "AdministrativeArea", "name": "حي مسرة", "containedInPlace": { "@type": "City", "name": "الطائف" } },
+          { "@type": "AdministrativeArea", "name": "حي الأحباب", "containedInPlace": { "@type": "City", "name": "الطائف" } },
+          { "@type": "AdministrativeArea", "name": "الحوية", "containedInPlace": { "@type": "City", "name": "الطائف" } },
+          { "@type": "AdministrativeArea", "name": "الحلقة الشرقية", "containedInPlace": { "@type": "City", "name": "الطائف" } },
+          { "@type": "AdministrativeArea", "name": "الحلقة الغربية", "containedInPlace": { "@type": "City", "name": "الطائف" } },
+          { "@type": "AdministrativeArea", "name": "حي القيم", "containedInPlace": { "@type": "City", "name": "الطائف" } },
+          { "@type": "AdministrativeArea", "name": "حي الفيصلية", "containedInPlace": { "@type": "City", "name": "الطائف" } },
+          { "@type": "AdministrativeArea", "name": "حي الورود", "containedInPlace": { "@type": "City", "name": "الطائف" } },
+          { "@type": "AdministrativeArea", "name": "حي النسيم", "containedInPlace": { "@type": "City", "name": "الطائف" } },
+          { "@type": "AdministrativeArea", "name": "حي الجال", "containedInPlace": { "@type": "City", "name": "الطائف" } },
+          { "@type": "AdministrativeArea", "name": "حي جبرة", "containedInPlace": { "@type": "City", "name": "الطائف" } },
+          { "@type": "AdministrativeArea", "name": "حي السلامة", "containedInPlace": { "@type": "City", "name": "الطائف" } },
+          { "@type": "AdministrativeArea", "name": "حي المثناة", "containedInPlace": { "@type": "City", "name": "الطائف" } },
+          { "@type": "AdministrativeArea", "name": "حي العزيزية", "containedInPlace": { "@type": "City", "name": "الطائف" } },
+          { "@type": "AdministrativeArea", "name": "حي شبرا", "containedInPlace": { "@type": "City", "name": "الطائف" } },
+          { "@type": "AdministrativeArea", "name": "منطقة وادي وج", "containedInPlace": { "@type": "City", "name": "الطائف" } },
+          { "@type": "AdministrativeArea", "name": "حي الرحاب", "containedInPlace": { "@type": "City", "name": "الطائف" } },
+          { "@type": "AdministrativeArea", "name": "الهدا", "containedInPlace": { "@type": "City", "name": "الطائف" } },
+          { "@type": "AdministrativeArea", "name": "الشفا", "containedInPlace": { "@type": "City", "name": "الطائف" } },
+          { "@type": "AdministrativeArea", "name": "السيل الصغير", "containedInPlace": { "@type": "City", "name": "الطائف" } },
+          { "@type": "AdministrativeArea", "name": "السيل الكبير", "containedInPlace": { "@type": "City", "name": "الطائف" } }
+        ],
+        "knowsAbout": [
+          "https://www.wikidata.org/wiki/Q179635",
+          "https://www.wikidata.org/wiki/Q753364",
+          "https://www.wikidata.org/wiki/Q179235",
+          "https://www.wikidata.org/wiki/Q168544",
+          "https://ar.wikipedia.org/wiki/%D8%AA%D9%83%D9%8A%D9%8A%D9%81_%D8%A7%D9%84%D9%87%D9%88%D8%A7%D8%A1",
+          "https://en.wikipedia.org/wiki/Air_conditioning",
+          "https://en.wikipedia.org/wiki/HVAC",
+          "فك وتركيب مكيفات سبليت بالطائف",
+          "صيانة وإصلاح مكيفات سبليت ودولابي",
+          "تنظيف وغسيل مكيفات بالموقع",
+          "تأسيس وتمديد شبكات نحاس مولر أمريكي",
+          "شحن وتعبئة فريون R410A و R22",
+          "تفريغ الفاكيوم بمضخات ثنائية المرحلة"
+        ],
+        "sameAs": [
+          "https://www.instagram.com/sayyaf_ac",
+          "https://facebook.com/sayyafac.official",
+          "https://www.tiktok.com/@sayyaf_ac",
+          "https://www.pinterest.com/sayyafac/"
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "@id": "https://sayyafac.com/#service-catalog",
+          "name": "دليل خدمات تكييف صَيّاف بالطائف",
+          "itemListElement": [
+            {
+              "@type": "OfferCatalog",
+              "name": "خدمات فك ونقل وتركيب المكيفات",
+              "url": "https://sayyafac.com/"
+            },
+            {
+              "@type": "OfferCatalog",
+              "name": "فني تركيب مكيفات سبليت",
+              "url": "https://sayyafac.com/split-ac-installation-technician/"
+            },
+            {
+              "@type": "OfferCatalog",
+              "name": "صيانة وتصليح مكيفات وتعبئة فريون",
+              "url": "https://sayyafac.com/maintenance/"
+            },
+            {
+              "@type": "OfferCatalog",
+              "name": "تنظيف وغسيل مكيفات بالموقع",
+              "url": "https://sayyafac.com/cleaning/"
+            },
+            {
+              "@type": "OfferCatalog",
+              "name": "تأسيس وتمديد مواسير النحاس",
+              "url": "https://sayyafac.com/copper-piping/"
+            }
+          ]
+        },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+966538972324",
+          "contactType": "customer service",
+          "areaServed": "SA",
+          "availableLanguage": [
+            "Arabic"
+          ]
+        }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://sayyafac.com/#abu-issa",
+        "name": "الفني أبو عيسى",
+        "jobTitle": "كبير فنيي التكييف والتبريد والمشرف الميداني العام",
+        "url": "https://sayyafac.com/about/",
+        "sameAs": [
+          "https://www.linkedin.com/in/abu-issa-sayyafac"
+        ],
+        "description": "كبير فنيي التكييف والتبريد والمشرف الميداني العام في صَيّاف للتكييف بالطائف، بخبرة تفوق 12 عاماً في تأسيس وتركيب وصيانة أنظمة التكييف بالمملكة العربية السعودية.",
+        "telephone": "+966538972324",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "شارع عور، حي أم العراد",
+          "addressLocality": "الطائف",
+          "addressRegion": "منطقة مكة المكرمة",
+          "postalCode": "26511",
+          "addressCountry": "SA"
+        },
+        "worksFor": {
+          "@id": "https://sayyafac.com/#organization"
+        },
+        "knowsAbout": [
+          "تأسيس وتمديد شبكات النحاس الأمريكي مولر",
+          "تركيب وتثبيت مكيفات سبليت ودولابي وشباك",
+          "تفريغ الفاكيوم بمضخات سحب الهواء ثنائية المرحلة",
+          "شحن وتعبئة فريون R410A و R22 بالميزان الإلكتروني",
+          "صيانة وتشخيص أعطال التكييف وكشف تهريب الغاز بالنيتروجين",
+          "غسيل وتنظيف المكيفات بالموقع وعزل اللوحات الإلكترونية PCB"
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://sayyafac.com/contact/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "الرئيسية",
+            "item": "https://sayyafac.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "تواصل معنا ومناطق التغطية",
+            "item": "https://sayyafac.com/contact/"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://sayyafac.com/contact/#faq",
+        "isPartOf": {
+          "@id": "https://sayyafac.com/contact/#webpage"
+        },
+        "about": {
+          "@id": "https://sayyafac.com/#organization"
+        },
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "كم يستغرق وصول فني التكييف بعد تأكيد الطلب؟",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "تصل فرقنا الميدانية خلال 30 إلى 60 دقيقة في الحالات العادية داخل أحياء الطائف. كما نوفر خدمة طوارئ سريعة للمساجد والمناسبات وقاعات الأفراح والمستودعات بالتنسيق الفوري عبر الهاتف."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "هل تقدمون خدمات التكييف يوم الجمعة؟",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "نعم، تعمل فرقنا الميدانية يوم الجمعة من الساعة 02:00 ظهراً وحتى 11:50 مساءً (وباقي أيام الأسبوع من 07:00 صباحاً وحتى 11:50 مساءً)، مع إعطاء الأولوية لصيانة مساجد الطائف والحالات الطارئة."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "ما هي طرق الدفع المعتمدة لدى فنييكم في الطائف؟",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "الدفع يتم دائماً بعد انتهاء الفني من العمل وفحص برودة المكيف والتأكد من انسياب الصرف. نقبل الدفع نقداً (كاش)، شبكة مدى عبر جهاز نقاط البيع (POS)، أو التحويل البنكي الفوري (الراجحي أو الأهلي)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "هل تخدمون ضواحي ومصايف الطائف مثل الهدا والشفا والسيل؟",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "نعم، نغطي الهدا والشفا ومخططات الوسام والسيل الصغير والسيل الكبير ووادي وج بفرق عمل مجهزة لمواجهة طبيعة التضاريس الجبلية والرياح العالية."
+            }
+          }
         ]
       }
-    },
-    {
-      "@type": "ContactPage",
-      "@id": "https://sayyafac.com/contact/#page",
-      "name": "تواصل مع صَيّاف للتكييف بالطائف",
-      "url": "https://sayyafac.com/contact/",
-      "isPartOf": {
-        "@id": "https://sayyafac.com/#organization"
-      }
-    },
-    {
-      "@type": "BreadcrumbList",
-      "@id": "https://sayyafac.com/contact/#breadcrumb",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "الرئيسية",
-          "item": "https://sayyafac.com/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "تواصل معنا ومناطق التغطية",
-          "item": "https://sayyafac.com/contact/"
-        }
-      ]
-    },
-    {
-      "@type": "FAQPage",
-      "@id": "https://sayyafac.com/contact/#faq",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "كم يستغرق وصول فني التكييف بعد تأكيد الطلب؟",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "تصل فرقنا الميدانية خلال 30 إلى 60 دقيقة في الحالات العادية داخل أحياء الطائف. كما نوفر خدمة طوارئ سريعة للمساجد والمناسبات وقاعات الأفراح والمستودعات بالتنسيق الفوري عبر الهاتف."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "هل تقدمون خدمات التكييف يوم الجمعة؟",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "نعم، تعمل فرقنا الميدانية يوم الجمعة من الساعة 02:00 ظهراً وحتى 11:50 مساءً (وباقي أيام الأسبوع من 07:00 صباحاً وحتى 11:50 مساءً)، مع إعطاء الأولوية لصيانة مساجد الطائف والحالات الطارئة."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "ما هي طرق الدفع المعتمدة لدى فنييكم في الطائف؟",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "الدفع يتم دائماً بعد انتهاء الفني من العمل وفحص برودة المكيف والتأكد من انسياب الصرف. نقبل الدفع نقداً (كاش)، شبكة مدى عبر جهاز نقاط البيع (POS)، أو التحويل البنكي الفوري (الراجحي أو الأهلي)."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "هل تخدمون ضواحي ومصايف الطائف مثل الهدا والشفا والسيل؟",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "نعم، نغطي الهدا والشفا ومخططات الوسام والسيل الصغير والسيل الكبير ووادي وج بفرق عمل مجهزة لمواجهة طبيعة التضاريس الجبلية والرياح العالية."
-          }
-        }
-      ]
-    }
-  ]
-}
+    ]
+  }
   </script>
 </head>
 <body>
@@ -386,7 +392,7 @@
             <span>0538972324</span>
           </a>
 
-          <a href="https://wa.me/966538972324?text=السلام%20عليكم،%20أحتاج%20خدمة%20فك%20وتركيب%20مكيفات%20في%20الطائف" class="sayyaf-btn-primary" target="_blank" rel="noopener">
+          <a href="https://wa.me/966538972324?text=السلام%20عليكم،%20أحتاج%20خدمة%20فك%20وتركيب%20مكيفات%20في%20الطائف" class="sayyaf-btn-primary" target="_blank" rel="noopener noreferrer">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.39-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.32a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24m4.52 11.66c-.19-.09-1.12-.55-1.3-.61-.17-.07-.3-.1-.43.1-.12.19-.48.61-.59.74-.11.12-.22.14-.41.05-.19-.09-.8-.3-1.52-.94-.56-.5-1-1.12-1.11-1.31-.11-.19-.01-.29.08-.38.08-.09.19-.22.28-.33.09-.11.13-.19.19-.32.06-.13.03-.24-.02-.33-.05-.09-.43-1.04-.59-1.42-.16-.38-.32-.33-.44-.33h-.37c-.13 0-.34.05-.52.24-.18.19-.69.67-.69 1.64s.71 1.9 0.81 2.03c.1.14 1.39 2.13 3.37 2.99.47.2 0.84.33 1.13.42.48.15.91.13 1.25.08.38-.06 1.17-.48 1.33-.94.17-.46.17-.86.12-.94-.05-.08-.18-.13-.37-.22z"/></svg>
             <span>واتساب فوري</span>
           </a>
@@ -443,7 +449,7 @@
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
         <span>اتصال: 0538972324</span>
       </a>
-      <a href="https://wa.me/966538972324?text=السلام%20عليكم،%20أحتاج%20خدمة%20فك%20وتركيب%20مكيفات%20في%20الطائف" class="sayyaf-btn-lg sayyaf-btn-wa" style="width: 100%;" target="_blank" rel="noopener">
+      <a href="https://wa.me/966538972324?text=السلام%20عليكم،%20أحتاج%20خدمة%20فك%20وتركيب%20مكيفات%20في%20الطائف" class="sayyaf-btn-lg sayyaf-btn-wa" style="width: 100%;" target="_blank" rel="noopener noreferrer">
         <span>محادثة واتساب مباشرة</span>
       </a>
     </div>
@@ -486,7 +492,7 @@
               </div>
               <h2 style="font-size: 1.25rem; font-weight: 800; color: var(--color-primary); margin-bottom: 0.5rem;">المراسلة الفورية عبر واتساب</h2>
               <p style="font-size: 0.92rem; color: #475569; margin-bottom: 1.25rem;">أرسل صور المكيف، موقعك بالحي، واحصل على تسعير فوري ومباشر.</p>
-              <a href="https://wa.me/966538972324?text=السلام%20عليكم،%20أحتاج%20خدمة%20تكييف%20في%20الطائف" class="sayyaf-btn-lg sayyaf-btn-wa" style="width: 100%;" target="_blank" rel="noopener">
+              <a href="https://wa.me/966538972324?text=السلام%20عليكم،%20أحتاج%20خدمة%20تكييف%20في%20الطائف" class="sayyaf-btn-lg sayyaf-btn-wa" style="width: 100%;" target="_blank" rel="noopener noreferrer">
                 <span>محادثة واتساب فورية</span>
               </a>
             </div>
@@ -514,7 +520,7 @@
               <p style="font-size: 0.92rem; color: #475569; margin: 0;">حدد نوع الخدمة والمكيف وموقعك لإرسال التفاصيل مباشرة للفني عبر واتساب وتحديد الموعد والتكلفة:</p>
             </div>
 
-            <form class="sayyaf-quote-form">
+            <form class="sayyaf-quote-form" action="https://wa.me/966538972324" method="GET">
               <div style="display: grid; gap: 1rem;">
                 
                 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem;">
@@ -599,7 +605,7 @@
                 </div>
               </div>
               <div>
-                <a href="https://maps.google.com/?q=21.256835196480665,40.408051642763986" target="_blank" rel="noopener" class="sayyaf-btn-primary" style="padding: 0.65rem 1.25rem; font-size: 0.92rem;">
+                <a href="https://maps.google.com/?q=21.256835196480665,40.408051642763986" target="_blank" rel="noopener noreferrer" class="sayyaf-btn-primary" style="padding: 0.65rem 1.25rem; font-size: 0.92rem;">
                   <span>📍 فتح في تطبيق الخرائط (GPS)</span>
                 </a>
               </div>
@@ -648,19 +654,19 @@
 
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem;">
           <div style="background: #ffffff; border: 1px solid var(--color-border); border-radius: var(--radius-md); padding: 1.25rem;">
-            <h4 style="font-weight: 800; color: var(--color-primary); margin-bottom: 0.5rem;">1. القطاع الغربي والجنوبي (مركز العمليات)</h4>
+            <h3 style="font-weight: 800; color: var(--color-primary); margin-bottom: 0.5rem;">1. القطاع الغربي والجنوبي (مركز العمليات)</h3>
             <p style="font-size: 0.88rem; color: #475569; line-height: 1.7; margin: 0;">مخططات الوسام (1، 2، 3)، حي شهار، حي السداد، حي الرحاب، حي الردف، حي الخالدية، حي أم العراد، شارع عور، حي قروى، حي مسرة، وحي الأحباب.</p>
           </div>
           <div style="background: #ffffff; border: 1px solid var(--color-border); border-radius: var(--radius-md); padding: 1.25rem;">
-            <h4 style="font-weight: 800; color: var(--color-primary); margin-bottom: 0.5rem;">2. القطاع الشمالي والشرقي (استجابة سريعة)</h4>
+            <h3 style="font-weight: 800; color: var(--color-primary); margin-bottom: 0.5rem;">2. القطاع الشمالي والشرقي (استجابة سريعة)</h3>
             <p style="font-size: 0.88rem; color: #475569; line-height: 1.7; margin: 0;">الحوية ومخططاتها السكنية، الحلقة الشرقية، الحلقة الغربية، حي القيم، حي الفيصلية، ومخطط البيعة.</p>
           </div>
           <div style="background: #ffffff; border: 1px solid var(--color-border); border-radius: var(--radius-md); padding: 1.25rem;">
-            <h4 style="font-weight: 800; color: var(--color-primary); margin-bottom: 0.5rem;">3. أحياء وسط وشرق الطائف السكنية</h4>
+            <h3 style="font-weight: 800; color: var(--color-primary); margin-bottom: 0.5rem;">3. أحياء وسط وشرق الطائف السكنية</h3>
             <p style="font-size: 0.88rem; color: #475569; line-height: 1.7; margin: 0;">حي الورود، حي النسيم، حي الجال، حي جبرة، حي السلامة، حي المثناة، حي العزيزية، وحي شبرا.</p>
           </div>
           <div style="background: #ffffff; border: 1px solid var(--color-border); border-radius: var(--radius-md); padding: 1.25rem;">
-            <h4 style="font-weight: 800; color: var(--color-primary); margin-bottom: 0.5rem;">4. قطاع المصايف والمراكز السياحية</h4>
+            <h3 style="font-weight: 800; color: var(--color-primary); margin-bottom: 0.5rem;">4. قطاع المصايف والمراكز السياحية</h3>
             <p style="font-size: 0.88rem; color: #475569; line-height: 1.7; margin: 0;">الهدا، الشفا، السيل الصغير، والسيل الكبير (خدمة مخصصة للفلل والمنتجعات والمنازل).</p>
           </div>
         </div>
@@ -734,22 +740,22 @@
             مركز صَيّاف للتكييف — متخصصون في فك وتركيب ونقل وصيانة وتنظيف وتأسيس أجهزة التكييف الميدانية في مدينة الطائف وضواحيها بإشراف فنيين خبراء وضمان معتمد.
           </p>
           <div style="display: flex; gap: 0.85rem; align-items: center; flex-wrap: wrap;">
-            <a href="https://www.instagram.com/sayyaf_ac" target="_blank" rel="noopener me" aria-label="حساب صَيّاف للتكييف على إنستغرام" style="color: #cbd5e1; display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.88rem;">
+            <a href="https://www.instagram.com/sayyaf_ac" target="_blank" rel="noopener noreferrer me" aria-label="حساب صَيّاف للتكييف على إنستغرام" style="color: #cbd5e1; display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.88rem;">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
               <span>إنستغرام</span>
             </a>
             <span style="color: #64748b;">•</span>
-            <a href="https://facebook.com/sayyafac.offical" target="_blank" rel="noopener me" aria-label="صفحة صَيّاف للتكييف على فيسبوك" style="color: #cbd5e1; display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.88rem;">
+            <a href="https://facebook.com/sayyafac.offical" target="_blank" rel="noopener noreferrer me" aria-label="صفحة صَيّاف للتكييف على فيسبوك" style="color: #cbd5e1; display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.88rem;">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
               <span>فيسبوك</span>
             </a>
             <span style="color: #64748b;">•</span>
-            <a href="https://www.tiktok.com/@sayyaf_ac" target="_blank" rel="noopener me" aria-label="حساب صَيّاف للتكييف على تيك توك" style="color: #cbd5e1; display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.88rem;">
+            <a href="https://www.tiktok.com/@sayyaf_ac" target="_blank" rel="noopener noreferrer me" aria-label="حساب صَيّاف للتكييف على تيك توك" style="color: #cbd5e1; display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.88rem;">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"></path></svg>
               <span>تيك توك</span>
             </a>
             <span style="color: #64748b;">•</span>
-            <a href="https://www.pinterest.com/sayyafac/" target="_blank" rel="noopener me" aria-label="حساب صَيّاف للتكييف على بنترست" style="color: #cbd5e1; display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.88rem;">
+            <a href="https://www.pinterest.com/sayyafac/" target="_blank" rel="noopener noreferrer me" aria-label="حساب صَيّاف للتكييف على بنترست" style="color: #cbd5e1; display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.88rem;">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="20" x2="12" y2="11"></line><path d="M10.7 14c.437 1.263 1.43 2 2.55 2c2.071 0 3.75 -1.554 3.75 -4a5 5 0 1 0 -9.7 1.7"></path><circle cx="12" cy="12" r="9"></circle></svg>
               <span>بنترست</span>
             </a>
@@ -758,7 +764,7 @@
 
         <!-- Col 2: Services -->
         <div>
-          <h4 class="footer-col-title">خدمات التكييف بالطائف</h4>
+          <h3 class="footer-col-title">خدمات التكييف بالطائف</h3>
           <ul class="footer-links-list">
             <li class="footer-link-item"><a href="/">فك وتركيب مكيفات بالطائف</a></li>
             <li class="footer-link-item"><a href="/split-ac-installation-technician/">تركيب مكيفات سبليت</a></li>
@@ -770,7 +776,7 @@
 
         <!-- Col 3: Quick Links (with 'خدماتنا') -->
         <div>
-          <h4 class="footer-col-title">روابط مهمة</h4>
+          <h3 class="footer-col-title">روابط مهمة</h3>
           <ul class="footer-links-list">
             <li class="footer-link-item"><a href="/services/">خدماتنا</a></li>
             <li class="footer-link-item"><a href="/about/">من نحن</a></li>
@@ -784,7 +790,7 @@
 
         <!-- Col 4: Contact & Hours -->
         <div>
-          <h4 class="footer-col-title">معلومات التواصل والمواعيد</h4>
+          <h3 class="footer-col-title">معلومات التواصل والمواعيد</h3>
           <div class="footer-contact-info">
             <div class="footer-contact-row">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
@@ -796,7 +802,7 @@
             </div>
             <div class="footer-contact-row">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.39-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.32a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24m4.52 11.66c-.19-.09-1.12-.55-1.3-.61-.17-.07-.3-.1-.43.1-.12.19-.48.61-.59.74-.11.12-.22.14-.41.05-.19-.09-.8-.3-1.52-.94-.56-.5-1-1.12-1.11-1.31-.11-.19-.01-.29.08-.38.08-.09.19-.22.28-.33.09-.11.13-.19.19-.32.06-.13.03-.24-.02-.33-.05-.09-.43-1.04-.59-1.42-.16-.38-.32-.33-.44-.33h-.37c-.13 0-.34.05-.52.24-.18.19-.69.67-.69 1.64s.71 1.9 0.81 2.03c.1.14 1.39 2.13 3.37 2.99.47.2 0.84.33 1.13.42.48.15.91.13 1.25.08.38-.06 1.17-.48 1.33-.94.17-.46.17-.86.12-.94-.05-.08-.18-.13-.37-.22z"/></svg>
-              <span>واتساب: <a href="https://wa.me/966538972324?text=السلام%20عليكم،%20أحتاج%20خدمة%20فك%20وتركيب%20مكيفات%20في%20الطائف" target="_blank" rel="noopener" style="color: #4ade80; font-weight: 700;">محادثة فورية (متاح 24 ساعة)</a></span>
+              <span>واتساب: <a href="https://wa.me/966538972324?text=السلام%20عليكم،%20أحتاج%20خدمة%20فك%20وتركيب%20مكيفات%20في%20الطائف" target="_blank" rel="noopener noreferrer" style="color: #4ade80; font-weight: 700;">محادثة فورية (متاح 24 ساعة)</a></span>
             </div>
             <div class="footer-contact-row">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
@@ -819,7 +825,7 @@
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
       <span>اتصال مباشر</span>
     </a>
-    <a href="https://wa.me/966538972324?text=السلام%20عليكم،%20أحتاج%20خدمة%20تكييف%20في%20الطائف" class="mobile-sticky-btn btn-wa" target="_blank" rel="noopener">
+    <a href="https://wa.me/966538972324?text=السلام%20عليكم،%20أحتاج%20خدمة%20تكييف%20في%20الطائف" class="mobile-sticky-btn btn-wa" target="_blank" rel="noopener noreferrer">
       <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.39-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.32a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24m4.52 11.66c-.19-.09-1.12-.55-1.3-.61-.17-.07-.3-.1-.43.1-.12.19-.48.61-.59.74-.11.12-.22.14-.41.05-.19-.09-.8-.3-1.52-.94-.56-.5-1-1.12-1.11-1.31-.11-.19-.01-.29.08-.38.08-.09.19-.22.28-.33.09-.11.13-.19.19-.32.06-.13.03-.24-.02-.33-.05-.09-.43-1.04-.59-1.42-.16-.38-.32-.33-.44-.33h-.37c-.13 0-.34.05-.52.24-.18.19-.69.67-.69 1.64s.71 1.9 0.81 2.03c.1.14 1.39 2.13 3.37 2.99.47.2 0.84.33 1.13.42.48.15.91.13 1.25.08.38-.06 1.17-.48 1.33-.94.17-.46.17-.86.12-.94-.05-.08-.18-.13-.37-.22z"/></svg>
       <span>واتساب</span>
     </a>

@@ -92,425 +92,397 @@
   <!-- Connected Entity Graph Schema (@graph) -->
   <script type="application/ld+json">
   {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": [
-        "Organization",
-        "HVACBusiness"
-      ],
-      "@id": "https://sayyafac.com/#organization",
-      "name": "صَيّاف للتكييف",
-      "alternateName": "صياف للتكييف",
-      "url": "https://sayyafac.com/",
-      "logo": "https://sayyafac.com/assets/images/logo.svg",
-      "image": "https://sayyafac.com/assets/images/install-after-aston-indoor.webp",
-      "description": "شركة متخصصة في خدمات فك ونقل وتركيب وصيانة أجهزة التكييف الميدانية في مدينة الطائف وضواحيها.",
-      "founder": {
-        "@id": "https://sayyafac.com/#abu-issa"
-      },
-      "telephone": "+966538972324",
-      "email": "info@sayyafac.com",
-      "priceRange": "SAR 50 - SAR 350",
-      "paymentAccepted": "Cash, Mada, Bank Transfer",
-      "currenciesAccepted": "SAR",
-      "hasMap": "https://maps.google.com/?q=21.256835196480665,40.408051642763986",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "شارع عور",
-        "addressLocality": "الطائف",
-        "addressRegion": "منطقة مكة المكرمة",
-        "postalCode": "26511",
-        "addressCountry": "SA"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 21.256835196480665,
-        "longitude": 40.408051642763986
-      },
-      "openingHoursSpecification": [
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": [
-            "Saturday",
-            "Sunday",
-            "Monday",
-            "Tuesday",
-            "Wednesday",
-            "Thursday"
-          ],
-          "opens": "07:00",
-          "closes": "23:50"
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "ItemPage",
+        "@id": "https://sayyafac.com/cleaning/#webpage",
+        "url": "https://sayyafac.com/cleaning/",
+        "name": "تنظيف وغسيل مكيفات سبليت ودولابي بالموقع في الطائف | صَيّاف للتكييف",
+        "description": "تنظيف وغسيل مكيفات سبليت ودولابي بالموقع في الطائف بدون فك الجدار بواسطة أغطية حماية عازلة ومضخات ضغط مائي دقيقة وتعقيم المبخر والبلاور بضمان معتمد.",
+        "inLanguage": "ar-SA",
+        "isPartOf": {
+          "@id": "https://sayyafac.com/#website"
         },
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": [
-            "Friday"
-          ],
-          "opens": "14:00",
-          "closes": "23:50"
+        "about": {
+          "@id": "https://sayyafac.com/#organization"
+        },
+        "mainEntity": {
+          "@id": "https://sayyafac.com/cleaning/#service"
+        },
+        "breadcrumb": {
+          "@id": "https://sayyafac.com/cleaning/#breadcrumb"
         }
-      ],
-      "areaServed": [
-        {
-          "@type": "City",
-          "name": "الطائف"
+      },
+      {
+        "@type": [
+          "Organization",
+          "HVACBusiness"
+        ],
+        "@id": "https://sayyafac.com/#organization",
+        "name": "صَيّاف للتكييف",
+        "alternateName": "صياف للتكييف",
+        "url": "https://sayyafac.com/",
+        "logo": {
+          "@type": "ImageObject",
+          "@id": "https://sayyafac.com/#logo",
+          "url": "https://sayyafac.com/assets/images/logo.png",
+          "contentUrl": "https://sayyafac.com/assets/images/logo.png",
+          "caption": "شعار صَيّاف للتكييف بالطائف",
+          "inLanguage": "ar-SA"
         },
-        {
-          "@type": "AdministrativeArea",
-          "name": "مخططات الوسام"
+        "image": "https://sayyafac.com/assets/images/install-after-aston-indoor.webp",
+        "description": "مركز متخصص في خدمات فك ونقل وتركيب وصيانة وتنظيف وتأسيس مكيفات سبليت ودولابي وشباك في مدينة الطائف وضواحيها بإشراف هندسي وضمان ميداني موثق.",
+        "founder": {
+          "@id": "https://sayyafac.com/#abu-issa"
         },
-        {
-          "@type": "AdministrativeArea",
-          "name": "حي شهار"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "حي السداد"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "حي الردف"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "حي الخالدية"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "حي أم العراد"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "حي قروى"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "حي مسرة"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "حي الأحباب"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "شارع عور"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "الحوية"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "الحلقة الشرقية"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "الحلقة الغربية"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "حي القيم"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "حي الفيصلية"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "حي الورود"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "حي النسيم"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "حي الجال"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "حي جبرة"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "حي السلامة"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "حي المثناة"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "حي العزيزية"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "حي شبرا"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "منطقة وادي وج"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "حي الرحاب"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "الهدا"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "الشفا"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "السيل الصغير"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "السيل الكبير"
-        }
-      ],
-      "knowsAbout": [
-        "https://en.wikipedia.org/wiki/Air_conditioning",
-        "https://en.wikipedia.org/wiki/Refrigeration",
-        "https://en.wikipedia.org/wiki/HVAC",
-        "https://ar.wikipedia.org/wiki/%D8%AA%D9%83%D9%8A%D9%8A%D9%81_%D8%A7%D9%84%D9%87%D9%88%D8%A7%D8%A1",
-        "تركيب مكيفات سبليت بالطائف",
-        "صيانة مكيفات سبليت",
-        "تنظيف وغسيل مكيفات",
-        "تمديد نحاس مولر أمريكي"
-      ],
-      "sameAs": [
-        "https://www.instagram.com/sayyaf_ac",
-        "https://facebook.com/sayyafac.offical",
-        "https://www.tiktok.com/@sayyaf_ac",
-        "https://www.pinterest.com/sayyafac/"
-      ],
-      "contactPoint": {
-        "@type": "ContactPoint",
         "telephone": "+966538972324",
-        "contactType": "customer service",
-        "areaServed": "SA",
-        "availableLanguage": [
-          "Arabic"
+        "email": "info@sayyafac.com",
+        "priceRange": "SAR 50 - SAR 350",
+        "paymentAccepted": "Cash, Mada, Bank Transfer",
+        "currenciesAccepted": "SAR",
+        "hasMap": "https://maps.google.com/?q=21.256835196480665,40.408051642763986",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "شارع عور، حي أم العراد",
+          "addressLocality": "الطائف",
+          "addressRegion": "منطقة مكة المكرمة",
+          "postalCode": "26511",
+          "addressCountry": "SA"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 21.256835196480665,
+          "longitude": 40.408051642763986
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Saturday",
+              "Sunday",
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday"
+            ],
+            "opens": "07:00",
+            "closes": "23:50"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Friday"
+            ],
+            "opens": "14:00",
+            "closes": "23:50"
+          }
+        ],
+        "areaServed": [
+          {
+            "@type": "City",
+            "@id": "https://www.wikidata.org/wiki/Q168544",
+            "name": "الطائف",
+            "sameAs": "https://ar.wikipedia.org/wiki/%D8%A7%D9%84%D8%B7%D8%A7%D8%A6%D9%81"
+          },
+          { "@type": "AdministrativeArea", "name": "مخططات الوسام", "containedInPlace": { "@type": "City", "name": "الطائف" } },
+          { "@type": "AdministrativeArea", "name": "حي شهار", "containedInPlace": { "@type": "City", "name": "الطائف" } },
+          { "@type": "AdministrativeArea", "name": "حي السداد", "containedInPlace": { "@type": "City", "name": "الطائف" } },
+          { "@type": "AdministrativeArea", "name": "حي الردف", "containedInPlace": { "@type": "City", "name": "الطائف" } },
+          { "@type": "AdministrativeArea", "name": "حي الخالدية", "containedInPlace": { "@type": "City", "name": "الطائف" } },
+          { "@type": "AdministrativeArea", "name": "حي أم العراد", "containedInPlace": { "@type": "City", "name": "الطائف" } },
+          { "@type": "AdministrativeArea", "name": "حي قروى", "containedInPlace": { "@type": "City", "name": "الطائف" } },
+          { "@type": "AdministrativeArea", "name": "حي مسرة", "containedInPlace": { "@type": "City", "name": "الطائف" } },
+          { "@type": "AdministrativeArea", "name": "حي الأحباب", "containedInPlace": { "@type": "City", "name": "الطائف" } },
+          { "@type": "AdministrativeArea", "name": "الحوية", "containedInPlace": { "@type": "City", "name": "الطائف" } },
+          { "@type": "AdministrativeArea", "name": "الحلقة الشرقية", "containedInPlace": { "@type": "City", "name": "الطائف" } },
+          { "@type": "AdministrativeArea", "name": "الحلقة الغربية", "containedInPlace": { "@type": "City", "name": "الطائف" } },
+          { "@type": "AdministrativeArea", "name": "حي القيم", "containedInPlace": { "@type": "City", "name": "الطائف" } },
+          { "@type": "AdministrativeArea", "name": "حي الفيصلية", "containedInPlace": { "@type": "City", "name": "الطائف" } },
+          { "@type": "AdministrativeArea", "name": "حي الورود", "containedInPlace": { "@type": "City", "name": "الطائف" } },
+          { "@type": "AdministrativeArea", "name": "حي النسيم", "containedInPlace": { "@type": "City", "name": "الطائف" } },
+          { "@type": "AdministrativeArea", "name": "حي الجال", "containedInPlace": { "@type": "City", "name": "الطائف" } },
+          { "@type": "AdministrativeArea", "name": "حي جبرة", "containedInPlace": { "@type": "City", "name": "الطائف" } },
+          { "@type": "AdministrativeArea", "name": "حي السلامة", "containedInPlace": { "@type": "City", "name": "الطائف" } },
+          { "@type": "AdministrativeArea", "name": "حي المثناة", "containedInPlace": { "@type": "City", "name": "الطائف" } },
+          { "@type": "AdministrativeArea", "name": "حي العزيزية", "containedInPlace": { "@type": "City", "name": "الطائف" } },
+          { "@type": "AdministrativeArea", "name": "حي شبرا", "containedInPlace": { "@type": "City", "name": "الطائف" } },
+          { "@type": "AdministrativeArea", "name": "منطقة وادي وج", "containedInPlace": { "@type": "City", "name": "الطائف" } },
+          { "@type": "AdministrativeArea", "name": "حي الرحاب", "containedInPlace": { "@type": "City", "name": "الطائف" } },
+          { "@type": "AdministrativeArea", "name": "الهدا", "containedInPlace": { "@type": "City", "name": "الطائف" } },
+          { "@type": "AdministrativeArea", "name": "الشفا", "containedInPlace": { "@type": "City", "name": "الطائف" } },
+          { "@type": "AdministrativeArea", "name": "السيل الصغير", "containedInPlace": { "@type": "City", "name": "الطائف" } },
+          { "@type": "AdministrativeArea", "name": "السيل الكبير", "containedInPlace": { "@type": "City", "name": "الطائف" } }
+        ],
+        "knowsAbout": [
+          "https://www.wikidata.org/wiki/Q179635",
+          "https://www.wikidata.org/wiki/Q753364",
+          "https://www.wikidata.org/wiki/Q179235",
+          "https://www.wikidata.org/wiki/Q168544",
+          "https://ar.wikipedia.org/wiki/%D8%AA%D9%83%D9%8A%D9%8A%D9%81_%D8%A7%D9%84%D9%87%D9%88%D8%A7%D8%A1",
+          "https://en.wikipedia.org/wiki/Air_conditioning",
+          "https://en.wikipedia.org/wiki/HVAC",
+          "فك وتركيب مكيفات سبليت بالطائف",
+          "صيانة وإصلاح مكيفات سبليت ودولابي",
+          "تنظيف وغسيل مكيفات بالموقع",
+          "تأسيس وتمديد شبكات نحاس مولر أمريكي",
+          "شحن وتعبئة فريون R410A و R22",
+          "تفريغ الفاكيوم بمضخات ثنائية المرحلة"
+        ],
+        "sameAs": [
+          "https://www.instagram.com/sayyaf_ac",
+          "https://facebook.com/sayyafac.official",
+          "https://www.tiktok.com/@sayyaf_ac",
+          "https://www.pinterest.com/sayyafac/"
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "@id": "https://sayyafac.com/#service-catalog",
+          "name": "دليل خدمات تكييف صَيّاف بالطائف",
+          "itemListElement": [
+            {
+              "@type": "OfferCatalog",
+              "name": "خدمات فك ونقل وتركيب المكيفات",
+              "url": "https://sayyafac.com/"
+            },
+            {
+              "@type": "OfferCatalog",
+              "name": "فني تركيب مكيفات سبليت",
+              "url": "https://sayyafac.com/split-ac-installation-technician/"
+            },
+            {
+              "@type": "OfferCatalog",
+              "name": "صيانة وتصليح مكيفات وتعبئة فريون",
+              "url": "https://sayyafac.com/maintenance/"
+            },
+            {
+              "@type": "OfferCatalog",
+              "name": "تنظيف وغسيل مكيفات بالموقع",
+              "url": "https://sayyafac.com/cleaning/"
+            },
+            {
+              "@type": "OfferCatalog",
+              "name": "تأسيس وتمديد مواسير النحاس",
+              "url": "https://sayyafac.com/copper-piping/"
+            }
+          ]
+        },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+966538972324",
+          "contactType": "customer service",
+          "areaServed": "SA",
+          "availableLanguage": [
+            "Arabic"
+          ]
+        }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://sayyafac.com/#abu-issa",
+        "name": "الفني أبو عيسى",
+        "jobTitle": "كبير فنيي التكييف والتبريد والمشرف الميداني العام",
+        "url": "https://sayyafac.com/about/",
+        "sameAs": [
+          "https://www.linkedin.com/in/abu-issa-sayyafac"
+        ],
+        "description": "كبير فنيي التكييف والتبريد والمشرف الميداني العام في صَيّاف للتكييف بالطائف، بخبرة تفوق 12 عاماً في تأسيس وتركيب وصيانة أنظمة التكييف بالمملكة العربية السعودية.",
+        "telephone": "+966538972324",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "شارع عور، حي أم العراد",
+          "addressLocality": "الطائف",
+          "addressRegion": "منطقة مكة المكرمة",
+          "postalCode": "26511",
+          "addressCountry": "SA"
+        },
+        "worksFor": {
+          "@id": "https://sayyafac.com/#organization"
+        },
+        "knowsAbout": [
+          "تأسيس وتمديد شبكات النحاس الأمريكي مولر",
+          "تركيب وتثبيت مكيفات سبليت ودولابي وشباك",
+          "تفريغ الفاكيوم بمضخات سحب الهواء ثنائية المرحلة",
+          "شحن وتعبئة فريون R410A و R22 بالميزان الإلكتروني",
+          "صيانة وتشخيص أعطال التكييف وكشف تهريب الغاز بالنيتروجين",
+          "غسيل وتنظيف المكيفات بالموقع وعزل اللوحات الإلكترونية PCB"
+        ]
+      },
+      {
+        "@type": "Service",
+        "@id": "https://sayyafac.com/cleaning/#service",
+        "name": "تنظيف وغسيل مكيفات سبليت ودولابي بالموقع في الطائف",
+        "serviceType": "تنظيف وغسيل مكيفات بالموقع",
+        "provider": {
+          "@id": "https://sayyafac.com/#organization"
+        },
+        "areaServed": {
+          "@type": "City",
+          "@id": "https://www.wikidata.org/wiki/Q168544",
+          "name": "الطائف",
+          "sameAs": "https://ar.wikipedia.org/wiki/%D8%A7%D9%84%D8%B7%D8%A7%D8%A6%D9%81"
+        },
+        "description": "غسيل وتنظيف عميق لمكيفات السبليت في الموقع بدون فك الجدار بواسطة أغطية حماية عازلة ومضخات ضغط مائي محسوبة وتنظيف البلاور وحوض الصرف وتعقيم المبخر.",
+        "offers": {
+          "@type": "AggregateOffer",
+          "priceCurrency": "SAR",
+          "lowPrice": "60",
+          "highPrice": "180",
+          "offerCount": "5"
+        },
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "باقات وأسعار تنظيف وغسيل المكيفات بالطائف",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "غسيل مكيف سبليت مفرد بالموقع"
+              },
+              "price": "80",
+              "priceCurrency": "SAR",
+              "description": "غسيل شامل للوحدتين بجراب الحماية المعلق وتسليك الصرف وتعقيم طبي (80 إلى 120 ريال)."
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "باقة الشقق السكنية (3 إلى 4 مكيفات)"
+              },
+              "price": "75",
+              "priceCurrency": "SAR",
+              "description": "غسيل كامل للوحدات الداخلية والخارجية بجراب الحماية وتطهير مجاري الصرف (75 إلى 85 ريال للجهاز)."
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "باقة الفلل والمباني (5 مكيفات فأكثر)"
+              },
+              "price": "70",
+              "priceCurrency": "SAR",
+              "description": "غسيل عميق لجميع المكيفات وفحص مجاني لضغوط الفريون وكابستورات الإقلاع (70 ريال للجهاز)."
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "غسيل مكيف دولابي تجاري كبير"
+              },
+              "price": "130",
+              "priceCurrency": "SAR",
+              "description": "تنظيف المبخرات العمودية وفك الفلاتر وغسيل المكثف الخارجي بضغط مائي مرتفع (130 إلى 180 ريال)."
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "تنظيف وغسيل مكيف شباك"
+              },
+              "price": "60",
+              "priceCurrency": "SAR",
+              "description": "سحب المكيف من الجدار وغسيل عميق للرديتر والمروحة وقاعدة الجهاز وإزالة الأوحال (60 إلى 90 ريال)."
+            }
+          ]
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://sayyafac.com/cleaning/#faq",
+        "isPartOf": {
+          "@id": "https://sayyafac.com/cleaning/#webpage"
+        },
+        "about": {
+          "@id": "https://sayyafac.com/cleaning/#service"
+        },
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "هل يتم غسيل مكيف السبليت في مكانه أم يلزم فكه من الجدار؟",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "يتم غسيل مكيف السبليت بالكامل وهو مثبت على الجدار دون فكه. نستخدم غطاء حماية معلق (جراب تصريف متخصص) محكم الإغلاق ومزود بخرطوم تصريف مباشر إلى سطل خارجي، مع عزل كامل للوحة الإلكترونية، مما يضمن بقاء دهان الجدار وأثاث الغرفة والجبس جافاً ونظيفاً تماماً دون أي تسريب مياه."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "كم سعر تنظيف وغسيل المكيف في الطائف؟ وهل توجد خصومات للكميات؟",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "يبدأ سعر غسيل مكيف السبليت المفرد بالموقع من 80 إلى 120 ريال. وتوجد باقات توفير خاصة للشقق والفلل؛ فإذا كان لديك 3 مكيفات فأكثر تنخفض التكلفة لتتراوح بين 70 و85 ريالاً للمكيف الواحد شاملة غسيل الوحدتين الداخلية والخارجية وتسليك الصرف. كما نوفر خدمة غسيل مكيف الشباك بسعر 60 إلى 90 ريال."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "كيف تضمنون عدم تضرر دهان الجدار أو الأثاث أثناء ضخ الماء؟",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "نركب جراب غسيل معلق يحيط بهيكل المكيف بالكامل بإحكام ومزود بمجرى تصريف يقود المياه والأطيان إلى سطل خارجي فوراً. كما نضع مفارش بلاستيكية عازلة على الأثاث والباركيه أسفل المكيف لضمان عدم وصول أي رذاذ ماء للغرفة نهائياً."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "هل يمكن أن تتلف اللوحة الإلكترونية (الكرت) بسبب ماء الغسيل؟",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "قبل بدء تشغيل مضخة الماء، نقوم بعزل كارتة التحكم الكهربائية (PCB) وحساسات الحرارة بأكياس عازلة مشدودة بإحكام. نغسل زعانف المبخر ومروحة البلاور فقط، وتضمن صَيّاف سلامة الدائرة الإلكترونية وتشغيل المكيف بنسبة 100%."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "ما الفرق بين تنظيف الفلاتر العادي وغسيل صَيّاف العميق؟",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "تنظيف الفلاتر المنزلية يزيل الغبار السطحي الخفيف فقط؛ بينما الغسيل العميق يتضمن فك الوجه الخارجي، وضخ مياه بضغط محسوب داخل زعانف الألمنيوم لطرد الأتربة المتكلسة، وغسيل مروحة البلاور الأسطوانية لإعادة قوة الدفع، وتسليك حوض ومجرى الصرف، وغسيل المكثف الخارجي لتقليل استهلاك الكهرباء."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "ما هي أبرز العلامات التي تدل على حاجة المكيف إلى غسيل فوري؟",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "أبرز العلامات هي: ضعف اندفاع الهواء من المكيف رغم رفع سرعة المروحة، صدور رائحة رطوبة أو عفن عند بدء التشغيل، خروج رذاذ ماء أو تنقيط داخلي بسبب انسداد حوض الصرف بالوحل، وتراكم طبقة غبار رمادية سميكة على زعانف رديتر الوحدة الخارجية مما يرفع حرارة الكمبروسر ويفصل التبريد."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "كم يستغرق غسيل المكيف الواحد؟ ومتى يمكن تشغيله؟",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "يستغرق غسيل مكيف السبليت الواحد من 30 إلى 45 دقيقة شاملة فك الوجه، تركيب الجراب، غسيل الوحدتين الداخلية والخارجية، وتسليك الصرف والتعقيم. ويتم تجفيف الأجزاء وتشغيل المكيف مباشرة بحضورك للتأكد من برودته وقوة اندفاع الهواء."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "ما هي أوقات العمل وكيف يتم حجز موعد الغسيل؟",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "أوقات العمل الميداني للفرق الفنية هي من السبت إلى الخميس من 07:00 ص إلى 11:50 م، ويوم الجمعة من 02:00 م إلى 11:50 م. واستقبال الحجوزات والاستفسارات متاح على مدار 24 ساعة عبر الهاتف أو واتساب على الرقم 0538972324 مع تغطية شاملة لكافة أحياء الطائف وضواحيها."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://sayyafac.com/cleaning/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "الرئيسية",
+            "item": "https://sayyafac.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "تنظيف مكيفات",
+            "item": "https://sayyafac.com/cleaning/"
+          }
         ]
       }
-    },
-    {
-      "@type": "Service",
-      "@id": "https://sayyafac.com/cleaning/#service",
-      "name": "تنظيف وغسيل مكيفات سبليت ودولابي بالموقع في الطائف",
-      "provider": {
-        "@id": "https://sayyafac.com/#organization"
-      },
-      "areaServed": [
-        {
-          "@type": "City",
-          "name": "الطائف"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "مخططات الوسام"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "حي شهار"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "حي السداد"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "حي الردف"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "حي الخالدية"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "حي أم العراد"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "شارع عور"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "حي قروى"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "حي مسرة"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "حي الأحباب"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "الحوية"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "الحلقة الشرقية"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "الحلقة الغربية"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "حي القيم"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "حي الفيصلية"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "حي الورود"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "حي النسيم"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "حي الجال"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "حي جبرة"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "حي السلامة"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "حي المثناة"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "الهدا"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "الشفا"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "السيل الصغير"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "السيل الكبير"
-        }
-      ],
-      "description": "غسيل وتنظيف عميق لمكيفات السبليت في الموقع بدون فك الجدار بواسطة أغطية حماية عازلة ومضخات ضغط مائي محسوبة وتنظيف البلاور وحوض الصرف وتعقيم المبخر.",
-      "offers": {
-        "@type": "AggregateOffer",
-        "priceCurrency": "SAR",
-        "lowPrice": "70",
-        "highPrice": "180",
-        "offerCount": "4"
-      }
-    },
-    {
-      "@type": "FAQPage",
-      "@id": "https://sayyafac.com/cleaning/#faq",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "هل يتم غسيل مكيف السبليت في مكانه أم يلزم فكه من الجدار؟",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "يتم غسيل مكيف السبليت بالكامل وهو مثبت على الجدار دون فكه. نستخدم غطاء حماية معلق (جراب تصريف متخصص) محكم الإغلاق ومزود بخرطوم تصريف مباشر إلى سطل خارجي، مع عزل كامل للوحة الإلكترونية، مما يضمن بقاء دهان الجدار وأثاث الغرفة والجبس جافاً ونظيفاً تماماً دون أي تسريب مياه."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "كم سعر تنظيف وغسيل المكيف في الطائف؟ وهل توجد خصومات للكميات؟",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "يبدأ سعر غسيل مكيف السبليت المفرد بالموقع من 80 إلى 120 ريال. وتوجد باقات توفير خاصة للشقق والفلل؛ فإذا كان لديك 3 مكيفات فأكثر تنخفض التكلفة لتتراوح بين 70 و85 ريالاً للمكيف الواحد شاملة غسيل الوحدتين الداخلية والخارجية وتسليك الصرف. كما نوفر خدمة غسيل مكيف الشباك بسعر 60 إلى 90 ريال."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "كيف تضمنون عدم تضرر دهان الجدار أو الأثاث أثناء ضخ الماء؟",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "نركب جراب غسيل معلق يحيط بهيكل المكيف بالكامل بإحكام ومزود بمجرى تصريف يقود المياه والأطيان إلى سطل خارجي فوراً. كما نضع مفارش بلاستيكية عازلة على الأثاث والباركيه أسفل المكيف لضمان عدم وصول أي رذاذ ماء للغرفة نهائياً."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "هل يمكن أن تتلف اللوحة الإلكترونية (الكرت) بسبب ماء الغسيل؟",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "قبل بدء تشغيل مضخة الماء، نقوم بعزل كارتة التحكم الكهربائية (PCB) وحساسات الحرارة بأكياس عازلة مشدودة بإحكام. نغسل زعانف المبخر ومروحة البلاور فقط، وتضمن صَيّاف سلامة الدائرة الإلكترونية وتشغيل المكيف بنسبة 100%."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "ما الفرق بين تنظيف الفلاتر العادي وغسيل صَيّاف العميق؟",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "تنظيف الفلاتر المنزلية يزيل الغبار السطحي الخفيف فقط؛ بينما الغسيل العميق يتضمن فك الوجه الخارجي، وضخ مياه بضغط محسوب داخل زعانف الألمنيوم لطرد الأتربة المتكلسة، وغسيل مروحة البلاور الأسطوانية لإعادة قوة الدفع، وتسليك حوض ومجرى الصرف، وغسيل المكثف الخارجي لتقليل استهلاك الكهرباء."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "ما هي أبرز العلامات التي تدل على حاجة المكيف إلى غسيل فوري؟",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "أبرز العلامات هي: ضعف اندفاع الهواء من المكيف رغم رفع سرعة المروحة، صدور رائحة رطوبة أو عفن عند بدء التشغيل، خروج رذاذ ماء أو تنقيط داخلي بسبب انسداد حوض الصرف بالوحل، وتراكم طبقة غبار رمادية سميكة على زعانف رديتر الوحدة الخارجية مما يرفع حرارة الكمبروسر ويفصل التبريد."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "كم يستغرق غسيل المكيف الواحد؟ ومتى يمكن تشغيله؟",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "يستغرق غسيل مكيف السبليت الواحد من 30 إلى 45 دقيقة شاملة فك الوجه، تركيب الجراب، غسيل الوحدتين الداخلية والخارجية، وتسليك الصرف والتعقيم. ويتم تجفيف الأجزاء وتشغيل المكيف مباشرة بحضورك للتأكد من برودته وقوة اندفاع الهواء."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "ما هي أوقات العمل وكيف يتم حجز موعد الغسيل؟",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "أوقات العمل الميداني للفرق الفنية هي من السبت إلى الخميس من 07:00 ص إلى 11:50 م، ويوم الجمعة من 02:00 م إلى 11:50 م. واستقبال الحجوزات والاستفسارات متاح على مدار 24 ساعة عبر الهاتف أو واتساب على الرقم 0538972324 مع تغطية شاملة لكافة أحياء الطائف وضواحيها."
-          }
-        }
-      ]
-    },
-    {
-      "@type": "BreadcrumbList",
-      "@id": "https://sayyafac.com/cleaning/#breadcrumb",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "الرئيسية",
-          "item": "https://sayyafac.com/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "تنظيف مكيفات",
-          "item": "https://sayyafac.com/cleaning/"
-        }
-      ]
-    }
-  ]
-}
+    ]
+  }
   </script>
 </head>
 
@@ -596,7 +568,7 @@
           </a>
 
           <a href="https://wa.me/966538972324?text=السلام%20عليكم،%20أحتاج%20خدمة%20فك%20وتركيب%20مكيفات%20في%20الطائف"
-            class="sayyaf-btn-primary" target="_blank" rel="noopener">
+            class="sayyaf-btn-primary" target="_blank" rel="noopener noreferrer">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
               <path
                 d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.39-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.32a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24m4.52 11.66c-.19-.09-1.12-.55-1.3-.61-.17-.07-.3-.1-.43.1-.12.19-.48.61-.59.74-.11.12-.22.14-.41.05-.19-.09-.8-.3-1.52-.94-.56-.5-1-1.12-1.11-1.31-.11-.19-.01-.29.08-.38.08-.09.19-.22.28-.33.09-.11.13-.19.19-.32.06-.13.03-.24-.02-.33-.05-.09-.43-1.04-.59-1.42-.16-.38-.32-.33-.44-.33h-.37c-.13 0-.34.05-.52.24-.18.19-.69.67-.69 1.64s.71 1.9 0.81 2.03c.1.14 1.39 2.13 3.37 2.99.47.2 0.84.33 1.13.42.48.15.91.13 1.25.08.38-.06 1.17-.48 1.33-.94.17-.46.17-.86.12-.94-.05-.08-.18-.13-.37-.22z" />
@@ -682,7 +654,7 @@
         <span>اتصال: 0538972324</span>
       </a>
       <a href="https://wa.me/966538972324?text=السلام%20عليكم،%20أحتاج%20خدمة%20فك%20وتركيب%20مكيفات%20في%20الطائف"
-        class="sayyaf-btn-lg sayyaf-btn-wa" style="width: 100%;" target="_blank" rel="noopener">
+        class="sayyaf-btn-lg sayyaf-btn-wa" style="width: 100%;" target="_blank" rel="noopener noreferrer">
         <span>محادثة واتساب مباشرة</span>
       </a>
     </div>
@@ -719,7 +691,7 @@
               </a>
 
               <a href="https://wa.me/966538972324?text=السلام%20عليكم،%20أحتاج%20خدمة%20غسيل%20مكيفات%20في%20الطائف"
-                class="sayyaf-btn-wa hero-btn-item" target="_blank" rel="noopener">
+                class="sayyaf-btn-wa hero-btn-item" target="_blank" rel="noopener noreferrer">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
                   <path
                     d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.39-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.32a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24m4.52 11.66c-.19-.09-1.12-.55-1.3-.61-.17-.07-.3-.1-.43.1-.12.19-.48.61-.59.74-.11.12-.22.14-.41.05-.19-.09-.8-.3-1.52-.94-.56-.5-1-1.12-1.11-1.31-.11-.19-.01-.29.08-.38.08-.09.19-.22.28-.33.09-.11.13-.19.19-.32.06-.13.03-.24-.02-.33-.05-.09-.43-1.04-.59-1.42-.16-.38-.32-.33-.44-.33h-.37c-.13 0-.34.05-.52.24-.18.19-.69.67-.69 1.64s.71 1.9 0.81 2.03c.1.14 1.39 2.13 3.37 2.99.47.2 0.84.33 1.13.42.48.15.91.13 1.25.08.38-.06 1.17-.48 1.33-.94.17-.46.17-.86.12-.94-.05-.08-.18-.13-.37-.22z" />
@@ -744,7 +716,7 @@
               </svg>
               <span>معايير الأمان والنظافة الميدانية</span>
             </span>
-            <h3 class="ac-hero-spec-title">4 ضمانات يقدمها صَيّاف عند غسيل مكيفك بالموقع</h3>
+            <h2 class="ac-hero-spec-title">4 ضمانات يقدمها صَيّاف عند غسيل مكيفك بالموقع</h2>
             <div class="ac-hero-spec-list">
               <div class="ac-hero-spec-item">
                 <div class="ac-hero-spec-icon">
@@ -972,7 +944,7 @@
               </li>
             </ul>
             <a href="https://wa.me/966538972324?text=السلام%20عليكم،%20أريد%20حجز%20باقة%20غسيل%20الشقق%20(3-4%20مكيفات)%20في%20الطائف"
-              class="sayyaf-btn-primary card-cta" target="_blank" rel="noopener">
+              class="sayyaf-btn-primary card-cta" target="_blank" rel="noopener noreferrer">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
                 <path
                   d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.39-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.32a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24m4.52 11.66c-.19-.09-1.12-.55-1.3-.61-.17-.07-.3-.1-.43.1-.12.19-.48.61-.59.74-.11.12-.22.14-.41.05-.19-.09-.8-.3-1.52-.94-.56-.5-1-1.12-1.11-1.31-.11-.19-.01-.29.08-.38.08-.09.19-.22.28-.33.09-.11.13-.19.19-.32.06-.13.03-.24-.02-.33-.05-.09-.43-1.04-.59-1.42-.16-.38-.32-.33-.44-.33h-.37c-.13 0-.34.05-.52.24-.18.19-.69.67-.69 1.64s.71 1.9 0.81 2.03c.1.14 1.39 2.13 3.37 2.99.47.2 0.84.33 1.13.42.48.15.91.13 1.25.08.38-.06 1.17-.48 1.33-.94.17-.46.17-.86.12-.94-.05-.08-.18-.13-.37-.22z" />
@@ -1019,7 +991,7 @@
               </li>
             </ul>
             <a href="https://wa.me/966538972324?text=السلام%20عليكم،%20أريد%20حجز%20باقة%20غسيل%20الفلل%20(5%20مكيفات%20فأكثر)%20في%20الطائف"
-              class="sayyaf-btn-primary card-cta" target="_blank" rel="noopener">
+              class="sayyaf-btn-primary card-cta" target="_blank" rel="noopener noreferrer">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
                 <path
                   d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.39-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.32a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24m4.52 11.66c-.19-.09-1.12-.55-1.3-.61-.17-.07-.3-.1-.43.1-.12.19-.48.61-.59.74-.11.12-.22.14-.41.05-.19-.09-.8-.3-1.52-.94-.56-.5-1-1.12-1.11-1.31-.11-.19-.01-.29.08-.38.08-.09.19-.22.28-.33.09-.11.13-.19.19-.32.06-.13.03-.24-.02-.33-.05-.09-.43-1.04-.59-1.42-.16-.38-.32-.33-.44-.33h-.37c-.13 0-.34.05-.52.24-.18.19-.69.67-.69 1.64s.71 1.9 0.81 2.03c.1.14 1.39 2.13 3.37 2.99.47.2 0.84.33 1.13.42.48.15.91.13 1.25.08.38-.06 1.17-.48 1.33-.94.17-.46.17-.86.12-.94-.05-.08-.18-.13-.37-.22z" />
@@ -1135,7 +1107,7 @@
           <a href="https://wa.me/966538972324?text=السلام%20عليكم،%20أحتاج%20عرض%20سعر%20غسيل%20كميات%20(مساجد/شقق/مدارس)%20في%20الطائف"
             class="sayyaf-btn-lg"
             style="background: #ffffff; color: var(--color-primary); font-weight: 800; white-space: nowrap;"
-            target="_blank" rel="noopener">
+            target="_blank" rel="noopener noreferrer">
             طلب عرض سعر كميات
           </a>
         </div>
@@ -1901,7 +1873,7 @@
             <span>اتصال حجز الغسيل: 0538972324</span>
           </a>
           <a href="https://wa.me/966538972324?text=السلام%20عليكم،%20أحتاج%20خدمة%20غسيل%20مكيفات%20في%20الطائف"
-            class="sayyaf-btn-wa hero-btn-item" target="_blank" rel="noopener">
+            class="sayyaf-btn-wa hero-btn-item" target="_blank" rel="noopener noreferrer">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
               <path
                 d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.39-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.32a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24m4.52 11.66c-.19-.09-1.12-.55-1.3-.61-.17-.07-.3-.1-.43.1-.12.19-.48.61-.59.74-.11.12-.22.14-.41.05-.19-.09-.8-.3-1.52-.94-.56-.5-1-1.12-1.11-1.31-.11-.19-.01-.29.08-.38.08-.09.19-.22.28-.33.09-.11.13-.19.19-.32.06-.13.03-.24-.02-.33-.05-.09-.43-1.04-.59-1.42-.16-.38-.32-.33-.44-.33h-.37c-.13 0-.34.05-.52.24-.18.19-.69.67-.69 1.64s.71 1.9 0.81 2.03c.1.14 1.39 2.13 3.37 2.99.47.2 0.84.33 1.13.42.48.15.91.13 1.25.08.38-.06 1.17-.48 1.33-.94.17-.46.17-.86.12-.94-.05-.08-.18-.13-.37-.22z" />
@@ -1929,7 +1901,7 @@
             وضواحيها بإشراف فنيين خبراء وضمان معتمد.
           </p>
           <div style="display: flex; gap: 0.85rem; align-items: center; flex-wrap: wrap;">
-            <a href="https://www.instagram.com/sayyaf_ac" target="_blank" rel="noopener me"
+            <a href="https://www.instagram.com/sayyaf_ac" target="_blank" rel="noopener noreferrer me"
               aria-label="حساب صَيّاف للتكييف على إنستغرام"
               style="color: #cbd5e1; display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.88rem;">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -1941,7 +1913,7 @@
               <span>إنستغرام</span>
             </a>
             <span style="color: #64748b;">•</span>
-            <a href="https://facebook.com/sayyafac.offical" target="_blank" rel="noopener me"
+            <a href="https://facebook.com/sayyafac.offical" target="_blank" rel="noopener noreferrer me"
               aria-label="صفحة صَيّاف للتكييف على فيسبوك"
               style="color: #cbd5e1; display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.88rem;">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -1951,7 +1923,7 @@
               <span>فيسبوك</span>
             </a>
             <span style="color: #64748b;">•</span>
-            <a href="https://www.tiktok.com/@sayyaf_ac" target="_blank" rel="noopener me"
+            <a href="https://www.tiktok.com/@sayyaf_ac" target="_blank" rel="noopener noreferrer me"
               aria-label="حساب صَيّاف للتكييف على تيك توك"
               style="color: #cbd5e1; display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.88rem;">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -1961,7 +1933,7 @@
               <span>تيك توك</span>
             </a>
             <span style="color: #64748b;">•</span>
-            <a href="https://www.pinterest.com/sayyafac/" target="_blank" rel="noopener me"
+            <a href="https://www.pinterest.com/sayyafac/" target="_blank" rel="noopener noreferrer me"
               aria-label="حساب صَيّاف للتكييف على بنترست"
               style="color: #cbd5e1; display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.88rem;">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -1977,7 +1949,7 @@
 
         <!-- Col 2: Services -->
         <div>
-          <h4 class="footer-col-title">خدمات التكييف بالطائف</h4>
+          <h3 class="footer-col-title">خدمات التكييف بالطائف</h3>
           <ul class="footer-links-list">
             <li class="footer-link-item"><a href="/">فك وتركيب مكيفات بالطائف</a></li>
             <li class="footer-link-item"><a href="/split-ac-installation-technician/">تركيب مكيفات سبليت</a></li>
@@ -1989,7 +1961,7 @@
 
         <!-- Col 3: Quick Links (with 'خدماتنا') -->
         <div>
-          <h4 class="footer-col-title">روابط مهمة</h4>
+          <h3 class="footer-col-title">روابط مهمة</h3>
           <ul class="footer-links-list">
             <li class="footer-link-item"><a href="/services/">خدماتنا</a></li>
             <li class="footer-link-item"><a href="/about/">من نحن</a></li>
@@ -2003,7 +1975,7 @@
 
         <!-- Col 4: Contact & Hours -->
         <div>
-          <h4 class="footer-col-title">معلومات التواصل والمواعيد</h4>
+          <h3 class="footer-col-title">معلومات التواصل والمواعيد</h3>
           <div class="footer-contact-info">
             <div class="footer-contact-row">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
@@ -2027,7 +1999,7 @@
               </svg>
               <span>واتساب: <a
                   href="https://wa.me/966538972324?text=السلام%20عليكم،%20أحتاج%20خدمة%20فك%20وتركيب%20مكيفات%20في%20الطائف"
-                  target="_blank" rel="noopener" style="color: #4ade80; font-weight: 700;">محادثة فورية (متاح 24
+                  target="_blank" rel="noopener noreferrer" style="color: #4ade80; font-weight: 700;">محادثة فورية (متاح 24
                   ساعة)</a></span>
             </div>
             <div class="footer-contact-row">
@@ -2067,7 +2039,7 @@
       <span>اتصال مباشر</span>
     </a>
     <a href="https://wa.me/966538972324?text=السلام%20عليكم،%20أحتاج%20خدمة%20غسيل%20مكيفات%20في%20الطائف"
-      class="mobile-sticky-btn btn-wa" target="_blank" rel="noopener">
+      class="mobile-sticky-btn btn-wa" target="_blank" rel="noopener noreferrer">
       <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
         <path
           d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.39-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.32a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24m4.52 11.66c-.19-.09-1.12-.55-1.3-.61-.17-.07-.3-.1-.43.1-.12.19-.48.61-.59.74-.11.12-.22.14-.41.05-.19-.09-.8-.3-1.52-.94-.56-.5-1-1.12-1.11-1.31-.11-.19-.01-.29.08-.38.08-.09.19-.22.28-.33.09-.11.13-.19.19-.32.06-.13.03-.24-.02-.33-.05-.09-.43-1.04-.59-1.42-.16-.38-.32-.33-.44-.33h-.37c-.13 0-.34.05-.52.24-.18.19-.69.67-.69 1.64s.71 1.9 0.81 2.03c.1.14 1.39 2.13 3.37 2.99.47.2 0.84.33 1.13.42.48.15.91.13 1.25.08.38-.06 1.17-.48 1.33-.94.17-.46.17-.86.12-.94-.05-.08-.18-.13-.37-.22z" />
