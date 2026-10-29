@@ -49,16 +49,17 @@
   <link rel="stylesheet" href="/assets/css/style.css">
 
   <style>
-    /* Decision-Maker Commercial Landing Layout Enhancements */
+    /* Critical Above-The-Fold Styles (Mobile-First Hero CTAs) */
     .hero-btn-group {
       display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
+      flex-direction: column;
+      width: 100%;
+      gap: 0.75rem;
       margin-top: 1.5rem;
     }
 
     .hero-btn-item {
-      flex: 1 1 200px;
+      width: 100%;
       min-height: 52px;
       display: inline-flex;
       align-items: center;
@@ -70,354 +71,22 @@
       border-radius: var(--radius-md);
       box-sizing: border-box;
       text-decoration: none;
+      touch-action: manipulation;
       transition: all 0.2s ease;
     }
 
-    @media (max-width: 640px) {
+    @media (min-width: 641px) {
       .hero-btn-group {
-        flex-direction: column;
-        width: 100%;
-        gap: 0.75rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: auto;
+        gap: 1rem;
       }
 
       .hero-btn-item {
-        width: 100%;
-        flex: none;
+        width: auto;
+        flex: 1 1 200px;
       }
-    }
-
-    /* Card-First Piping Pricing Grid */
-    .tech-pricing-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 1.5rem;
-      margin-top: 2rem;
-    }
-
-    .tech-pricing-card {
-      background: #ffffff;
-      border: 1px solid var(--color-border);
-      border-radius: var(--radius-lg);
-      padding: 1.75rem 1.5rem;
-      display: flex;
-      flex-direction: column;
-      position: relative;
-      box-shadow: var(--shadow-sm);
-      transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
-    }
-
-    .tech-pricing-card:hover {
-      transform: translateY(-4px);
-      box-shadow: var(--shadow-md);
-      border-color: var(--color-primary-light);
-    }
-
-    .tech-pricing-card.popular {
-      border: 2px solid var(--color-primary);
-      box-shadow: 0 10px 25px -5px rgba(2, 132, 199, 0.15);
-    }
-
-    .tech-pricing-badge {
-      position: absolute;
-      top: -12px;
-      left: 1.5rem;
-      background: var(--color-primary);
-      color: #ffffff;
-      font-size: 0.78rem;
-      font-weight: 700;
-      padding: 0.25rem 0.85rem;
-      border-radius: var(--radius-full);
-      box-shadow: var(--shadow-sm);
-    }
-
-    .tech-pricing-header {
-      margin-bottom: 1.25rem;
-      border-bottom: 1px solid #f1f5f9;
-      padding-bottom: 1.25rem;
-    }
-
-    .tech-pricing-header h3 {
-      font-size: 1.25rem;
-      font-weight: 800;
-      color: var(--color-text-main);
-      margin: 0 0 0.5rem 0;
-      line-height: 1.35;
-    }
-
-    .tech-pricing-price {
-      display: flex;
-      align-items: baseline;
-      gap: 0.35rem;
-      color: var(--color-primary);
-      margin-top: 0.75rem;
-    }
-
-    .tech-pricing-price .amount {
-      font-size: 2.25rem;
-      font-weight: 800;
-      line-height: 1;
-    }
-
-    .tech-pricing-price .currency {
-      font-size: 0.95rem;
-      font-weight: 700;
-      color: var(--color-text-muted);
-    }
-
-    .tech-pricing-features {
-      list-style: none;
-      padding: 0;
-      margin: 0 0 1.75rem 0;
-      display: flex;
-      flex-direction: column;
-      gap: 0.75rem;
-      flex-grow: 1;
-    }
-
-    .tech-pricing-features li {
-      display: flex;
-      align-items: flex-start;
-      gap: 0.6rem;
-      font-size: 0.92rem;
-      color: #334155;
-      line-height: 1.45;
-    }
-
-    .tech-pricing-features svg {
-      flex-shrink: 0;
-      margin-top: 0.2rem;
-      color: #16a34a;
-    }
-
-    .tech-pricing-card .card-cta {
-      width: 100%;
-      text-align: center;
-      padding: 0.75rem 1rem;
-      border-radius: var(--radius-md);
-      font-weight: 700;
-      font-size: 0.95rem;
-      text-decoration: none;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 0.5rem;
-      transition: background 0.2s ease;
-      box-sizing: border-box;
-    }
-
-    /* Bulk/Packages Special Banner */
-    .package-banner {
-      background: linear-gradient(135deg, #0b3b60 0%, #0369a1 100%);
-      color: #ffffff;
-      border-radius: var(--radius-lg);
-      padding: 2rem;
-      margin-top: 2rem;
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: space-between;
-      gap: 1.5rem;
-      box-shadow: var(--shadow-md);
-    }
-
-    .package-banner-content h3 {
-      font-size: 1.4rem;
-      font-weight: 800;
-      margin: 0 0 0.5rem 0;
-      color: #ffffff;
-    }
-
-    .package-banner-content p {
-      margin: 0;
-      font-size: 0.98rem;
-      color: #e2e8f0;
-      max-width: 650px;
-      line-height: 1.6;
-    }
-
-    /* Duration Timeline Grid */
-    .duration-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 1.25rem;
-      margin-top: 1.75rem;
-    }
-
-    .duration-card {
-      background: #ffffff;
-      border: 1px solid var(--color-border);
-      border-radius: var(--radius-md);
-      padding: 1.25rem;
-      text-align: center;
-      box-shadow: var(--shadow-sm);
-    }
-
-    .duration-time {
-      font-size: 1.6rem;
-      font-weight: 800;
-      color: var(--color-primary);
-      margin-bottom: 0.35rem;
-    }
-
-    .duration-title {
-      font-weight: 700;
-      font-size: 1rem;
-      color: var(--color-text-main);
-      margin-bottom: 0.35rem;
-    }
-
-    .duration-desc {
-      font-size: 0.85rem;
-      color: var(--color-text-muted);
-      line-height: 1.4;
-      margin: 0;
-    }
-
-    /* Why Choose Us Grid */
-    .why-choose-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 1.5rem;
-      margin-top: 2rem;
-    }
-
-    .why-choose-card {
-      background: #ffffff;
-      border: 1px solid var(--color-border);
-      border-radius: var(--radius-lg);
-      padding: 1.5rem;
-      display: flex;
-      align-items: flex-start;
-      gap: 1rem;
-      box-shadow: var(--shadow-sm);
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-
-    .why-choose-card:hover {
-      transform: translateY(-3px);
-      box-shadow: var(--shadow-md);
-    }
-
-    .why-choose-icon {
-      flex-shrink: 0;
-      width: 44px;
-      height: 44px;
-      border-radius: var(--radius-md);
-      background: rgba(2, 132, 199, 0.1);
-      color: var(--color-primary);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .why-choose-info h3 {
-      font-size: 1.12rem;
-      font-weight: 800;
-      color: var(--color-text-main);
-      margin: 0 0 0.35rem 0;
-    }
-
-    .why-choose-info p {
-      font-size: 0.92rem;
-      color: var(--color-text-muted);
-      margin: 0;
-      line-height: 1.5;
-    }
-
-    /* Quick Q&A 3-Card Grid */
-    .quick-qa-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 1.25rem;
-      margin-top: 2rem;
-    }
-
-    .quick-qa-card {
-      background: #f8fafc;
-      border: 1px solid var(--color-border);
-      border-radius: var(--radius-md);
-      padding: 1.25rem 1.5rem;
-    }
-
-    .quick-qa-card h3 {
-      font-size: 1.05rem;
-      font-weight: 800;
-      color: var(--color-primary);
-      margin: 0 0 0.5rem 0;
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-    }
-
-    .quick-qa-card p {
-      font-size: 0.92rem;
-      color: #334155;
-      margin: 0;
-      line-height: 1.55;
-    }
-
-    /* Sister Services Cross-Links */
-    .sister-services-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 1.25rem;
-      margin-top: 2rem;
-    }
-
-    .sister-service-card {
-      background: #ffffff;
-      border: 1px solid var(--color-border);
-      border-radius: var(--radius-md);
-      padding: 1.25rem;
-      text-decoration: none;
-      display: flex;
-      flex-direction: column;
-      gap: 0.5rem;
-      transition: all 0.2s ease;
-      box-shadow: var(--shadow-sm);
-    }
-
-    .sister-service-card:hover {
-      border-color: var(--color-primary);
-      transform: translateY(-3px);
-      box-shadow: var(--shadow-md);
-    }
-
-    .sister-service-card h3 {
-      font-size: 1.05rem;
-      font-weight: 800;
-      color: var(--color-primary);
-      margin: 0;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    .sister-service-card p {
-      font-size: 0.88rem;
-      color: var(--color-text-muted);
-      margin: 0;
-      line-height: 1.5;
-    }
-
-    /* Districts Title Group */
-    .districts-title-group {
-      text-align: center;
-      margin-bottom: 2rem;
-    }
-
-    .districts-main-title {
-      font-size: clamp(1.5rem, 3vw, 2.2rem);
-      font-weight: 800;
-      color: var(--color-primary);
-      margin: 0.5rem 0;
-    }
-
-    .districts-subtitle {
-      font-size: 1.05rem;
-      color: var(--color-text-muted);
-      max-width: 650px;
-      margin: 0 auto;
     }
   </style>
 

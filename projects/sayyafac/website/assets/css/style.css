@@ -34,7 +34,13 @@
 
   --font-family: 'Cairo', system-ui, -apple-system, sans-serif;
   --container-max: 1200px;
-  --header-height: 72px;
+  --header-height: 56px;
+}
+
+@media (min-width: 992px) {
+  :root {
+    --header-height: 72px;
+  }
 }
 
 /* Reset & Box Sizing */
@@ -187,17 +193,17 @@ ul, ol {
 
 .sayyaf-brand-logo img,
 .sayyaf-logo-img {
-  height: 60px;
+  height: 38px;
   width: auto;
   max-width: 100%;
   object-fit: contain;
   display: block;
 }
 
-@media (max-width: 991px) {
+@media (min-width: 992px) {
   .sayyaf-brand-logo img,
   .sayyaf-logo-img {
-    height: 40px;
+    height: 56px;
     width: auto;
   }
 }
@@ -315,7 +321,7 @@ ul, ol {
   position: fixed;
   inset: 0;
   background-color: rgba(15, 23, 42, 0.6);
-  z-index: 1090;
+  z-index: 10000;
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s ease, visibility 0.3s ease;
@@ -334,7 +340,7 @@ ul, ol {
   width: 300px;
   max-width: 85vw;
   background-color: var(--color-bg-surface);
-  z-index: 1100;
+  z-index: 10001;
   box-shadow: -4px 0 20px rgba(0, 0, 0, 0.15);
   display: flex;
   flex-direction: column;
@@ -463,9 +469,9 @@ ul, ol {
 .ac-hero-cta-group,
 .hero-btn-group {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 1rem;
+  flex-direction: column;
+  width: 100%;
+  gap: 0.75rem;
   padding-top: 0.5rem;
 }
 
@@ -480,10 +486,10 @@ ul, ol {
   gap: 0.6rem;
   font-weight: 700;
   font-size: 1.05rem;
-  padding: 0.85rem 1.6rem;
+  padding: 0.85rem 1.4rem;
   border-radius: var(--radius-md);
-  min-height: 52px;
-  height: auto;
+  min-height: 50px;
+  width: 100%;
   box-sizing: border-box;
   text-decoration: none;
   touch-action: manipulation;
@@ -491,32 +497,20 @@ ul, ol {
 }
 
 @media (min-width: 641px) {
+  .ac-hero-cta-group,
+  .hero-btn-group {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: auto;
+    gap: 1rem;
+  }
   .ac-hero-cta-group .sayyaf-btn-lg,
   .ac-hero-cta-group .hero-btn-item,
   .hero-btn-group .hero-btn-item {
     flex: 0 1 auto;
+    width: auto;
     min-width: 220px;
-  }
-}
-
-@media (max-width: 640px) {
-  .ac-hero-cta-group,
-  .hero-btn-group {
-    flex-direction: column;
-    width: 100%;
-    gap: 0.75rem;
-  }
-  .ac-hero-cta-group .sayyaf-btn-lg,
-  .ac-hero-cta-group .hero-btn-item,
-  .hero-btn-group .hero-btn-item,
-  .ac-hero-cta-group > *,
-  .hero-btn-group > *,
-  .sayyaf-btn-lg {
-    width: 100% !important;
-    max-width: 100% !important;
-    flex: none !important;
-    height: auto !important;
-    min-height: 50px;
+    min-height: 52px;
   }
 }
 
@@ -1644,7 +1638,7 @@ ul, ol {
   bottom: calc(0.75rem + env(safe-area-inset-bottom, 0px));
   left: 0.75rem;
   right: 0.75rem;
-  z-index: 9999;
+  z-index: 990;
   background-color: rgba(255, 255, 255, 0.96);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
@@ -1661,6 +1655,66 @@ ul, ol {
 @media (min-width: 768px) {
   .mobile-sticky-action-bar {
     display: none !important;
+  }
+}
+
+/* Hide floating actions when drawer is open */
+body.drawer-open .mobile-sticky-action-bar,
+body.drawer-open .sayyaf-back-to-top {
+  display: none !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+/* ==========================================================================
+   Back to Top Floating Action Button (Mobile-First Ergonomics)
+   ========================================================================== */
+.sayyaf-back-to-top {
+  position: fixed;
+  bottom: calc(80px + env(safe-area-inset-bottom, 0px));
+  left: 1rem;
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-full);
+  background: var(--color-primary);
+  color: #ffffff;
+  border: 1.5px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 4px 14px rgba(11, 59, 96, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 980;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateY(12px) scale(0.9);
+  transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s ease, background-color 0.2s ease;
+  touch-action: manipulation;
+}
+
+.sayyaf-back-to-top.is-visible {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateY(0) scale(1);
+}
+
+.sayyaf-back-to-top:hover {
+  background: var(--color-primary-light);
+  transform: translateY(-2px);
+}
+
+.sayyaf-back-to-top:active {
+  transform: scale(0.92);
+}
+
+@media (min-width: 768px) {
+  .sayyaf-back-to-top {
+    bottom: 2rem;
+    left: 2rem;
+    width: 48px;
+    height: 48px;
   }
 }
 
@@ -2706,6 +2760,219 @@ ul, ol {
   }
 }
 
+/* ==========================================================================
+   Mobile-First Transformation: Tables into Structured Cards (<768px)
+   Keeps semantic <table> markup 100% intact for AI crawlers & search engines,
+   while rendering responsive, zero-horizontal-scroll cards for mobile users.
+   ========================================================================== */
+@media (max-width: 767px) {
+  .hvac-price-table-container,
+  .ac-duration-table-wrap,
+  .sayyaf-compare-card {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    overflow-x: visible !important;
+    padding: 0 !important;
+    margin-bottom: 1.5rem !important;
+  }
+
+  .table-scroll-hint {
+    display: none !important;
+  }
+
+  /* 1. Add-ons & General Price / Diagnostic Tables */
+  .hvac-price-table,
+  .hvac-diagnostic-table,
+  .hvac-price-table tbody,
+  .hvac-diagnostic-table tbody,
+  .hvac-price-table tr,
+  .hvac-diagnostic-table tr,
+  .hvac-price-table td,
+  .hvac-diagnostic-table td {
+    display: block !important;
+    width: 100% !important;
+    min-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .hvac-price-table thead,
+  .hvac-diagnostic-table thead {
+    display: none !important;
+  }
+
+  .hvac-price-table tr,
+  .hvac-diagnostic-table tr {
+    background: #ffffff !important;
+    border: 1px solid var(--color-border) !important;
+    border-radius: var(--radius-md) !important;
+    padding: 1.15rem !important;
+    margin-bottom: 0.85rem !important;
+    box-shadow: var(--shadow-sm) !important;
+  }
+
+  .hvac-price-table td,
+  .hvac-diagnostic-table td {
+    padding: 0.35rem 0 !important;
+    border-bottom: none !important;
+    font-size: 0.92rem !important;
+    line-height: 1.6 !important;
+  }
+
+  .hvac-price-table td:first-child,
+  .hvac-diagnostic-table td:first-child {
+    font-size: 1.05rem !important;
+    color: var(--color-primary) !important;
+    font-weight: 800 !important;
+    border-bottom: 1px solid var(--color-border) !important;
+    padding-bottom: 0.45rem !important;
+    margin-bottom: 0.45rem !important;
+  }
+
+  .hvac-price-table td:nth-child(2),
+  .hvac-diagnostic-table td:nth-child(2) {
+    color: var(--color-text-muted) !important;
+    font-size: 0.88rem !important;
+  }
+
+  .hvac-price-table td:nth-child(3),
+  .hvac-diagnostic-table td:nth-child(3) {
+    margin-block: 0.4rem !important;
+  }
+
+  .hvac-price-table td:nth-child(3) .price-highlight,
+  .hvac-diagnostic-table td:nth-child(3) .price-highlight {
+    display: inline-block !important;
+    background: var(--color-accent-light) !important;
+    color: var(--color-primary) !important;
+    font-weight: 800 !important;
+    padding: 0.25rem 0.65rem !important;
+    border-radius: var(--radius-sm) !important;
+    font-size: 0.95rem !important;
+  }
+
+  .hvac-price-table td:last-child,
+  .hvac-diagnostic-table td:last-child {
+    font-size: 0.82rem !important;
+    color: #64748b !important;
+    border-top: 1px dashed var(--color-border) !important;
+    padding-top: 0.45rem !important;
+    margin-top: 0.45rem !important;
+  }
+
+  /* 2. Duration Tables */
+  .ac-duration-table,
+  .ac-duration-table tbody,
+  .ac-duration-table tr,
+  .ac-duration-table td {
+    display: block !important;
+    width: 100% !important;
+    min-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .ac-duration-table thead {
+    display: none !important;
+  }
+
+  .ac-duration-table tr {
+    background: #ffffff !important;
+    border: 1px solid var(--color-border) !important;
+    border-radius: var(--radius-md) !important;
+    padding: 1.1rem !important;
+    margin-bottom: 0.85rem !important;
+    box-shadow: var(--shadow-sm) !important;
+  }
+
+  .ac-duration-table td {
+    padding: 0.3rem 0 !important;
+    border-bottom: none !important;
+  }
+
+  .ac-duration-table td:first-child {
+    font-size: 1.02rem !important;
+    color: var(--color-primary) !important;
+    font-weight: 800 !important;
+  }
+
+  .ac-duration-table td:nth-child(2) {
+    margin-block: 0.35rem !important;
+  }
+
+  .ac-duration-table td:last-child {
+    font-size: 0.88rem !important;
+    color: var(--color-text-muted) !important;
+    line-height: 1.6 !important;
+    border-top: 1px dashed var(--color-border) !important;
+    padding-top: 0.45rem !important;
+    margin-top: 0.45rem !important;
+  }
+
+  /* 3. Comparison Matrix Tables */
+  .sayyaf-compare-table,
+  .sayyaf-compare-table tbody,
+  .sayyaf-compare-table tr,
+  .sayyaf-compare-table td {
+    display: block !important;
+    width: 100% !important;
+    min-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .sayyaf-compare-table thead {
+    display: none !important;
+  }
+
+  .sayyaf-compare-table tr {
+    background: #ffffff !important;
+    border: 1px solid var(--color-border) !important;
+    border-radius: var(--radius-lg) !important;
+    padding: 1.15rem !important;
+    margin-bottom: 1rem !important;
+    box-shadow: var(--shadow-sm) !important;
+  }
+
+  .sayyaf-compare-table td {
+    padding: 0.45rem 0 !important;
+    border-bottom: none !important;
+  }
+
+  .sayyaf-compare-table td:first-child {
+    font-size: 1.05rem !important;
+    color: var(--color-primary) !important;
+    font-weight: 800 !important;
+    border-bottom: 1px solid var(--color-border) !important;
+    padding-bottom: 0.5rem !important;
+    margin-bottom: 0.6rem !important;
+  }
+
+  .sayyaf-compare-table td:nth-child(2) {
+    margin-bottom: 0.5rem !important;
+  }
+
+  .sayyaf-compare-table td:nth-child(2) .sayyaf-badge-win {
+    display: block !important;
+    background: #f0fdf4 !important;
+    color: #15803d !important;
+    border: 1px solid #bbf7d0 !important;
+    border-radius: var(--radius-sm) !important;
+    padding: 0.55rem 0.75rem !important;
+    font-size: 0.88rem !important;
+    line-height: 1.6 !important;
+  }
+
+  .sayyaf-compare-table td:nth-child(3) .sayyaf-badge-lose {
+    display: block !important;
+    background: #fef2f2 !important;
+    color: #991b1b !important;
+    border: 1px solid #fecaca !important;
+    border-radius: var(--radius-sm) !important;
+    padding: 0.55rem 0.75rem !important;
+    font-size: 0.88rem !important;
+    line-height: 1.6 !important;
+  }
+}
+
 /* Multi-unit discount highlight badge */
 .discount-pill {
   display: inline-block;
@@ -3373,5 +3640,413 @@ ul, ol {
   font-size: 1.15rem;
   font-weight: 800;
   color: var(--color-accent);
+}
+
+/* ==========================================================================
+   Service Landing Page Modules (Mobile-First Components)
+   ========================================================================== */
+
+/* Diagnostic Cards Grid */
+.diag-cards-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+  margin-top: 1.75rem;
+}
+
+@media (min-width: 640px) {
+  .diag-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .diag-cards-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.diag-card {
+  background: #ffffff;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .diag-card:hover {
+    transform: translateY(-3px);
+    border-color: var(--color-primary);
+  }
+}
+
+.diag-card-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.diag-card-icon {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-md);
+  background: #fee2e2;
+  color: #dc2626;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.diag-card-header h3 {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--color-text-main);
+  margin: 0;
+  line-height: 1.4;
+}
+
+.diag-card-body {
+  flex-grow: 1;
+  font-size: 0.93rem;
+  line-height: 1.6;
+  color: #475569;
+  margin-bottom: 1.25rem;
+}
+
+.diag-card-solution {
+  background: #f8fafc;
+  border-right: 3px solid var(--color-primary);
+  padding: 0.75rem 1rem;
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  color: #0f172a;
+}
+
+.diag-card-solution strong {
+  color: var(--color-primary);
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+/* Why Choose Us Grid (Service Pages) */
+.why-choose-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+  margin-top: 1.75rem;
+}
+
+@media (min-width: 640px) {
+  .why-choose-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .why-choose-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.why-choose-card {
+  background: #ffffff;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .why-choose-card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
+  }
+}
+
+.why-choose-icon {
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-md);
+  background: rgba(2, 132, 199, 0.1);
+  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.why-choose-info h3 {
+  font-size: 1.12rem;
+  font-weight: 800;
+  color: var(--color-text-main);
+  margin: 0 0 0.35rem 0;
+}
+
+.why-choose-info p {
+  font-size: 0.92rem;
+  color: var(--color-text-muted);
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Sayyaf Why Choose Grid (Split AC page) */
+.sayyaf-why-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+  margin-top: 2rem;
+}
+
+@media (min-width: 640px) {
+  .sayyaf-why-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  .sayyaf-why-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.sayyaf-why-card {
+  background: #ffffff;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 1.65rem 1.45rem;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .sayyaf-why-card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
+    border-color: #38bdf8;
+  }
+}
+
+.sayyaf-why-icon-box {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: #e0f2fe;
+  color: #0284c7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.sayyaf-why-title {
+  font-size: 1.18rem;
+  font-weight: 800;
+  color: var(--color-primary);
+}
+
+.sayyaf-why-desc {
+  font-size: 0.93rem;
+  color: #475569;
+  line-height: 1.65;
+  margin: 0;
+}
+
+/* Quick Q&A Grid */
+.quick-qa-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+  margin-top: 1.75rem;
+}
+
+@media (min-width: 640px) {
+  .quick-qa-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+}
+
+.quick-qa-card {
+  background: #f8fafc;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 1.25rem 1.5rem;
+}
+
+.quick-qa-card h3 {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: var(--color-primary);
+  margin: 0 0 0.5rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.quick-qa-card p {
+  font-size: 0.92rem;
+  color: #334155;
+  margin: 0;
+  line-height: 1.55;
+}
+
+/* Sister Services Cross-Links */
+.sister-services-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+  margin-top: 1.75rem;
+}
+
+@media (min-width: 640px) {
+  .sister-services-grid {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  }
+}
+
+.sister-service-card {
+  background: #ffffff;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 1.25rem;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  transition: all 0.2s ease;
+  box-shadow: var(--shadow-sm);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .sister-service-card:hover {
+    border-color: var(--color-primary);
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
+  }
+}
+
+.sister-service-card h3 {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: var(--color-primary);
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sister-service-card p {
+  font-size: 0.88rem;
+  color: var(--color-text-muted);
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Districts Title Group */
+.districts-title-group {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.districts-main-title {
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+  font-weight: 800;
+  color: var(--color-primary);
+  margin: 0.5rem 0;
+}
+
+.districts-subtitle {
+  font-size: 1.05rem;
+  color: var(--color-text-muted);
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+/* Bulk / Package Banners */
+.ac-pricing-bulk-banner {
+  background: linear-gradient(135deg, #0b3b60 0%, #072640 100%);
+  color: #ffffff;
+  border-radius: var(--radius-lg);
+  padding: 1.75rem 1.5rem;
+  margin-top: 2rem;
+  border: 2px solid #0284c7;
+  box-shadow: 0 10px 25px -4px rgba(11, 59, 96, 0.25);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+@media (min-width: 860px) {
+  .ac-pricing-bulk-banner {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 2.25rem;
+  }
+}
+
+.bulk-banner-info h4 {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 0.4rem;
+}
+
+.bulk-banner-info p {
+  color: #cbd5e1;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 0.75rem;
+}
+
+.bulk-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.bulk-tag {
+  background: rgba(2, 132, 199, 0.3);
+  color: #7dd3fc;
+  border: 1px solid rgba(56, 189, 248, 0.4);
+  border-radius: 9999px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  padding: 0.25rem 0.75rem;
+}
+
+.bulk-banner-cta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.6rem;
+  flex-shrink: 0;
+}
+
+@media (min-width: 860px) {
+  .bulk-banner-cta {
+    align-items: flex-end;
+  }
+}
+
+.bulk-price {
+  font-size: 1.85rem;
+  font-weight: 900;
+  color: #38bdf8;
 }
 

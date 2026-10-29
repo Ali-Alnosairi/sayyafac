@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
       savedScrollY = window.scrollY || window.pageYOffset;
       drawer.classList.add('is-open');
       drawerBackdrop.classList.add('is-open');
+      document.body.classList.add('drawer-open');
       
       // قفل التمرير الخلفي بدقة لمنع تسريب التمرير في متصفح Safari على iOS
       document.body.style.position = 'fixed';
@@ -34,6 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (drawer && drawerBackdrop) {
       drawer.classList.remove('is-open');
       drawerBackdrop.classList.remove('is-open');
+      document.body.classList.remove('drawer-open');
       drawer.style.transform = '';
 
       // استعادة وضع التمرير الطبيعي وإعادة الصفحة لموضعها
@@ -243,4 +245,80 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
+
+  // 6. زر الرجوع إلى أعلى الصفحة (Back to Top FAB - Ultra Mobile-First)
+  let backToTopBtn = document.getElementById('sayyafBackToTop');
+  if (!backToTopBtn) {
+    backToTopBtn = document.createElement('button');
+    backToTopBtn.type = 'button';
+    backToTopBtn.id = 'sayyafBackToTop';
+    backToTopBtn.className = 'sayyaf-back-to-top';
+    backToTopBtn.setAttribute('aria-label', 'الرجوع إلى أعلى الصفحة');
+    backToTopBtn.setAttribute('title', 'الرجوع لأعلى الصفحة');
+    backToTopBtn.innerHTML = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg>';
+    document.body.appendChild(backToTopBtn);
+  }
+
+  let scrollTicking = false;
+  window.addEventListener('scroll', () => {
+    if (!scrollTicking) {
+      window.requestAnimationFrame(() => {
+        if (window.scrollY > 350) {
+          backToTopBtn.classList.add('is-visible');
+        } else {
+          backToTopBtn.classList.remove('is-visible');
+        }
+        scrollTicking = false;
+      });
+      scrollTicking = true;
+    }
+  }, { passive: true });
+
+  backToTopBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+
+  // 7. رقاقات الأحياء التفاعلية لتعبئة نموذج الواتساب بسلاسة (Interactive District Chips)
+  document.querySelectorAll('.taif-district-chip').forEach((chip) => {
+    chip.setAttribute('role', 'button');
+    chip.setAttribute('tabindex', '0');
+    chip.style.cursor = 'pointer';
+    chip.addEventListener('click', () => {
+      const rawText = chip.textContent.trim();
+      const locationInput = document.querySelector('.sayyaf-location-input');
+      const quoteSection = document.getElementById('quick-quote');
+      
+      if (locationInput) {
+        locationInput.value = rawText;
+        if (quoteSection) {
+          quoteSection.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+        locationInput.focus();
+      }
+    });
+
+    chip.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        chip.click();
+      }
+    });
+  });
+
+  // 8. إيقاف شريط الأخبار المتحرك عند اللمس على شاشات الجوال لحماية البطارية وتسهيل النقر
+  const tickerBar = document.querySelector('.sayyaf-ticker-bar');
+  const tickerTrack = document.querySelector('.sayyaf-ticker-track');
+  if (tickerBar && tickerTrack) {
+    tickerBar.addEventListener('touchstart', () => {
+      tickerTrack.style.animationPlayState = 'paused';
+    }, { passive: true });
+
+    tickerBar.addEventListener('touchend', () => {
+      tickerTrack.style.animationPlayState = 'running';
+    }, { passive: true });
+  }
 });
