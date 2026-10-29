@@ -2,7 +2,10 @@
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#0b3b60">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
   <title>تواصل مع صَيّاف للتكييف | حجز موعد فني تكييف بالطائف</title>
   <meta name="description" content="اتصل بفريق صَيّاف للتكييف الميداني في الطائف. هاتف وواتساب: 0538972324. المقر: شارع عور، حي أم العراد، الطائف. تغطية سريعة لجميع أحياء وضواحي الطائف.">
   <meta name="keywords" content="رقم فني تكييف الطائف, اتصال تكييف الطائف, واتساب صيانة مكيفات الطائف, فني مكيفات أم العراد الطائف, تكييف شهار الطائف">
@@ -27,8 +30,10 @@
   <meta name="twitter:description" content="اتصال مباشر وخدمة سريعة في الطائف. 0538972324.">
   <meta name="twitter:image" content="https://sayyafac.com/assets/images/install-after-aston-indoor.webp">
 
-  <!-- Favicon -->
+  <!-- Favicon & Mobile Icons -->
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/sayyafac-profile-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
 
   <!-- Preload Critical LCP & Font -->
   <link rel="preload" href="/assets/fonts/cairo-v35-arabic-700.woff2" as="font" type="font/woff2" crossorigin>
@@ -514,8 +519,8 @@
                 
                 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem;">
                   <div>
-                    <label class="sayyaf-form-label" style="display: block; font-weight: 700; margin-bottom: 0.35rem; font-size: 0.9rem;">نوع الخدمة المطلوبة:</label>
-                    <select name="service_type" class="sayyaf-form-select" style="width: 100%; padding: 0.65rem; border: 1px solid var(--color-border); border-radius: var(--radius-sm); font-family: inherit;">
+                    <label class="sayyaf-form-label" for="contact-service-type" style="display: block; font-weight: 700; margin-bottom: 0.35rem; font-size: 0.92rem;">نوع الخدمة المطلوبة:</label>
+                    <select id="contact-service-type" name="service_type" class="sayyaf-form-select" style="font-size: 16px;">
                       <option value="تركيب مكيف سبليت (مع تفريغ فاكيوم)" selected>تركيب مكيف سبليت (مع تفريغ فاكيوم)</option>
                       <option value="فك ونقل وإعادة تركيب مكيف">فك ونقل وإعادة تركيب مكيف</option>
                       <option value="صيانة وتصليح أعطال وتبريد">صيانة وتصليح أعطال وتبريد</option>
@@ -526,8 +531,8 @@
                   </div>
 
                   <div>
-                    <label class="sayyaf-form-label" style="display: block; font-weight: 700; margin-bottom: 0.35rem; font-size: 0.9rem;">نوع المكيف:</label>
-                    <select name="ac_type" class="sayyaf-form-select" style="width: 100%; padding: 0.65rem; border: 1px solid var(--color-border); border-radius: var(--radius-sm); font-family: inherit;">
+                    <label class="sayyaf-form-label" for="contact-ac-type" style="display: block; font-weight: 700; margin-bottom: 0.35rem; font-size: 0.92rem;">نوع المكيف:</label>
+                    <select id="contact-ac-type" name="ac_type" class="sayyaf-form-select" style="font-size: 16px;">
                       <option value="مكيف سبليت جداري" selected>مكيف سبليت جداري</option>
                       <option value="مكيف دولابي كبير (Floor Standing)">مكيف دولابي كبير (Floor Standing)</option>
                       <option value="مكيف شباك">مكيف شباك</option>
@@ -538,8 +543,8 @@
 
                 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem;">
                   <div>
-                    <label class="sayyaf-form-label" style="display: block; font-weight: 700; margin-bottom: 0.35rem; font-size: 0.9rem;">عدد المكيفات:</label>
-                    <select name="ac_count" class="sayyaf-form-select" style="width: 100%; padding: 0.65rem; border: 1px solid var(--color-border); border-radius: var(--radius-sm); font-family: inherit;">
+                    <label class="sayyaf-form-label" for="contact-ac-count" style="display: block; font-weight: 700; margin-bottom: 0.35rem; font-size: 0.92rem;">عدد المكيفات:</label>
+                    <select id="contact-ac-count" name="ac_count" class="sayyaf-form-select" style="font-size: 16px;">
                       <option value="1 مكيف" selected>1 مكيف</option>
                       <option value="2 مكيف">2 مكيف</option>
                       <option value="3 إلى 4 مكيفات (خصم باقة)">3 إلى 4 مكيفات (خصم باقة)</option>
@@ -548,14 +553,14 @@
                   </div>
 
                   <div>
-                    <label class="sayyaf-form-label" style="display: block; font-weight: 700; margin-bottom: 0.35rem; font-size: 0.9rem;">موقعك في الطائف (الحي):</label>
-                    <input type="text" name="location" class="sayyaf-form-input sayyaf-location-input" placeholder="مثال: حي شهار، أم العراد، الحوية..." style="width: 100%; padding: 0.65rem; border: 1px solid var(--color-border); border-radius: var(--radius-sm); font-family: inherit;">
+                    <label class="sayyaf-form-label" for="contact-location" style="display: block; font-weight: 700; margin-bottom: 0.35rem; font-size: 0.92rem;">موقعك في الطائف (الحي):</label>
+                    <input id="contact-location" type="text" name="location" class="sayyaf-form-input sayyaf-location-input" placeholder="مثال: حي شهار، أم العراد، الحوية..." style="font-size: 16px;">
                   </div>
                 </div>
 
                 <div>
-                  <label class="sayyaf-form-label" style="display: block; font-weight: 700; margin-bottom: 0.35rem; font-size: 0.9rem;">ملاحظات إضافية أو وقت الزيارة المفضل (اختياري):</label>
-                  <textarea name="notes" class="sayyaf-form-textarea" rows="2" placeholder="مثال: مكيف جري 24 ألف وحدة، أحتاج زيارة بعد العصر..." style="width: 100%; padding: 0.65rem; border: 1px solid var(--color-border); border-radius: var(--radius-sm); font-family: inherit; resize: vertical;"></textarea>
+                  <label class="sayyaf-form-label" for="contact-notes" style="display: block; font-weight: 700; margin-bottom: 0.35rem; font-size: 0.92rem;">ملاحظات إضافية أو وقت الزيارة المفضل (اختياري):</label>
+                  <textarea id="contact-notes" name="notes" class="sayyaf-form-textarea" rows="2" placeholder="مثال: مكيف جري 24 ألف وحدة، أحتاج زيارة بعد العصر..." style="font-size: 16px; resize: vertical;"></textarea>
                 </div>
 
                 <button type="submit" class="sayyaf-btn-lg sayyaf-btn-wa" style="width: 100%; justify-content: center; cursor: pointer; border: none; font-size: 1.05rem;">

@@ -42,7 +42,13 @@ def validate_all_articles():
             try:
                 d = json.loads(m_json.group(1))
                 assert '@graph' in d
-                types = [n.get('@type') for n in d['@graph']]
+                types = []
+                for n in d['@graph']:
+                    t = n.get('@type')
+                    if isinstance(t, list):
+                        types.extend(t)
+                    else:
+                        types.append(t)
                 assert 'Article' in types
                 assert 'BreadcrumbList' in types
                 assert 'Organization' in types

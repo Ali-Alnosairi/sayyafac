@@ -1,0 +1,26 @@
+{
+  "name": "صياف للتكييف",
+  "short_name": "صياف للتكييف",
+  "description": "شركة تكييف معتمدة بالطائف - فك وتركيب وصيانة وتنظيف مكيفات سبليت وشباك وتأسيس مواسير النحاس",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0b3b60",
+  "theme_color": "#0b3b60",
+  "orientation": "portrait-primary",
+  "dir": "rtl",
+  "lang": "ar-SA",
+  "icons": [
+    {
+      "src": "/assets/images/sayyafac-profile-icon.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/images/sayyafac-profile-icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

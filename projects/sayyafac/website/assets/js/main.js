@@ -1,21 +1,29 @@
 /**
- * صَيّاف للتكييف - التفاعل البرمجي الموحد
- * يعمل بتوافق تام على الصفحة الرئيسية وجميع المسارات الفرعية (Subpage Script Parity)
+ * صَيّاف للتكييف - التفاعل البرمجي الموحد للجوال وسطح المكتب
+ * يعمل بتوافق تام على الصفحة الرئيسية وجميع المسارات الفرعية (Mobile-First Parity)
  */
 
 document.addEventListener('DOMContentLoaded', () => {
-  // 1. إدارة القائمة الجانبية للجوال (Mobile Navigation Drawer)
+  // 1. إدارة القائمة الجانبية للجوال (Mobile Navigation Drawer & Gestures)
   const mobileToggleBtn = document.querySelector('.sayyaf-mobile-toggle');
   const drawer = document.querySelector('.sayyaf-drawer');
   const drawerBackdrop = document.querySelector('.sayyaf-drawer-backdrop');
   const drawerCloseBtn = document.querySelector('.sayyaf-drawer-close');
   const drawerLinks = document.querySelectorAll('.sayyaf-drawer-link');
+  let savedScrollY = 0;
 
   function openDrawer() {
     if (drawer && drawerBackdrop) {
+      savedScrollY = window.scrollY || window.pageYOffset;
       drawer.classList.add('is-open');
       drawerBackdrop.classList.add('is-open');
+      
+      // قفل التمرير الخلفي بدقة لمنع تسريب التمرير في متصفح Safari على iOS
+      document.body.style.position = 'fixed';
+      document.body.style.top = `-${savedScrollY}px`;
+      document.body.style.width = '100%';
       document.body.style.overflow = 'hidden';
+
       if (mobileToggleBtn) {
         mobileToggleBtn.setAttribute('aria-expanded', 'true');
       }
@@ -26,7 +34,15 @@ document.addEventListener('DOMContentLoaded', () => {
     if (drawer && drawerBackdrop) {
       drawer.classList.remove('is-open');
       drawerBackdrop.classList.remove('is-open');
+      drawer.style.transform = '';
+
+      // استعادة وضع التمرير الطبيعي وإعادة الصفحة لموضعها
+      document.body.style.position = '';
+      document.body.style.top = '';
+      document.body.style.width = '';
       document.body.style.overflow = '';
+      window.scrollTo(0, savedScrollY);
+
       if (mobileToggleBtn) {
         mobileToggleBtn.setAttribute('aria-expanded', 'false');
       }
@@ -51,6 +67,10 @@ document.addEventListener('DOMContentLoaded', () => {
     drawerBackdrop.addEventListener('click', () => {
       closeDrawer();
     });
+    // منع تمرير الخلفية عند لمس الستارة
+    drawerBackdrop.addEventListener('touchmove', (e) => {
+      e.preventDefault();
+    }, { passive: false });
   }
 
   drawerLinks.forEach((link) => {
@@ -65,6 +85,34 @@ document.addEventListener('DOMContentLoaded', () => {
       closeDrawer();
     }
   });
+
+  // دعم إيماءة السحب الطبيعية (Swipe to Dismiss) في واجهات اليمين لليسار (RTL)
+  let touchStartX = 0;
+  let touchCurrentX = 0;
+  if (drawer) {
+    drawer.addEventListener('touchstart', (e) => {
+      touchStartX = e.touches[0].clientX;
+    }, { passive: true });
+
+    drawer.addEventListener('touchmove', (e) => {
+      touchCurrentX = e.touches[0].clientX;
+      const diffX = touchCurrentX - touchStartX;
+      // في بيئة RTL، السحب لليمين (diffX > 0) هو اتجاه الإغلاق الطبيعي
+      if (diffX > 0) {
+        drawer.style.transform = `translateX(${diffX}px)`;
+      }
+    }, { passive: true });
+
+    drawer.addEventListener('touchend', () => {
+      const diffX = touchCurrentX - touchStartX;
+      drawer.style.transform = '';
+      if (diffX > 65) {
+        closeDrawer();
+      }
+      touchStartX = 0;
+      touchCurrentX = 0;
+    }, { passive: true });
+  }
 
   // 2. تمييز الرابط النشط تلقائياً حسب المسار الحالي
   const currentPath = window.location.pathname.replace(/\/$/, '') || '/';
@@ -106,7 +154,8 @@ document.addEventListener('DOMContentLoaded', () => {
       gpsBtn.addEventListener('click', (e) => {
         e.preventDefault();
         if (!navigator.geolocation) {
-          alert('خاصية تحديد الموقع غير مدعومة في متصفحك. يرجى كتابة اسم الحي بالطائف.');
+          gpsBtn.textContent = '❌ غير مدعوم بالجهاز';
+          setTimeout(() => { gpsBtn.textContent = '📍 تحديد موقعي'; }, 3000);
           return;
         }
         gpsBtn.textContent = '⏳ جاري التحديد...';
@@ -122,8 +171,8 @@ document.addEventListener('DOMContentLoaded', () => {
             }
           },
           (error) => {
-            gpsBtn.textContent = '📍 تحديد موقعي';
-            alert('تعذر الوصول التلقائي للموقع. يرجى كتابة اسم الحي بالطائف يدوياً.');
+            gpsBtn.textContent = '📍 تعذر التحديد (اكتب الحي)';
+            setTimeout(() => { gpsBtn.textContent = '📍 تحديد موقعي'; }, 3500);
           },
           { timeout: 10000 }
         );
@@ -162,7 +211,13 @@ document.addEventListener('DOMContentLoaded', () => {
         });
       }
 
-      window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
+      // توجيه ذكي مباشر على الهواتف لمنع اعتراض متصفحات الجوال للنوافذ المنبثقة
+      const isMobile = /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+      if (isMobile) {
+        window.location.href = whatsappUrl;
+      } else {
+        window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
+      }
     });
   });
 
@@ -188,6 +243,4 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
-
 });
-
