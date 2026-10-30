@@ -188,6 +188,33 @@ def validate_sayyafac_engineering():
             else:
                 errors.append(f"sitemap.xml incomplete, missing: {missing_urls}")
 
+    # 4b. Gate: Dual Favicon Architecture & SERP Icon Integrity (Lesson 29)
+    favicon_ico_path = os.path.join(base_dir, 'favicon.ico')
+    favicon_svg_path = os.path.join(base_dir, 'favicon.svg')
+    if not os.path.exists(favicon_ico_path):
+        errors.append("Missing root favicon.ico (triggers 404 on Googlebot favicon crawl)")
+    elif os.path.getsize(favicon_ico_path) < 100:
+        errors.append(f"Root favicon.ico is empty or invalid size: {os.path.getsize(favicon_ico_path)} bytes")
+    else:
+        passes.append("Root favicon.ico verified and valid (prevents Googlebot SERP icon 404)")
+
+    if not os.path.exists(favicon_svg_path):
+        errors.append("Missing root favicon.svg")
+    else:
+        passes.append("Root favicon.svg verified")
+
+    missing_ico_link = []
+    for hf in html_files:
+        rel = os.path.relpath(hf, base_dir).replace('\\', '/')
+        with open(hf, 'r', encoding='utf-8') as f:
+            c = f.read()
+        if '<link rel="icon" href="/favicon.ico" sizes="any">' not in c:
+            missing_ico_link.append(rel)
+    if missing_ico_link:
+        errors.append(f"Pages missing explicit favicon.ico link: {missing_ico_link}")
+    else:
+        passes.append(f"Dual favicon architecture verified across all {len(html_files)} HTML pages")
+
     # 5. Check 25 Canonical Districts Parity across Core Pages & llms.txt
     canonical_districts = [
         "مخططات الوسام", "حي شهار", "حي السداد", "حي الردف", "حي الخالدية",
