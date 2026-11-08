@@ -1,5 +1,5 @@
 /**
- * صَيّاف للتكييف - التفاعل البرمجي الموحد للجوال وسطح المكتب
+ * صياف للتكييف - التفاعل البرمجي الموحد للجوال وسطح المكتب
  * يعمل بتوافق تام على الصفحة الرئيسية وجميع المسارات الفرعية (Mobile-First Parity)
  */
 
@@ -189,7 +189,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const district = locationInput?.value.trim() || 'الطائف';
       const notes = quoteForm.querySelector('[name="notes"]')?.value.trim() || '';
 
-      let message = 'السلام عليكم ورحمة الله، أحتاج تسعير / حجز موعد مع صَيّاف للتكييف:\n';
+      let message = 'السلام عليكم ورحمة الله، أحتاج تسعير / حجز موعد مع صياف للتكييف:\n';
       message += `• نوع الخدمة: ${serviceType}\n`;
       message += `• نوع المكيف: ${acType}\n`;
       message += `• العدد: ${acCount}\n`;

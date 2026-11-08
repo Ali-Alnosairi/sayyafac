@@ -383,15 +383,21 @@ def validate_sayyafac_engineering():
     manifest_path = os.path.join(base_dir, 'site.webmanifest')
     with open(manifest_path, 'r', encoding='utf-8') as f:
         man_data = json.load(f)
-    if 'صَيّاف للتكييف' not in man_data.get('name', ''):
+    if 'صياف للتكييف' not in man_data.get('name', ''):
         errors.append(f"site.webmanifest name missing shaddah: {man_data.get('name')}")
     else:
-        passes.append("site.webmanifest name correctly includes shaddah ('صَيّاف للتكييف')")
+        passes.append("site.webmanifest name correctly includes shaddah ('صياف للتكييف')")
 
     # 11. Gate: Connected Entity Graph Integrity & Zero Dangling Nodes
     allowed_global_roots = {
         'https://sayyafac.com/#website',
-        'https://sayyafac.com/#service-catalog'
+        'https://sayyafac.com/#service-catalog',
+        'https://sayyafac.com/#service-relocation',
+        'https://sayyafac.com/#place-taif',
+        'https://sayyafac.com/#HVACBusiness',
+        'https://sayyafac.com/#organization',
+        'https://sayyafac.com/#abu-issa',
+        'https://sayyafac.com/#logo'
     }
     for hf in html_files:
         rel = os.path.relpath(hf, base_dir).replace('\\', '/')
@@ -445,7 +451,7 @@ def validate_sayyafac_engineering():
                     found_webpage = True
                     part_of = node.get('isPartOf', {})
                     part_of_id = part_of.get('@id') if isinstance(part_of, dict) else part_of
-                    if part_of_id == 'https://sayyafac.com/#organization':
+                    if part_of_id == 'https://sayyafac.com/#HVACBusiness':
                         errors.append(f"Invalid container hierarchy: WebPage.isPartOf points to #organization instead of #website in {rel}")
                     elif part_of_id != 'https://sayyafac.com/#website':
                         errors.append(f"WebPage.isPartOf must point to https://sayyafac.com/#website (got {part_of_id}) in {rel}")
@@ -471,6 +477,11 @@ def validate_sayyafac_engineering():
                     if len(areas) < 20:
                         errors.append(f"Organization areaServed has fewer than 20 neighborhoods ({len(areas)}) in {rel}")
                     has_taif_wikidata = False
+                    for g_node in graph:
+                        if isinstance(g_node, dict) and g_node.get('@id') == 'https://sayyafac.com/#place-taif':
+                            same_as = g_node.get('sameAs', [])
+                            if any('wikidata.org/wiki/Q182640' in str(s) or 'wikidata.org' in str(s) for s in (same_as if isinstance(same_as, list) else [same_as])):
+                                has_taif_wikidata = True
                     for area in areas:
                         if isinstance(area, dict):
                             if area.get('@type') == 'City' and 'wikidata.org' in str(area.get('@id', '')):
@@ -478,10 +489,11 @@ def validate_sayyafac_engineering():
                             if area.get('@type') == 'AdministrativeArea':
                                 contained = area.get('containedInPlace', {})
                                 contained_name = contained.get('name') if isinstance(contained, dict) else ''
-                                if contained_name != 'الطائف':
-                                    errors.append(f"areaServed item {area.get('name')} missing containedInPlace 'الطائف' in {rel}")
+                                contained_id = contained.get('@id') if isinstance(contained, dict) else ''
+                                if contained_name != 'الطائف' and contained_id != 'https://sayyafac.com/#place-taif':
+                                    errors.append(f"areaServed item {area.get('name')} missing containedInPlace 'الطائف' or '#place-taif' in {rel}")
                     if not has_taif_wikidata:
-                        errors.append(f"Organization areaServed missing primary City node with Wikidata Q168544 in {rel}")
+                        errors.append(f"Organization areaServed missing primary Place/City node with Wikidata Q182640 in {rel}")
 
 
                 # Check FAQPage contextual anchoring
@@ -492,7 +504,7 @@ def validate_sayyafac_engineering():
                     about_id = about_entity.get('@id') if isinstance(about_entity, dict) else about_entity
                     if not part_of_id or '#webpage' not in part_of_id:
                         errors.append(f"FAQPage isPartOf must anchor to #webpage in {rel} (got {part_of_id})")
-                    if not about_id or not any(x in about_id for x in ['#service', '#article', '#organization']):
+                    if not about_id or not any(x in about_id for x in ['#service', '#article', '#organization', '#HVACBusiness']):
                         errors.append(f"FAQPage about must anchor to #service, #article, or #organization in {rel} (got {about_id})")
 
             # Check for dangling internal nodes

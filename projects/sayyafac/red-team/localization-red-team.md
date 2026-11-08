@@ -1,5 +1,5 @@
 # تقرير الفريق الأحمر للملاءمة والعمق المحلي (Localization & Geo Red Team Report)
-**المشروع**: صَيّاف للتكييف (SayyafAC) - الطائف  
+**المشروع**: صياف للتكييف (SayyafAC) - الطائف  
 **المرحلة**: ترقية وتحديث معايير النظام (System Modernization & Alignment)  
 **التاريخ**: 2026-10-23  
 **النتيجة الإجمالية**: معتمد ومطابق بنسبة 100% (APPROVED - DEEP LOCAL TAIF GROUNDING)  

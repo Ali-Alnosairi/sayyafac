@@ -1,5 +1,5 @@
 # استراتيجية هندسة المعلومات وهيكل الروابط النظيفة (Information Architecture & Clean URLs)
-**المشروع**: صَيّاف للتكييف (SayyafAC) - الطائف  
+**المشروع**: صياف للتكييف (SayyafAC) - الطائف  
 **المرحلة**: ترقية وتحديث معايير النظام (System Modernization & Alignment)  
 **التاريخ**: 2026-10-23  
 **الحالة**: معتمد ومطابق للحقيقة الميدانية 100%  
@@ -24,7 +24,7 @@ projects/sayyafac/website/
 ├── copper-piping/
 │   └── index.html                                    ➔ https://sayyafac.com/copper-piping/ (تأسيس وتمديد نحاس مكيفات)
 ├── about/
-│   └── index.html                                    ➔ https://sayyafac.com/about/ (من نحن وقصة صَيّاف)
+│   └── index.html                                    ➔ https://sayyafac.com/about/ (من نحن وقصة صياف)
 ├── contact/
 │   └── index.html                                    ➔ https://sayyafac.com/contact/ (تواصل معنا ومناطق التغطية)
 ├── terms/
@@ -63,10 +63,10 @@ projects/sayyafac/website/
 | `/maintenance/` | ركيزة الصيانة (Diagnostic & Repair) | صيانة مكيفات بالطائف، تصليح مكيفات، تعبئة فريون R410A | HVACBusiness / Service / FAQPage |
 | `/cleaning/` | ركيزة الغسيل (On-Site Deep Cleaning) | تنظيف مكيفات بالطائف، غسيل مكيفات سبليت بالموقع | HVACBusiness / Service / FAQPage |
 | `/copper-piping/` | ركيزة التأسيس (Infrastructure Piping) | تأسيس نحاس مكيفات بالطائف، تمديد نحاس مولر أمريكي | HVACBusiness / Service / FAQPage |
-| `/about/` | صفحة الهوية والخبرة (E-E-A-T Base) | من نحن صَيّاف للتكييف، خبرة فنيي التكييف بالطائف | AboutPage / HVACBusiness |
+| `/about/` | صفحة الهوية والخبرة (E-E-A-T Base) | من نحن صياف للتكييف، خبرة فنيي التكييف بالطائف | AboutPage / HVACBusiness |
 | `/contact/` | صفحة التواصل والأحياء (Local Citations) | رقم فني تكييف بالطائف، تكييف أم العراد الطائف | ContactPage / HVACBusiness |
-| `/privacy/` | السياسة التنظيمية (PDPL Compliance) | سياسة الخصوصية صَيّاف للتكييف | WebPage |
-| `/terms/` | الشروط والضمان (Field Warranty) | شروط خدمة صَيّاف للتكييف وضمان التركيب | WebPage |
+| `/privacy/` | السياسة التنظيمية (PDPL Compliance) | سياسة الخصوصية صياف للتكييف | WebPage |
+| `/terms/` | الشروط والضمان (Field Warranty) | شروط خدمة صياف للتكييف وضمان التركيب | WebPage |
 | `/articles/` | مركز الأدلة الفنية الاسترشادية (Hub) | دليل التكييف بالطائف، نصائح تشغيل التكييف | CollectionPage |
 | `/articles/split-ac-guide/` | دليل فني تخصصي (Technical Guide) | دليل تركيب مكيف سبليت، فاكيوم المكيف | TechArticle / Article |
 | `/articles/water-leakage-guide/` | دليل فني تخصصي (Technical Guide) | علاج تنقيط ماء المكيف، تسليك صرف المكيف | TechArticle / Article |
@@ -81,7 +81,7 @@ projects/sayyafac/website/
 1. **توحيد اسم رابط الصفحة الرئيسية**:
    - تثبيت اسم الرابط للصفحة الرئيسية كـ **"الرئيسية"** دائماً في شريط التنقل العلوي لسطح المكتب وقائمة الجوال عبر كافة الصفحات الـ 12.
 2. **تذييل موحد من 4 أعمدة (Unified 4-Column Footer)**:
-   - العمود 1: هوية صَيّاف، العنوان الفعلي بشارع عور بحي أم العراد، ونبذة الاعتماد الميداني.
+   - العمود 1: هوية صياف، العنوان الفعلي بشارع عور بحي أم العراد، ونبذة الاعتماد الميداني.
    - العمود 2: روابط خدمات التكييف الميدانية المباشرة (فك وتركيب، فني سبليت، صيانة وتعبئة فريون، غسيل عميق، تأسيس نحاس).
    - العمود 3: مركز الأدلة الفنية وروابط المقالات الاسترشادية والصفحات التنظيمية (من نحن، الشروط، الخصوصية).
    - العمود 4: قنوات الاتصال والواتساب، ساعات العمل المعتمدة (السبت-الخميس: 07:00-23:50 | الجمعة: 14:00-23:50)، وشبكات التواصل الموثقة (إنستغرام وفيسبوك).

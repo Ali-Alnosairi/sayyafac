@@ -193,7 +193,7 @@ body {{
 """
 
 # -------------------------------------------------------------
-# 2. ARABIC TEXT ONLY: "صَيّاف للتكييف" (No English) - 2400 x 2400
+# 2. ARABIC TEXT ONLY: "صياف للتكييف" (No English) - 2400 x 2400
 # -------------------------------------------------------------
 
 # A. Dark Navy Square Avatar
@@ -243,7 +243,7 @@ body {{
   <div class="emblem-box">
     {generate_snowflake_svg(620, 620, "#38bdf8", "#ffffff")}
   </div>
-  <div class="brand-title">صَيّاف للتكييف</div>
+  <div class="brand-title">صياف للتكييف</div>
 </body>
 </html>
 """
@@ -294,7 +294,7 @@ body {{
   <div class="emblem-box">
     {generate_snowflake_svg(620, 620, "#38bdf8", "#ffffff")}
   </div>
-  <div class="brand-title">صَيّاف للتكييف</div>
+  <div class="brand-title">صياف للتكييف</div>
 </body>
 </html>
 """
@@ -345,7 +345,7 @@ body {{
   <div class="emblem-box">
     {generate_snowflake_svg(620, 620, "#38bdf8", "#ffffff")}
   </div>
-  <div class="brand-title">صَيّاف للتكييف</div>
+  <div class="brand-title">صياف للتكييف</div>
 </body>
 </html>
 """
@@ -396,7 +396,7 @@ body {{
   <div class="emblem-box">
     {generate_snowflake_svg(420, 420, "#38bdf8", "#ffffff")}
   </div>
-  <div class="brand-title">صَيّاف للتكييف</div>
+  <div class="brand-title">صياف للتكييف</div>
 </body>
 </html>
 """
@@ -448,7 +448,7 @@ body {{
   <div class="emblem-box">
     {generate_snowflake_svg(420, 420, "#38bdf8", "#ffffff")}
   </div>
-  <div class="brand-title">صَيّاف للتكييف</div>
+  <div class="brand-title">صياف للتكييف</div>
 </body>
 </html>
 """
@@ -459,7 +459,7 @@ tasks = [
     ("sayyafac-icon-only-light.png", html_icon_light, 2400, 2400, False),
     ("sayyafac-icon-only-transparent.png", html_icon_transparent, 2400, 2400, True),
     
-    # 2. Arabic Text Only (صَيّاف للتكييف - No English)
+    # 2. Arabic Text Only (صياف للتكييف - No English)
     ("sayyafac-arabic-only-dark.png", html_arabic_dark, 2400, 2400, False),
     ("sayyafac-arabic-only-light.png", html_arabic_light, 2400, 2400, False),
     ("sayyafac-arabic-only-transparent.png", html_arabic_transparent, 2400, 2400, True),
