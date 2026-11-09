@@ -100,7 +100,51 @@
       "@type": "WebSite",
       "@id": "https://sayyafac.com/#website",
       "url": "https://sayyafac.com/",
-      "name": "صياف للتكييف"
+      "name": "صياف للتكييف",
+      "alternateName": "Sayyaf AC",
+      "description": "مركز صياف للتكييف الرسمي بالطائف: خدمات فك ونقل وتركيب وصيانة وتنظيف وتأسيس نحاس مكيفات سبليت ودولابي وشباك بضمان ميداني معتمد.",
+      "inLanguage": "ar-SA",
+      "publisher": {
+        "@id": "https://sayyafac.com/#HVACBusiness"
+      },
+      "potentialAction": [
+        {
+          "@type": "CommunicateAction",
+          "name": "اتصال هاتفي مباشر لطلب الخدمة",
+          "description": "طلب الخدمة والحجز الميداني الفوري عبر الاتصال المباشر",
+          "target": "tel:+966538972324",
+          "recipient": {
+            "@id": "https://sayyafac.com/#HVACBusiness"
+          }
+        },
+        {
+          "@type": "CommunicateAction",
+          "name": "مراسلة الدعم الفني والحجز عبر واتساب",
+          "description": "إرسال الموقع وحجز الموعد الفني عبر محادثة واتساب الفورية",
+          "target": "https://wa.me/966538972324",
+          "recipient": {
+            "@id": "https://sayyafac.com/#HVACBusiness"
+          }
+        },
+        {
+          "@type": "ReserveAction",
+          "name": "حجز موعد خدمة تكييف ميدانية",
+          "description": "طلب معاينة أو حجز موعد صيانة أو تركيب مكيفات بالطائف",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://wa.me/966538972324?text=طلب%20خدمة%20تكييف%20من%20موقع%20صياف",
+            "inLanguage": "ar-SA",
+            "actionPlatform": [
+              "http://schema.org/DesktopWebPlatform",
+              "http://schema.org/MobileWebPlatform"
+            ]
+          },
+          "result": {
+            "@type": "Reservation",
+            "name": "حجز خدمة فك وتركيب تكييف"
+          }
+        }
+      ]
     },
     {
       "@type": "ItemPage",
@@ -123,9 +167,10 @@
       }
     },
     {
-      "@type": "Place",
+      "@type": "City",
       "@id": "https://sayyafac.com/#place-taif",
       "name": "الطائف",
+      "alternateName": "Taif",
       "sameAs": [
         "https://www.wikidata.org/wiki/Q182640",
         "https://ar.wikipedia.org/wiki/%D8%A7%D9%84%D8%B7%D8%A7%D8%A6%D9%81"

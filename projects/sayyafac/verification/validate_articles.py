@@ -51,7 +51,7 @@ def validate_all_articles():
                         types.append(t)
                 assert 'Article' in types
                 assert 'BreadcrumbList' in types
-                assert 'Organization' in types
+                assert any(t in types for t in ['Organization', 'HVACBusiness'])
             except Exception as e:
                 print(f"[FAIL] JSON-LD error in {art}: {e}")
                 all_ok = False

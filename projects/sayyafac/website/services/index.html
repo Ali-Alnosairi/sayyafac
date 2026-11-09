@@ -57,7 +57,51 @@
       "@type": "WebSite",
       "@id": "https://sayyafac.com/#website",
       "url": "https://sayyafac.com/",
-      "name": "صياف للتكييف"
+      "name": "صياف للتكييف",
+      "alternateName": "Sayyaf AC",
+      "description": "مركز صياف للتكييف الرسمي بالطائف: خدمات فك ونقل وتركيب وصيانة وتنظيف وتأسيس نحاس مكيفات سبليت ودولابي وشباك بضمان ميداني معتمد.",
+      "inLanguage": "ar-SA",
+      "publisher": {
+        "@id": "https://sayyafac.com/#HVACBusiness"
+      },
+      "potentialAction": [
+        {
+          "@type": "CommunicateAction",
+          "name": "اتصال هاتفي مباشر لطلب الخدمة",
+          "description": "طلب الخدمة والحجز الميداني الفوري عبر الاتصال المباشر",
+          "target": "tel:+966538972324",
+          "recipient": {
+            "@id": "https://sayyafac.com/#HVACBusiness"
+          }
+        },
+        {
+          "@type": "CommunicateAction",
+          "name": "مراسلة الدعم الفني والحجز عبر واتساب",
+          "description": "إرسال الموقع وحجز الموعد الفني عبر محادثة واتساب الفورية",
+          "target": "https://wa.me/966538972324",
+          "recipient": {
+            "@id": "https://sayyafac.com/#HVACBusiness"
+          }
+        },
+        {
+          "@type": "ReserveAction",
+          "name": "حجز موعد خدمة تكييف ميدانية",
+          "description": "طلب معاينة أو حجز موعد صيانة أو تركيب مكيفات بالطائف",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://wa.me/966538972324?text=طلب%20خدمة%20تكييف%20من%20موقع%20صياف",
+            "inLanguage": "ar-SA",
+            "actionPlatform": [
+              "http://schema.org/DesktopWebPlatform",
+              "http://schema.org/MobileWebPlatform"
+            ]
+          },
+          "result": {
+            "@type": "Reservation",
+            "name": "حجز خدمة فك وتركيب تكييف"
+          }
+        }
+      ]
     },
     {
       "@type": "CollectionPage",
@@ -112,9 +156,10 @@
       ]
     },
     {
-      "@type": "Place",
+      "@type": "City",
       "@id": "https://sayyafac.com/#place-taif",
       "name": "الطائف",
+      "alternateName": "Taif",
       "sameAs": [
         "https://www.wikidata.org/wiki/Q182640",
         "https://ar.wikipedia.org/wiki/%D8%A7%D9%84%D8%B7%D8%A7%D8%A6%D9%81"
@@ -407,12 +452,6 @@
             "@type": "Offer",
             "name": "خدمات فك ونقل وتركيب المكيفات",
             "url": "https://sayyafac.com/",
-            "priceSpecification": {
-              "@type": "PriceSpecification",
-              "priceCurrency": "SAR",
-              "minPrice": "100",
-              "maxPrice": "350"
-            },
             "itemOffered": {
               "@id": "https://sayyafac.com/#service-relocation"
             }
@@ -421,12 +460,6 @@
             "@type": "Offer",
             "name": "فني تركيب مكيفات سبليت",
             "url": "https://sayyafac.com/split-ac-installation-technician/",
-            "priceSpecification": {
-              "@type": "PriceSpecification",
-              "priceCurrency": "SAR",
-              "minPrice": "90",
-              "maxPrice": "180"
-            },
             "itemOffered": {
               "@id": "https://sayyafac.com/split-ac-installation-technician/#service"
             }
@@ -435,12 +468,6 @@
             "@type": "Offer",
             "name": "صيانة وتصليح مكيفات وتعبئة فريون",
             "url": "https://sayyafac.com/maintenance/",
-            "priceSpecification": {
-              "@type": "PriceSpecification",
-              "priceCurrency": "SAR",
-              "minPrice": "50",
-              "maxPrice": "220"
-            },
             "itemOffered": {
               "@id": "https://sayyafac.com/maintenance/#service"
             }
@@ -449,12 +476,6 @@
             "@type": "Offer",
             "name": "تنظيف وغسيل مكيفات بالموقع",
             "url": "https://sayyafac.com/cleaning/",
-            "priceSpecification": {
-              "@type": "PriceSpecification",
-              "priceCurrency": "SAR",
-              "minPrice": "60",
-              "maxPrice": "180"
-            },
             "itemOffered": {
               "@id": "https://sayyafac.com/cleaning/#service"
             }
@@ -463,12 +484,6 @@
             "@type": "Offer",
             "name": "تأسيس وتمديد مواسير النحاس",
             "url": "https://sayyafac.com/copper-piping/",
-            "priceSpecification": {
-              "@type": "PriceSpecification",
-              "priceCurrency": "SAR",
-              "minPrice": "25",
-              "maxPrice": "60"
-            },
             "itemOffered": {
               "@id": "https://sayyafac.com/copper-piping/#service"
             }
