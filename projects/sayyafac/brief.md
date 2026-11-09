@@ -22,6 +22,7 @@
 - **الموقع الجغرافي الدقيق**:
   - خط العرض (Latitude): `21.256835196480665`
   - خط الطول (Longitude): `40.408051642763986`
+  - توثيق خريطة OpenStreetMap العالمية: `https://www.openstreetmap.org/node/14354595098`
   - الشارع: شارع عور (Awir Street)
   - الحي: حي أم العراد (Umm Al-Arad District)
   - الرمز البريدي: `26511`
@@ -30,8 +31,12 @@
   - رقم الهاتف الموحد المباشر: `0538972324`
   - رابط الاتصال السريع: `tel:+966538972324`
   - رابط واتساب الرسمي المباشر: `https://wa.me/966538972324`
+  - البريد الإلكتروني المهني: `info@sayyafac.com`
+  - توثيق OpenStreetMap: `https://www.openstreetmap.org/node/14354595098`
   - حساب إنستغرام الرسمي: `https://www.instagram.com/sayyaf_ac`
-  - صفحة فيسبوك الرسمية: `https://facebook.com/sayyafac.offical`
+  - صفحة فيسبوك الرسمية: `https://facebook.com/sayyafac.official`
+  - حساب تيك توك الرسمي: `https://www.tiktok.com/@sayyaf_ac`
+  - حساب بنترست الرسمي: `https://www.pinterest.com/sayyafac/`
 - **ساعات العمل الميدانية المعتمدة**:
   - السبت إلى الخميس: 07:00 صباحاً – 11:50 مساءً
   - الجمعة: 02:00 ظهراً – 11:50 مساءً
