@@ -2746,20 +2746,9 @@ body.drawer-open .sayyaf-back-to-top {
   margin-top: 2px;
 }
 
-/* Table scroll visual cue on mobile */
+/* Table scroll visual cue (superseded by table-to-card mobile transformation) */
 .table-scroll-hint {
-  display: flex;
-  align-items: center;
-  gap: 0.4rem;
-  font-size: 0.82rem;
-  color: #64748b;
-  margin-bottom: 0.5rem;
-}
-
-@media (min-width: 768px) {
-  .table-scroll-hint {
-    display: none;
-  }
+  display: none;
 }
 
 /* ==========================================================================
@@ -2771,16 +2760,16 @@ body.drawer-open .sayyaf-back-to-top {
   .hvac-price-table-container,
   .ac-duration-table-wrap,
   .sayyaf-compare-card {
-    background: transparent !important;
-    border: none !important;
-    box-shadow: none !important;
-    overflow-x: visible !important;
-    padding: 0 !important;
-    margin-bottom: 1.5rem !important;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    overflow-x: visible;
+    padding: 0;
+    margin-bottom: 1.5rem;
   }
 
   .table-scroll-hint {
-    display: none !important;
+    display: none;
   }
 
   /* 1. Add-ons & General Price / Diagnostic Tables */
@@ -2792,74 +2781,75 @@ body.drawer-open .sayyaf-back-to-top {
   .hvac-diagnostic-table tr,
   .hvac-price-table td,
   .hvac-diagnostic-table td {
-    display: block !important;
-    width: 100% !important;
-    min-width: 100% !important;
-    box-sizing: border-box !important;
+    display: block;
+    width: 100%;
+    min-width: 0;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .hvac-price-table thead,
   .hvac-diagnostic-table thead {
-    display: none !important;
+    display: none;
   }
 
   .hvac-price-table tr,
   .hvac-diagnostic-table tr {
-    background: #ffffff !important;
-    border: 1px solid var(--color-border) !important;
-    border-radius: var(--radius-md) !important;
-    padding: 1.15rem !important;
-    margin-bottom: 0.85rem !important;
-    box-shadow: var(--shadow-sm) !important;
+    background: #ffffff;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    padding: 1.15rem;
+    margin-bottom: 0.85rem;
+    box-shadow: var(--shadow-sm);
   }
 
   .hvac-price-table td,
   .hvac-diagnostic-table td {
-    padding: 0.35rem 0 !important;
-    border-bottom: none !important;
-    font-size: 0.92rem !important;
-    line-height: 1.6 !important;
+    padding: 0.35rem 0;
+    border-bottom: none;
+    font-size: 0.92rem;
+    line-height: 1.6;
   }
 
   .hvac-price-table td:first-child,
   .hvac-diagnostic-table td:first-child {
-    font-size: 1.05rem !important;
-    color: var(--color-primary) !important;
-    font-weight: 800 !important;
-    border-bottom: 1px solid var(--color-border) !important;
-    padding-bottom: 0.45rem !important;
-    margin-bottom: 0.45rem !important;
+    font-size: 1.05rem;
+    color: var(--color-primary);
+    font-weight: 800;
+    border-bottom: 1px solid var(--color-border);
+    padding-bottom: 0.45rem;
+    margin-bottom: 0.45rem;
   }
 
   .hvac-price-table td:nth-child(2),
   .hvac-diagnostic-table td:nth-child(2) {
-    color: var(--color-text-muted) !important;
-    font-size: 0.88rem !important;
+    color: var(--color-text-muted);
+    font-size: 0.88rem;
   }
 
   .hvac-price-table td:nth-child(3),
   .hvac-diagnostic-table td:nth-child(3) {
-    margin-block: 0.4rem !important;
+    margin-block: 0.4rem;
   }
 
   .hvac-price-table td:nth-child(3) .price-highlight,
   .hvac-diagnostic-table td:nth-child(3) .price-highlight {
-    display: inline-block !important;
-    background: var(--color-accent-light) !important;
-    color: var(--color-primary) !important;
-    font-weight: 800 !important;
-    padding: 0.25rem 0.65rem !important;
-    border-radius: var(--radius-sm) !important;
-    font-size: 0.95rem !important;
+    display: inline-block;
+    background: var(--color-accent-light);
+    color: var(--color-primary);
+    font-weight: 800;
+    padding: 0.25rem 0.65rem;
+    border-radius: var(--radius-sm);
+    font-size: 0.95rem;
   }
 
   .hvac-price-table td:last-child,
   .hvac-diagnostic-table td:last-child {
-    font-size: 0.82rem !important;
-    color: #64748b !important;
-    border-top: 1px dashed var(--color-border) !important;
-    padding-top: 0.45rem !important;
-    margin-top: 0.45rem !important;
+    font-size: 0.82rem;
+    color: #64748b;
+    border-top: 1px dashed var(--color-border);
+    padding-top: 0.45rem;
+    margin-top: 0.45rem;
   }
 
   /* 2. Duration Tables */
@@ -2867,47 +2857,48 @@ body.drawer-open .sayyaf-back-to-top {
   .ac-duration-table tbody,
   .ac-duration-table tr,
   .ac-duration-table td {
-    display: block !important;
-    width: 100% !important;
-    min-width: 100% !important;
-    box-sizing: border-box !important;
+    display: block;
+    width: 100%;
+    min-width: 0;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .ac-duration-table thead {
-    display: none !important;
+    display: none;
   }
 
   .ac-duration-table tr {
-    background: #ffffff !important;
-    border: 1px solid var(--color-border) !important;
-    border-radius: var(--radius-md) !important;
-    padding: 1.1rem !important;
-    margin-bottom: 0.85rem !important;
-    box-shadow: var(--shadow-sm) !important;
+    background: #ffffff;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    padding: 1.1rem;
+    margin-bottom: 0.85rem;
+    box-shadow: var(--shadow-sm);
   }
 
   .ac-duration-table td {
-    padding: 0.3rem 0 !important;
-    border-bottom: none !important;
+    padding: 0.3rem 0;
+    border-bottom: none;
   }
 
   .ac-duration-table td:first-child {
-    font-size: 1.02rem !important;
-    color: var(--color-primary) !important;
-    font-weight: 800 !important;
+    font-size: 1.02rem;
+    color: var(--color-primary);
+    font-weight: 800;
   }
 
   .ac-duration-table td:nth-child(2) {
-    margin-block: 0.35rem !important;
+    margin-block: 0.35rem;
   }
 
   .ac-duration-table td:last-child {
-    font-size: 0.88rem !important;
-    color: var(--color-text-muted) !important;
-    line-height: 1.6 !important;
-    border-top: 1px dashed var(--color-border) !important;
-    padding-top: 0.45rem !important;
-    margin-top: 0.45rem !important;
+    font-size: 0.88rem;
+    color: var(--color-text-muted);
+    line-height: 1.6;
+    border-top: 1px dashed var(--color-border);
+    padding-top: 0.45rem;
+    margin-top: 0.45rem;
   }
 
   /* 3. Comparison Matrix Tables */
@@ -2915,63 +2906,64 @@ body.drawer-open .sayyaf-back-to-top {
   .sayyaf-compare-table tbody,
   .sayyaf-compare-table tr,
   .sayyaf-compare-table td {
-    display: block !important;
-    width: 100% !important;
-    min-width: 100% !important;
-    box-sizing: border-box !important;
+    display: block;
+    width: 100%;
+    min-width: 0;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .sayyaf-compare-table thead {
-    display: none !important;
+    display: none;
   }
 
   .sayyaf-compare-table tr {
-    background: #ffffff !important;
-    border: 1px solid var(--color-border) !important;
-    border-radius: var(--radius-lg) !important;
-    padding: 1.15rem !important;
-    margin-bottom: 1rem !important;
-    box-shadow: var(--shadow-sm) !important;
+    background: #ffffff;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    padding: 1.15rem;
+    margin-bottom: 1rem;
+    box-shadow: var(--shadow-sm);
   }
 
   .sayyaf-compare-table td {
-    padding: 0.45rem 0 !important;
-    border-bottom: none !important;
+    padding: 0.45rem 0;
+    border-bottom: none;
   }
 
   .sayyaf-compare-table td:first-child {
-    font-size: 1.05rem !important;
-    color: var(--color-primary) !important;
-    font-weight: 800 !important;
-    border-bottom: 1px solid var(--color-border) !important;
-    padding-bottom: 0.5rem !important;
-    margin-bottom: 0.6rem !important;
+    font-size: 1.05rem;
+    color: var(--color-primary);
+    font-weight: 800;
+    border-bottom: 1px solid var(--color-border);
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.6rem;
   }
 
   .sayyaf-compare-table td:nth-child(2) {
-    margin-bottom: 0.5rem !important;
+    margin-bottom: 0.5rem;
   }
 
   .sayyaf-compare-table td:nth-child(2) .sayyaf-badge-win {
-    display: block !important;
-    background: #f0fdf4 !important;
-    color: #15803d !important;
-    border: 1px solid #bbf7d0 !important;
-    border-radius: var(--radius-sm) !important;
-    padding: 0.55rem 0.75rem !important;
-    font-size: 0.88rem !important;
-    line-height: 1.6 !important;
+    display: block;
+    background: #f0fdf4;
+    color: #15803d;
+    border: 1px solid #bbf7d0;
+    border-radius: var(--radius-sm);
+    padding: 0.55rem 0.75rem;
+    font-size: 0.88rem;
+    line-height: 1.6;
   }
 
   .sayyaf-compare-table td:nth-child(3) .sayyaf-badge-lose {
-    display: block !important;
-    background: #fef2f2 !important;
-    color: #991b1b !important;
-    border: 1px solid #fecaca !important;
-    border-radius: var(--radius-sm) !important;
-    padding: 0.55rem 0.75rem !important;
-    font-size: 0.88rem !important;
-    line-height: 1.6 !important;
+    display: block;
+    background: #fef2f2;
+    color: #991b1b;
+    border: 1px solid #fecaca;
+    border-radius: var(--radius-sm);
+    padding: 0.55rem 0.75rem;
+    font-size: 0.88rem;
+    line-height: 1.6;
   }
 }
 
