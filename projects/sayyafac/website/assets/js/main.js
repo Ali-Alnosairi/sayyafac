@@ -4,21 +4,35 @@
  */
 
 document.addEventListener('DOMContentLoaded', () => {
-  // 1. إدارة القائمة الجانبية للجوال (Mobile Navigation Drawer & Gestures)
+  // 1. إدارة القائمة الجانبية للجوال (Mobile Navigation Drawer, Focus Trap & Gestures)
   const mobileToggleBtn = document.querySelector('.sayyaf-mobile-toggle');
   const drawer = document.querySelector('.sayyaf-drawer');
   const drawerBackdrop = document.querySelector('.sayyaf-drawer-backdrop');
   const drawerCloseBtn = document.querySelector('.sayyaf-drawer-close');
   const drawerLinks = document.querySelectorAll('.sayyaf-drawer-link');
   let savedScrollY = 0;
+  let lastFocusedEl = null;
+
+  if (drawer) {
+    drawer.setAttribute('aria-hidden', 'true');
+  }
+
+  function getDrawerFocusable() {
+    if (!drawer) return [];
+    return Array.from(
+      drawer.querySelectorAll('a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])')
+    );
+  }
 
   function openDrawer() {
     if (drawer && drawerBackdrop) {
+      lastFocusedEl = document.activeElement;
       savedScrollY = window.scrollY || window.pageYOffset;
       drawer.classList.add('is-open');
+      drawer.setAttribute('aria-hidden', 'false');
       drawerBackdrop.classList.add('is-open');
       document.body.classList.add('drawer-open');
-      
+
       // قفل التمرير الخلفي بدقة لمنع تسريب التمرير في متصفح Safari على iOS
       document.body.style.position = 'fixed';
       document.body.style.top = `-${savedScrollY}px`;
@@ -28,12 +42,22 @@ document.addEventListener('DOMContentLoaded', () => {
       if (mobileToggleBtn) {
         mobileToggleBtn.setAttribute('aria-expanded', 'true');
       }
+
+      window.requestAnimationFrame(() => {
+        if (drawerCloseBtn) {
+          drawerCloseBtn.focus();
+        } else {
+          const focusables = getDrawerFocusable();
+          if (focusables.length) focusables[0].focus();
+        }
+      });
     }
   }
 
   function closeDrawer() {
     if (drawer && drawerBackdrop) {
       drawer.classList.remove('is-open');
+      drawer.setAttribute('aria-hidden', 'true');
       drawerBackdrop.classList.remove('is-open');
       document.body.classList.remove('drawer-open');
       drawer.style.transform = '';
@@ -48,6 +72,13 @@ document.addEventListener('DOMContentLoaded', () => {
       if (mobileToggleBtn) {
         mobileToggleBtn.setAttribute('aria-expanded', 'false');
       }
+
+      if (lastFocusedEl && typeof lastFocusedEl.focus === 'function') {
+        lastFocusedEl.focus();
+      } else if (mobileToggleBtn) {
+        mobileToggleBtn.focus();
+      }
+      lastFocusedEl = null;
     }
   }
 
@@ -81,10 +112,28 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // إغلاق الدرج بمفتاح Escape
+  // إغلاق الدرج بمفتاح Escape وحصر التنقل بلوحة المفاتيح داخله (Focus Trap)
   document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && drawer && drawer.classList.contains('is-open')) {
+    if (!drawer || !drawer.classList.contains('is-open')) return;
+
+    if (e.key === 'Escape') {
       closeDrawer();
+      return;
+    }
+
+    if (e.key === 'Tab') {
+      const focusables = getDrawerFocusable();
+      if (!focusables.length) return;
+      const firstEl = focusables[0];
+      const lastEl = focusables[focusables.length - 1];
+
+      if (e.shiftKey && document.activeElement === firstEl) {
+        e.preventDefault();
+        lastEl.focus();
+      } else if (!e.shiftKey && document.activeElement === lastEl) {
+        e.preventDefault();
+        firstEl.focus();
+      }
     }
   });
 
@@ -94,6 +143,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (drawer) {
     drawer.addEventListener('touchstart', (e) => {
       touchStartX = e.touches[0].clientX;
+      touchCurrentX = touchStartX;
     }, { passive: true });
 
     drawer.addEventListener('touchmove', (e) => {
@@ -124,8 +174,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const linkPath = (link.getAttribute('href') || '').replace(/\/$/, '') || '/';
     if (linkPath === currentPath) {
       link.classList.add('active');
+      link.setAttribute('aria-current', 'page');
     } else {
       link.classList.remove('active');
+      link.removeAttribute('aria-current');
     }
   });
 
@@ -146,6 +198,21 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  function openWhatsAppUrl(whatsappUrl) {
+    const isMobile = /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    if (isMobile) {
+      window.location.href = whatsappUrl;
+    } else {
+      window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
+    }
+  }
+
+  function trackEvent(eventName, params) {
+    if (typeof window.gtag === 'function') {
+      window.gtag('event', eventName, params);
+    }
+  }
+
   // 4. إدارة نموذج طلب تسعير الواتساب التفاعلي (Interactive WhatsApp Lead Generator)
   document.querySelectorAll('.sayyaf-quote-form').forEach((quoteForm) => {
     const gpsBtn = quoteForm.querySelector('.sayyaf-gps-btn');
@@ -153,28 +220,31 @@ document.addEventListener('DOMContentLoaded', () => {
     let detectedLocation = '';
 
     if (gpsBtn && locationInput) {
+      const gpsLabel = gpsBtn.querySelector('span') || gpsBtn;
+      const defaultGpsText = gpsLabel.textContent.trim() || 'موقعي';
+
       gpsBtn.addEventListener('click', (e) => {
         e.preventDefault();
         if (!navigator.geolocation) {
-          gpsBtn.textContent = '❌ غير مدعوم بالجهاز';
-          setTimeout(() => { gpsBtn.textContent = '📍 تحديد موقعي'; }, 3000);
+          gpsLabel.textContent = 'غير مدعوم';
+          setTimeout(() => { gpsLabel.textContent = defaultGpsText; }, 3000);
           return;
         }
-        gpsBtn.textContent = '⏳ جاري التحديد...';
+        gpsLabel.textContent = 'جاري التحديد...';
         navigator.geolocation.getCurrentPosition(
           (position) => {
             const lat = position.coords.latitude.toFixed(6);
             const lng = position.coords.longitude.toFixed(6);
             detectedLocation = `https://maps.google.com/?q=${lat},${lng}`;
-            gpsBtn.textContent = '✅ تم تحديد موقعك';
+            gpsLabel.textContent = 'تم تحديد موقعك';
             gpsBtn.classList.add('is-active');
             if (!locationInput.value.trim()) {
               locationInput.value = 'موقعي على الخريطة (GPS)';
             }
           },
-          (error) => {
-            gpsBtn.textContent = '📍 تعذر التحديد (اكتب الحي)';
-            setTimeout(() => { gpsBtn.textContent = '📍 تحديد موقعي'; }, 3500);
+          () => {
+            gpsLabel.textContent = 'اكتب الحي يدوياً';
+            setTimeout(() => { gpsLabel.textContent = defaultGpsText; }, 3500);
           },
           { timeout: 10000 }
         );
@@ -184,14 +254,16 @@ document.addEventListener('DOMContentLoaded', () => {
     quoteForm.addEventListener('submit', (e) => {
       e.preventDefault();
       const serviceType = quoteForm.querySelector('[name="service_type"]')?.value || 'غير محدد';
-      const acType = quoteForm.querySelector('[name="ac_type"]')?.value || 'سبليت جداري';
+      const acTypeEl = quoteForm.querySelector('[name="ac_type"]');
       const acCount = quoteForm.querySelector('[name="ac_count"]')?.value || '1';
       const district = locationInput?.value.trim() || 'الطائف';
       const notes = quoteForm.querySelector('[name="notes"]')?.value.trim() || '';
 
       let message = 'السلام عليكم ورحمة الله، أحتاج تسعير / حجز موعد مع صياف للتكييف:\n';
       message += `• نوع الخدمة: ${serviceType}\n`;
-      message += `• نوع المكيف: ${acType}\n`;
+      if (acTypeEl && acTypeEl.value) {
+        message += `• نوع المكيف: ${acTypeEl.value}\n`;
+      }
       message += `• العدد: ${acCount}\n`;
       message += `• الحي / الموقع في الطائف: ${district}\n`;
       if (detectedLocation) {
@@ -204,45 +276,33 @@ document.addEventListener('DOMContentLoaded', () => {
       const encodedMsg = encodeURIComponent(message);
       const whatsappUrl = `https://wa.me/966538972324?text=${encodedMsg}`;
 
-      if (typeof window.gtag === 'function') {
-        window.gtag('event', 'generate_lead', {
-          event_category: 'conversion',
-          event_label: 'whatsapp_quote_builder',
-          service_type: serviceType,
-          district: district
-        });
-      }
+      trackEvent('generate_lead', {
+        event_category: 'conversion',
+        event_label: 'whatsapp_quote_builder',
+        service_type: serviceType,
+        district: district
+      });
 
-      // توجيه ذكي مباشر على الهواتف لمنع اعتراض متصفحات الجوال للنوافذ المنبثقة
-      const isMobile = /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-      if (isMobile) {
-        window.location.href = whatsappUrl;
-      } else {
-        window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
-      }
+      openWhatsAppUrl(whatsappUrl);
     });
   });
 
   // 5. تتبع أحداث التحويل المباشر للاتصال والواتساب (Conversion Tracking Hooks)
   document.querySelectorAll('a[href^="tel:"]').forEach((link) => {
     link.addEventListener('click', () => {
-      if (typeof window.gtag === 'function') {
-        window.gtag('event', 'contact', {
-          event_category: 'conversion',
-          event_label: 'phone_call'
-        });
-      }
+      trackEvent('contact', {
+        event_category: 'conversion',
+        event_label: 'phone_call'
+      });
     });
   });
 
   document.querySelectorAll('a[href*="wa.me"]').forEach((link) => {
     link.addEventListener('click', () => {
-      if (typeof window.gtag === 'function') {
-        window.gtag('event', 'contact', {
-          event_category: 'conversion',
-          event_label: 'whatsapp_direct_click'
-        });
-      }
+      trackEvent('contact', {
+        event_category: 'conversion',
+        event_label: 'whatsapp_direct_click'
+      });
     });
   });
 
@@ -255,7 +315,7 @@ document.addEventListener('DOMContentLoaded', () => {
     backToTopBtn.className = 'sayyaf-back-to-top';
     backToTopBtn.setAttribute('aria-label', 'الرجوع إلى أعلى الصفحة');
     backToTopBtn.setAttribute('title', 'الرجوع لأعلى الصفحة');
-    backToTopBtn.innerHTML = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg>';
+    backToTopBtn.innerHTML = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 15l-6-6-6 6"/></svg>';
     document.body.appendChild(backToTopBtn);
   }
 
@@ -282,22 +342,47 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // 7. رقاقات الأحياء التفاعلية لتعبئة نموذج الواتساب بسلاسة (Interactive District Chips)
+  // 7. رقاقات الأحياء التفاعلية (تعبئة النموذج بالرئيسية أو فتح واتساب مباشر بالخدمة والحي في الصفحات الفرعية)
+  const pathServiceMap = {
+    '/split-ac-installation-technician': 'تركيب مكيفات سبليت',
+    '/maintenance': 'صيانة مكيفات وتعبئة فريون',
+    '/cleaning': 'تنظيف وغسيل مكيفات بالموقع',
+    '/copper-piping': 'تأسيس وتمديد مواسير النحاس'
+  };
+  const pageServiceName = pathServiceMap[currentPath] || 'خدمات التكييف';
+
   document.querySelectorAll('.taif-district-chip').forEach((chip) => {
+    const rawText = chip.textContent.trim();
+    const locationInput = document.querySelector('.sayyaf-location-input');
+    const quoteSection = document.getElementById('quick-quote');
+
     chip.setAttribute('role', 'button');
     chip.setAttribute('tabindex', '0');
     chip.style.cursor = 'pointer';
+    chip.setAttribute(
+      'aria-label',
+      locationInput
+        ? `اختيار ${rawText} في نموذج التسعير`
+        : `طلب ${pageServiceName} في ${rawText} عبر واتساب`
+    );
+
     chip.addEventListener('click', () => {
-      const rawText = chip.textContent.trim();
-      const locationInput = document.querySelector('.sayyaf-location-input');
-      const quoteSection = document.getElementById('quick-quote');
-      
       if (locationInput) {
         locationInput.value = rawText;
         if (quoteSection) {
           quoteSection.scrollIntoView({ behavior: 'smooth', block: 'center' });
         }
         locationInput.focus();
+      } else {
+        const msg = `السلام عليكم ورحمة الله، أحتاج خدمة ${pageServiceName} في ${rawText} (الطائف).`;
+        const whatsappUrl = `https://wa.me/966538972324?text=${encodeURIComponent(msg)}`;
+        trackEvent('generate_lead', {
+          event_category: 'conversion',
+          event_label: 'district_chip_whatsapp',
+          service_type: pageServiceName,
+          district: rawText
+        });
+        openWhatsAppUrl(whatsappUrl);
       }
     });
 

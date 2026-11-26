@@ -24,7 +24,7 @@
   <meta property="og:image:secure_url" content="https://sayyafac.com/assets/images/install-after-aston-indoor.webp">
   <meta property="og:image:type" content="image/webp">
   <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
+  <meta property="og:image:height" content="900">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
@@ -36,15 +36,15 @@
   <!-- Favicon & Mobile Icons -->
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="icon" href="/favicon.ico" sizes="any">
-  <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/sayyafac-profile-icon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
 
   <!-- Preload Critical Font -->
   <link rel="preload" href="/assets/fonts/cairo-v35-arabic-700.woff2" as="font" type="font/woff2" crossorigin>
 
   <!-- Stylesheets (ZERO CSS @import) -->
-  <link rel="stylesheet" href="/assets/css/fonts.css">
-  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/fonts.css?v=20261125">
+  <link rel="stylesheet" href="/assets/css/style.css?v=20261125">
 
   <style>
     /* Critical Above-The-Fold Styles (Mobile-First Hero CTAs) */
@@ -959,16 +959,16 @@
       <div class="sayyaf-nav-wrapper">
         <a href="/" class="sayyaf-brand-logo" aria-label="الرئيسية - صياف للتكييف">
           <picture>
-            <source media="(max-width: 991px)" srcset="/assets/images/logo-mobile.svg">
-            <img src="/assets/images/logo-pc.svg" alt="صياف للتكييف" width="76" height="60" class="sayyaf-logo-img">
+            <source media="(max-width: 991px)" srcset="/assets/images/logo-mobile.webp">
+            <img src="/assets/images/logo-pc.webp" alt="صياف للتكييف" width="76" height="60" class="sayyaf-logo-img">
           </picture>
         </a>
 
         <nav class="sayyaf-nav-links" aria-label="القائمة الرئيسية">
-          <a href="/" class="sayyaf-nav-link active">الرئيسية</a>
+          <a href="/" class="sayyaf-nav-link">الرئيسية</a>
           <a href="/split-ac-installation-technician/" class="sayyaf-nav-link">تركيب مكيفات سبليت</a>
           <a href="/maintenance/" class="sayyaf-nav-link">صيانة مكيفات</a>
-          <a href="/cleaning/" class="sayyaf-nav-link">تنظيف مكيفات</a>
+          <a href="/cleaning/" class="sayyaf-nav-link active" aria-current="page">تنظيف مكيفات</a>
           <a href="/copper-piping/" class="sayyaf-nav-link">تأسيس مكيفات</a>
           <a href="/articles/" class="sayyaf-nav-link">المدونة</a>
         </nav>
@@ -976,7 +976,7 @@
         <div class="sayyaf-nav-actions">
           <a href="tel:+966538972324" class="sayyaf-phone-chip" title="اتصل بمركز صياف">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
-              stroke-linecap="round" stroke-linejoin="round">
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
               <path
                 d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
             </svg>
@@ -985,7 +985,7 @@
 
           <a href="https://wa.me/966538972324?text=السلام%20عليكم،%20أحتاج%20خدمة%20فك%20وتركيب%20مكيفات%20في%20الطائف"
             class="sayyaf-btn-primary" target="_blank" rel="noopener noreferrer">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
               <path
                 d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.39-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.32a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24m4.52 11.66c-.19-.09-1.12-.55-1.3-.61-.17-.07-.3-.1-.43.1-.12.19-.48.61-.59.74-.11.12-.22.14-.41.05-.19-.09-.8-.3-1.52-.94-.56-.5-1-1.12-1.11-1.31-.11-.19-.01-.29.08-.38.08-.09.19-.22.28-.33.09-.11.13-.19.19-.32.06-.13.03-.24-.02-.33-.05-.09-.43-1.04-.59-1.42-.16-.38-.32-.33-.44-.33h-.37c-.13 0-.34.05-.52.24-.18.19-.69.67-.69 1.64s.71 1.9 0.81 2.03c.1.14 1.39 2.13 3.37 2.99.47.2 0.84.33 1.13.42.48.15.91.13 1.25.08.38-.06 1.17-.48 1.33-.94.17-.46.17-.86.12-.94-.05-.08-.18-.13-.37-.22z" />
             </svg>
@@ -994,7 +994,7 @@
 
           <button type="button" class="sayyaf-mobile-toggle" aria-label="فتح قائمة التنقل" aria-expanded="false">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
-              stroke-linecap="round" stroke-linejoin="round">
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
               <line x1="3" y1="12" x2="21" y2="12"></line>
               <line x1="3" y1="6" x2="21" y2="6"></line>
               <line x1="3" y1="18" x2="21" y2="18"></line>
@@ -1010,12 +1010,12 @@
   <aside class="sayyaf-drawer" aria-label="قائمة الجوال">
     <div class="sayyaf-drawer-header">
       <div class="sayyaf-brand-logo">
-        <img src="/assets/images/logo-mobile.svg" alt="صياف للتكييف" width="117" height="40"
+        <img src="/assets/images/logo-mobile.webp" alt="صياف للتكييف" width="117" height="40"
           style="height: 38px; width: auto;">
       </div>
       <button type="button" class="sayyaf-drawer-close" aria-label="إغلاق القائمة">
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
-          stroke-linecap="round" stroke-linejoin="round">
+          stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
           <line x1="18" y1="6" x2="6" y2="18"></line>
           <line x1="6" y1="6" x2="18" y2="18"></line>
         </svg>
@@ -1023,39 +1023,39 @@
     </div>
 
     <nav class="sayyaf-drawer-links">
-      <a href="/" class="sayyaf-drawer-link active">
+      <a href="/" class="sayyaf-drawer-link">
         <span>الرئيسية</span>
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
           <polyline points="15 18 9 12 15 6"></polyline>
         </svg>
       </a>
       <a href="/split-ac-installation-technician/" class="sayyaf-drawer-link">
         <span>تركيب مكيفات سبليت</span>
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
           <polyline points="15 18 9 12 15 6"></polyline>
         </svg>
       </a>
       <a href="/maintenance/" class="sayyaf-drawer-link">
         <span>صيانة مكيفات</span>
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
           <polyline points="15 18 9 12 15 6"></polyline>
         </svg>
       </a>
-      <a href="/cleaning/" class="sayyaf-drawer-link">
+      <a href="/cleaning/" class="sayyaf-drawer-link active" aria-current="page">
         <span>تنظيف مكيفات</span>
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
           <polyline points="15 18 9 12 15 6"></polyline>
         </svg>
       </a>
       <a href="/copper-piping/" class="sayyaf-drawer-link">
         <span>تأسيس مكيفات</span>
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
           <polyline points="15 18 9 12 15 6"></polyline>
         </svg>
       </a>
       <a href="/articles/" class="sayyaf-drawer-link">
         <span>المدونة</span>
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
           <polyline points="15 18 9 12 15 6"></polyline>
         </svg>
       </a>
@@ -1063,7 +1063,7 @@
 
     <div class="sayyaf-drawer-footer">
       <a href="tel:+966538972324" class="sayyaf-btn-lg sayyaf-btn-call" style="width: 100%;">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
           <path
             d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
         </svg>
@@ -1085,7 +1085,7 @@
         <div class="ac-hero-grid">
           <div class="ac-hero-content">
             <span class="ac-badge-label">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
                 <polyline points="20 6 9 17 4 12"></polyline>
               </svg>
               فريق غسيل مكيفات متاح الآن — خدمة بالموقع بدون فك الجدار
@@ -1099,7 +1099,7 @@
 
             <div class="hero-btn-group">
               <a href="tel:+966538972324" class="sayyaf-btn-call hero-btn-item">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
                   <path
                     d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
                 </svg>
@@ -1108,7 +1108,7 @@
 
               <a href="https://wa.me/966538972324?text=السلام%20عليكم،%20أحتاج%20خدمة%20غسيل%20مكيفات%20في%20الطائف"
                 class="sayyaf-btn-wa hero-btn-item" target="_blank" rel="noopener noreferrer">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                   <path
                     d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.39-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.32a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24m4.52 11.66c-.19-.09-1.12-.55-1.3-.61-.17-.07-.3-.1-.43.1-.12.19-.48.61-.59.74-.11.12-.22.14-.41.05-.19-.09-.8-.3-1.52-.94-.56-.5-1-1.12-1.11-1.31-.11-.19-.01-.29.08-.38.08-.09.19-.22.28-.33.09-.11.13-.19.19-.32.06-.13.03-.24-.02-.33-.05-.09-.43-1.04-.59-1.42-.16-.38-.32-.33-.44-.33h-.37c-.13 0-.34.05-.52.24-.18.19-.69.67-.69 1.64s.71 1.9 0.81 2.03c.1.14 1.39 2.13 3.37 2.99.47.2 0.84.33 1.13.42.48.15.91.13 1.25.08.38-.06 1.17-.48 1.33-.94.17-.46.17-.86.12-.94-.05-.08-.18-.13-.37-.22z" />
                 </svg>
@@ -1127,7 +1127,7 @@
           <!-- Hero Actionable Cleaning Spec Card -->
           <div class="ac-hero-spec-card">
             <span class="ac-hero-spec-badge">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
                 <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
               </svg>
               <span>معايير الأمان والنظافة الميدانية</span>
@@ -1136,7 +1136,7 @@
             <div class="ac-hero-spec-list">
               <div class="ac-hero-spec-item">
                 <div class="ac-hero-spec-icon">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
                     <polyline points="20 6 9 17 4 12" />
                   </svg>
                 </div>
@@ -1147,7 +1147,7 @@
               </div>
               <div class="ac-hero-spec-item">
                 <div class="ac-hero-spec-icon">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
                     <polyline points="20 6 9 17 4 12" />
                   </svg>
                 </div>
@@ -1158,18 +1158,18 @@
               </div>
               <div class="ac-hero-spec-item">
                 <div class="ac-hero-spec-icon">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
                     <polyline points="20 6 9 17 4 12" />
                   </svg>
                 </div>
                 <div>
-                  <strong>مضخة ضغط محسوبة (30 – 50 بار)</strong>
+                  <strong>مضخة ضغط محسوبة (10 – 35 بار)</strong>
                   تنظيف عميق لشرائح رديتر الألمنيوم والبلاور دون ثني الزعانف أو تلفها.
                 </div>
               </div>
               <div class="ac-hero-spec-item">
                 <div class="ac-hero-spec-icon">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
                     <polyline points="20 6 9 17 4 12" />
                   </svg>
                 </div>
@@ -1180,7 +1180,7 @@
               </div>
             </div>
             <div class="ac-hero-spec-footer">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
                 <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
                 <polyline points="22 4 12 14.01 9 11.01" />
               </svg>
@@ -1198,7 +1198,7 @@
           style="border-right-color: #16a34a; background-color: #f0fdf4; padding: 1.5rem; border-radius: var(--radius-md);">
           <div
             style="font-weight: 800; font-size: 1.15rem; color: #166534; margin-bottom: 0.35rem; display: flex; align-items: center; gap: 0.5rem;">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
               <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
             </svg>
             <span>حقيقة هندسية: تنظيف المكيف يخفض استهلاك الكهرباء بنسبة تصل إلى 20%</span>
@@ -1288,32 +1288,32 @@
             </div>
             <ul class="tech-pricing-features">
               <li>
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
                   <polyline points="20 6 9 17 4 12"></polyline>
                 </svg>
                 <span>تركيب جراب الحماية المعلق وحماية الأثاث والجدران</span>
               </li>
               <li>
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
                   <polyline points="20 6 9 17 4 12"></polyline>
                 </svg>
                 <span>غسيل المبخر الداخلي ومروحة البلاور بضغط منضبط</span>
               </li>
               <li>
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
                   <polyline points="20 6 9 17 4 12"></polyline>
                 </svg>
                 <span>غسيل رديتر الوحدة الخارجية وإزالة الأتربة المتكلسة</span>
               </li>
               <li>
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
                   <polyline points="20 6 9 17 4 12"></polyline>
                 </svg>
                 <span>تسليك مجرى الصرف وتعقيم طبي لطرد الروائح</span>
               </li>
             </ul>
             <a href="tel:+966538972324" class="sayyaf-btn-primary card-cta">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
                 <path
                   d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
               </svg>
@@ -1335,25 +1335,25 @@
             </div>
             <ul class="tech-pricing-features">
               <li>
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
                   <polyline points="20 6 9 17 4 12"></polyline>
                 </svg>
                 <span>غسيل كامل لكافة الوحدات الداخلية بجراب الحماية</span>
               </li>
               <li>
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
                   <polyline points="20 6 9 17 4 12"></polyline>
                 </svg>
                 <span>غسيل المكثفات الخارجية بمضخة الضغط العالي</span>
               </li>
               <li>
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
                   <polyline points="20 6 9 17 4 12"></polyline>
                 </svg>
                 <span>تسليك وتطهير مجاري الصرف لكافة الغرف</span>
               </li>
               <li>
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
                   <polyline points="20 6 9 17 4 12"></polyline>
                 </svg>
                 <span>تعقيم كامل وفحص روتيني لمستوى التبريد</span>
@@ -1361,7 +1361,7 @@
             </ul>
             <a href="https://wa.me/966538972324?text=السلام%20عليكم،%20أريد%20حجز%20باقة%20غسيل%20الشقق%20(3-4%20مكيفات)%20في%20الطائف"
               class="sayyaf-btn-primary card-cta" target="_blank" rel="noopener noreferrer">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                 <path
                   d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.39-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.32a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24m4.52 11.66c-.19-.09-1.12-.55-1.3-.61-.17-.07-.3-.1-.43.1-.12.19-.48.61-.59.74-.11.12-.22.14-.41.05-.19-.09-.8-.3-1.52-.94-.56-.5-1-1.12-1.11-1.31-.11-.19-.01-.29.08-.38.08-.09.19-.22.28-.33.09-.11.13-.19.19-.32.06-.13.03-.24-.02-.33-.05-.09-.43-1.04-.59-1.42-.16-.38-.32-.33-.44-.33h-.37c-.13 0-.34.05-.52.24-.18.19-.69.67-.69 1.64s.71 1.9 0.81 2.03c.1.14 1.39 2.13 3.37 2.99.47.2 0.84.33 1.13.42.48.15.91.13 1.25.08.38-.06 1.17-.48 1.33-.94.17-.46.17-.86.12-.94-.05-.08-.18-.13-.37-.22z" />
               </svg>
@@ -1371,7 +1371,7 @@
 
           <!-- Card 3 -->
           <div class="tech-pricing-card">
-            <span class="tech-pricing-badge" style="background: #16a34a;">خصم الفلل والعمائر</span>
+            <span class="tech-pricing-badge" style="background: #15803d;">خصم الفلل والعمائر</span>
             <div class="tech-pricing-header">
               <h3>باقة الفلل والمباني (5 مكيفات فأكثر)</h3>
               <p style="color: var(--color-text-muted); font-size: 0.88rem; margin: 0;">أقصى توفير مع فحص شامل</p>
@@ -1382,25 +1382,25 @@
             </div>
             <ul class="tech-pricing-features">
               <li>
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
                   <polyline points="20 6 9 17 4 12"></polyline>
                 </svg>
                 <span>غسيل عميق لجميع المكيفات الداخلية والخارجية</span>
               </li>
               <li>
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
                   <polyline points="20 6 9 17 4 12"></polyline>
                 </svg>
                 <span>فحص مجاني لضغوط الفريون وكابستورات الإقلاع</span>
               </li>
               <li>
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
                   <polyline points="20 6 9 17 4 12"></polyline>
                 </svg>
                 <span>تسليك وصيانة كاملة لكافة خطوط صرف التكثيف</span>
               </li>
               <li>
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
                   <polyline points="20 6 9 17 4 12"></polyline>
                 </svg>
                 <span>خصم 20% على أي تعبئة فريون أو صيانة إضافية</span>
@@ -1408,7 +1408,7 @@
             </ul>
             <a href="https://wa.me/966538972324?text=السلام%20عليكم،%20أريد%20حجز%20باقة%20غسيل%20الفلل%20(5%20مكيفات%20فأكثر)%20في%20الطائف"
               class="sayyaf-btn-primary card-cta" target="_blank" rel="noopener noreferrer">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                 <path
                   d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.39-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.32a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24m4.52 11.66c-.19-.09-1.12-.55-1.3-.61-.17-.07-.3-.1-.43.1-.12.19-.48.61-.59.74-.11.12-.22.14-.41.05-.19-.09-.8-.3-1.52-.94-.56-.5-1-1.12-1.11-1.31-.11-.19-.01-.29.08-.38.08-.09.19-.22.28-.33.09-.11.13-.19.19-.32.06-.13.03-.24-.02-.33-.05-.09-.43-1.04-.59-1.42-.16-.38-.32-.33-.44-.33h-.37c-.13 0-.34.05-.52.24-.18.19-.69.67-.69 1.64s.71 1.9 0.81 2.03c.1.14 1.39 2.13 3.37 2.99.47.2 0.84.33 1.13.42.48.15.91.13 1.25.08.38-.06 1.17-.48 1.33-.94.17-.46.17-.86.12-.94-.05-.08-.18-.13-.37-.22z" />
               </svg>
@@ -1418,7 +1418,7 @@
 
           <!-- Card 4 -->
           <div class="tech-pricing-card">
-            <span class="tech-pricing-badge" style="background: #0284c7;">المساجد والمحلات</span>
+            <span class="tech-pricing-badge" style="background: #0369a1;">المساجد والمحلات</span>
             <div class="tech-pricing-header">
               <h3>غسيل مكيف دولابي تجاري كبير</h3>
               <p style="color: var(--color-text-muted); font-size: 0.88rem; margin: 0;">تنظيف للمبخرات العمودية ومراوح
@@ -1430,32 +1430,32 @@
             </div>
             <ul class="tech-pricing-features">
               <li>
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
                   <polyline points="20 6 9 17 4 12"></polyline>
                 </svg>
                 <span>تنظيف المبخرات العمودية وفك الفلاتر المعدنية</span>
               </li>
               <li>
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
                   <polyline points="20 6 9 17 4 12"></polyline>
                 </svg>
                 <span>غسيل مراوح الطرد الأسطوانية وتطهير الحوض</span>
               </li>
               <li>
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
                   <polyline points="20 6 9 17 4 12"></polyline>
                 </svg>
                 <span>غسيل المكثف الخارجي بضغط مائي مرتفع</span>
               </li>
               <li>
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
                   <polyline points="20 6 9 17 4 12"></polyline>
                 </svg>
                 <span>إزالة الدهون والروائح والأتربة المتكلسة</span>
               </li>
             </ul>
             <a href="tel:+966538972324" class="sayyaf-btn-primary card-cta">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
                 <path
                   d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
               </svg>
@@ -1476,32 +1476,32 @@
             </div>
             <ul class="tech-pricing-features">
               <li>
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
                   <polyline points="20 6 9 17 4 12"></polyline>
                 </svg>
                 <span>سحب المكيف من فتحة الجدار بأمان وتفريغ الماء الراكد</span>
               </li>
               <li>
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
                   <polyline points="20 6 9 17 4 12"></polyline>
                 </svg>
                 <span>غسيل عميق للرديتر والمروحة وقاعدة الجهاز بضغط الماء</span>
               </li>
               <li>
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
                   <polyline points="20 6 9 17 4 12"></polyline>
                 </svg>
                 <span>إزالة الأوحال والتكلسات المتراكمة ومعالجة انسداد الصرف</span>
               </li>
               <li>
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
                   <polyline points="20 6 9 17 4 12"></polyline>
                 </svg>
                 <span>إعادة التركيب والتثبيت المحكم واختبار التبريد بعد الغسيل</span>
               </li>
             </ul>
             <a href="tel:+966538972324" class="sayyaf-btn-primary card-cta">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
                 <path
                   d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
               </svg>
@@ -1536,7 +1536,7 @@
             التخصصية عند الحاجة الفعلية لها:</p>
 
           <div class="table-scroll-hint">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
               <path d="M7 16l-4-4m0 0l4-4m-4 4h18m-4 4l4-4m0 0l-4-4"></path>
             </svg>
             <span>مرر الجدول أفقياً للاطلاع على كامل التفاصيل الفنية والأسعار</span>
@@ -1586,7 +1586,7 @@
         <div class="quick-qa-grid">
           <div class="quick-qa-card">
             <h3>
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
                 <circle cx="12" cy="12" r="10" />
                 <path d="M12 8v4" />
                 <path d="M12 16h.01" />
@@ -1599,7 +1599,7 @@
 
           <div class="quick-qa-card">
             <h3>
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
                 <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
               </svg>
               <span>هل يتأثر الأثاث أو دهان الجدار؟</span>
@@ -1610,7 +1610,7 @@
 
           <div class="quick-qa-card">
             <h3>
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
                 <circle cx="12" cy="12" r="10" />
                 <polyline points="12 6 12 12 16 14" />
               </svg>
@@ -1675,35 +1675,35 @@
         <div class="sayyaf-warranty-grid">
           <div class="sayyaf-warranty-col covered">
             <h3 class="sayyaf-warranty-title covered">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
                 <polyline points="20 6 9 17 4 12"></polyline>
               </svg>
               <span>ما يشمله ضمان الغسيل (مسؤوليتنا المباشرة)</span>
             </h3>
             <ul class="sayyaf-warranty-list">
               <li class="sayyaf-warranty-item">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5" aria-hidden="true">
                   <polyline points="20 6 9 17 4 12"></polyline>
                 </svg>
                 <span><strong>سلامة اللوحة الإلكترونية (PCB) والحساسات:</strong> نتحمل مسؤولية سلامة اللوحة والحساسات
                   بنسبة 100% ضد أي بلل أو تلف أثناء الغسيل.</span>
               </li>
               <li class="sayyaf-warranty-item">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5" aria-hidden="true">
                   <polyline points="20 6 9 17 4 12"></polyline>
                 </svg>
                 <span><strong>نظافة الجدران والأثاث بنسبة 100%:</strong> عدم تسرب أي قطرة ماء أسود أو اتساخ للدهانات أو
                   الأثاث أو المفروشات المحيطة.</span>
               </li>
               <li class="sayyaf-warranty-item">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5" aria-hidden="true">
                   <polyline points="20 6 9 17 4 12"></polyline>
                 </svg>
                 <span><strong>انسياب ماء الصرف وعدم الانسداد:</strong> ضمان عدم ارتداد أو انسداد مجرى الصرف الذي تم
                   تسليكه لمدة 30 يوماً.</span>
               </li>
               <li class="sayyaf-warranty-item">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5" aria-hidden="true">
                   <polyline points="20 6 9 17 4 12"></polyline>
                 </svg>
                 <span><strong>سلامة زعانف الألمنيوم (رديتر التبريد):</strong> استخدام ضغط ماء محسوب يمنع انثناء الزعانف
@@ -1714,7 +1714,7 @@
 
           <div class="sayyaf-warranty-col not-covered">
             <h3 class="sayyaf-warranty-title not-covered">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
                 <circle cx="12" cy="12" r="10"></circle>
                 <line x1="15" y1="9" x2="9" y2="15"></line>
                 <line x1="9" y1="9" x2="15" y2="15"></line>
@@ -1723,7 +1723,7 @@
             </h3>
             <ul class="sayyaf-warranty-list">
               <li class="sayyaf-warranty-item">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#dc2626" stroke-width="2.5">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#dc2626" stroke-width="2.5" aria-hidden="true">
                   <line x1="18" y1="6" x2="6" y2="18"></line>
                   <line x1="6" y1="6" x2="18" y2="18"></line>
                 </svg>
@@ -1731,7 +1731,7 @@
                   الحرارة لكنه لا يعوض الفريون الناقص في الدورة.</span>
               </li>
               <li class="sayyaf-warranty-item">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#dc2626" stroke-width="2.5">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#dc2626" stroke-width="2.5" aria-hidden="true">
                   <line x1="18" y1="6" x2="6" y2="18"></line>
                   <line x1="6" y1="6" x2="18" y2="18"></line>
                 </svg>
@@ -1739,7 +1739,7 @@
                   عمره الافتراضي لا يُعالج بالغسيل.</span>
               </li>
               <li class="sayyaf-warranty-item">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#dc2626" stroke-width="2.5">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#dc2626" stroke-width="2.5" aria-hidden="true">
                   <line x1="18" y1="6" x2="6" y2="18"></line>
                   <line x1="6" y1="6" x2="18" y2="18"></line>
                 </svg>
@@ -1747,7 +1747,7 @@
                   بعد انتهاء فترة الضمان.</span>
               </li>
               <li class="sayyaf-warranty-item">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#dc2626" stroke-width="2.5">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#dc2626" stroke-width="2.5" aria-hidden="true">
                   <line x1="18" y1="6" x2="6" y2="18"></line>
                   <line x1="6" y1="6" x2="18" y2="18"></line>
                 </svg>
@@ -1773,7 +1773,7 @@
           <div class="sayyaf-fear-card">
             <div class="sayyaf-fear-header">
               <div class="sayyaf-fear-icon" aria-hidden="true">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
                   <circle cx="12" cy="12" r="10"></circle>
                   <line x1="12" y1="8" x2="12" y2="12"></line>
                   <line x1="12" y1="16" x2="12.01" y2="16"></line>
@@ -1787,7 +1787,7 @@
               بلاستيكية عازلة.
             </p>
             <div class="sayyaf-guarantee-badge">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
                 <polyline points="20 6 9 17 4 12"></polyline>
               </svg>
               <span>جراب عازل وحماية كاملة للأثاث والدهانات</span>
@@ -1797,7 +1797,7 @@
           <div class="sayyaf-fear-card">
             <div class="sayyaf-fear-header">
               <div class="sayyaf-fear-icon" aria-hidden="true">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
                   <circle cx="12" cy="12" r="10"></circle>
                   <line x1="12" y1="8" x2="12" y2="12"></line>
                   <line x1="12" y1="16" x2="12.01" y2="16"></line>
@@ -1811,7 +1811,7 @@
               100%.
             </p>
             <div class="sayyaf-guarantee-badge">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
                 <polyline points="20 6 9 17 4 12"></polyline>
               </svg>
               <span>عزل كهربائي محكم للوحة وضمان تشغيل سليم</span>
@@ -1821,7 +1821,7 @@
           <div class="sayyaf-fear-card">
             <div class="sayyaf-fear-header">
               <div class="sayyaf-fear-icon" aria-hidden="true">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
                   <circle cx="12" cy="12" r="10"></circle>
                   <line x1="12" y1="8" x2="12" y2="12"></line>
                   <line x1="12" y1="16" x2="12.01" y2="16"></line>
@@ -1835,7 +1835,7 @@
               شحنة الفريون، يُبلغك فوراً لعلاج التسريب وشحن الغاز.
             </p>
             <div class="sayyaf-guarantee-badge">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
                 <polyline points="20 6 9 17 4 12"></polyline>
               </svg>
               <span>استعادة تدفق الهواء وكفاءة التبريد القصوى</span>
@@ -1858,7 +1858,7 @@
         <div class="why-choose-grid">
           <div class="why-choose-card">
             <div class="why-choose-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
                 <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
               </svg>
             </div>
@@ -1871,7 +1871,7 @@
 
           <div class="why-choose-card">
             <div class="why-choose-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
                 <polygon
                   points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
               </svg>
@@ -1885,7 +1885,7 @@
 
           <div class="why-choose-card">
             <div class="why-choose-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
                 <path
                   d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
               </svg>
@@ -1899,7 +1899,7 @@
 
           <div class="why-choose-card">
             <div class="why-choose-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
                 <circle cx="12" cy="12" r="10" />
                 <polyline points="12 6 12 12 16 14" />
               </svg>
@@ -1913,7 +1913,7 @@
 
           <div class="why-choose-card">
             <div class="why-choose-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
                 <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
               </svg>
             </div>
@@ -1925,7 +1925,7 @@
 
           <div class="why-choose-card">
             <div class="why-choose-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
                 <path
                   d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
               </svg>
@@ -2052,7 +2052,7 @@
           <a href="/" class="sister-service-card">
             <h3>
               <span>فك وتركيب ونقل المكيفات</span>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
                 <polyline points="15 18 9 12 15 6"></polyline>
               </svg>
             </h3>
@@ -2062,7 +2062,7 @@
           <a href="/split-ac-installation-technician/" class="sister-service-card">
             <h3>
               <span>فني تركيب مكيفات سبليت</span>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
                 <polyline points="15 18 9 12 15 6"></polyline>
               </svg>
             </h3>
@@ -2072,7 +2072,7 @@
           <a href="/maintenance/" class="sister-service-card">
             <h3>
               <span>صيانة وتصليح وتعبئة فريون</span>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
                 <polyline points="15 18 9 12 15 6"></polyline>
               </svg>
             </h3>
@@ -2082,7 +2082,7 @@
           <a href="/copper-piping/" class="sister-service-card">
             <h3>
               <span>تأسيس وتمديد نحاس التكييف</span>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
                 <polyline points="15 18 9 12 15 6"></polyline>
               </svg>
             </h3>
@@ -2092,8 +2092,45 @@
       </div>
     </section>
 
-    <!-- Chunk-Ready FAQs -->
+    <!-- Field Proof Showcase -->
     <section class="sayyaf-section bg-subtle" style="border-top: 1px solid var(--color-border);">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-tag">توثيق الغسيل والتعقيم الميداني</span>
+          <h2 class="section-title">نتائج تنظيف وغسيل المكيفات في منازل الطائف</h2>
+          <p class="section-subtitle">لقطات من مواقع عملنا بعد الانتهاء من غسيل الوحدات الداخلية والخارجية مع الحفاظ التام على نظافة المكان:</p>
+        </div>
+
+        <div class="hvac-showcase-grid">
+          <div class="hvac-showcase-card">
+            <div class="hvac-showcase-card-img">
+              <img src="/assets/images/install-after-aston-indoor.webp"
+                alt="وحدة مكيف سبليت داخلية بعد الغسيل والتعقيم الكامل بالموقع في الطائف" width="1200" height="900" loading="lazy">
+            </div>
+            <div class="hvac-showcase-content">
+              <span class="hvac-showcase-tag">غسيل بالموقع — بدون فك</span>
+              <h3 class="hvac-showcase-title">وحدة داخلية معقمة مع حماية تامة للجدار والأثاث</h3>
+              <p class="hvac-showcase-detail">تنظيف شامل لزعانف المبخر ومروحة البلاور وحوض الصرف داخل جراب عازل دون ترك أي أثر ماء على الديكور أو الدهان.</p>
+            </div>
+          </div>
+
+          <div class="hvac-showcase-card">
+            <div class="hvac-showcase-card-img">
+              <img src="/assets/images/install-aston-outdoor-facade.webp"
+                alt="وحدة مكيف خارجية على واجهة مبنى بالطائف بعد الغسيل وإزالة الأتربة" width="1200" height="900" loading="lazy">
+            </div>
+            <div class="hvac-showcase-content">
+              <span class="hvac-showcase-tag">تنظيف المكثف الخارجي</span>
+              <h3 class="hvac-showcase-title">غسيل رديتر الوحدة الخارجية لرفع كفاءة التبريد</h3>
+              <p class="hvac-showcase-detail">إزالة الأتربة المتكلسة من رديتر المكثف الخارجي لتقليل حرارة الضاغط وخفض استهلاك الكهرباء في صيف الطائف.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Chunk-Ready FAQs -->
+    <section class="sayyaf-section" style="border-top: 1px solid var(--color-border);">
       <div class="container">
         <div class="section-head">
           <span class="section-tag">إجابات فنية مباشرة</span>
@@ -2106,7 +2143,7 @@
             <summary class="sayyaf-faq-summary">
               <span>هل يتم غسيل مكيف السبليت في مكانه أم يلزم فكه من الجدار؟</span>
               <div class="sayyaf-faq-icon" aria-hidden="true">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
                   <polyline points="6 9 12 15 18 9"></polyline>
                 </svg>
               </div>
@@ -2123,7 +2160,7 @@
             <summary class="sayyaf-faq-summary">
               <span>كم سعر تنظيف وغسيل المكيف في الطائف؟ وهل توجد خصومات للكميات؟</span>
               <div class="sayyaf-faq-icon" aria-hidden="true">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
                   <polyline points="6 9 12 15 18 9"></polyline>
                 </svg>
               </div>
@@ -2141,7 +2178,7 @@
             <summary class="sayyaf-faq-summary">
               <span>كيف تضمنون عدم تضرر دهان الجدار أو الأثاث أثناء ضخ الماء؟</span>
               <div class="sayyaf-faq-icon" aria-hidden="true">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
                   <polyline points="6 9 12 15 18 9"></polyline>
                 </svg>
               </div>
@@ -2158,7 +2195,7 @@
             <summary class="sayyaf-faq-summary">
               <span>هل يمكن أن تتلف اللوحة الإلكترونية (الكرت) بسبب ماء الغسيل؟</span>
               <div class="sayyaf-faq-icon" aria-hidden="true">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
                   <polyline points="6 9 12 15 18 9"></polyline>
                 </svg>
               </div>
@@ -2175,7 +2212,7 @@
             <summary class="sayyaf-faq-summary">
               <span>ما الفرق بين تنظيف الفلاتر العادي وغسيل صياف العميق؟</span>
               <div class="sayyaf-faq-icon" aria-hidden="true">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
                   <polyline points="6 9 12 15 18 9"></polyline>
                 </svg>
               </div>
@@ -2192,7 +2229,7 @@
             <summary class="sayyaf-faq-summary">
               <span>ما هي أبرز العلامات التي تدل على حاجة المكيف إلى غسيل فوري؟</span>
               <div class="sayyaf-faq-icon" aria-hidden="true">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
                   <polyline points="6 9 12 15 18 9"></polyline>
                 </svg>
               </div>
@@ -2209,7 +2246,7 @@
             <summary class="sayyaf-faq-summary">
               <span>كم يستغرق غسيل المكيف الواحد؟ ومتى يمكن تشغيله؟</span>
               <div class="sayyaf-faq-icon" aria-hidden="true">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
                   <polyline points="6 9 12 15 18 9"></polyline>
                 </svg>
               </div>
@@ -2226,7 +2263,7 @@
             <summary class="sayyaf-faq-summary">
               <span>ما هي أوقات العمل وكيف يتم حجز موعد الغسيل؟</span>
               <div class="sayyaf-faq-icon" aria-hidden="true">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
                   <polyline points="6 9 12 15 18 9"></polyline>
                 </svg>
               </div>
@@ -2249,7 +2286,7 @@
         <div class="topic-cluster-card">
           <div class="topic-cluster-content">
             <span class="topic-cluster-tag">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
                 <circle cx="12" cy="12" r="10"></circle>
                 <line x1="12" y1="16" x2="12" y2="12"></line>
                 <line x1="12" y1="8" x2="12.01" y2="8"></line>
@@ -2263,7 +2300,7 @@
           <div class="topic-cluster-action">
             <a href="/articles/deep-cleaning-guide/" class="topic-cluster-btn">
               <span>قراءة الدليل الشامل</span>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
                 <polyline points="15 18 9 12 15 6"></polyline>
               </svg>
             </a>
@@ -2282,7 +2319,7 @@
           نقي.</p>
         <div class="hero-btn-group" style="justify-content: center; max-width: 540px; margin: 0 auto;">
           <a href="tel:+966538972324" class="sayyaf-btn-call hero-btn-item">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
               <path
                 d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
             </svg>
@@ -2290,7 +2327,7 @@
           </a>
           <a href="https://wa.me/966538972324?text=السلام%20عليكم،%20أحتاج%20خدمة%20غسيل%20مكيفات%20في%20الطائف"
             class="sayyaf-btn-wa hero-btn-item" target="_blank" rel="noopener noreferrer">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
               <path
                 d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.39-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.32a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24m4.52 11.66c-.19-.09-1.12-.55-1.3-.61-.17-.07-.3-.1-.43.1-.12.19-.48.61-.59.74-.11.12-.22.14-.41.05-.19-.09-.8-.3-1.52-.94-.56-.5-1-1.12-1.11-1.31-.11-.19-.01-.29.08-.38.08-.09.19-.22.28-.33.09-.11.13-.19.19-.32.06-.13.03-.24-.02-.33-.05-.09-.43-1.04-.59-1.42-.16-.38-.32-.33-.44-.33h-.37c-.13 0-.34.05-.52.24-.18.19-.69.67-.69 1.64s.71 1.9 0.81 2.03c.1.14 1.39 2.13 3.37 2.99.47.2 0.84.33 1.13.42.48.15.91.13 1.25.08.38-.06 1.17-.48 1.33-.94.17-.46.17-.86.12-.94-.05-.08-.18-.13-.37-.22z" />
             </svg>
@@ -2309,7 +2346,7 @@
         <!-- Col 1: Brand & About -->
         <div>
           <div style="margin-bottom: 1.25rem;">
-            <img src="/assets/images/logo-footer.svg" alt="صياف للتكييف" width="160" height="55"
+            <img src="/assets/images/logo-footer.webp" alt="صياف للتكييف" width="160" height="55"
               style="height: 50px; width: auto;">
           </div>
           <p style="color: #94a3b8; font-size: 0.92rem; line-height: 1.7; margin-bottom: 1.5rem;">
@@ -2321,7 +2358,7 @@
               aria-label="حساب صياف للتكييف على إنستغرام"
               style="color: #cbd5e1; display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.88rem;">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                stroke-linecap="round" stroke-linejoin="round">
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
                 <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
                 <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
@@ -2333,7 +2370,7 @@
               aria-label="صفحة صياف للتكييف على فيسبوك"
               style="color: #cbd5e1; display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.88rem;">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                stroke-linecap="round" stroke-linejoin="round">
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
               </svg>
               <span>فيسبوك</span>
@@ -2343,7 +2380,7 @@
               aria-label="حساب صياف للتكييف على تيك توك"
               style="color: #cbd5e1; display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.88rem;">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                stroke-linecap="round" stroke-linejoin="round">
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"></path>
               </svg>
               <span>تيك توك</span>
@@ -2353,7 +2390,7 @@
               aria-label="حساب صياف للتكييف على بنترست"
               style="color: #cbd5e1; display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.88rem;">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                stroke-linecap="round" stroke-linejoin="round">
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <line x1="8" y1="20" x2="12" y2="11"></line>
                 <path d="M10.7 14c.437 1.263 1.43 2 2.55 2c2.071 0 3.75 -1.554 3.75 -4a5 5 0 1 0 -9.7 1.7"></path>
                 <circle cx="12" cy="12" r="9"></circle>
@@ -2394,14 +2431,14 @@
           <h3 class="footer-col-title">معلومات التواصل والمواعيد</h3>
           <div class="footer-contact-info">
             <div class="footer-contact-row">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
                 <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
                 <circle cx="12" cy="10" r="3"></circle>
               </svg>
               <span>شارع عور، حي أم العراد، الرمز البريدي 26511، الطائف</span>
             </div>
             <div class="footer-contact-row">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
                 <path
                   d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
               </svg>
@@ -2409,7 +2446,7 @@
                   style="color: #38bdf8; font-weight: 700;">0538972324</a></span>
             </div>
             <div class="footer-contact-row">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                 <path
                   d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.39-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.32a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24m4.52 11.66c-.19-.09-1.12-.55-1.3-.61-.17-.07-.3-.1-.43.1-.12.19-.48.61-.59.74-.11.12-.22.14-.41.05-.19-.09-.8-.3-1.52-.94-.56-.5-1-1.12-1.11-1.31-.11-.19-.01-.29.08-.38.08-.09.19-.22.28-.33.09-.11.13-.19.19-.32.06-.13.03-.24-.02-.33-.05-.09-.43-1.04-.59-1.42-.16-.38-.32-.33-.44-.33h-.37c-.13 0-.34.05-.52.24-.18.19-.69.67-.69 1.64s.71 1.9 0.81 2.03c.1.14 1.39 2.13 3.37 2.99.47.2 0.84.33 1.13.42.48.15.91.13 1.25.08.38-.06 1.17-.48 1.33-.94.17-.46.17-.86.12-.94-.05-.08-.18-.13-.37-.22z" />
               </svg>
@@ -2420,7 +2457,7 @@
                   ساعة)</a></span>
             </div>
             <div class="footer-contact-row">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
                 <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
                 <polyline points="22,6 12,13 2,6"></polyline>
               </svg>
@@ -2428,7 +2465,7 @@
                   style="color: #38bdf8;">info@sayyafac.com</a></span>
             </div>
             <div class="footer-contact-row">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
                 <circle cx="12" cy="12" r="10"></circle>
                 <polyline points="12 6 12 12 16 14"></polyline>
               </svg>
@@ -2449,7 +2486,7 @@
   <!-- Mobile Sticky Action Bar -->
   <div class="mobile-sticky-action-bar">
     <a href="tel:+966538972324" class="mobile-sticky-btn btn-call">
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
         <path
           d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
       </svg>
@@ -2457,7 +2494,7 @@
     </a>
     <a href="https://wa.me/966538972324?text=السلام%20عليكم،%20أحتاج%20خدمة%20غسيل%20مكيفات%20في%20الطائف"
       class="mobile-sticky-btn btn-wa" target="_blank" rel="noopener noreferrer">
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
         <path
           d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.39-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.32a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24m4.52 11.66c-.19-.09-1.12-.55-1.3-.61-.17-.07-.3-.1-.43.1-.12.19-.48.61-.59.74-.11.12-.22.14-.41.05-.19-.09-.8-.3-1.52-.94-.56-.5-1-1.12-1.11-1.31-.11-.19-.01-.29.08-.38.08-.09.19-.22.28-.33.09-.11.13-.19.19-.32.06-.13.03-.24-.02-.33-.05-.09-.43-1.04-.59-1.42-.16-.38-.32-.33-.44-.33h-.37c-.13 0-.34.05-.52.24-.18.19-.69.67-.69 1.64s.71 1.9 0.81 2.03c.1.14 1.39 2.13 3.37 2.99.47.2 0.84.33 1.13.42.48.15.91.13 1.25.08.38-.06 1.17-.48 1.33-.94.17-.46.17-.86.12-.94-.05-.08-.18-.13-.37-.22z" />
       </svg>
@@ -2465,7 +2502,7 @@
     </a>
   </div>
 
-  <script src="/assets/js/main.js" defer></script>
+  <script src="/assets/js/main.js?v=20261125" defer></script>
 </body>
 
 </html>
